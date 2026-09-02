@@ -29,28 +29,6 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Inspect trader price and flea shapes
-        shell: bash
-        run: |
-          node --input-type=module <<'NODE'
-          const get = async (name) => (await (await fetch(`https://json.tarkov.dev/pve/${name}`)).json()).data;
-          const [itemsData, tradersData, hideoutData, bartersData] = await Promise.all([get('items'), get('traders'), get('hideout'), get('barters')]);
-          const recs = v => Array.isArray(v) ? v : Object.values(v ?? {}).filter(x => x && typeof x === 'object');
-          const items = recs(itemsData?.items ?? itemsData);
-          const traders = recs(tradersData);
-          const hideout = recs(hideoutData);
-          const barters = recs(bartersData);
-          const buy = items.find(i => Array.isArray(i.buyFromTrader) && i.buyFromTrader.length);
-          const sell = items.find(i => Array.isArray(i.sellToTrader) && i.sellToTrader.length);
-          console.log('BUY_FROM_TRADER_SAMPLE', JSON.stringify(buy ?? null, null, 2).slice(0, 16000));
-          console.log('SELL_TO_TRADER_SAMPLE', JSON.stringify(sell ?? null, null, 2).slice(0, 16000));
-          console.log('FLEA_MARKET', JSON.stringify(itemsData?.fleaMarket ?? null, null, 2));
-          console.log('TRADERS', JSON.stringify(traders.map(t => ({id:t.id,name:t.name,normalizedName:t.normalizedName})), null, 2));
-          console.log('STATIONS', JSON.stringify(hideout.map(s => ({id:s.id,name:s.name,normalizedName:s.normalizedName})), null, 2));
-          const taskBarter = barters.find(b => b.taskUnlock);
-          console.log('TASK_BARTER_SAMPLE', JSON.stringify(taskBarter ?? null, null, 2).slice(0, 12000));
-          NODE
-
       - name: Calculate latest PvE report directly from Tarkov.dev
         run: node scripts/calculate-report.mjs
 
@@ -60,11 +38,19 @@ jobs:
           set -euo pipefail
           test -s data/report.txt
           test -s data/report.json
+          test -s data/crafts.json
           test -s data/integrity.json
+
           jq -e '.metadata.mode == "PvE"' data/report.json >/dev/null
-          jq -e '.counts.authoritativeCrafts > 0' data/report.json >/dev/null
-          jq -e '.counts.hideoutCrafts > 0' data/report.json >/dev/null
+          jq -e '.counts.crafts > 0' data/report.json >/dev/null
           jq -e '.counts.check == true' data/report.json >/dev/null
+          jq -e '.integrity.countMatch == true' data/integrity.json >/dev/null
+          jq -e '.integrity.unresolvedStationCrafts == 0' data/integrity.json >/dev/null
+          jq -e '.integrity.missingReferencedItems == 0' data/integrity.json >/dev/null
+
+          crafts=$(jq '.counts.crafts' data/report.json)
+          calculated=$(jq 'length' data/crafts.json)
+          test "$crafts" -eq "$calculated"
 
       - name: Commit updated report
         shell: bash
@@ -72,7 +58,10 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/report.txt data/report.json data/integrity.json
-          if git diff --cached --quiet; then echo "No report changes."; exit 0; fi
+          git add data/report.txt data/report.json data/crafts.json data/integrity.json
+          if git diff --cached --quiet; then
+            echo "No report changes."
+            exit 0
+          fi
           git commit -m "Update Tarkov PvE report"
           git push
