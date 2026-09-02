@@ -8,6 +8,7 @@ on:
     paths:
       - ".github/workflows/update-report.yml"
       - "scripts/calculate-report.mjs"
+      - "scripts/calculate-special-systems.mjs"
 
 permissions:
   contents: write
@@ -32,6 +33,9 @@ jobs:
       - name: Calculate latest PvE report directly from Tarkov.dev
         run: node scripts/calculate-report.mjs
 
+      - name: Calculate special hideout systems
+        run: node scripts/calculate-special-systems.mjs
+
       - name: Validate generated data
         shell: bash
         run: |
@@ -40,6 +44,7 @@ jobs:
           test -s data/report.json
           test -s data/crafts.json
           test -s data/integrity.json
+          test -s data/special-systems.json
 
           jq -e '.metadata.mode == "PvE"' data/report.json >/dev/null
           jq -e '.counts.crafts > 0' data/report.json >/dev/null
@@ -47,6 +52,13 @@ jobs:
           jq -e '.integrity.countMatch == true' data/integrity.json >/dev/null
           jq -e '.integrity.unresolvedStationCrafts == 0' data/integrity.json >/dev/null
           jq -e '.integrity.missingReferencedItems == 0' data/integrity.json >/dev/null
+
+          jq -e '.bitcoinFarm.status == "complete"' data/special-systems.json >/dev/null
+          jq -e '.bitcoinFarm.variants | length == 4' data/special-systems.json >/dev/null
+          jq -e '.scavCase.options | length == 5' data/special-systems.json >/dev/null
+          jq -e '.fuel.cheapest != null' data/special-systems.json >/dev/null
+          jq -e '.continuousProduction.waterCollector.scannedCompleteCrafts > 0' data/special-systems.json >/dev/null
+          jq -e '.continuousProduction.boozeGenerator.scannedCompleteCrafts > 0' data/special-systems.json >/dev/null
 
           crafts=$(jq '.counts.crafts' data/report.json)
           calculated=$(jq 'length' data/crafts.json)
@@ -58,7 +70,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/report.txt data/report.json data/crafts.json data/integrity.json
+          git add data/report.txt data/report.json data/crafts.json data/integrity.json data/special-systems.json
           if git diff --cached --quiet; then
             echo "No report changes."
             exit 0
