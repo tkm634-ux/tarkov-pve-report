@@ -29,6 +29,22 @@ jobs:
         with:
           node-version: "24"
 
+      - name: Inspect current hideout JSON shape
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          const r = await fetch('https://json.tarkov.dev/pve/hideout');
+          const envelope = await r.json();
+          const data = envelope.data;
+          const type = Array.isArray(data) ? 'array' : typeof data;
+          console.log('hideout data type:', type);
+          console.log('hideout top keys:', data && typeof data === 'object' ? Object.keys(data).slice(0, 20) : []);
+          const values = Array.isArray(data) ? data : (data && typeof data === 'object' ? Object.values(data) : []);
+          const first = values.find(v => v && typeof v === 'object' && !Array.isArray(v));
+          console.log('first record keys:', first ? Object.keys(first) : []);
+          console.log('first record:', JSON.stringify(first, null, 2).slice(0, 12000));
+          NODE
+
       - name: Calculate latest PvE report directly from Tarkov.dev
         run: node scripts/calculate-report.mjs
 
