@@ -2,20 +2,42 @@ import fs from 'node:fs/promises';
 
 const BASE = 'https://json.tarkov.dev/pve';
 const RUB_ID = '5449016a4bdc2d6f028b456f';
-const USD_ID = '5696686a4bdc2da3298b456a';
-const EUR_ID = '569668774bdc2da2298b4568';
 const INTEL_CENTER_LEVEL = 3;
 const HIDEOUT_MANAGEMENT_LEVEL = 0;
 const MAX_PASSES = 40;
+const SPECIAL_RANDOM_STATIONS = new Set(['scav-case', 'cultist-circle']);
 
-async function get(endpoint) {
+const STATION_LABELS = {
+  'workbench': 'Workbench',
+  'lavatory': 'Lavatory',
+  'nutrition-unit': 'Nutrition Unit',
+  'medstation': 'Medstation',
+  'intelligence-center': 'Intelligence Center',
+  'booze-generator': 'Booze Generator',
+  'water-collector': 'Water Collector',
+  'scav-case': 'Scav Case',
+  'cultist-circle': 'Cultist Circle',
+  'bitcoin-farm': 'Bitcoin Farm',
+};
+
+async function fetchEnvelope(endpoint) {
   const r = await fetch(`${BASE}/${endpoint}`, { headers: { accept: 'application/json' } });
   if (!r.ok) throw new Error(`${endpoint}: HTTP ${r.status}`);
   const envelope = await r.json();
   if (!envelope || !Object.prototype.hasOwnProperty.call(envelope, 'data')) {
     throw new Error(`${endpoint}: missing data envelope`);
   }
-  return envelope.data;
+  return envelope;
+}
+
+async function fetchLocale(endpoint) {
+  try {
+    const env = await fetchEnvelope(`${endpoint}_en`);
+    return env?.data && typeof env.data === 'object' ? env.data : {};
+  } catch (error) {
+    console.warn(`locale ${endpoint}_en unavailable:`, error instanceof Error ? error.message : String(error));
+    return {};
+  }
 }
 
 function records(value) {
@@ -40,50 +62,65 @@ function isTool(part) {
   if (!a) return false;
   if (!Array.isArray(a) && typeof a === 'object') return a.tool === true || a.Tool === true;
   if (Array.isArray(a)) {
-    return a.some(x => {
-      const key = String(x?.type ?? x?.name ?? '').toLowerCase();
-      const val = x?.value ?? true;
-      return key === 'tool' && (val === true || val === 'true' || val === 1 || val === '1');
-    });
+    return a.some(x => String(x?.type ?? x?.name ?? '').toLowerCase() === 'tool' && [true, 'true', 1, '1'].includes(x?.value ?? true));
   }
   return false;
 }
 
-function partsOf(record, key, { skipTools = false } = {}) {
-  const list = Array.isArray(record?.[key]) ? record[key] : [];
-  return list.map(part => ({
-    id: idOf(part?.item),
-    count: countOf(part),
-    tool: isTool(part),
-  })).filter(x => x.id && !(skipTools && x.tool));
+function containedPart(part) {
+  const id = idOf(part?.item);
+  if (!id) return null;
+  return { id, count: countOf(part), tool: isTool(part) };
 }
 
-function itemPayloadItems(itemsData) {
-  const candidate = itemsData?.items ?? itemsData;
-  return records(candidate);
+function requiredParts(record, { skipTools = false } = {}) {
+  const list = Array.isArray(record?.requiredItems) ? record.requiredItems : [];
+  return list.map(containedPart).filter(Boolean).filter(x => !(skipTools && x.tool));
 }
 
-function buildMap(list) {
+function outputParts(record) {
+  if (record?.productItem) {
+    const part = containedPart(record.productItem);
+    return part ? [part] : [];
+  }
+  if (record?.offeredItem) {
+    const part = containedPart(record.offeredItem);
+    return part ? [part] : [];
+  }
+  const list = Array.isArray(record?.rewardItems) ? record.rewardItems : [];
+  return list.map(containedPart).filter(Boolean);
+}
+
+function makeMap(list) {
   return new Map(list.map(x => [x.id, x]).filter(([id]) => typeof id === 'string'));
 }
 
-function flattenHideoutCrafts(hideoutData) {
-  const map = new Map();
-  for (const station of records(hideoutData)) {
-    for (const level of records(station.levels)) {
-      for (const craft of records(level.crafts)) {
-        const id = craft.id;
-        if (!id) continue;
-        map.set(id, {
-          ...craft,
-          _stationId: station.id ?? idOf(craft.station),
-          _stationName: station.name ?? station.normalizedName ?? station.id ?? idOf(craft.station) ?? 'Unknown',
-          _stationLevel: Number(craft.level ?? level.level ?? 0),
-        });
-      }
-    }
-  }
-  return [...map.values()];
+function titleFromSlug(value) {
+  return String(value ?? '')
+    .split('-')
+    .filter(Boolean)
+    .map(x => x.charAt(0).toUpperCase() + x.slice(1))
+    .join(' ');
+}
+
+function translated(raw, locale, fallback = null) {
+  if (typeof raw === 'string' && typeof locale?.[raw] === 'string') return locale[raw];
+  return fallback ?? raw ?? null;
+}
+
+function itemLabel(item, locale) {
+  if (!item) return null;
+  return translated(item.name, locale, titleFromSlug(item.normalizedName) || item.id);
+}
+
+function traderLabel(trader, locale) {
+  if (!trader) return 'Trader';
+  return translated(trader.name, locale, titleFromSlug(trader.normalizedName) || trader.id);
+}
+
+function stationLabel(station) {
+  if (!station) return 'Unknown';
+  return STATION_LABELS[station.normalizedName] ?? titleFromSlug(station.normalizedName) ?? station.id;
 }
 
 function fleaAllowed(item) {
@@ -92,24 +129,48 @@ function fleaAllowed(item) {
   return !types.includes('noFlea') && Number(item.lastLowPrice) > 0;
 }
 
-function traderSellOffers(item, traderMap) {
+function directPurchaseCandidates(item, traderMap, traderLocale) {
   const out = [];
-  for (const p of Array.isArray(item?.traderPrices) ? item.traderPrices : []) {
-    const price = Number(p?.priceRUB ?? p?.price);
-    if (!(price > 0)) continue;
-    const tid = idOf(p?.trader) ?? p?.trader;
-    const t = traderMap.get(tid);
+  if (fleaAllowed(item)) {
     out.push({
-      method: t?.name ?? p?.source ?? tid ?? 'Trader',
-      unit: price,
-      type: 'trader',
+      unitCost: Number(item.lastLowPrice),
+      method: 'Flea Market',
+      type: 'flea',
+      buyLimit: null,
+      taskUnlock: null,
+      ancestors: [],
     });
   }
-  for (const p of Array.isArray(item?.sellFor) ? item.sellFor : []) {
-    const vendorName = p?.vendor?.name ?? p?.vendor?.normalizedName ?? p?.source ?? '';
-    if (String(vendorName).toLowerCase().includes('flea')) continue;
-    const price = Number(p?.priceRUB ?? p?.price);
-    if (price > 0) out.push({ method: vendorName || 'Trader', unit: price, type: 'trader' });
+  for (const offer of Array.isArray(item?.buyFromTrader) ? item.buyFromTrader : []) {
+    const price = Number(offer?.priceRUB);
+    if (!(price > 0)) continue;
+    const trader = traderMap.get(idOf(offer?.trader) ?? offer?.trader);
+    out.push({
+      unitCost: price,
+      method: `Trader purchase: ${traderLabel(trader, traderLocale)} LL${offer.minTraderLevel ?? '?'}`,
+      type: 'trader',
+      trader: traderLabel(trader, traderLocale),
+      traderLevel: offer.minTraderLevel ?? null,
+      buyLimit: offer.buyLimit ?? null,
+      taskUnlock: idOf(offer.taskUnlock) ?? offer.taskUnlock ?? null,
+      ancestors: [],
+    });
+  }
+  return out.sort((a, b) => a.unitCost - b.unitCost);
+}
+
+function traderSellCandidates(item, traderMap, traderLocale) {
+  const out = [];
+  for (const offer of Array.isArray(item?.sellToTrader) ? item.sellToTrader : []) {
+    const price = Number(offer?.priceRUB);
+    if (!(price > 0)) continue;
+    const trader = traderMap.get(idOf(offer?.trader) ?? offer?.trader);
+    out.push({
+      method: traderLabel(trader, traderLocale),
+      type: 'trader',
+      unitPrice: price,
+      grossUnit: price,
+    });
   }
   return out;
 }
@@ -140,51 +201,46 @@ function fleaFee(item, unitPrice, count, flea) {
   return Math.round(Math.max(0, fee));
 }
 
-function bestSale(item, count, traderMap, flea) {
-  const offers = [];
-  for (const t of traderSellOffers(item, traderMap)) {
-    const gross = t.unit * count;
-    offers.push({ method: t.method, type: t.type, unitPrice: t.unit, gross, fee: 0, net: gross });
+function bestSale(item, count, traderMap, traderLocale, flea) {
+  const candidates = [];
+  for (const t of traderSellCandidates(item, traderMap, traderLocale)) {
+    const gross = t.unitPrice * count;
+    candidates.push({ method: t.method, type: 'trader', unitPrice: t.unitPrice, gross, fee: 0, net: gross });
   }
   if (fleaAllowed(item)) {
-    const unit = Number(item.lastLowPrice);
-    const gross = unit * count;
-    const fee = fleaFee(item, unit, count, flea);
-    if (fee !== null) offers.push({ method: 'Flea Market', type: 'flea', unitPrice: unit, gross, fee, net: gross - fee });
+    const unitPrice = Number(item.lastLowPrice);
+    const gross = unitPrice * count;
+    const fee = fleaFee(item, unitPrice, count, flea);
+    if (fee !== null) candidates.push({ method: 'Flea Market', type: 'flea', unitPrice, gross, fee, net: gross - fee });
   }
-  offers.sort((a, b) => b.net - a.net);
-  return offers[0] ?? null;
+  candidates.sort((a, b) => b.net - a.net);
+  return candidates[0] ?? null;
 }
 
-function totalCost(parts, costMap) {
+function combinedInputCost(parts, costMap, outputId = null) {
   let total = 0;
-  for (const p of parts) {
-    const c = costMap.get(p.id);
+  const ancestors = new Set();
+  for (const part of parts) {
+    const c = costMap.get(part.id);
     if (!c || !(Number(c.unitCost) > 0)) return null;
-    total += c.unitCost * p.count;
+    total += c.unitCost * part.count;
+    ancestors.add(part.id);
+    for (const ancestor of c.ancestors ?? []) ancestors.add(ancestor);
   }
-  return total;
+  if (outputId && ancestors.has(outputId)) return null;
+  return { total, ancestors: [...ancestors] };
 }
 
-function traderName(barter, traderMap) {
-  const tid = idOf(barter?.trader) ?? barter?.trader;
-  return traderMap.get(tid)?.name ?? barter?.sourceName ?? barter?.source ?? tid ?? 'Trader';
-}
-
-function buildCosts(items, crafts, barters, traderMap) {
+function buildCosts(items, crafts, barters, traderMap, traderLocale) {
   const costMap = new Map();
-  costMap.set(RUB_ID, { unitCost: 1, method: 'RUB', type: 'currency' });
+  costMap.set(RUB_ID, { unitCost: 1, method: 'RUB', type: 'currency', ancestors: [] });
 
   for (const item of items) {
     if (!item?.id) continue;
-    if (fleaAllowed(item)) {
-      costMap.set(item.id, {
-        unitCost: Number(item.lastLowPrice),
-        method: 'Flea Market',
-        type: 'flea',
-      });
-    }
+    const best = directPurchaseCandidates(item, traderMap, traderLocale)[0];
+    if (best) costMap.set(item.id, best);
   }
+  costMap.set(RUB_ID, { unitCost: 1, method: 'RUB', type: 'currency', ancestors: [] });
 
   let passes = 0;
   let converged = false;
@@ -193,22 +249,26 @@ function buildCosts(items, crafts, barters, traderMap) {
     let changed = false;
 
     for (const barter of barters) {
-      const req = partsOf(barter, 'requiredItems');
-      const rew = partsOf(barter, 'rewardItems');
-      if (!req.length || !rew.length) continue;
-      const input = totalCost(req, costMap);
-      if (input === null) continue;
-      for (const out of rew) {
-        if (out.id === RUB_ID || req.some(x => x.id === out.id)) continue;
-        const candidate = input / out.count;
-        const old = costMap.get(out.id)?.unitCost;
+      const req = requiredParts(barter);
+      const outputs = outputParts(barter);
+      if (!req.length || !outputs.length) continue;
+      for (const output of outputs) {
+        const input = combinedInputCost(req, costMap, output.id);
+        if (!input) continue;
+        const candidate = input.total / output.count;
+        const old = costMap.get(output.id)?.unitCost;
         if (candidate > 0 && (!old || candidate < old - 0.01)) {
-          const cash = req.every(x => [RUB_ID, USD_ID, EUR_ID].includes(x.id));
-          costMap.set(out.id, {
+          const trader = traderMap.get(idOf(barter.trader) ?? barter.trader);
+          costMap.set(output.id, {
             unitCost: candidate,
-            method: `${cash ? 'Trader purchase' : 'Trader barter'}: ${traderName(barter, traderMap)} LL${barter.level ?? '?'}`,
-            type: cash ? 'trader' : 'barter',
+            method: `Trader barter: ${traderLabel(trader, traderLocale)} LL${barter.minTraderLevel ?? '?'}`,
+            type: 'barter',
+            trader: traderLabel(trader, traderLocale),
+            traderLevel: barter.minTraderLevel ?? null,
+            buyLimit: barter.buyLimit ?? null,
             taskUnlock: idOf(barter.taskUnlock) ?? barter.taskUnlock ?? null,
+            barterId: barter.id ?? null,
+            ancestors: input.ancestors,
           });
           changed = true;
         }
@@ -216,101 +276,110 @@ function buildCosts(items, crafts, barters, traderMap) {
     }
 
     for (const craft of crafts) {
-      const req = partsOf(craft, 'requiredItems', { skipTools: true });
-      const rew = partsOf(craft, 'rewardItems');
-      if (!req.length || !rew.length) continue;
-      const input = totalCost(req, costMap);
-      if (input === null) continue;
-      for (const out of rew) {
-        if (req.some(x => x.id === out.id)) continue;
-        const candidate = input / out.count;
-        const old = costMap.get(out.id)?.unitCost;
+      if (SPECIAL_RANDOM_STATIONS.has(craft._stationNormalizedName)) continue;
+      const req = requiredParts(craft, { skipTools: true });
+      const outputs = outputParts(craft);
+      if (!req.length || !outputs.length) continue;
+      for (const output of outputs) {
+        const input = combinedInputCost(req, costMap, output.id);
+        if (!input) continue;
+        const candidate = input.total / output.count;
+        const old = costMap.get(output.id)?.unitCost;
         if (candidate > 0 && (!old || candidate < old - 0.01)) {
-          costMap.set(out.id, {
+          costMap.set(output.id, {
             unitCost: candidate,
-            method: `Hideout craft: ${craft._stationName} Lv${craft._stationLevel}`,
+            method: `Hideout craft: ${craft._stationLabel} Lv${craft.level ?? '?'}`,
             type: 'craft',
-            craftId: craft.id,
+            craftId: craft.id ?? null,
             taskUnlock: idOf(craft.taskUnlock) ?? craft.taskUnlock ?? null,
+            ancestors: input.ancestors,
           });
           changed = true;
         }
       }
     }
 
-    costMap.set(RUB_ID, { unitCost: 1, method: 'RUB', type: 'currency' });
+    costMap.set(RUB_ID, { unitCost: 1, method: 'RUB', type: 'currency', ancestors: [] });
     if (!changed) {
       converged = true;
       break;
     }
   }
+
   return { costMap, passes, converged };
 }
 
 function round(n) { return Number.isFinite(Number(n)) ? Math.round(Number(n)) : null; }
 function round2(n) { return Number.isFinite(Number(n)) ? Math.round(Number(n) * 100) / 100 : null; }
 
-function calculateCraft(craft, itemMap, costMap, traderMap, flea) {
-  const reqAll = partsOf(craft, 'requiredItems');
+function calculateCraft(craft, itemMap, itemLocale, costMap, traderMap, traderLocale, flea) {
+  const reqAll = requiredParts(craft);
   const req = reqAll.filter(x => !x.tool);
   const tools = reqAll.filter(x => x.tool);
-  const rew = partsOf(craft, 'rewardItems');
+  const outputs = outputParts(craft);
   const duration = Number(craft.duration);
+  const station = craft._stationLabel;
+  const outputName = outputs.map(x => `${itemLabel(itemMap.get(x.id), itemLocale) ?? x.id} x${x.count}`).join(' + ') || craft.id;
+
   const base = {
-    craftId: craft.id,
-    station: craft._stationName,
-    stationId: craft._stationId,
-    stationLevel: craft._stationLevel,
+    craftId: craft.id ?? null,
+    station,
+    stationId: craft.station ?? null,
+    stationNormalizedName: craft._stationNormalizedName,
+    stationLevel: craft.level ?? null,
     taskUnlock: idOf(craft.taskUnlock) ?? craft.taskUnlock ?? null,
     durationSeconds: Number.isFinite(duration) ? duration : null,
     durationMinutes: Number.isFinite(duration) ? round2(duration / 60) : null,
-    status: 'complete',
-    craft: rew.map(x => `${itemMap.get(x.id)?.name ?? x.id} x${x.count}`).join(' + ') || craft.id,
+    craft: outputName,
     materials: [],
-    tools: tools.map(x => ({ id: x.id, item: itemMap.get(x.id)?.name ?? x.id, count: x.count })),
+    tools: tools.map(x => ({ id: x.id, item: itemLabel(itemMap.get(x.id), itemLocale) ?? x.id, count: x.count })),
     outputs: [],
   };
 
-  if (!req.length && !tools.length) return { ...base, status: 'incomplete', reason: 'No requiredItems' };
-  if (!rew.length) return { ...base, status: 'incomplete', reason: 'No rewardItems in hideout data' };
+  if (SPECIAL_RANDOM_STATIONS.has(craft._stationNormalizedName)) {
+    return { ...base, status: 'special-random', reason: 'Random-return system; expected value is intentionally not invented.' };
+  }
+  if (!outputs.length) return { ...base, status: 'incomplete', reason: 'No productItem/offered output' };
   if (!(duration > 0)) return { ...base, status: 'incomplete', reason: 'Invalid duration' };
 
   let materialCost = 0;
-  for (const p of req) {
-    const item = itemMap.get(p.id);
-    const c = costMap.get(p.id);
-    if (!item) return { ...base, status: 'incomplete', reason: `Missing material item ${p.id}` };
-    if (!c) return { ...base, status: 'incomplete', reason: `No acquisition price for ${item.name ?? p.id}` };
-    const subtotal = c.unitCost * p.count;
+  for (const part of req) {
+    const item = itemMap.get(part.id);
+    const cost = costMap.get(part.id);
+    if (!item) return { ...base, status: 'incomplete', reason: `Missing material item ${part.id}` };
+    if (!cost) return { ...base, status: 'incomplete', reason: `No acquisition price for ${itemLabel(item, itemLocale) ?? part.id}` };
+    const subtotal = cost.unitCost * part.count;
     materialCost += subtotal;
     base.materials.push({
-      id: p.id,
-      item: item.name ?? p.id,
-      count: p.count,
-      unitCost: round(c.unitCost),
+      id: part.id,
+      item: itemLabel(item, itemLocale) ?? part.id,
+      count: part.count,
+      unitCost: round(cost.unitCost),
       subtotal: round(subtotal),
-      method: c.method,
-      methodType: c.type,
+      method: cost.method,
+      methodType: cost.type,
+      buyLimit: cost.buyLimit ?? null,
+      taskUnlock: cost.taskUnlock ?? null,
     });
   }
 
   let saleGross = 0;
-  let fees = 0;
+  let fleaFees = 0;
   let netRevenue = 0;
   const destinations = new Set();
-  for (const p of rew) {
-    const item = itemMap.get(p.id);
-    if (!item) return { ...base, status: 'incomplete', reason: `Missing output item ${p.id}` };
-    const sale = bestSale(item, p.count, traderMap, flea);
-    if (!sale) return { ...base, status: 'incomplete', reason: `No sale price for ${item.name ?? p.id}` };
+  for (const part of outputs) {
+    const item = itemMap.get(part.id);
+    if (!item) return { ...base, status: 'incomplete', reason: `Missing output item ${part.id}` };
+    const sale = bestSale(item, part.count, traderMap, traderLocale, flea);
+    if (!sale) return { ...base, status: 'incomplete', reason: `No sale price for ${itemLabel(item, itemLocale) ?? part.id}` };
     saleGross += sale.gross;
-    fees += sale.fee;
+    fleaFees += sale.fee;
     netRevenue += sale.net;
     destinations.add(sale.method);
     base.outputs.push({
-      id: p.id,
-      item: item.name ?? p.id,
-      count: p.count,
+      id: part.id,
+      item: itemLabel(item, itemLocale) ?? part.id,
+      count: part.count,
       unitPrice: round(sale.unitPrice),
       gross: round(sale.gross),
       fee: round(sale.fee),
@@ -319,15 +388,17 @@ function calculateCraft(craft, itemMap, costMap, traderMap, flea) {
       methodType: sale.type,
       lastLowPrice: round(item.lastLowPrice),
       avg24hPrice: round(item.avg24hPrice),
+      updated: item.updated ?? null,
     });
   }
 
   const profit = netRevenue - materialCost;
   return {
     ...base,
+    status: 'complete',
     materialCost: round(materialCost),
     saleGross: round(saleGross),
-    fleaFee: round(fees),
+    fleaFee: round(fleaFees),
     netRevenue: round(netRevenue),
     profit: round(profit),
     profitPerHour: round(profit / duration * 3600),
@@ -356,26 +427,27 @@ function compact(r) {
 }
 
 function reportText(report) {
-  const f = n => Number.isFinite(Number(n)) ? `${Math.round(Number(n)).toLocaleString('en-US')} RUB` : 'N/A';
+  const rub = n => Number.isFinite(Number(n)) ? `${Math.round(Number(n)).toLocaleString('en-US')} RUB` : 'N/A';
   const lines = [
     `Mode: PvE`,
     `Calculated: ${report.metadata.calculatedAt}`,
-    `Crafts authoritative: ${report.counts.authoritativeCrafts}`,
-    `Crafts from hideout: ${report.counts.hideoutCrafts}`,
+    `Crafts scanned: ${report.counts.crafts}`,
     `Success: ${report.counts.calculatedSuccessfully}`,
     `Incomplete: ${report.counts.incomplete}`,
+    `Special/random: ${report.counts.specialRandom}`,
     `Barters scanned: ${report.counts.barters}`,
     `Items loaded: ${report.counts.items}`,
     `Count integrity: ${report.counts.check}`,
     '',
   ];
-  for (const s of report.stations) {
-    lines.push(`## ${s.station}`);
-    lines.push(`Scanned crafts: ${s.scannedCrafts}`);
+  for (const station of report.stations) {
+    lines.push(`## ${station.station}`);
+    lines.push(`Scanned crafts: ${station.scannedCrafts}`);
+    if (station.specialRandom) lines.push(`Random-system recipes: ${station.specialRandom} (EV not fabricated)`);
     lines.push('Profit/h TOP3');
-    s.topProfitPerHour.forEach((r, i) => lines.push(`${i + 1}. ${r.craft} | profit ${f(r.profit)} | ${f(r.profitPerHour)}/h | ${r.sellTo}`));
+    station.topProfitPerHour.forEach((r, i) => lines.push(`${i + 1}. ${r.craft} | profit ${rub(r.profit)} | ${rub(r.profitPerHour)}/h | ${r.sellTo}`));
     lines.push('Profit/craft TOP3');
-    s.topProfitPerCraft.forEach((r, i) => lines.push(`${i + 1}. ${r.craft} | profit ${f(r.profit)} | ${f(r.profitPerHour)}/h | ${r.sellTo}`));
+    station.topProfitPerCraft.forEach((r, i) => lines.push(`${i + 1}. ${r.craft} | profit ${rub(r.profit)} | ${rub(r.profitPerHour)}/h | ${r.sellTo}`));
     lines.push('');
   }
   if (report.incomplete.length) {
@@ -386,47 +458,80 @@ function reportText(report) {
 }
 
 async function main() {
-  const [hideoutData, craftsData, bartersData, itemsData, tradersData] = await Promise.all([
-    get('hideout'), get('crafts'), get('barters'), get('items'), get('traders'),
+  const [craftsEnv, bartersEnv, itemsEnv, tradersEnv, hideoutEnv, itemLocale, traderLocale] = await Promise.all([
+    fetchEnvelope('crafts'),
+    fetchEnvelope('barters'),
+    fetchEnvelope('items'),
+    fetchEnvelope('traders'),
+    fetchEnvelope('hideout'),
+    fetchLocale('items'),
+    fetchLocale('traders'),
   ]);
 
-  const hideoutCrafts = flattenHideoutCrafts(hideoutData);
-  const authoritativeCrafts = records(craftsData);
-  const barters = records(bartersData);
-  const items = itemPayloadItems(itemsData);
-  const traders = records(tradersData);
-  const itemMap = buildMap(items);
-  const traderMap = buildMap(traders);
+  const craftsRaw = records(craftsEnv.data);
+  const barters = records(bartersEnv.data);
+  const itemsData = itemsEnv.data;
+  const items = records(itemsData?.items ?? itemsData);
+  const traders = records(tradersEnv.data);
+  const stations = records(hideoutEnv.data);
+  const itemMap = makeMap(items);
+  const traderMap = makeMap(traders);
+  const stationMap = makeMap(stations);
   const flea = itemsData?.fleaMarket ?? null;
 
-  const hideoutIds = new Set(hideoutCrafts.map(x => x.id));
-  const authIds = new Set(authoritativeCrafts.map(x => x.id));
-  const missingFromHideout = [...authIds].filter(id => !hideoutIds.has(id));
-  const extraInHideout = [...hideoutIds].filter(id => !authIds.has(id));
+  const crafts = craftsRaw.map(craft => {
+    const station = stationMap.get(idOf(craft.station) ?? craft.station);
+    return {
+      ...craft,
+      _stationLabel: stationLabel(station),
+      _stationNormalizedName: station?.normalizedName ?? String(craft.station ?? 'unknown'),
+    };
+  });
 
-  const engine = buildCosts(items, hideoutCrafts, barters, traderMap);
-  const results = hideoutCrafts.map(c => calculateCraft(c, itemMap, engine.costMap, traderMap, flea));
-  const complete = results.filter(x => x.status === 'complete');
-  const incomplete = results.filter(x => x.status !== 'complete');
-
-  const stationMap = new Map();
-  for (const r of results) {
-    if (!stationMap.has(r.station)) stationMap.set(r.station, []);
-    stationMap.get(r.station).push(r);
+  const unresolvedStationCrafts = crafts.filter(c => !stationMap.has(idOf(c.station) ?? c.station)).map(c => c.id);
+  const referencedIds = new Set();
+  for (const craft of crafts) {
+    for (const p of requiredParts(craft)) referencedIds.add(p.id);
+    for (const p of outputParts(craft)) referencedIds.add(p.id);
   }
-  const stations = [...stationMap.entries()].map(([station, rows]) => {
+  for (const barter of barters) {
+    for (const p of requiredParts(barter)) referencedIds.add(p.id);
+    for (const p of outputParts(barter)) referencedIds.add(p.id);
+  }
+  const missingReferencedItems = [...referencedIds].filter(id => !itemMap.has(id));
+
+  const engine = buildCosts(items, crafts, barters, traderMap, traderLocale);
+  const results = crafts.map(craft => calculateCraft(craft, itemMap, itemLocale, engine.costMap, traderMap, traderLocale, flea));
+  const complete = results.filter(x => x.status === 'complete');
+  const incomplete = results.filter(x => x.status === 'incomplete');
+  const specialRandom = results.filter(x => x.status === 'special-random');
+
+  const stationGroups = new Map();
+  for (const row of results) {
+    if (!stationGroups.has(row.station)) stationGroups.set(row.station, []);
+    stationGroups.get(row.station).push(row);
+  }
+  const stationReports = [...stationGroups.entries()].map(([station, rows]) => {
     const ok = rows.filter(x => x.status === 'complete');
+    const random = rows.filter(x => x.status === 'special-random');
     return {
       station,
       scannedCrafts: rows.length,
       successful: ok.length,
-      incomplete: rows.length - ok.length,
+      incomplete: rows.filter(x => x.status === 'incomplete').length,
+      specialRandom: random.length,
       topProfitPerHour: [...ok].sort((a, b) => b.profitPerHour - a.profitPerHour).slice(0, 3).map(compact),
       topProfitPerCraft: [...ok].sort((a, b) => b.profit - a.profit).slice(0, 3).map(compact),
     };
-  }).sort((a, b) => String(a.station).localeCompare(String(b.station)));
+  }).sort((a, b) => a.station.localeCompare(b.station));
 
-  const updated = items.map(x => x.updated).filter(Boolean).map(x => new Date(x)).filter(x => !Number.isNaN(x.getTime())).sort((a, b) => a - b);
+  const updated = items
+    .map(x => x.updated)
+    .filter(Boolean)
+    .map(x => new Date(x))
+    .filter(x => !Number.isNaN(x.getTime()))
+    .sort((a, b) => a - b);
+
   const report = {
     metadata: {
       mode: 'PvE',
@@ -445,21 +550,23 @@ async function main() {
         intelCenterLevel: INTEL_CENTER_LEVEL,
         hideoutManagementLevel: HIDEOUT_MANAGEMENT_LEVEL,
         tools: 'required but not consumed; excluded from per-craft material cost',
-        fuel: 'regular craft ranking uses shared-generator marginal fuel cost = 0; continuous systems require separate model',
+        ownedItems: 'no inventory assumption; inputs are valued at cheapest current realistic acquisition route',
+        fuel: 'regular craft ranking uses shared-generator marginal fuel cost = 0; continuous systems need a separate production model',
       },
     },
     counts: {
-      authoritativeCrafts: authoritativeCrafts.length,
-      hideoutCrafts: hideoutCrafts.length,
+      crafts: crafts.length,
       barters: barters.length,
       items: items.length,
       calculatedSuccessfully: complete.length,
       incomplete: incomplete.length,
-      check: authoritativeCrafts.length === hideoutCrafts.length && complete.length + incomplete.length === hideoutCrafts.length,
+      specialRandom: specialRandom.length,
+      check: complete.length + incomplete.length + specialRandom.length === crafts.length && crafts.length === craftsRaw.length,
     },
     integrity: {
-      missingCraftIdsFromHideout: missingFromHideout,
-      extraCraftIdsInHideout: extraInHideout,
+      unresolvedStationCrafts,
+      missingReferencedItems,
+      referencedUniqueItems: referencedIds.size,
     },
     acquisitionEngine: {
       converged: engine.converged,
@@ -467,28 +574,35 @@ async function main() {
       pricedItems: engine.costMap.size,
     },
     fleaMarket: flea,
-    stations,
+    stations: stationReports,
     incomplete: incomplete.map(x => ({ craftId: x.craftId, station: x.station, craft: x.craft, reason: x.reason })),
+    specialRandom: specialRandom.map(x => ({ craftId: x.craftId, station: x.station, craft: x.craft, durationMinutes: x.durationMinutes, reason: x.reason, materials: x.materials })),
+    specialSystems: {
+      bitcoinFarm: { status: 'separate-model-required' },
+      scavCase: { status: 'random-return; exact PvE EV intentionally not fabricated' },
+      cultistCircle: { status: 'random-return; exact PvE EV intentionally not fabricated' },
+    },
   };
 
   await fs.mkdir('data', { recursive: true });
   await fs.writeFile('data/report.json', JSON.stringify(report, null, 2));
   await fs.writeFile('data/report.txt', reportText(report));
+  await fs.writeFile('data/crafts.json', JSON.stringify(results, null, 2));
   await fs.writeFile('data/integrity.json', JSON.stringify({
     mode: 'pve',
     source: 'Tarkov.dev JSON API',
-    totals: { crafts: authoritativeCrafts.length, hideoutCrafts: hideoutCrafts.length, barters: barters.length, items: items.length },
+    totals: { crafts: crafts.length, barters: barters.length, items: items.length, referencedUniqueItems: referencedIds.size },
     integrity: {
-      missingCraftIdsFromHideout: missingFromHideout.length,
-      extraCraftIdsInHideout: extraInHideout.length,
-      countMatch: authoritativeCrafts.length === hideoutCrafts.length,
+      countMatch: report.counts.check,
+      unresolvedStationCrafts: unresolvedStationCrafts.length,
+      missingReferencedItems: missingReferencedItems.length,
     },
-    missingCraftIds: missingFromHideout,
-    extraCraftIds: extraInHideout,
+    unresolvedStationCraftIds: unresolvedStationCrafts,
+    missingReferencedItemIds: missingReferencedItems,
   }, null, 2));
 
   console.log(JSON.stringify({ counts: report.counts, integrity: report.integrity, engine: report.acquisitionEngine }, null, 2));
-  if (!report.counts.check) process.exitCode = 2;
+  if (!report.counts.check || unresolvedStationCrafts.length || missingReferencedItems.length) process.exitCode = 2;
 }
 
 await main();
