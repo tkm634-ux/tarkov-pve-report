@@ -1,0 +1,79 @@
+name: Update Tarkov PvE Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+  push:
+    paths:
+      - ".github/workflows/update-report.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tarkov-pve-report-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch latest PvE reports
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p data
+
+          curl --fail --silent --show-error --location \
+            --retry 3 --retry-delay 2 \
+            "https://tarkov-pve-report-page.pages.dev/report.txt" \
+            -o data/report.txt
+
+          curl --fail --silent --show-error --location \
+            --retry 3 --retry-delay 2 \
+            "https://tarkov-pve-report-page.pages.dev/report.json" \
+            -o data/report.json
+
+          curl --fail --silent --show-error --location \
+            --retry 3 --retry-delay 2 \
+            "https://tarkov-pve-report-page.pages.dev/integrity.json" \
+            -o data/integrity.json
+
+      - name: Validate downloaded data
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          test -s data/report.txt
+          test -s data/report.json
+          test -s data/integrity.json
+
+          jq -e '.metadata.mode == "PvE"' data/report.json >/dev/null
+          jq -e '.counts.crafts > 0' data/report.json >/dev/null
+          jq -e '.counts.check == true' data/report.json >/dev/null
+          jq -e '.integrity.missingUniqueItemIds == 0' data/integrity.json >/dev/null
+          jq -e '.integrity.brokenCraftCount == 0' data/integrity.json >/dev/null
+          jq -e '.integrity.brokenBarterCount == 0' data/integrity.json >/dev/null
+
+      - name: Commit updated report
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/report.txt data/report.json data/integrity.json
+
+          if git diff --cached --quiet; then
+            echo "No report changes."
+            exit 0
+          fi
+
+          git commit -m "Update Tarkov PvE report"
+          git push
