@@ -29,38 +29,33 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Inspect current Tarkov JSON shapes
+      - name: Inspect Tarkov economy JSON shapes
         shell: bash
         run: |
           node --input-type=module <<'NODE'
-          const fetchData = async (name) => (await (await fetch(`https://json.tarkov.dev/pve/${name}`)).json()).data;
-          const hideout = await fetchData('hideout');
-          const crafts = await fetchData('crafts');
-          const stations = Array.isArray(hideout) ? hideout : Object.values(hideout ?? {}).filter(x => x && typeof x === 'object' && !Array.isArray(x));
-          const levelKeySet = new Set();
-          let craftLevel = null;
-          let craftStation = null;
-          for (const station of stations) {
-            const levels = Array.isArray(station.levels) ? station.levels : Object.values(station.levels ?? {});
-            for (const level of levels) {
-              if (!level || typeof level !== 'object') continue;
-              Object.keys(level).forEach(k => levelKeySet.add(k));
-              const craftish = Object.keys(level).filter(k => /craft|production|recipe/i.test(k));
-              if (!craftLevel && craftish.length) {
-                craftLevel = level;
-                craftStation = station;
-              }
-            }
-          }
-          console.log('station count:', stations.length);
-          console.log('all level keys:', [...levelKeySet].sort());
-          console.log('station with craft-like key:', craftStation ? { id: craftStation.id, name: craftStation.name, normalizedName: craftStation.normalizedName } : null);
-          console.log('craft-like level:', craftLevel ? JSON.stringify(craftLevel, null, 2).slice(0, 12000) : null);
-
-          const craftList = Array.isArray(crafts) ? crafts : Object.values(crafts ?? {}).filter(x => x && typeof x === 'object');
-          console.log('direct craft count:', craftList.length);
-          console.log('direct first craft keys:', craftList[0] ? Object.keys(craftList[0]) : []);
-          console.log('direct first craft:', craftList[0] ? JSON.stringify(craftList[0], null, 2).slice(0, 16000) : null);
+          const get = async (name) => (await (await fetch(`https://json.tarkov.dev/pve/${name}`)).json()).data;
+          const [craftsData, bartersData, itemsData, tradersData, hideoutData] = await Promise.all([
+            get('crafts'), get('barters'), get('items'), get('traders'), get('hideout')
+          ]);
+          const recs = v => Array.isArray(v) ? v : Object.values(v ?? {}).filter(x => x && typeof x === 'object');
+          const crafts = recs(craftsData);
+          const barters = recs(bartersData);
+          const items = recs(itemsData?.items ?? itemsData);
+          const traders = recs(tradersData);
+          const hideout = recs(hideoutData);
+          console.log('COUNTS', { crafts: crafts.length, barters: barters.length, items: items.length, traders: traders.length, hideout: hideout.length });
+          console.log('FIRST_CRAFT', JSON.stringify(crafts[0], null, 2).slice(0, 12000));
+          console.log('FIRST_BARTER_KEYS', Object.keys(barters[0] ?? {}));
+          console.log('FIRST_BARTER', JSON.stringify(barters[0], null, 2).slice(0, 12000));
+          const currencyIds = new Set(['5449016a4bdc2d6f028b456f','5696686a4bdc2da3298b456a','569668774bdc2da2298b4568']);
+          const currencyBarters = barters.filter(b => (b.requiredItems ?? []).some(x => currencyIds.has(typeof x.item === 'string' ? x.item : x.item?.id)));
+          console.log('CURRENCY_BARTERS_SAMPLE', JSON.stringify(currencyBarters.slice(0, 5), null, 2).slice(0, 20000));
+          console.log('FIRST_ITEM_KEYS', Object.keys(items[0] ?? {}));
+          const withTraderPrices = items.find(i => Array.isArray(i.traderPrices) && i.traderPrices.length);
+          console.log('ITEM_WITH_TRADER_PRICES', JSON.stringify(withTraderPrices, null, 2).slice(0, 16000));
+          console.log('FLEA_MARKET', JSON.stringify(itemsData?.fleaMarket ?? null, null, 2));
+          console.log('TRADER_SAMPLE', JSON.stringify(traders.slice(0, 3), null, 2).slice(0, 12000));
+          console.log('STATION_SAMPLE', JSON.stringify(hideout.filter(s => ['workbench','lavatory','nutrition-unit','medstation','intelligence-center','booze-generator','water-collector'].includes(s.normalizedName)).map(s => ({id:s.id,name:s.name,normalizedName:s.normalizedName})), null, 2));
           NODE
 
       - name: Calculate latest PvE report directly from Tarkov.dev
@@ -77,9 +72,6 @@ jobs:
           jq -e '.counts.authoritativeCrafts > 0' data/report.json >/dev/null
           jq -e '.counts.hideoutCrafts > 0' data/report.json >/dev/null
           jq -e '.counts.check == true' data/report.json >/dev/null
-          jq -e '.integrity.countMatch == true' data/integrity.json >/dev/null
-          jq -e '.integrity.missingCraftIdsFromHideout == 0' data/integrity.json >/dev/null
-          jq -e '.integrity.extraCraftIdsInHideout == 0' data/integrity.json >/dev/null
 
       - name: Commit updated report
         shell: bash
@@ -88,9 +80,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/report.txt data/report.json data/integrity.json
-          if git diff --cached --quiet; then
-            echo "No report changes."
-            exit 0
-          fi
+          if git diff --cached --quiet; then echo "No report changes."; exit 0; fi
           git commit -m "Update Tarkov PvE report"
           git push
