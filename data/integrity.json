@@ -1,17 +1,17 @@
 {
   "mode": "pve",
-  "source": "Tarkov.dev",
+  "source": "Tarkov.dev JSON API",
   "totals": {
     "crafts": 214,
     "barters": 789,
-    "items": 5312
+    "items": 5312,
+    "referencedUniqueItems": 1095
   },
   "integrity": {
-    "missingUniqueItemIds": 0,
-    "brokenCraftCount": 0,
-    "brokenBarterCount": 0
+    "countMatch": true,
+    "unresolvedStationCrafts": 0,
+    "missingReferencedItems": 0
   },
-  "missingItemIds": [],
-  "brokenCrafts": [],
-  "brokenBarters": []
+  "unresolvedStationCraftIds": [],
+  "missingReferencedItemIds": []
 }

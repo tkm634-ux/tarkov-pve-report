@@ -1,1446 +1,2752 @@
 {
   "metadata": {
     "mode": "PvE",
-    "calculatedAt": "2026-09-02T22:18:01.135Z",
-    "source": "Tarkov.dev",
-    "sources": {
-      "crafts": "https://json.tarkov.dev/pve/crafts",
-      "barters": "https://json.tarkov.dev/pve/barters",
-      "items": "https://json.tarkov.dev/pve/items"
-    },
+    "source": "Tarkov.dev JSON API",
+    "calculatedAt": "2026-09-02T22:28:20.840Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-02T22:08:08.000Z"
+      "newest": "2026-09-02T22:18:08.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
       "traderLL": "maximum",
-      "taskUnlocks": "included, task name is preserved in result",
       "fleaPurchasePrice": "lastLowPrice",
-      "fleaFee": "Tarkov.dev current formula",
+      "fleaSalePrice": "lastLowPrice",
+      "fleaFee": "Tarkov.dev itemResolver formula",
       "intelCenterLevel": 3,
       "hideoutManagementLevel": 0,
-      "fuelPerHourRUB": 0,
-      "fuelMode": "Generator already running / shared marginal fuel cost"
+      "tools": "required but not consumed; excluded from per-craft material cost",
+      "ownedItems": "no inventory assumption; inputs are valued at cheapest current realistic acquisition route",
+      "fuel": "regular craft ranking uses shared-generator marginal fuel cost = 0; continuous systems need a separate production model"
     }
   },
   "counts": {
     "crafts": 214,
     "barters": 789,
     "items": 5312,
-    "calculatedSuccessfully": 0,
-    "incomplete": 214,
+    "calculatedSuccessfully": 192,
+    "incomplete": 22,
+    "specialRandom": 0,
     "check": true
+  },
+  "integrity": {
+    "unresolvedStationCrafts": [],
+    "missingReferencedItems": [],
+    "referencedUniqueItems": 1095
   },
   "acquisitionEngine": {
     "converged": true,
-    "passes": 1,
-    "maxPasses": 40
+    "passes": 4,
+    "pricedItems": 4077
   },
   "fleaMarket": {
+    "name": "FleaMarket",
+    "normalizedName": "flea-market",
+    "minPlayerLevel": 15,
     "enabled": true,
     "sellOfferFeeRate": 0.05,
     "sellRequirementFeeRate": 0.05,
-    "foundInRaidRequired": false
+    "foundInRaidRequired": false,
+    "reputationLevels": [
+      {
+        "offers": 1,
+        "offersSpecialEditions": 1,
+        "minRep": -10000,
+        "maxRep": -10
+      },
+      {
+        "offers": 2,
+        "offersSpecialEditions": 3,
+        "minRep": -10,
+        "maxRep": -2
+      },
+      {
+        "offers": 3,
+        "offersSpecialEditions": 4,
+        "minRep": -2,
+        "maxRep": 0.2
+      },
+      {
+        "offers": 4,
+        "offersSpecialEditions": 5,
+        "minRep": 0.2,
+        "maxRep": 7
+      },
+      {
+        "offers": 5,
+        "offersSpecialEditions": 6,
+        "minRep": 7,
+        "maxRep": 30
+      },
+      {
+        "offers": 6,
+        "offersSpecialEditions": 7,
+        "minRep": 30,
+        "maxRep": 60
+      },
+      {
+        "offers": 7,
+        "offersSpecialEditions": 8,
+        "minRep": 60,
+        "maxRep": 150
+      },
+      {
+        "offers": 8,
+        "offersSpecialEditions": 9,
+        "minRep": 150,
+        "maxRep": 200
+      },
+      {
+        "offers": 9,
+        "offersSpecialEditions": 10,
+        "minRep": 200,
+        "maxRep": 250
+      },
+      {
+        "offers": 10,
+        "offersSpecialEditions": 11,
+        "minRep": 250,
+        "maxRep": 500
+      },
+      {
+        "offers": 11,
+        "offersSpecialEditions": 12,
+        "minRep": 500,
+        "maxRep": 750
+      },
+      {
+        "offers": 12,
+        "offersSpecialEditions": 13,
+        "minRep": 750,
+        "maxRep": 1000
+      },
+      {
+        "offers": 15,
+        "offersSpecialEditions": 16,
+        "minRep": 1000,
+        "maxRep": 10000
+      }
+    ]
   },
   "stations": [
     {
-      "station": "5d484fba654e7600691aadf7",
-      "scannedCrafts": 41,
-      "successful": 0,
-      "incomplete": 41,
-      "topProfitPerHour": [],
-      "topProfitPerCraft": [],
-      "top3Recheck": {
-        "profitPerHour": [],
-        "profitPerCraft": []
-      }
+      "station": "Bitcoin Farm",
+      "scannedCrafts": 1,
+      "successful": 1,
+      "incomplete": 0,
+      "specialRandom": 0,
+      "topProfitPerHour": [
+        {
+          "craftId": "5d5c205bd582a50d042a3c0e",
+          "craft": "Physical Bitcoin x1",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 0,
+          "saleGross": 549968,
+          "fleaFee": 0,
+          "netRevenue": 549968,
+          "profit": 549968,
+          "durationMinutes": 5000,
+          "profitPerHour": 6600,
+          "sellTo": "Therapist",
+          "materials": [],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "59faff1d86f7746c51718c9c",
+              "item": "Physical Bitcoin",
+              "count": 1,
+              "unitPrice": 549968,
+              "gross": 549968,
+              "fee": 0,
+              "net": 549968,
+              "sellTo": "Therapist",
+              "methodType": "trader",
+              "lastLowPrice": null,
+              "avg24hPrice": null,
+              "updated": "2025-12-03T12:34:05.000Z"
+            }
+          ]
+        }
+      ],
+      "topProfitPerCraft": [
+        {
+          "craftId": "5d5c205bd582a50d042a3c0e",
+          "craft": "Physical Bitcoin x1",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 0,
+          "saleGross": 549968,
+          "fleaFee": 0,
+          "netRevenue": 549968,
+          "profit": 549968,
+          "durationMinutes": 5000,
+          "profitPerHour": 6600,
+          "sellTo": "Therapist",
+          "materials": [],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "59faff1d86f7746c51718c9c",
+              "item": "Physical Bitcoin",
+              "count": 1,
+              "unitPrice": 549968,
+              "gross": 549968,
+              "fee": 0,
+              "net": 549968,
+              "sellTo": "Therapist",
+              "methodType": "trader",
+              "lastLowPrice": null,
+              "avg24hPrice": null,
+              "updated": "2025-12-03T12:34:05.000Z"
+            }
+          ]
+        }
+      ]
     },
     {
-      "station": "5d484fc8654e760065037abf",
-      "scannedCrafts": 4,
-      "successful": 0,
-      "incomplete": 4,
-      "topProfitPerHour": [],
-      "topProfitPerCraft": [],
-      "top3Recheck": {
-        "profitPerHour": [],
-        "profitPerCraft": []
-      }
+      "station": "Booze Generator",
+      "scannedCrafts": 1,
+      "successful": 1,
+      "incomplete": 0,
+      "specialRandom": 0,
+      "topProfitPerHour": [
+        {
+          "craftId": "5d5c1fd4d582a500650132f0",
+          "craft": "Bottle of Fierce Hatchling moonshine x1",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 380741,
+          "saleGross": 449999,
+          "fleaFee": 28975,
+          "netRevenue": 421024,
+          "profit": 40283,
+          "durationMinutes": 183.33,
+          "profitPerHour": 13184,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "59e3577886f774176a362503",
+              "item": "Pack of sugar",
+              "count": 2,
+              "unitCost": 94900,
+              "subtotal": 189800,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d1b33a686f7742523398398",
+              "item": "Canister with purified water",
+              "count": 1,
+              "unitCost": 190941,
+              "subtotal": 190941,
+              "method": "Hideout craft: Water Collector Lv3",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5d1b376e86f774252519444e",
+              "item": "Bottle of Fierce Hatchling moonshine",
+              "count": 1,
+              "unitPrice": 449999,
+              "gross": 449999,
+              "fee": 28975,
+              "net": 421024,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 449999,
+              "avg24hPrice": 444086,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        }
+      ],
+      "topProfitPerCraft": [
+        {
+          "craftId": "5d5c1fd4d582a500650132f0",
+          "craft": "Bottle of Fierce Hatchling moonshine x1",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 380741,
+          "saleGross": 449999,
+          "fleaFee": 28975,
+          "netRevenue": 421024,
+          "profit": 40283,
+          "durationMinutes": 183.33,
+          "profitPerHour": 13184,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "59e3577886f774176a362503",
+              "item": "Pack of sugar",
+              "count": 2,
+              "unitCost": 94900,
+              "subtotal": 189800,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d1b33a686f7742523398398",
+              "item": "Canister with purified water",
+              "count": 1,
+              "unitCost": 190941,
+              "subtotal": 190941,
+              "method": "Hideout craft: Water Collector Lv3",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5d1b376e86f774252519444e",
+              "item": "Bottle of Fierce Hatchling moonshine",
+              "count": 1,
+              "unitPrice": 449999,
+              "gross": 449999,
+              "fee": 28975,
+              "net": 421024,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 449999,
+              "avg24hPrice": 444086,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        }
+      ]
     },
     {
-      "station": "5d484fcd654e7668ec2ec322",
-      "scannedCrafts": 28,
-      "successful": 0,
-      "incomplete": 28,
-      "topProfitPerHour": [],
-      "topProfitPerCraft": [],
-      "top3Recheck": {
-        "profitPerHour": [],
-        "profitPerCraft": []
-      }
-    },
-    {
-      "station": "5d484fd1654e76006732bf2e",
-      "scannedCrafts": 19,
-      "successful": 0,
-      "incomplete": 19,
-      "topProfitPerHour": [],
-      "topProfitPerCraft": [],
-      "top3Recheck": {
-        "profitPerHour": [],
-        "profitPerCraft": []
-      }
-    },
-    {
-      "station": "5d484fda654e7600681d9315",
-      "scannedCrafts": 94,
-      "successful": 0,
-      "incomplete": 94,
-      "topProfitPerHour": [],
-      "topProfitPerCraft": [],
-      "top3Recheck": {
-        "profitPerHour": [],
-        "profitPerCraft": []
-      }
-    },
-    {
-      "station": "5d484fdf654e7600691aadf8",
+      "station": "Intelligence Center",
       "scannedCrafts": 26,
-      "successful": 0,
-      "incomplete": 26,
-      "topProfitPerHour": [],
-      "topProfitPerCraft": [],
-      "top3Recheck": {
-        "profitPerHour": [],
-        "profitPerCraft": []
-      }
+      "successful": 18,
+      "incomplete": 8,
+      "specialRandom": 0,
+      "topProfitPerHour": [
+        {
+          "craftId": "67da0223078f1947650d7bb7",
+          "craft": "TerraGroup Labs access keycard x3",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 246999,
+          "saleGross": 354000,
+          "fleaFee": 22936,
+          "netRevenue": 331064,
+          "profit": 84065,
+          "durationMinutes": 40,
+          "profitPerHour": 126097,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5c12613b86f7743bbe2c3f76",
+              "item": "Intelligence folder",
+              "count": 1,
+              "unitCost": 246999,
+              "subtotal": 246999,
+              "method": "Hideout craft: Intelligence Center Lv3",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5c052fb986f7746b2101e909",
+              "item": "UHF RFID Reader",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5c94bbff86f7747ee735c08f",
+              "item": "TerraGroup Labs access keycard",
+              "count": 3,
+              "unitPrice": 118000,
+              "gross": 354000,
+              "fee": 22936,
+              "net": 331064,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 118000,
+              "avg24hPrice": 122746,
+              "updated": "2026-09-02T22:08:05.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5eeca812c4c989140245ae0c",
+          "craft": "Graphics card x1",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 515105,
+          "saleGross": 749888,
+          "fleaFee": 59645,
+          "netRevenue": 690243,
+          "profit": 175138,
+          "durationMinutes": 900,
+          "profitPerHour": 11676,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "590a3b0486f7743954552bdb",
+              "item": "Printed circuit board",
+              "count": 2,
+              "unitCost": 7222,
+              "subtotal": 14444,
+              "method": "Hideout craft: Workbench Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "573477e124597737dd42e191",
+              "item": "PC CPU",
+              "count": 2,
+              "unitCost": 19777,
+              "subtotal": 39554,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5734779624597737e04bf329",
+              "item": "CPU fan",
+              "count": 2,
+              "unitCost": 14444,
+              "subtotal": 28888,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5c05300686f7746dce784e5d",
+              "item": "VPX Flash Storage Module",
+              "count": 1,
+              "unitCost": 139420,
+              "subtotal": 139420,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "57347baf24597738002c6178",
+              "item": "RAM stick",
+              "count": 1,
+              "unitCost": 64999,
+              "subtotal": 64999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "6389c70ca33d8c4cdf4932c6",
+              "item": "Electronic components",
+              "count": 4,
+              "unitCost": 56950,
+              "subtotal": 227800,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "6389c92d52123d5dd17f8876",
+              "item": "Advanced Electronic Materials textbook",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "57347ca924597744596b4e71",
+              "item": "Graphics card",
+              "count": 1,
+              "unitPrice": 749888,
+              "gross": 749888,
+              "fee": 59645,
+              "net": 690243,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 749888,
+              "avg24hPrice": 748411,
+              "updated": "2026-09-02T21:58:03.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5e58e0c286f7740ba7486ca3",
+          "craft": "Intelligence folder x1",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 246999,
+          "saleGross": 290000,
+          "fleaFee": 24350,
+          "netRevenue": 265650,
+          "profit": 18651,
+          "durationMinutes": 1900,
+          "profitPerHour": 589,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "62a0a16d0b9d3c46de5b6e97",
+              "item": "Military flash drive",
+              "count": 2,
+              "unitCost": 105000,
+              "subtotal": 210000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "577e1c9d2459773cd707c525",
+              "item": "Printer paper",
+              "count": 1,
+              "unitCost": 36999,
+              "subtotal": 36999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5c12613b86f7743bbe2c3f76",
+              "item": "Intelligence folder",
+              "count": 1,
+              "unitPrice": 290000,
+              "gross": 290000,
+              "fee": 24350,
+              "net": 265650,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 290000,
+              "avg24hPrice": 289109,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        }
+      ],
+      "topProfitPerCraft": [
+        {
+          "craftId": "5eeca812c4c989140245ae0c",
+          "craft": "Graphics card x1",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 515105,
+          "saleGross": 749888,
+          "fleaFee": 59645,
+          "netRevenue": 690243,
+          "profit": 175138,
+          "durationMinutes": 900,
+          "profitPerHour": 11676,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "590a3b0486f7743954552bdb",
+              "item": "Printed circuit board",
+              "count": 2,
+              "unitCost": 7222,
+              "subtotal": 14444,
+              "method": "Hideout craft: Workbench Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "573477e124597737dd42e191",
+              "item": "PC CPU",
+              "count": 2,
+              "unitCost": 19777,
+              "subtotal": 39554,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5734779624597737e04bf329",
+              "item": "CPU fan",
+              "count": 2,
+              "unitCost": 14444,
+              "subtotal": 28888,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5c05300686f7746dce784e5d",
+              "item": "VPX Flash Storage Module",
+              "count": 1,
+              "unitCost": 139420,
+              "subtotal": 139420,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "57347baf24597738002c6178",
+              "item": "RAM stick",
+              "count": 1,
+              "unitCost": 64999,
+              "subtotal": 64999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "6389c70ca33d8c4cdf4932c6",
+              "item": "Electronic components",
+              "count": 4,
+              "unitCost": 56950,
+              "subtotal": 227800,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "6389c92d52123d5dd17f8876",
+              "item": "Advanced Electronic Materials textbook",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "57347ca924597744596b4e71",
+              "item": "Graphics card",
+              "count": 1,
+              "unitPrice": 749888,
+              "gross": 749888,
+              "fee": 59645,
+              "net": 690243,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 749888,
+              "avg24hPrice": 748411,
+              "updated": "2026-09-02T21:58:03.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "67da0223078f1947650d7bb7",
+          "craft": "TerraGroup Labs access keycard x3",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 246999,
+          "saleGross": 354000,
+          "fleaFee": 22936,
+          "netRevenue": 331064,
+          "profit": 84065,
+          "durationMinutes": 40,
+          "profitPerHour": 126097,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5c12613b86f7743bbe2c3f76",
+              "item": "Intelligence folder",
+              "count": 1,
+              "unitCost": 246999,
+              "subtotal": 246999,
+              "method": "Hideout craft: Intelligence Center Lv3",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5c052fb986f7746b2101e909",
+              "item": "UHF RFID Reader",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5c94bbff86f7747ee735c08f",
+              "item": "TerraGroup Labs access keycard",
+              "count": 3,
+              "unitPrice": 118000,
+              "gross": 354000,
+              "fee": 22936,
+              "net": 331064,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 118000,
+              "avg24hPrice": 122746,
+              "updated": "2026-09-02T22:08:05.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5e58e0c286f7740ba7486ca3",
+          "craft": "Intelligence folder x1",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 246999,
+          "saleGross": 290000,
+          "fleaFee": 24350,
+          "netRevenue": 265650,
+          "profit": 18651,
+          "durationMinutes": 1900,
+          "profitPerHour": 589,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "62a0a16d0b9d3c46de5b6e97",
+              "item": "Military flash drive",
+              "count": 2,
+              "unitCost": 105000,
+              "subtotal": 210000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "577e1c9d2459773cd707c525",
+              "item": "Printer paper",
+              "count": 1,
+              "unitCost": 36999,
+              "subtotal": 36999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5c12613b86f7743bbe2c3f76",
+              "item": "Intelligence folder",
+              "count": 1,
+              "unitPrice": 290000,
+              "gross": 290000,
+              "fee": 24350,
+              "net": 265650,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 290000,
+              "avg24hPrice": 289109,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        }
+      ]
     },
     {
-      "station": "5d494a3f5b56502f18c98a0e",
-      "scannedCrafts": 1,
-      "successful": 0,
+      "station": "Lavatory",
+      "scannedCrafts": 41,
+      "successful": 40,
       "incomplete": 1,
-      "topProfitPerHour": [],
-      "topProfitPerCraft": [],
-      "top3Recheck": {
-        "profitPerHour": [],
-        "profitPerCraft": []
-      }
+      "specialRandom": 0,
+      "topProfitPerHour": [
+        {
+          "craftId": "5eecaa6327ccd70521107ff5",
+          "craft": "Ripstop fabric x2",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 13000,
+          "saleGross": 53800,
+          "fleaFee": 4766,
+          "netRevenue": 49034,
+          "profit": 36034,
+          "durationMinutes": 36.67,
+          "profitPerHour": 58965,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "572b7adb24597762ae139821",
+              "item": "Scav Vest",
+              "count": 1,
+              "unitCost": 13000,
+              "subtotal": 13000,
+              "method": "Trader barter: Jaeger LL1",
+              "methodType": "barter",
+              "buyLimit": 10,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "61bf83814088ec1a363d7097",
+              "item": "Sewing kit",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af4a786f7746d3f3c3400",
+              "item": "Ripstop fabric",
+              "count": 2,
+              "unitPrice": 26900,
+              "gross": 53800,
+              "fee": 4766,
+              "net": 49034,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 26900,
+              "avg24hPrice": 32127,
+              "updated": "2026-09-02T22:08:02.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5df8fe0deddb880fd56f2d7d",
+          "craft": "Clin window cleaner x2",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 58500,
+          "saleGross": 110000,
+          "fleaFee": 13178,
+          "netRevenue": 96822,
+          "profit": 38322,
+          "durationMinutes": 40.83,
+          "profitPerHour": 56310,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5d40407c86f774318526545a",
+              "item": "Bottle of Tarkovskaya vodka",
+              "count": 1,
+              "unitCost": 40000,
+              "subtotal": 40000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d40412b86f7743cb332ac3a",
+              "item": "Schaman shampoo",
+              "count": 1,
+              "unitCost": 18500,
+              "subtotal": 18500,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5d1b39a386f774252339976f",
+              "item": "Silicone tube",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "59e358a886f7741776641ac3",
+              "item": "Clin window cleaner",
+              "count": 2,
+              "unitPrice": 55000,
+              "gross": 110000,
+              "fee": 13178,
+              "net": 96822,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 55000,
+              "avg24hPrice": 54475,
+              "updated": "2026-09-02T21:58:03.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5ffcaa60f3fdc212a91d552b",
+          "craft": "Aramid fiber fabric x2",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 36506,
+          "saleGross": 67998,
+          "fleaFee": 5464,
+          "netRevenue": 62534,
+          "profit": 26028,
+          "durationMinutes": 33.33,
+          "profitPerHour": 46850,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5648a7494bdc2d9d488b4583",
+              "item": "PACA Soft Armor",
+              "count": 1,
+              "unitCost": 36506,
+              "subtotal": 36506,
+              "method": "Trader purchase: Ragman LL1",
+              "methodType": "trader",
+              "buyLimit": 10,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af4d286f7746d4159f07a",
+              "item": "Aramid fiber fabric",
+              "count": 2,
+              "unitPrice": 33999,
+              "gross": 67998,
+              "fee": 5464,
+              "net": 62534,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 33999,
+              "avg24hPrice": 35037,
+              "updated": "2026-09-02T22:08:02.000Z"
+            }
+          ]
+        }
+      ],
+      "topProfitPerCraft": [
+        {
+          "craftId": "5df8fe0deddb880fd56f2d7d",
+          "craft": "Clin window cleaner x2",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 58500,
+          "saleGross": 110000,
+          "fleaFee": 13178,
+          "netRevenue": 96822,
+          "profit": 38322,
+          "durationMinutes": 40.83,
+          "profitPerHour": 56310,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5d40407c86f774318526545a",
+              "item": "Bottle of Tarkovskaya vodka",
+              "count": 1,
+              "unitCost": 40000,
+              "subtotal": 40000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d40412b86f7743cb332ac3a",
+              "item": "Schaman shampoo",
+              "count": 1,
+              "unitCost": 18500,
+              "subtotal": 18500,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5d1b39a386f774252339976f",
+              "item": "Silicone tube",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "59e358a886f7741776641ac3",
+              "item": "Clin window cleaner",
+              "count": 2,
+              "unitPrice": 55000,
+              "gross": 110000,
+              "fee": 13178,
+              "net": 96822,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 55000,
+              "avg24hPrice": 54475,
+              "updated": "2026-09-02T21:58:03.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5eecaa6327ccd70521107ff5",
+          "craft": "Ripstop fabric x2",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 13000,
+          "saleGross": 53800,
+          "fleaFee": 4766,
+          "netRevenue": 49034,
+          "profit": 36034,
+          "durationMinutes": 36.67,
+          "profitPerHour": 58965,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "572b7adb24597762ae139821",
+              "item": "Scav Vest",
+              "count": 1,
+              "unitCost": 13000,
+              "subtotal": 13000,
+              "method": "Trader barter: Jaeger LL1",
+              "methodType": "barter",
+              "buyLimit": 10,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "61bf83814088ec1a363d7097",
+              "item": "Sewing kit",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af4a786f7746d3f3c3400",
+              "item": "Ripstop fabric",
+              "count": 2,
+              "unitPrice": 26900,
+              "gross": 53800,
+              "fee": 4766,
+              "net": 49034,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 26900,
+              "avg24hPrice": 32127,
+              "updated": "2026-09-02T22:08:02.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "600aa140090cb63380270290",
+          "craft": "Cordura polyamide fabric x2",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 16680,
+          "saleGross": 55800,
+          "fleaFee": 3537,
+          "netRevenue": 52263,
+          "profit": 35583,
+          "durationMinutes": 48.33,
+          "profitPerHour": 44172,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5ab8f04f86f774585f4237d8",
+              "item": "Tactical sling bag (Khaki)",
+              "count": 2,
+              "unitCost": 8340,
+              "subtotal": 16680,
+              "method": "Trader purchase: Ragman LL1",
+              "methodType": "trader",
+              "buyLimit": 10,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "61bf83814088ec1a363d7097",
+              "item": "Sewing kit",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af41e86f774755a234b67",
+              "item": "Cordura polyamide fabric",
+              "count": 2,
+              "unitPrice": 27900,
+              "gross": 55800,
+              "fee": 3537,
+              "net": 52263,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 27900,
+              "avg24hPrice": 25196,
+              "updated": "2026-09-02T22:08:02.000Z"
+            }
+          ]
+        }
+      ]
     },
     {
-      "station": "5d494a445b56502f18c98a10",
-      "scannedCrafts": 1,
-      "successful": 0,
-      "incomplete": 1,
-      "topProfitPerHour": [],
-      "topProfitPerCraft": [],
-      "top3Recheck": {
-        "profitPerHour": [],
-        "profitPerCraft": []
-      }
+      "station": "Medstation",
+      "scannedCrafts": 28,
+      "successful": 28,
+      "incomplete": 0,
+      "specialRandom": 0,
+      "topProfitPerHour": [
+        {
+          "craftId": "5e13301cc7049d4d9738e1a7",
+          "craft": "Pile of meds x3",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 50546,
+          "saleGross": 93333,
+          "fleaFee": 8414,
+          "netRevenue": 84919,
+          "profit": 34373,
+          "durationMinutes": 48,
+          "profitPerHour": 42967,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5755356824597772cb798962",
+              "item": "AI-2 medkit",
+              "count": 1,
+              "unitCost": 6599,
+              "subtotal": 6599,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "544fb25a4bdc2dfb738b4567",
+              "item": "Aseptic bandage",
+              "count": 1,
+              "unitCost": 947,
+              "subtotal": 947,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "590c695186f7741e566b64a2",
+              "item": "Augmentin antibiotic pills",
+              "count": 1,
+              "unitCost": 43000,
+              "subtotal": 43000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5d1b3a5d86f774252167ba22",
+              "item": "Pile of meds",
+              "count": 3,
+              "unitPrice": 31111,
+              "gross": 93333,
+              "fee": 8414,
+              "net": 84919,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 31111,
+              "avg24hPrice": 31185,
+              "updated": "2026-09-02T21:58:03.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5ede0502879619077751d00a",
+          "craft": "SJ6 TGLabs combat stimulant injector x2",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 134697,
+          "saleGross": 210400,
+          "fleaFee": 16682,
+          "netRevenue": 193718,
+          "profit": 59021,
+          "durationMinutes": 85,
+          "profitPerHour": 41662,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5c0e531286f7747fa54205c2",
+              "item": "SJ1 TGLabs combat stimulant injector",
+              "count": 1,
+              "unitCost": 25000,
+              "subtotal": 25000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d1b3a5d86f774252167ba22",
+              "item": "Pile of meds",
+              "count": 2,
+              "unitCost": 16849,
+              "subtotal": 33697,
+              "method": "Hideout craft: Medstation Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "59e3606886f77417674759a5",
+              "item": "Bottle of saline solution",
+              "count": 1,
+              "unitCost": 56000,
+              "subtotal": 56000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "62a0a043cf4a99369e2624a5",
+              "item": "Bottle of OLOLO Multivitamins",
+              "count": 1,
+              "unitCost": 20000,
+              "subtotal": 20000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5c0e531d86f7747fa23f4d42",
+              "item": "SJ6 TGLabs combat stimulant injector",
+              "count": 2,
+              "unitPrice": 105200,
+              "gross": 210400,
+              "fee": 16682,
+              "net": 193718,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 105200,
+              "avg24hPrice": 111844,
+              "updated": "2026-09-02T22:08:05.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "6012ee7e44a0465ee67a58de",
+          "craft": "M.U.L.E. stimulant injector x1",
+          "stationLevel": 2,
+          "taskUnlock": "5c0d1c4cd0928202a02a6f5c",
+          "materialCost": 129906,
+          "saleGross": 211111,
+          "fleaFee": 19168,
+          "netRevenue": 191943,
+          "profit": 62037,
+          "durationMinutes": 91.67,
+          "profitPerHour": 40606,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5c0e533786f7747fa23f4d47",
+              "item": "Zagustin hemostatic drug injector",
+              "count": 2,
+              "unitCost": 30000,
+              "subtotal": 60000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "544fb3f34bdc2d03748b456a",
+              "item": "Morphine injector",
+              "count": 1,
+              "unitCost": 9999,
+              "subtotal": 9999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5751435d24597720a27126d1",
+              "item": "Can of Max Energy energy drink",
+              "count": 2,
+              "unitCost": 13105,
+              "subtotal": 26210,
+              "method": "Hideout craft: Nutrition Unit Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d1b3a5d86f774252167ba22",
+              "item": "Pile of meds",
+              "count": 2,
+              "unitCost": 16849,
+              "subtotal": 33697,
+              "method": "Hideout craft: Medstation Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5ed51652f6c34d2cc26336a1",
+              "item": "M.U.L.E. stimulant injector",
+              "count": 1,
+              "unitPrice": 211111,
+              "gross": 211111,
+              "fee": 19168,
+              "net": 191943,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 211111,
+              "avg24hPrice": 251777,
+              "updated": "2026-09-02T22:08:05.000Z"
+            }
+          ]
+        }
+      ],
+      "topProfitPerCraft": [
+        {
+          "craftId": "5eeca8e327ccd70521107fdc",
+          "craft": "Portable defibrillator x1",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 205497,
+          "saleGross": 430000,
+          "fleaFee": 26746,
+          "netRevenue": 403254,
+          "profit": 197757,
+          "durationMinutes": 315,
+          "profitPerHour": 37668,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "590a391c86f774385a33c404",
+              "item": "Magnet",
+              "count": 2,
+              "unitCost": 43333,
+              "subtotal": 86666,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5c06779c86f77426e00dd782",
+              "item": "Bundle of wires",
+              "count": 3,
+              "unitCost": 12500,
+              "subtotal": 37499,
+              "method": "Hideout craft: Workbench Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5c06782b86f77426df5407d2",
+              "item": "Capacitors",
+              "count": 4,
+              "unitCost": 4333,
+              "subtotal": 17333,
+              "method": "Hideout craft: Workbench Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5af0561e86f7745f5f3ad6ac",
+              "item": "Portable Powerbank",
+              "count": 1,
+              "unitCost": 63999,
+              "subtotal": 63999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "590c2e1186f77425357b6124",
+              "item": "Toolset",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5c052e6986f7746b207bc3c9",
+              "item": "Portable defibrillator",
+              "count": 1,
+              "unitPrice": 430000,
+              "gross": 430000,
+              "fee": 26746,
+              "net": 403254,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 430000,
+              "avg24hPrice": 497723,
+              "updated": "2026-09-02T22:08:02.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5d8f614c9ea122564c316462",
+          "craft": "Propital regenerative stimulant injector x4",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 157243,
+          "saleGross": 239996,
+          "fleaFee": 16751,
+          "netRevenue": 223245,
+          "profit": 66002,
+          "durationMinutes": 115,
+          "profitPerHour": 34436,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5af0548586f7743a532b7e99",
+              "item": "Ibuprofen painkillers",
+              "count": 1,
+              "unitCost": 70546,
+              "subtotal": 70546,
+              "method": "Trader barter: Therapist LL4",
+              "methodType": "barter",
+              "buyLimit": 1,
+              "taskUnlock": null
+            },
+            {
+              "id": "5751a89d24597722aa0e8db0",
+              "item": "Golden Star balm",
+              "count": 1,
+              "unitCost": 53000,
+              "subtotal": 53000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d1b3a5d86f774252167ba22",
+              "item": "Pile of meds",
+              "count": 2,
+              "unitCost": 16849,
+              "subtotal": 33697,
+              "method": "Hideout craft: Medstation Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5c0e530286f7747fa1419862",
+              "item": "Propital regenerative stimulant injector",
+              "count": 4,
+              "unitPrice": 59999,
+              "gross": 239996,
+              "fee": 16751,
+              "net": 223245,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 59999,
+              "avg24hPrice": 61744,
+              "updated": "2026-09-02T22:08:05.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "6012ee7e44a0465ee67a58de",
+          "craft": "M.U.L.E. stimulant injector x1",
+          "stationLevel": 2,
+          "taskUnlock": "5c0d1c4cd0928202a02a6f5c",
+          "materialCost": 129906,
+          "saleGross": 211111,
+          "fleaFee": 19168,
+          "netRevenue": 191943,
+          "profit": 62037,
+          "durationMinutes": 91.67,
+          "profitPerHour": 40606,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5c0e533786f7747fa23f4d47",
+              "item": "Zagustin hemostatic drug injector",
+              "count": 2,
+              "unitCost": 30000,
+              "subtotal": 60000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "544fb3f34bdc2d03748b456a",
+              "item": "Morphine injector",
+              "count": 1,
+              "unitCost": 9999,
+              "subtotal": 9999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5751435d24597720a27126d1",
+              "item": "Can of Max Energy energy drink",
+              "count": 2,
+              "unitCost": 13105,
+              "subtotal": 26210,
+              "method": "Hideout craft: Nutrition Unit Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d1b3a5d86f774252167ba22",
+              "item": "Pile of meds",
+              "count": 2,
+              "unitCost": 16849,
+              "subtotal": 33697,
+              "method": "Hideout craft: Medstation Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5ed51652f6c34d2cc26336a1",
+              "item": "M.U.L.E. stimulant injector",
+              "count": 1,
+              "unitPrice": 211111,
+              "gross": 211111,
+              "fee": 19168,
+              "net": 191943,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 211111,
+              "avg24hPrice": 251777,
+              "updated": "2026-09-02T22:08:05.000Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Nutrition Unit",
+      "scannedCrafts": 19,
+      "successful": 19,
+      "incomplete": 0,
+      "specialRandom": 0,
+      "topProfitPerHour": [
+        {
+          "craftId": "68f2073205d9d632d30e1e97",
+          "craft": "Salty Dog beef sausage x3",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 73499,
+          "saleGross": 107100,
+          "fleaFee": 6605,
+          "netRevenue": 100495,
+          "profit": 26997,
+          "durationMinutes": 33,
+          "profitPerHour": 49085,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "62a09ee4cf4a99369e262453",
+              "item": "Can of white salt",
+              "count": 1,
+              "unitCost": 29599,
+              "subtotal": 29599,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "57347d7224597744596b4e72",
+              "item": "Can of beef stew (Small)",
+              "count": 1,
+              "unitCost": 25400,
+              "subtotal": 25400,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5c13cef886f774072e618e82",
+              "item": "Toilet paper",
+              "count": 1,
+              "unitCost": 18500,
+              "subtotal": 18500,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5672cb724bdc2dc2088b456b",
+              "item": "Geiger-Muller counter",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "635a758bfefc88a93f021b8a",
+              "item": "Salty Dog beef sausage",
+              "count": 3,
+              "unitPrice": 35700,
+              "gross": 107100,
+              "fee": 6605,
+              "net": 100495,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 35700,
+              "avg24hPrice": 38105,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "629e1b3a0694b45420210cad",
+          "craft": "Can of Majaica coffee beans x2",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 29950,
+          "saleGross": 70000,
+          "fleaFee": 4556,
+          "netRevenue": 65444,
+          "profit": 35494,
+          "durationMinutes": 45,
+          "profitPerHour": 47325,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5e54f6af86f7742199090bf3",
+              "item": "Can of Dr. Lupo's coffee beans",
+              "count": 1,
+              "unitCost": 25990,
+              "subtotal": 25990,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "590c5a7286f7747884343aea",
+              "item": "Gunpowder \"Kite\"",
+              "count": 1,
+              "unitCost": 3960,
+              "subtotal": 3960,
+              "method": "Hideout craft: Workbench Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5af0484c86f7740f02001f7f",
+              "item": "Can of Majaica coffee beans",
+              "count": 2,
+              "unitPrice": 35000,
+              "gross": 70000,
+              "fee": 4556,
+              "net": 65444,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 35000,
+              "avg24hPrice": 35473,
+              "updated": "2026-09-02T22:08:02.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5f240f45f4a9420a8c328ee0",
+          "craft": "Can of Max Energy energy drink x4",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 52419,
+          "saleGross": 100000,
+          "fleaFee": 6930,
+          "netRevenue": 93070,
+          "profit": 40651,
+          "durationMinutes": 108.33,
+          "profitPerHour": 22514,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "57514643245977207f2c2d09",
+              "item": "Can of TarCola soda",
+              "count": 1,
+              "unitCost": 24444,
+              "subtotal": 24444,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5af0484c86f7740f02001f7f",
+              "item": "Can of Majaica coffee beans",
+              "count": 1,
+              "unitCost": 14975,
+              "subtotal": 14975,
+              "method": "Hideout craft: Nutrition Unit Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5448fee04bdc2dbc018b4567",
+              "item": "Bottle of water (0.6L)",
+              "count": 1,
+              "unitCost": 13000,
+              "subtotal": 13000,
+              "method": "Trader barter: Therapist LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "62a09e73af34e73a266d932a",
+              "item": "BakeEzy cook book",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5751435d24597720a27126d1",
+              "item": "Can of Max Energy energy drink",
+              "count": 4,
+              "unitPrice": 25000,
+              "gross": 100000,
+              "fee": 6930,
+              "net": 93070,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 25000,
+              "avg24hPrice": 29189,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        }
+      ],
+      "topProfitPerCraft": [
+        {
+          "craftId": "5f241246232409155b66b809",
+          "craft": "Can of Hot Rod energy drink x20",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 317816,
+          "saleGross": 459980,
+          "fleaFee": 30545,
+          "netRevenue": 429435,
+          "profit": 111619,
+          "durationMinutes": 720,
+          "profitPerHour": 9302,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5d1b33a686f7742523398398",
+              "item": "Canister with purified water",
+              "count": 1,
+              "unitCost": 190941,
+              "subtotal": 190941,
+              "method": "Hideout craft: Water Collector Lv3",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "59e3577886f774176a362503",
+              "item": "Pack of sugar",
+              "count": 1,
+              "unitCost": 94900,
+              "subtotal": 94900,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5af0484c86f7740f02001f7f",
+              "item": "Can of Majaica coffee beans",
+              "count": 1,
+              "unitCost": 14975,
+              "subtotal": 14975,
+              "method": "Hideout craft: Nutrition Unit Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5bc9be8fd4351e00334cae6e",
+              "item": "42 Signature Blend English Tea",
+              "count": 1,
+              "unitCost": 17000,
+              "subtotal": 17000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5d1b385e86f774252167b98a",
+              "item": "Water filter",
+              "count": 1
+            },
+            {
+              "id": "62a09e73af34e73a266d932a",
+              "item": "BakeEzy cook book",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5751496424597720a27126da",
+              "item": "Can of Hot Rod energy drink",
+              "count": 20,
+              "unitPrice": 22999,
+              "gross": 459980,
+              "fee": 30545,
+              "net": 429435,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 22999,
+              "avg24hPrice": 24729,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5f240f45f4a9420a8c328ee0",
+          "craft": "Can of Max Energy energy drink x4",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 52419,
+          "saleGross": 100000,
+          "fleaFee": 6930,
+          "netRevenue": 93070,
+          "profit": 40651,
+          "durationMinutes": 108.33,
+          "profitPerHour": 22514,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "57514643245977207f2c2d09",
+              "item": "Can of TarCola soda",
+              "count": 1,
+              "unitCost": 24444,
+              "subtotal": 24444,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5af0484c86f7740f02001f7f",
+              "item": "Can of Majaica coffee beans",
+              "count": 1,
+              "unitCost": 14975,
+              "subtotal": 14975,
+              "method": "Hideout craft: Nutrition Unit Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5448fee04bdc2dbc018b4567",
+              "item": "Bottle of water (0.6L)",
+              "count": 1,
+              "unitCost": 13000,
+              "subtotal": 13000,
+              "method": "Trader barter: Therapist LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "62a09e73af34e73a266d932a",
+              "item": "BakeEzy cook book",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5751435d24597720a27126d1",
+              "item": "Can of Max Energy energy drink",
+              "count": 4,
+              "unitPrice": 25000,
+              "gross": 100000,
+              "fee": 6930,
+              "net": 93070,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 25000,
+              "avg24hPrice": 29189,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "629e1b3a0694b45420210cad",
+          "craft": "Can of Majaica coffee beans x2",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 29950,
+          "saleGross": 70000,
+          "fleaFee": 4556,
+          "netRevenue": 65444,
+          "profit": 35494,
+          "durationMinutes": 45,
+          "profitPerHour": 47325,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5e54f6af86f7742199090bf3",
+              "item": "Can of Dr. Lupo's coffee beans",
+              "count": 1,
+              "unitCost": 25990,
+              "subtotal": 25990,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "590c5a7286f7747884343aea",
+              "item": "Gunpowder \"Kite\"",
+              "count": 1,
+              "unitCost": 3960,
+              "subtotal": 3960,
+              "method": "Hideout craft: Workbench Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5af0484c86f7740f02001f7f",
+              "item": "Can of Majaica coffee beans",
+              "count": 2,
+              "unitPrice": 35000,
+              "gross": 70000,
+              "fee": 4556,
+              "net": 65444,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 35000,
+              "avg24hPrice": 35473,
+              "updated": "2026-09-02T22:08:02.000Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Water Collector",
+      "scannedCrafts": 4,
+      "successful": 4,
+      "incomplete": 0,
+      "specialRandom": 0,
+      "topProfitPerHour": [
+        {
+          "craftId": "67f4ec82690e0a541a021d3d",
+          "craft": "Emergency Water Ration x2",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 50999,
+          "saleGross": 76000,
+          "fleaFee": 4870,
+          "netRevenue": 71130,
+          "profit": 20131,
+          "durationMinutes": 30,
+          "profitPerHour": 40262,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "57513f9324597720a7128161",
+              "item": "Pack of Grand juice",
+              "count": 1,
+              "unitCost": 50999,
+              "subtotal": 50999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5d1b39a386f774252339976f",
+              "item": "Silicone tube",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "60098b1705871270cd5352a1",
+              "item": "Emergency Water Ration",
+              "count": 2,
+              "unitPrice": 38000,
+              "gross": 76000,
+              "fee": 4870,
+              "net": 71130,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 38000,
+              "avg24hPrice": 24239,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "67f4ec521d41954d4f09a9c8",
+          "craft": "Aquamari water bottle with filter x5",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 82000,
+          "saleGross": 116500,
+          "fleaFee": 9861,
+          "netRevenue": 106639,
+          "profit": 24639,
+          "durationMinutes": 60,
+          "profitPerHour": 24639,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5448fee04bdc2dbc018b4567",
+              "item": "Bottle of water (0.6L)",
+              "count": 5,
+              "unitCost": 13000,
+              "subtotal": 65000,
+              "method": "Trader barter: Therapist LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            },
+            {
+              "id": "6389c6c7dbfd5e4b95197e68",
+              "item": "Aquapeps water purification tablets",
+              "count": 1,
+              "unitCost": 17000,
+              "subtotal": 17000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5c0fa877d174af02a012e1cf",
+              "item": "Aquamari water bottle with filter",
+              "count": 5,
+              "unitPrice": 23300,
+              "gross": 116500,
+              "fee": 9861,
+              "net": 106639,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 23300,
+              "avg24hPrice": 23648,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "67f4ebb7d0fb51b8c705e80e",
+          "craft": "Bottle of water (0.6L) x1",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 13000,
+          "saleGross": 21555,
+          "fleaFee": 2800,
+          "netRevenue": 18755,
+          "profit": 5755,
+          "durationMinutes": 20,
+          "profitPerHour": 17265,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5448fee04bdc2dbc018b4567",
+              "item": "Bottle of water (0.6L)",
+              "count": 1,
+              "unitCost": 13000,
+              "subtotal": 13000,
+              "method": "Trader barter: Therapist LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5448fee04bdc2dbc018b4567",
+              "item": "Bottle of water (0.6L)",
+              "count": 1,
+              "unitPrice": 21555,
+              "gross": 21555,
+              "fee": 2800,
+              "net": 18755,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 21555,
+              "avg24hPrice": 25072,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        }
+      ],
+      "topProfitPerCraft": [
+        {
+          "craftId": "5d5589c1f934db045e6c5492",
+          "craft": "Canister with purified water x1",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 190941,
+          "saleGross": 287000,
+          "fleaFee": 28723,
+          "netRevenue": 258277,
+          "profit": 67336,
+          "durationMinutes": 325,
+          "profitPerHour": 12431,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5d1b385e86f774252167b98a",
+              "item": "Water filter",
+              "count": 0.66,
+              "unitCost": 289304,
+              "subtotal": 190941,
+              "method": "Hideout craft: Lavatory Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5d1b33a686f7742523398398",
+              "item": "Canister with purified water",
+              "count": 1,
+              "unitPrice": 287000,
+              "gross": 287000,
+              "fee": 28723,
+              "net": 258277,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 287000,
+              "avg24hPrice": 284932,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "67f4ec521d41954d4f09a9c8",
+          "craft": "Aquamari water bottle with filter x5",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 82000,
+          "saleGross": 116500,
+          "fleaFee": 9861,
+          "netRevenue": 106639,
+          "profit": 24639,
+          "durationMinutes": 60,
+          "profitPerHour": 24639,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5448fee04bdc2dbc018b4567",
+              "item": "Bottle of water (0.6L)",
+              "count": 5,
+              "unitCost": 13000,
+              "subtotal": 65000,
+              "method": "Trader barter: Therapist LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            },
+            {
+              "id": "6389c6c7dbfd5e4b95197e68",
+              "item": "Aquapeps water purification tablets",
+              "count": 1,
+              "unitCost": 17000,
+              "subtotal": 17000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5c0fa877d174af02a012e1cf",
+              "item": "Aquamari water bottle with filter",
+              "count": 5,
+              "unitPrice": 23300,
+              "gross": 116500,
+              "fee": 9861,
+              "net": 106639,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 23300,
+              "avg24hPrice": 23648,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "67f4ec82690e0a541a021d3d",
+          "craft": "Emergency Water Ration x2",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 50999,
+          "saleGross": 76000,
+          "fleaFee": 4870,
+          "netRevenue": 71130,
+          "profit": 20131,
+          "durationMinutes": 30,
+          "profitPerHour": 40262,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "57513f9324597720a7128161",
+              "item": "Pack of Grand juice",
+              "count": 1,
+              "unitCost": 50999,
+              "subtotal": 50999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5d1b39a386f774252339976f",
+              "item": "Silicone tube",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "60098b1705871270cd5352a1",
+              "item": "Emergency Water Ration",
+              "count": 2,
+              "unitPrice": 38000,
+              "gross": 76000,
+              "fee": 4870,
+              "net": 71130,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 38000,
+              "avg24hPrice": 24239,
+              "updated": "2026-09-02T21:58:06.000Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Workbench",
+      "scannedCrafts": 94,
+      "successful": 81,
+      "incomplete": 13,
+      "specialRandom": 0,
+      "topProfitPerHour": [
+        {
+          "craftId": "63a2abbb31772a61500d5336",
+          "craft": "Piece of plexiglass x4",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 37800,
+          "saleGross": 216000,
+          "fleaFee": 22710,
+          "netRevenue": 193290,
+          "profit": 155490,
+          "durationMinutes": 25,
+          "profitPerHour": 373176,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5d1b309586f77425227d1676",
+              "item": "Broken LCD",
+              "count": 2,
+              "unitCost": 18900,
+              "subtotal": 37800,
+              "method": "Hideout craft: Workbench Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5e2af22086f7746d3f3c33fa",
+              "item": "Tube of Poxeram cold welding",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "59e366c186f7741778269d85",
+              "item": "Piece of plexiglass",
+              "count": 4,
+              "unitPrice": 54000,
+              "gross": 216000,
+              "fee": 22710,
+              "net": 193290,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 54000,
+              "avg24hPrice": 22583,
+              "updated": "2026-09-02T22:18:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5dd3c5487058311d4b267186",
+          "craft": "Gunpowder \"Kite\" x2",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 7920,
+          "saleGross": 53000,
+          "fleaFee": 3291,
+          "netRevenue": 49709,
+          "profit": 41789,
+          "durationMinutes": 15,
+          "profitPerHour": 167156,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "56dff216d2720bbd668b4568",
+              "item": "5.45x39mm HP",
+              "count": 120,
+              "unitCost": 66,
+              "subtotal": 7920,
+              "method": "Trader purchase: Jaeger LL1",
+              "methodType": "trader",
+              "buyLimit": 1000,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "590c2b4386f77425357b6123",
+              "item": "Pliers",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "590c5a7286f7747884343aea",
+              "item": "Gunpowder \"Kite\"",
+              "count": 2,
+              "unitPrice": 26500,
+              "gross": 53000,
+              "fee": 3291,
+              "net": 49709,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 26500,
+              "avg24hPrice": 26808,
+              "updated": "2026-09-02T22:08:02.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5df138986c38ba26da0b3a77",
+          "craft": "Broken LCD x4",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 75600,
+          "saleGross": 132000,
+          "fleaFee": 8114,
+          "netRevenue": 123886,
+          "profit": 48286,
+          "durationMinutes": 22,
+          "profitPerHour": 131689,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5d1b304286f774253763a528",
+              "item": "Working LCD",
+              "count": 4,
+              "unitCost": 18900,
+              "subtotal": 75600,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "590c2d8786f774245b1f03f3",
+              "item": "Screwdriver",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d1b309586f77425227d1676",
+              "item": "Broken LCD",
+              "count": 4,
+              "unitPrice": 33000,
+              "gross": 132000,
+              "fee": 8114,
+              "net": 123886,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 33000,
+              "avg24hPrice": 31242,
+              "updated": "2026-09-02T21:58:03.000Z"
+            }
+          ]
+        }
+      ],
+      "topProfitPerCraft": [
+        {
+          "craftId": "63a2abbb31772a61500d5336",
+          "craft": "Piece of plexiglass x4",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 37800,
+          "saleGross": 216000,
+          "fleaFee": 22710,
+          "netRevenue": 193290,
+          "profit": 155490,
+          "durationMinutes": 25,
+          "profitPerHour": 373176,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5d1b309586f77425227d1676",
+              "item": "Broken LCD",
+              "count": 2,
+              "unitCost": 18900,
+              "subtotal": 37800,
+              "method": "Hideout craft: Workbench Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5e2af22086f7746d3f3c33fa",
+              "item": "Tube of Poxeram cold welding",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "59e366c186f7741778269d85",
+              "item": "Piece of plexiglass",
+              "count": 4,
+              "unitPrice": 54000,
+              "gross": 216000,
+              "fee": 22710,
+              "net": 193290,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 54000,
+              "avg24hPrice": 22583,
+              "updated": "2026-09-02T22:18:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5de919ec1b25d85cf30ca39a",
+          "craft": "Gunpowder \"Eagle\" x2",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 37527,
+          "saleGross": 186000,
+          "fleaFee": 13088,
+          "netRevenue": 172912,
+          "profit": 135385,
+          "durationMinutes": 97.83,
+          "profitPerHour": 83030,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "58d3db5386f77426186285a0",
+              "item": "M67 hand grenade",
+              "count": 2,
+              "unitCost": 16471,
+              "subtotal": 32942,
+              "method": "Trader purchase: Peacekeeper LL3",
+              "methodType": "trader",
+              "buyLimit": 10,
+              "taskUnlock": "5a03173786f77451cb427172"
+            },
+            {
+              "id": "617aa4dd8166f034d57de9c5",
+              "item": "M18 smoke grenade (Green)",
+              "count": 1,
+              "unitCost": 4585,
+              "subtotal": 4585,
+              "method": "Trader purchase: Jaeger LL1",
+              "methodType": "trader",
+              "buyLimit": 5,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "590c2d8786f774245b1f03f3",
+              "item": "Screwdriver",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d6fc78386f77449d825f9dc",
+              "item": "Gunpowder \"Eagle\"",
+              "count": 2,
+              "unitPrice": 93000,
+              "gross": 186000,
+              "fee": 13088,
+              "net": 172912,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 93000,
+              "avg24hPrice": 94068,
+              "updated": "2026-09-02T22:08:02.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5de021b30f6d581e965bcde7",
+          "craft": "Weapon parts x5",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 54999,
+          "saleGross": 189500,
+          "fleaFee": 12882,
+          "netRevenue": 176618,
+          "profit": 121619,
+          "durationMinutes": 78.33,
+          "profitPerHour": 93155,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "59d6088586f774275f37482f",
+              "item": "Kalashnikov AKM 7.62x39 assault rifle",
+              "count": 1,
+              "unitCost": 54999,
+              "subtotal": 54999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d1c819a86f774771b0acd6c",
+              "item": "Weapon parts",
+              "count": 5,
+              "unitPrice": 37900,
+              "gross": 189500,
+              "fee": 12882,
+              "net": 176618,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 37900,
+              "avg24hPrice": 35779,
+              "updated": "2026-09-02T22:08:02.000Z"
+            }
+          ]
+        }
+      ]
     }
   ],
   "incomplete": [
     {
-      "craftId": "655b675e1f2b6843ec751fd6",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b675e1f2b6843ec751fd6",
-      "reason": "No deterministic rewardItems"
-    },
-    {
       "craftId": "67caf5c5bfe0242ab1032966",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "67caf5c5bfe0242ab1032966",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "67da02e9078f1947650d7bb8",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "67da02e9078f1947650d7bb8",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d5c1f5ed582a543983ee82e",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5d5c1f5ed582a543983ee82e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6002e55595c402039a2747f4",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "6002e55595c402039a2747f4",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5e58e0c286f7740ba7486ca3",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "5e58e0c286f7740ba7486ca3",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b4de41f2b6843ec751fd5",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b4de41f2b6843ec751fd5",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Unlocked equipment crate (BattlePass 0) x1",
+      "reason": "No acquisition price for Locked equipment crate (BattlePass 0)"
     },
     {
       "craftId": "690c784a8c5857a8e80c9970",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "690c784a8c5857a8e80c9970",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Secure container Gamma x1",
+      "reason": "No acquisition price for Secure container Gamma"
     },
     {
       "craftId": "690c7882b6e7d092f006dda8",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "690c7882b6e7d092f006dda8",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Secure container Gamma x1",
+      "reason": "No acquisition price for Secure container Gamma"
     },
     {
       "craftId": "6666d829a8298779fc40e537",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "6666d829a8298779fc40e537",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ed9fd73f6626f08ef0efec6",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5ed9fd73f6626f08ef0efec6",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6002ed409f2c60461a2d0f5a",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "6002ed409f2c60461a2d0f5a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "63baedefe6ebc10fe0201083",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "63baedefe6ebc10fe0201083",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d5c1f25d582a5479d4ec458",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5d5c1f25d582a5479d4ec458",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600ab8e3e4022c380a726088",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "600ab8e3e4022c380a726088",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5eeca7724a8a9b668f0d89cd",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5eeca7724a8a9b668f0d89cd",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d8a1a7d7a3dfe597c2e459e",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5d8a1a7d7a3dfe597c2e459e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d5589c1f934db045e6c5492",
-      "station": "5d484fc8654e760065037abf",
-      "craft": "5d5589c1f934db045e6c5492",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "67da05c8078f1947650d7bb9",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "67da05c8078f1947650d7bb9",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "61c77d465a98404dee40a77c",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "61c77d465a98404dee40a77c",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d78d8a03fe9fc21602e16be",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5d78d8a03fe9fc21602e16be",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "603cf3094bb658618458e010",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "603cf3094bb658618458e010",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "629e1b3a0694b45420210cad",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "629e1b3a0694b45420210cad",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "60048c82a7903e00382d9593",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "60048c82a7903e00382d9593",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dea63e21ecdbf7668030f24",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5dea63e21ecdbf7668030f24",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "64b6aefe25251516d768542d",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "64b6aefe25251516d768542d",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5eda07acb6c564225571536c",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5eda07acb6c564225571536c",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Unlocked supply crate (Rare) x1",
+      "reason": "No acquisition price for Locked supply crate (Rare)"
     },
     {
       "craftId": "68fe55248312b42f5f02129a",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "68fe55248312b42f5f02129a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ede01e062155304b6512067",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5ede01e062155304b6512067",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600aa0d1090cb6338027028c",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "600aa0d1090cb6338027028c",
-      "reason": "No deterministic rewardItems"
+      "station": "Intelligence Center",
+      "craft": "Station 14-4 KORD Arshavin K. pass (Restored) x1",
+      "reason": "No sale price for Station 14-4 KORD Arshavin K. pass (Restored)"
     },
     {
       "craftId": "67c86b2828d3adac2e09a16e",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "67c86b2828d3adac2e09a16e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "67f4ec82690e0a541a021d3d",
-      "station": "5d484fc8654e760065037abf",
-      "craft": "67f4ec82690e0a541a021d3d",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68ef997d16e4ed785f0fc18e",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "68ef997d16e4ed785f0fc18e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "61c77cc6fcc1673f08540e9b",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "61c77cc6fcc1673f08540e9b",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5f245f875b664e084523a4ce",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5f245f875b664e084523a4ce",
-      "reason": "No deterministic rewardItems"
+      "station": "Intelligence Center",
+      "craft": "Reprogrammed RFID keycard with Prapor's hash codes x1",
+      "reason": "No sale price for Reprogrammed RFID keycard with Prapor's hash codes"
     },
     {
       "craftId": "66575197464c4b4ba4671004",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "66575197464c4b4ba4671004",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "603ce7c5fd70f047f93bee2a",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "603ce7c5fd70f047f93bee2a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600abc08e4022c380a7260a8",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "600abc08e4022c380a7260a8",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5eda0247658fac5b8c3862a8",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5eda0247658fac5b8c3862a8",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d8b8ddd322e8650762f6e3a",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5d8b8ddd322e8650762f6e3a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b50e7c023e22044165de5",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b50e7c023e22044165de5",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "603cf23a420e7f487e175d7f",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "603cf23a420e7f487e175d7f",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "64b6b5c1c3abf20a9660daad",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "64b6b5c1c3abf20a9660daad",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5de951483c52683d810b4a10",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5de951483c52683d810b4a10",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "61c226d91b8c294cd411c881",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "61c226d91b8c294cd411c881",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Unlocked weapon crate (Rare) x1",
+      "reason": "No acquisition price for Locked weapon crate (Rare)"
     },
     {
       "craftId": "655b65fc1273611d2462ab77",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b65fc1273611d2462ab77",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "615c3d27966c85458e4c49cf",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "615c3d27966c85458e4c49cf",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6002eec9cc73cd34ac64188a",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "6002eec9cc73cd34ac64188a",
-      "reason": "No deterministic rewardItems"
+      "station": "Lavatory",
+      "craft": "5.11 Tactical TacTec plate carrier (Ranger Green) x1",
+      "reason": "No acquisition price for GAC 3s15m ballistic plate"
     },
     {
       "craftId": "67bc980c3c4c5942cb0ac53f",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "67bc980c3c4c5942cb0ac53f",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5e37f15386f774299f112a2e",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5e37f15386f774299f112a2e",
-      "reason": "No deterministic rewardItems"
+      "station": "Intelligence Center",
+      "craft": "Activated Kruglov's RFID keycard x1",
+      "reason": "No acquisition price for Kruglov's RFID keycard"
     },
     {
       "craftId": "67c9d5035be7fc94c806dee9",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "67c9d5035be7fc94c806dee9",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5eeca8e327ccd70521107fdc",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5eeca8e327ccd70521107fdc",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6913722bd4c6de533e0c774a",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "6913722bd4c6de533e0c774a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5f240f45f4a9420a8c328ee0",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "5f240f45f4a9420a8c328ee0",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600a98d076fc4b1877509ead",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "600a98d076fc4b1877509ead",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600aa209f64dfd63ec1293d6",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "600aa209f64dfd63ec1293d6",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6558d7894626375d6735670c",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "6558d7894626375d6735670c",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ffcadeff3fdc212a91d5539",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "5ffcadeff3fdc212a91d5539",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6002e26ac6b84d04cc62045e",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "6002e26ac6b84d04cc62045e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5de10c50c607752a1f1262c7",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "5de10c50c607752a1f1262c7",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68ef997a4fc35ae00505dcf2",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "68ef997a4fc35ae00505dcf2",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5e1330dca0f0f8773c069c99",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5e1330dca0f0f8773c069c99",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ffcafd468c55773943fc71e",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5ffcafd468c55773943fc71e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600ab99ce4022c380a726090",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "600ab99ce4022c380a726090",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Unlocked weapon crate (Rare) x1",
+      "reason": "No acquisition price for Locked weapon crate (Rare)"
     },
     {
       "craftId": "6666d7ea0b734650a91d0a42",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "6666d7ea0b734650a91d0a42",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "63a571802116d261d2336cd1",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "63a571802116d261d2336cd1",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d558968f934db006d2d5b32",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5d558968f934db006d2d5b32",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68f111a853aec9cbde0aa22f",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "68f111a853aec9cbde0aa22f",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b56eb32b0b1645e6f54c8",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b56eb32b0b1645e6f54c8",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68f11230b10b42c44a0a5f8f",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "68f11230b10b42c44a0a5f8f",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68f207d400ca7e22d3081a07",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "68f207d400ca7e22d3081a07",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Unlocked valuables crate (Rare) x1",
+      "reason": "No acquisition price for Locked valuables crate (Rare)"
     },
     {
       "craftId": "67c9d4b251ce173bff01eec7",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "67c9d4b251ce173bff01eec7",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "62a1123ac30cfa1d366aeb82",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "62a1123ac30cfa1d366aeb82",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Unlocked supply crate (Rare) x1",
+      "reason": "No acquisition price for Locked supply crate (Rare)"
     },
     {
       "craftId": "6a50095e2a763b0f4c034024",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "6a50095e2a763b0f4c034024",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "619eb0eb56579138ec08fed8",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "619eb0eb56579138ec08fed8",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b5dc8065b076eb02c4b48",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b5dc8065b076eb02c4b48",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "61c77c830f3639492721e99c",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "61c77c830f3639492721e99c",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68f68abd75ecb35e20030e85",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "68f68abd75ecb35e20030e85",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "67da01179cbeb8d6f4011961",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "67da01179cbeb8d6f4011961",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ffcac4e1285295b7441ee01",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5ffcac4e1285295b7441ee01",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ede07163c345121732a10e9",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5ede07163c345121732a10e9",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d5c21aed582a50066024610",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5d5c21aed582a50066024610",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b5af31273611d2462ab76",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b5af31273611d2462ab76",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d8f5e1af3a8f83c8600afb2",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5d8f5e1af3a8f83c8600afb2",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d5c1fd4d582a500650132f0",
-      "station": "5d494a3f5b56502f18c98a0e",
-      "craft": "5d5c1fd4d582a500650132f0",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68f110c61bc3ee7616092bde",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "68f110c61bc3ee7616092bde",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ee4a093a297eb185236194f",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "5ee4a093a297eb185236194f",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "62a11658650cc35fa94e009a",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "62a11658650cc35fa94e009a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "62a11415c30cfa1d366aeb83",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "62a11415c30cfa1d366aeb83",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dceb6964a98801ba2075d27",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5dceb6964a98801ba2075d27",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b58a49db22d43ab42b709",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b58a49db22d43ab42b709",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6012ee7e44a0465ee67a58de",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "6012ee7e44a0465ee67a58de",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600a9a34189b226f40059743",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "600a9a34189b226f40059743",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Icebreaker model x1",
+      "reason": "No acquisition price for Icebreaker model kit"
     },
     {
       "craftId": "67c9d447b53b0fcf1d0bb0ab",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "67c9d447b53b0fcf1d0bb0ab",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "67f4ebb7d0fb51b8c705e80e",
-      "station": "5d484fc8654e760065037abf",
-      "craft": "67f4ebb7d0fb51b8c705e80e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5de950a845b5d67bad6e9ef7",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5de950a845b5d67bad6e9ef7",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ffcad24f3fdc212a91d5536",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5ffcad24f3fdc212a91d5536",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b5fd2975a7f3c734661a8",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b5fd2975a7f3c734661a8",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dd3c5487058311d4b267186",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5dd3c5487058311d4b267186",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6839a4b18b47de9b76007028",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "6839a4b18b47de9b76007028",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "62a112fec1cce91d2c46a06e",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "62a112fec1cce91d2c46a06e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ede0502879619077751d00a",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5ede0502879619077751d00a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d8a13fc2d9612419804003c",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "5d8a13fc2d9612419804003c",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dd1126571e3fd3f634b1c8b",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5dd1126571e3fd3f634b1c8b",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ed9ff023a68ec264e5233c2",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "5ed9ff023a68ec264e5233c2",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d93b91286f77467310ca15d",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5d93b91286f77467310ca15d",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b6bc01f2b6843ec751fd7",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b6bc01f2b6843ec751fd7",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b505c32b0b1645e6f54c5",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b505c32b0b1645e6f54c5",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5df138986c38ba26da0b3a77",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5df138986c38ba26da0b3a77",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b6a50b71eeb7c4168c628",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b6a50b71eeb7c4168c628",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "61dc03711bdcfa2f253c9b7c",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "61dc03711bdcfa2f253c9b7c",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dde60e0e2c8f57eb6465327",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5dde60e0e2c8f57eb6465327",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dc1f7de6058e020335c9d88",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "5dc1f7de6058e020335c9d88",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d5c205bd582a50d042a3c0e",
-      "station": "5d494a445b56502f18c98a10",
-      "craft": "5d5c205bd582a50d042a3c0e",
-      "reason": "No requiredItems"
-    },
-    {
-      "craftId": "655b4bbe4343a16d2e047668",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b4bbe4343a16d2e047668",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d8a1568df9fc649e81b8b1b",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "5d8a1568df9fc649e81b8b1b",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ffcab66fd851f4b000d61ef",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5ffcab66fd851f4b000d61ef",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "67da0223078f1947650d7bb7",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "67da0223078f1947650d7bb7",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b63ac9db22d43ab42b70a",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b63ac9db22d43ab42b70a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5df8fe0deddb880fd56f2d7d",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5df8fe0deddb880fd56f2d7d",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b4669b71eeb7c4168c625",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b4669b71eeb7c4168c625",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "691371a2a911df6c2f0195f1",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "691371a2a911df6c2f0195f1",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b4489065b076eb02c4b45",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b4489065b076eb02c4b45",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "67da04db9cbeb8d6f4011962",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "67da04db9cbeb8d6f4011962",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68f1105b53aec9cbde0aa22e",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "68f1105b53aec9cbde0aa22e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600aa140090cb63380270290",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "600aa140090cb63380270290",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6a564745aac5d6632d0757bc",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "6a564745aac5d6632d0757bc",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d8a13564ac882218d2085b0",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "5d8a13564ac882218d2085b0",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "63a2327c151bfb591645c104",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "63a2327c151bfb591645c104",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6012ea1a01328b2dec3c1a9d",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "6012ea1a01328b2dec3c1a9d",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "63a232f8ab6bb51044344bff",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "63a232f8ab6bb51044344bff",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Unlocked valuables crate (Rare) x1",
+      "reason": "No acquisition price for Locked valuables crate (Rare)"
     },
     {
       "craftId": "6399c421d65735732c6ba765",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "6399c421d65735732c6ba765",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d93ba4486f77454bd61d2a9",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5d93ba4486f77454bd61d2a9",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dcfe2582f9b3d566c7af977",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5dcfe2582f9b3d566c7af977",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b4a73975a7f3c734661a5",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b4a73975a7f3c734661a5",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b68b4769de97e1d62d117",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b68b4769de97e1d62d117",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68f2094c00ca7e22d3081a08",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "68f2094c00ca7e22d3081a08",
-      "reason": "No deterministic rewardItems"
+      "station": "Intelligence Center",
+      "craft": "Digital secure DSP radio transmitter x1",
+      "reason": "No acquisition price for Digital secure DSP radio transmitter"
     },
     {
       "craftId": "686c17583cf79421d70b007e",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "686c17583cf79421d70b007e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ede0053879619077751cff1",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5ede0053879619077751cff1",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dceeaf100b3815535149f5a",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5dceeaf100b3815535149f5a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d8f614c9ea122564c316462",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5d8f614c9ea122564c316462",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "62a115db5c6bbf22c15ac19d",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "62a115db5c6bbf22c15ac19d",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5de021b30f6d581e965bcde7",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5de021b30f6d581e965bcde7",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "63a3359eaf870e651d58e61a",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "63a3359eaf870e651d58e61a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "67f4ec521d41954d4f09a9c8",
-      "station": "5d484fc8654e760065037abf",
-      "craft": "67f4ec521d41954d4f09a9c8",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600a9b10adfcb94fee6d3e06",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "600a9b10adfcb94fee6d3e06",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "677d4fdb42cdfce74006f961",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "677d4fdb42cdfce74006f961",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600a9fb7ba91d953182d6a1c",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "600a9fb7ba91d953182d6a1c",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5eecaa6327ccd70521107ff5",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5eecaa6327ccd70521107ff5",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600a9bd0189b226f40059751",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "600a9bd0189b226f40059751",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5e6cfc53a3e6886b9e6c39a8",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5e6cfc53a3e6886b9e6c39a8",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d78f27d115f693ad750d2c6",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5d78f27d115f693ad750d2c6",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6002e8fb41d38607bc4198ab",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "6002e8fb41d38607bc4198ab",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5eda072cf6626f08ef0efed4",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5eda072cf6626f08ef0efed4",
-      "reason": "No deterministic rewardItems"
+      "station": "Intelligence Center",
+      "craft": "Decrypted intelligence folder x1",
+      "reason": "No acquisition price for Military thumb drive"
     },
     {
       "craftId": "690a89f3f986495a06051d5b",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "690a89f3f986495a06051d5b",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5de95c91225b0a76ca0ea0b7",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5de95c91225b0a76ca0ea0b7",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6941307f73dcf473e50be4b7",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "6941307f73dcf473e50be4b7",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ffcacbf24fa2e741e767234",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5ffcacbf24fa2e741e767234",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d78dbfb65aebb016d20b6f3",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5d78dbfb65aebb016d20b6f3",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "615c3d800d3afc358a55405e",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "615c3d800d3afc358a55405e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ffcaa60f3fdc212a91d552b",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5ffcaa60f3fdc212a91d552b",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5e13301cc7049d4d9738e1a7",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5e13301cc7049d4d9738e1a7",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b60774343a16d2e04766b",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b60774343a16d2e04766b",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b4f57769de97e1d62d116",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b4f57769de97e1d62d116",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "63bd4c3964d7e356983c4cf5",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "63bd4c3964d7e356983c4cf5",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b47d1769de97e1d62d115",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b47d1769de97e1d62d115",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "677d4db74ac9193862043ee9",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "677d4db74ac9193862043ee9",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5e66408286f7747b2c2d7786",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5e66408286f7747b2c2d7786",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68f2073205d9d632d30e1e97",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "68f2073205d9d632d30e1e97",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "63a2abbb31772a61500d5336",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "63a2abbb31772a61500d5336",
-      "reason": "No deterministic rewardItems"
+      "station": "Intelligence Center",
+      "craft": "Hard drive printout x1",
+      "reason": "No sale price for Hard drive printout"
     },
     {
       "craftId": "6666d899eb78191c502350b2",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "6666d899eb78191c502350b2",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ede0135f7db6021ee400dfe",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "5ede0135f7db6021ee400dfe",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Unlocked equipment crate (Rare) x1",
+      "reason": "No acquisition price for Locked equipment crate (Rare)"
     },
     {
       "craftId": "67bdfb12884b40ea9d08b5c9",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "67bdfb12884b40ea9d08b5c9",
-      "reason": "No deterministic rewardItems"
+      "station": "Intelligence Center",
+      "craft": "Reprogrammed RFID keycard with Mr. Kerman's hash codes x1",
+      "reason": "No sale price for Reprogrammed RFID keycard with Mr. Kerman's hash codes"
     },
     {
       "craftId": "67c9d54b017035dd060bff5e",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "67c9d54b017035dd060bff5e",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Unlocked equipment crate (Rare) x1",
+      "reason": "No acquisition price for Locked equipment crate (Rare)"
     },
     {
       "craftId": "67bc88ec4e7dbc3aa2024321",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "67bc88ec4e7dbc3aa2024321",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b5ebc32b0b1645e6f54c9",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b5ebc32b0b1645e6f54c9",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dd3c5a67da3785e63275437",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5dd3c5a67da3785e63275437",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5f241246232409155b66b809",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "5f241246232409155b66b809",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b6c381fe356507267b2f6",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b6c381fe356507267b2f6",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5eda04a30699b81bb9142aa2",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5eda04a30699b81bb9142aa2",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "66509e8c9398c9c9e10a31bb",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "66509e8c9398c9c9e10a31bb",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5de95f1c9517b140195ab717",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5de95f1c9517b140195ab717",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d78d81757c9b8484a2bcb99",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5d78d81757c9b8484a2bcb99",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68f0e37d1ddd18a6290a7e68",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "68f0e37d1ddd18a6290a7e68",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b6b641273611d2462ab78",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "655b6b641273611d2462ab78",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600ab813d19f85018a7489c4",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "600ab813d19f85018a7489c4",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dd11303b78bb413d5133f79",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5dd11303b78bb413d5133f79",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "62a11354b552772a0c4ba09e",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "62a11354b552772a0c4ba09e",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68ef997596921a3bf70d6196",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "68ef997596921a3bf70d6196",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6002e68bca41c53bee18813b",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "6002e68bca41c53bee18813b",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5de919ec1b25d85cf30ca39a",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5de919ec1b25d85cf30ca39a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "657fc79cfd86b9d9680c4a24",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "657fc79cfd86b9d9680c4a24",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68f1113b58cb1bc9000d2f8b",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "68f1113b58cb1bc9000d2f8b",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5ede1e0b7690fa313b632e88",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "5ede1e0b7690fa313b632e88",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6671d4fef3bee343f5000703",
-      "station": "5d484fcd654e7668ec2ec322",
-      "craft": "6671d4fef3bee343f5000703",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dc1f634ee5f2440a9272dc7",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "5dc1f634ee5f2440a9272dc7",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5df8ffcbaab5f257bd7ff3a8",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5df8ffcbaab5f257bd7ff3a8",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b33429db22d43ab42b704",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b33429db22d43ab42b704",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "619e45ea98398d3b104e8419",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "619e45ea98398d3b104e8419",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "600a9955ba91d953182d69f0",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "600a9955ba91d953182d69f0",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b598db71eeb7c4168c626",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b598db71eeb7c4168c626",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dc1f4d9e078d303d91b44c7",
-      "station": "5d484fd1654e76006732bf2e",
-      "craft": "5dc1f4d9e078d303d91b44c7",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "6a1568b4a9185da666070a24",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "6a1568b4a9185da666070a24",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "68f0e32460d1d6ebba02de4a",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "68f0e32460d1d6ebba02de4a",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b457c9db22d43ab42b706",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b457c9db22d43ab42b706",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5eeca812c4c989140245ae0c",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "5eeca812c4c989140245ae0c",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5eeca9bad874f914d2536585",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5eeca9bad874f914d2536585",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5df914a53ce0f648b833bb37",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "5df914a53ce0f648b833bb37",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5d8f5ee9de0799001d229ed2",
-      "station": "5d484fba654e7600691aadf7",
-      "craft": "5d8f5ee9de0799001d229ed2",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "62a116282c5e0c325b62d5ec",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "62a116282c5e0c325b62d5ec",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "5dd3c9c8449c0c31795b0f0b",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "5dd3c9c8449c0c31795b0f0b",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "67da000f1556838cf90d1716",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "67da000f1556838cf90d1716",
-      "reason": "No deterministic rewardItems"
-    },
-    {
-      "craftId": "655b54e7065b076eb02c4b47",
-      "station": "5d484fda654e7600681d9315",
-      "craft": "655b54e7065b076eb02c4b47",
-      "reason": "No deterministic rewardItems"
+      "station": "Workbench",
+      "craft": "Armored case x1",
+      "reason": "No acquisition price for Armored case"
     },
     {
       "craftId": "6a614e9593f5bcb59a0af69c",
-      "station": "5d484fdf654e7600691aadf8",
-      "craft": "6a614e9593f5bcb59a0af69c",
-      "reason": "No deterministic rewardItems"
+      "station": "Intelligence Center",
+      "craft": "Data from Fence's laptop x1",
+      "reason": "No sale price for Data from Fence's laptop"
     }
   ],
+  "specialRandom": [],
   "specialSystems": {
     "bitcoinFarm": {
-      "status": "not-calculated-by-normal-craft-engine",
-      "reason": "Bitcoin Farm is continuous production and requires a separate GPU/fuel production model."
+      "status": "separate-model-required"
     },
     "scavCase": {
-      "status": "expected-value-not-calculated",
-      "reason": "Tarkov.dev does not provide reliable PvE average random-return statistics. EV is intentionally not invented."
+      "status": "random-return; exact PvE EV intentionally not fabricated"
     },
-    "waterCollector": {
-      "status": "normal deterministic crafts are included if present in /pve/crafts"
-    },
-    "boozeGenerator": {
-      "status": "normal deterministic crafts are included if present in /pve/crafts"
+    "cultistCircle": {
+      "status": "random-return; exact PvE EV intentionally not fabricated"
     }
   }
 }
