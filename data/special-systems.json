@@ -1,0 +1,624 @@
+{
+  "fuel": {
+    "solarPower": true,
+    "hideoutManagementLevel": 0,
+    "fuelUnitsPerHour": 2.375,
+    "residualEmptyCanValueCredited": false,
+    "residualValueNote": "Conservative fuel cost: static Tarkov.dev item data does not expose a reliable resource-state value for an empty can, so no residual empty-can value is credited.",
+    "options": [
+      {
+        "itemId": "5d1b371186f774253763a656",
+        "item": "5d1b371186f774253763a656 Name",
+        "normalizedName": "expeditionary-fuel-tank",
+        "capacity": 60,
+        "acquisitionCost": 118995,
+        "acquisitionMethod": "Hideout craft: Lavatory Lv2",
+        "runtimeHours": 25.26,
+        "costPerHour": 4710.22,
+        "costPerDay": 113045,
+        "status": "complete"
+      },
+      {
+        "itemId": "5d1b36a186f7742523398433",
+        "item": "5d1b36a186f7742523398433 Name",
+        "normalizedName": "metal-fuel-tank",
+        "capacity": 100,
+        "acquisitionCost": 135998,
+        "acquisitionMethod": "Trader barter: Prapor LL2",
+        "runtimeHours": 42.11,
+        "costPerHour": 3229.95,
+        "costPerDay": 77519,
+        "status": "complete"
+      }
+    ],
+    "cheapest": {
+      "itemId": "5d1b36a186f7742523398433",
+      "item": "5d1b36a186f7742523398433 Name",
+      "normalizedName": "metal-fuel-tank",
+      "capacity": 100,
+      "acquisitionCost": 135998,
+      "acquisitionMethod": "Trader barter: Prapor LL2",
+      "runtimeHours": 42.11,
+      "costPerHour": 3229.95,
+      "costPerDay": 77519,
+      "status": "complete"
+    },
+    "dailyFuelCost": 77519
+  },
+  "bitcoinFarm": {
+    "status": "complete",
+    "formula": "300000 / (1 + (GC - 1) * 0.041225) seconds per Physical Bitcoin",
+    "formulaSource": "Official Escape from Tarkov Wiki - Hideout / Bitcoin Farm",
+    "formulaVerifiedAt": "2026-09-03",
+    "graphicsCard": {
+      "itemId": "57347ca924597744596b4e71",
+      "acquisitionCost": 576996,
+      "acquisitionMethod": "Hideout craft: Intelligence Center Lv3"
+    },
+    "variants": [
+      {
+        "gpuCount": 1,
+        "secondsPerBitcoin": 300000,
+        "hoursPerBitcoin": 83.33,
+        "bitcoinsPerDay": 0.29,
+        "bitcoinNetSaleEach": 549968,
+        "saleDestination": "Therapist",
+        "revenuePerDay": 158391,
+        "fuelCostPerDay": 77519,
+        "netProfitPerDay": 80872,
+        "gpuUnitAcquisitionCost": 576996,
+        "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
+        "installedGpuCapital": 576996,
+        "simpleCapitalPaybackDays": 7.13
+      },
+      {
+        "gpuCount": 10,
+        "secondsPerBitcoin": 218814,
+        "hoursPerBitcoin": 60.78,
+        "bitcoinsPerDay": 0.39,
+        "bitcoinNetSaleEach": 549968,
+        "saleDestination": "Therapist",
+        "revenuePerDay": 217158,
+        "fuelCostPerDay": 77519,
+        "netProfitPerDay": 139639,
+        "gpuUnitAcquisitionCost": 576996,
+        "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
+        "installedGpuCapital": 5769960,
+        "simpleCapitalPaybackDays": 41.32
+      },
+      {
+        "gpuCount": 25,
+        "secondsPerBitcoin": 150799,
+        "hoursPerBitcoin": 41.89,
+        "bitcoinsPerDay": 0.57,
+        "bitcoinNetSaleEach": 549968,
+        "saleDestination": "Therapist",
+        "revenuePerDay": 315103,
+        "fuelCostPerDay": 77519,
+        "netProfitPerDay": 237584,
+        "gpuUnitAcquisitionCost": 576996,
+        "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
+        "installedGpuCapital": 14424900,
+        "simpleCapitalPaybackDays": 60.72
+      },
+      {
+        "gpuCount": 50,
+        "secondsPerBitcoin": 99337,
+        "hoursPerBitcoin": 27.59,
+        "bitcoinsPerDay": 0.87,
+        "bitcoinNetSaleEach": 549968,
+        "saleDestination": "Therapist",
+        "revenuePerDay": 478344,
+        "fuelCostPerDay": 77519,
+        "netProfitPerDay": 400825,
+        "gpuUnitAcquisitionCost": 576996,
+        "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
+        "installedGpuCapital": 28849800,
+        "simpleCapitalPaybackDays": 71.98
+      }
+    ]
+  },
+  "continuousProduction": {
+    "fuelPolicy": {
+      "standalone": "Each station is charged the full daily generator fuel cost when evaluated alone.",
+      "marginal": "If the generator is already running for another station, additional shared fuel is treated as 0 RUB marginal cost.",
+      "combined": "Combined operation counts generator fuel only once."
+    },
+    "waterCollector": {
+      "scannedCompleteCrafts": 4,
+      "crafts": [
+        {
+          "craftId": "5d5589c1f934db045e6c5492",
+          "station": "Water Collector",
+          "craft": "Canister with purified water x1",
+          "durationSeconds": 19500,
+          "durationHours": 5.42,
+          "cyclesPerDay": 4.43,
+          "materialCostPerCycle": 189584,
+          "netRevenuePerCycle": 258277,
+          "profitPerCycleBeforeFuel": 68693,
+          "profitPerDayBeforeFuel": 304363,
+          "standaloneFuelCostPerDay": 77519,
+          "profitPerDayStandalone": 226844,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 304363,
+          "materials": [
+            {
+              "id": "5d1b385e86f774252167b98a",
+              "item": "Water filter",
+              "count": 0.66,
+              "unitCost": 287249,
+              "subtotal": 189584,
+              "method": "Hideout craft: Lavatory Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d1b33a686f7742523398398",
+              "item": "Canister with purified water",
+              "count": 1,
+              "unitPrice": 287000,
+              "gross": 287000,
+              "fee": 28723,
+              "net": 258277,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 287000,
+              "avg24hPrice": 284932,
+              "updated": "2026-09-02T22:28:06.000Z"
+            }
+          ],
+          "sellTo": "Flea Market"
+        },
+        {
+          "craftId": "67f4ec82690e0a541a021d3d",
+          "station": "Water Collector",
+          "craft": "Emergency Water Ration x2",
+          "durationSeconds": 1800,
+          "durationHours": 0.5,
+          "cyclesPerDay": 48,
+          "materialCostPerCycle": 50999,
+          "netRevenuePerCycle": 71130,
+          "profitPerCycleBeforeFuel": 20131,
+          "profitPerDayBeforeFuel": 966288,
+          "standaloneFuelCostPerDay": 77519,
+          "profitPerDayStandalone": 888769,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 966288,
+          "materials": [
+            {
+              "id": "57513f9324597720a7128161",
+              "item": "Pack of Grand juice",
+              "count": 1,
+              "unitCost": 50999,
+              "subtotal": 50999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "outputs": [
+            {
+              "id": "60098b1705871270cd5352a1",
+              "item": "Emergency Water Ration",
+              "count": 2,
+              "unitPrice": 38000,
+              "gross": 76000,
+              "fee": 4870,
+              "net": 71130,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 38000,
+              "avg24hPrice": 24239,
+              "updated": "2026-09-02T22:28:06.000Z"
+            }
+          ],
+          "sellTo": "Flea Market"
+        },
+        {
+          "craftId": "67f4ebb7d0fb51b8c705e80e",
+          "station": "Water Collector",
+          "craft": "Bottle of water (0.6L) x1",
+          "durationSeconds": 1200,
+          "durationHours": 0.33,
+          "cyclesPerDay": 72,
+          "materialCostPerCycle": 9997,
+          "netRevenuePerCycle": 18755,
+          "profitPerCycleBeforeFuel": 8758,
+          "profitPerDayBeforeFuel": 630576,
+          "standaloneFuelCostPerDay": 77519,
+          "profitPerDayStandalone": 553057,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 630576,
+          "materials": [
+            {
+              "id": "5448fee04bdc2dbc018b4567",
+              "item": "Bottle of water (0.6L)",
+              "count": 1,
+              "unitCost": 9997,
+              "subtotal": 9997,
+              "method": "Trader barter: Therapist LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5448fee04bdc2dbc018b4567",
+              "item": "Bottle of water (0.6L)",
+              "count": 1,
+              "unitPrice": 21555,
+              "gross": 21555,
+              "fee": 2800,
+              "net": 18755,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 21555,
+              "avg24hPrice": 25072,
+              "updated": "2026-09-02T22:28:06.000Z"
+            }
+          ],
+          "sellTo": "Flea Market"
+        },
+        {
+          "craftId": "67f4ec521d41954d4f09a9c8",
+          "station": "Water Collector",
+          "craft": "Aquamari water bottle with filter x5",
+          "durationSeconds": 3600,
+          "durationHours": 1,
+          "cyclesPerDay": 24,
+          "materialCostPerCycle": 69985,
+          "netRevenuePerCycle": 106639,
+          "profitPerCycleBeforeFuel": 36654,
+          "profitPerDayBeforeFuel": 879696,
+          "standaloneFuelCostPerDay": 77519,
+          "profitPerDayStandalone": 802177,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 879696,
+          "materials": [
+            {
+              "id": "5448fee04bdc2dbc018b4567",
+              "item": "Bottle of water (0.6L)",
+              "count": 5,
+              "unitCost": 9997,
+              "subtotal": 49985,
+              "method": "Trader barter: Therapist LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            },
+            {
+              "id": "6389c6c7dbfd5e4b95197e68",
+              "item": "Aquapeps water purification tablets",
+              "count": 1,
+              "unitCost": 20000,
+              "subtotal": 20000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5c0fa877d174af02a012e1cf",
+              "item": "Aquamari water bottle with filter",
+              "count": 5,
+              "unitPrice": 23300,
+              "gross": 116500,
+              "fee": 9861,
+              "net": 106639,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 23300,
+              "avg24hPrice": 23648,
+              "updated": "2026-09-02T22:28:06.000Z"
+            }
+          ],
+          "sellTo": "Flea Market"
+        }
+      ],
+      "recommendedByDailyProfitBeforeFuel": {
+        "craftId": "67f4ec82690e0a541a021d3d",
+        "station": "Water Collector",
+        "craft": "Emergency Water Ration x2",
+        "durationSeconds": 1800,
+        "durationHours": 0.5,
+        "cyclesPerDay": 48,
+        "materialCostPerCycle": 50999,
+        "netRevenuePerCycle": 71130,
+        "profitPerCycleBeforeFuel": 20131,
+        "profitPerDayBeforeFuel": 966288,
+        "standaloneFuelCostPerDay": 77519,
+        "profitPerDayStandalone": 888769,
+        "profitPerDayMarginalIfGeneratorAlreadyRunning": 966288,
+        "materials": [
+          {
+            "id": "57513f9324597720a7128161",
+            "item": "Pack of Grand juice",
+            "count": 1,
+            "unitCost": 50999,
+            "subtotal": 50999,
+            "method": "Flea Market",
+            "methodType": "flea",
+            "buyLimit": null,
+            "taskUnlock": null
+          }
+        ],
+        "outputs": [
+          {
+            "id": "60098b1705871270cd5352a1",
+            "item": "Emergency Water Ration",
+            "count": 2,
+            "unitPrice": 38000,
+            "gross": 76000,
+            "fee": 4870,
+            "net": 71130,
+            "sellTo": "Flea Market",
+            "methodType": "flea",
+            "lastLowPrice": 38000,
+            "avg24hPrice": 24239,
+            "updated": "2026-09-02T22:28:06.000Z"
+          }
+        ],
+        "sellTo": "Flea Market"
+      }
+    },
+    "boozeGenerator": {
+      "scannedCompleteCrafts": 1,
+      "crafts": [
+        {
+          "craftId": "5d5c1fd4d582a500650132f0",
+          "station": "Booze Generator",
+          "craft": "Bottle of Fierce Hatchling moonshine x1",
+          "durationSeconds": 11000,
+          "durationHours": 3.06,
+          "cyclesPerDay": 7.85,
+          "materialCostPerCycle": 379384,
+          "netRevenuePerCycle": 421024,
+          "profitPerCycleBeforeFuel": 41640,
+          "profitPerDayBeforeFuel": 327063,
+          "standaloneFuelCostPerDay": 77519,
+          "profitPerDayStandalone": 249544,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 327063,
+          "materials": [
+            {
+              "id": "59e3577886f774176a362503",
+              "item": "Pack of sugar",
+              "count": 2,
+              "unitCost": 94900,
+              "subtotal": 189800,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d1b33a686f7742523398398",
+              "item": "Canister with purified water",
+              "count": 1,
+              "unitCost": 189584,
+              "subtotal": 189584,
+              "method": "Hideout craft: Water Collector Lv3",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d1b376e86f774252519444e",
+              "item": "Bottle of Fierce Hatchling moonshine",
+              "count": 1,
+              "unitPrice": 449999,
+              "gross": 449999,
+              "fee": 28975,
+              "net": 421024,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 449999,
+              "avg24hPrice": 444086,
+              "updated": "2026-09-02T22:28:06.000Z"
+            }
+          ],
+          "sellTo": "Flea Market"
+        }
+      ],
+      "recommendedByDailyProfitBeforeFuel": {
+        "craftId": "5d5c1fd4d582a500650132f0",
+        "station": "Booze Generator",
+        "craft": "Bottle of Fierce Hatchling moonshine x1",
+        "durationSeconds": 11000,
+        "durationHours": 3.06,
+        "cyclesPerDay": 7.85,
+        "materialCostPerCycle": 379384,
+        "netRevenuePerCycle": 421024,
+        "profitPerCycleBeforeFuel": 41640,
+        "profitPerDayBeforeFuel": 327063,
+        "standaloneFuelCostPerDay": 77519,
+        "profitPerDayStandalone": 249544,
+        "profitPerDayMarginalIfGeneratorAlreadyRunning": 327063,
+        "materials": [
+          {
+            "id": "59e3577886f774176a362503",
+            "item": "Pack of sugar",
+            "count": 2,
+            "unitCost": 94900,
+            "subtotal": 189800,
+            "method": "Flea Market",
+            "methodType": "flea",
+            "buyLimit": null,
+            "taskUnlock": null
+          },
+          {
+            "id": "5d1b33a686f7742523398398",
+            "item": "Canister with purified water",
+            "count": 1,
+            "unitCost": 189584,
+            "subtotal": 189584,
+            "method": "Hideout craft: Water Collector Lv3",
+            "methodType": "craft",
+            "buyLimit": null,
+            "taskUnlock": null
+          }
+        ],
+        "outputs": [
+          {
+            "id": "5d1b376e86f774252519444e",
+            "item": "Bottle of Fierce Hatchling moonshine",
+            "count": 1,
+            "unitPrice": 449999,
+            "gross": 449999,
+            "fee": 28975,
+            "net": 421024,
+            "sellTo": "Flea Market",
+            "methodType": "flea",
+            "lastLowPrice": 449999,
+            "avg24hPrice": 444086,
+            "updated": "2026-09-02T22:28:06.000Z"
+          }
+        ],
+        "sellTo": "Flea Market"
+      }
+    }
+  },
+  "scavCase": {
+    "status": "ev-unavailable",
+    "fenceReputationAssumption": "Base turnaround times are shown; actual turnaround is affected by Fence reputation.",
+    "source": "Official Escape from Tarkov Wiki, cross-checked with current Japanese EFT Wiki craft table",
+    "sourceVerifiedAt": "2026-09-03",
+    "expectedValuePolicy": "信頼できるPvEサンプル不足のため正確な期待値は算出不可",
+    "options": [
+      {
+        "key": "2500-rubles",
+        "inputType": "roubles",
+        "amount": 2500,
+        "durationSeconds": 2500,
+        "rewardCount": [
+          1,
+          3
+        ],
+        "risk": "Low stake, high outcome variance",
+        "highValueHits": [
+          "Rare loot is possible, but current PvE probabilities are not published"
+        ],
+        "input": "2,500 RUB",
+        "investmentCost": 2500,
+        "investmentMethod": "Roubles",
+        "durationMinutes": 41.67,
+        "expectedReturn": null,
+        "expectedProfit": null,
+        "profitPerHour": null,
+        "evStatus": "信頼できるPvEサンプル不足のため正確な期待値は算出不可"
+      },
+      {
+        "key": "15000-rubles",
+        "inputType": "roubles",
+        "amount": 15000,
+        "durationSeconds": 7700,
+        "rewardCount": [
+          2,
+          4
+        ],
+        "risk": "Low-to-moderate stake, high outcome variance",
+        "highValueHits": [
+          "Barter items and weapon-related loot; exact PvE probabilities unavailable"
+        ],
+        "input": "15,000 RUB",
+        "investmentCost": 15000,
+        "investmentMethod": "Roubles",
+        "durationMinutes": 128.33,
+        "expectedReturn": null,
+        "expectedProfit": null,
+        "profitPerHour": null,
+        "evStatus": "信頼できるPvEサンプル不足のため正確な期待値は算出不可"
+      },
+      {
+        "key": "95000-rubles",
+        "inputType": "roubles",
+        "amount": 95000,
+        "durationSeconds": 8100,
+        "rewardCount": [
+          2,
+          5
+        ],
+        "risk": "Moderate stake, high outcome variance",
+        "highValueHits": [
+          "Keys, containers and valuable barter/gear drops are reported; exact PvE probabilities unavailable"
+        ],
+        "input": "95,000 RUB",
+        "investmentCost": 95000,
+        "investmentMethod": "Roubles",
+        "durationMinutes": 135,
+        "expectedReturn": null,
+        "expectedProfit": null,
+        "profitPerHour": null,
+        "evStatus": "信頼できるPvEサンプル不足のため正確な期待値は算出不可"
+      },
+      {
+        "key": "moonshine",
+        "inputType": "item",
+        "normalizedName": "bottle-of-fierce-hatchling-moonshine",
+        "amount": 1,
+        "durationSeconds": 16800,
+        "rewardCount": [
+          4,
+          6
+        ],
+        "risk": "High stake, very high outcome variance",
+        "highValueHits": [
+          "Rare barter, quest and streamer-item categories; exact PvE probabilities unavailable"
+        ],
+        "input": "5d1b376e86f774252519444e Name",
+        "inputItemId": "5d1b376e86f774252519444e",
+        "investmentCost": 379384,
+        "investmentMethod": "Hideout craft: Booze Generator Lv1",
+        "durationMinutes": 280,
+        "expectedReturn": null,
+        "expectedProfit": null,
+        "profitPerHour": null,
+        "evStatus": "信頼できるPvEサンプル不足のため正確な期待値は算出不可",
+        "incompleteReason": null
+      },
+      {
+        "key": "intelligence-folder",
+        "inputType": "item",
+        "normalizedName": "intelligence-folder",
+        "amount": 1,
+        "durationSeconds": 19200,
+        "rewardCount": [
+          4,
+          7
+        ],
+        "risk": "High stake, very high outcome variance",
+        "highValueHits": [
+          "Keys and intelligence-related rare loot categories; exact PvE probabilities unavailable"
+        ],
+        "input": "5c12613b86f7743bbe2c3f76 Name",
+        "inputItemId": "5c12613b86f7743bbe2c3f76",
+        "investmentCost": 250428,
+        "investmentMethod": "Trader barter: Peacekeeper LL3",
+        "durationMinutes": 320,
+        "expectedReturn": null,
+        "expectedProfit": null,
+        "profitPerHour": null,
+        "evStatus": "信頼できるPvEサンプル不足のため正確な期待値は算出不可",
+        "incompleteReason": null
+      }
+    ]
+  },
+  "cultistCircle": {
+    "status": "random-return",
+    "expectedValue": null,
+    "note": "Exact PvE expected value is intentionally not fabricated."
+  },
+  "combinedDailyOperation": {
+    "scenario": "50 GPU Bitcoin Farm + highest daily-profit Water Collector craft + highest daily-profit Booze Generator craft; generator fuel counted once",
+    "bitcoinGpuCount": 50,
+    "waterCraft": "Emergency Water Ration x2",
+    "boozeCraft": "Bottle of Fierce Hatchling moonshine x1",
+    "sharedFuelCostPerDay": 77519,
+    "netProfitPerDay": 1694176
+  }
+}
