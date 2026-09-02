@@ -29,20 +29,38 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Inspect current hideout JSON shape
+      - name: Inspect current Tarkov JSON shapes
         shell: bash
         run: |
           node --input-type=module <<'NODE'
-          const r = await fetch('https://json.tarkov.dev/pve/hideout');
-          const envelope = await r.json();
-          const data = envelope.data;
-          const type = Array.isArray(data) ? 'array' : typeof data;
-          console.log('hideout data type:', type);
-          console.log('hideout top keys:', data && typeof data === 'object' ? Object.keys(data).slice(0, 20) : []);
-          const values = Array.isArray(data) ? data : (data && typeof data === 'object' ? Object.values(data) : []);
-          const first = values.find(v => v && typeof v === 'object' && !Array.isArray(v));
-          console.log('first record keys:', first ? Object.keys(first) : []);
-          console.log('first record:', JSON.stringify(first, null, 2).slice(0, 12000));
+          const fetchData = async (name) => (await (await fetch(`https://json.tarkov.dev/pve/${name}`)).json()).data;
+          const hideout = await fetchData('hideout');
+          const crafts = await fetchData('crafts');
+          const stations = Array.isArray(hideout) ? hideout : Object.values(hideout ?? {}).filter(x => x && typeof x === 'object' && !Array.isArray(x));
+          const levelKeySet = new Set();
+          let craftLevel = null;
+          let craftStation = null;
+          for (const station of stations) {
+            const levels = Array.isArray(station.levels) ? station.levels : Object.values(station.levels ?? {});
+            for (const level of levels) {
+              if (!level || typeof level !== 'object') continue;
+              Object.keys(level).forEach(k => levelKeySet.add(k));
+              const craftish = Object.keys(level).filter(k => /craft|production|recipe/i.test(k));
+              if (!craftLevel && craftish.length) {
+                craftLevel = level;
+                craftStation = station;
+              }
+            }
+          }
+          console.log('station count:', stations.length);
+          console.log('all level keys:', [...levelKeySet].sort());
+          console.log('station with craft-like key:', craftStation ? { id: craftStation.id, name: craftStation.name, normalizedName: craftStation.normalizedName } : null);
+          console.log('craft-like level:', craftLevel ? JSON.stringify(craftLevel, null, 2).slice(0, 12000) : null);
+
+          const craftList = Array.isArray(crafts) ? crafts : Object.values(crafts ?? {}).filter(x => x && typeof x === 'object');
+          console.log('direct craft count:', craftList.length);
+          console.log('direct first craft keys:', craftList[0] ? Object.keys(craftList[0]) : []);
+          console.log('direct first craft:', craftList[0] ? JSON.stringify(craftList[0], null, 2).slice(0, 16000) : null);
           NODE
 
       - name: Calculate latest PvE report directly from Tarkov.dev
@@ -52,11 +70,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-
           test -s data/report.txt
           test -s data/report.json
           test -s data/integrity.json
-
           jq -e '.metadata.mode == "PvE"' data/report.json >/dev/null
           jq -e '.counts.authoritativeCrafts > 0' data/report.json >/dev/null
           jq -e '.counts.hideoutCrafts > 0' data/report.json >/dev/null
@@ -69,16 +85,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add data/report.txt data/report.json data/integrity.json
-
           if git diff --cached --quiet; then
             echo "No report changes."
             exit 0
           fi
-
           git commit -m "Update Tarkov PvE report"
           git push
