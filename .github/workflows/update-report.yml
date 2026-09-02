@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - ".github/workflows/update-report.yml"
+      - "scripts/calculate-report.mjs"
 
 permissions:
   contents: write
@@ -21,30 +22,17 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Fetch latest PvE reports
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p data
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
 
-          curl --fail --silent --show-error --location \
-            --retry 3 --retry-delay 2 \
-            "https://tarkov-pve-report-page.pages.dev/report.txt" \
-            -o data/report.txt
+      - name: Calculate latest PvE report directly from Tarkov.dev
+        run: node scripts/calculate-report.mjs
 
-          curl --fail --silent --show-error --location \
-            --retry 3 --retry-delay 2 \
-            "https://tarkov-pve-report-page.pages.dev/report.json" \
-            -o data/report.json
-
-          curl --fail --silent --show-error --location \
-            --retry 3 --retry-delay 2 \
-            "https://tarkov-pve-report-page.pages.dev/integrity.json" \
-            -o data/integrity.json
-
-      - name: Validate downloaded data
+      - name: Validate generated data
         shell: bash
         run: |
           set -euo pipefail
@@ -54,11 +42,12 @@ jobs:
           test -s data/integrity.json
 
           jq -e '.metadata.mode == "PvE"' data/report.json >/dev/null
-          jq -e '.counts.crafts > 0' data/report.json >/dev/null
+          jq -e '.counts.authoritativeCrafts > 0' data/report.json >/dev/null
+          jq -e '.counts.hideoutCrafts > 0' data/report.json >/dev/null
           jq -e '.counts.check == true' data/report.json >/dev/null
-          jq -e '.integrity.missingUniqueItemIds == 0' data/integrity.json >/dev/null
-          jq -e '.integrity.brokenCraftCount == 0' data/integrity.json >/dev/null
-          jq -e '.integrity.brokenBarterCount == 0' data/integrity.json >/dev/null
+          jq -e '.integrity.countMatch == true' data/integrity.json >/dev/null
+          jq -e '.integrity.missingCraftIdsFromHideout == 0' data/integrity.json >/dev/null
+          jq -e '.integrity.extraCraftIdsInHideout == 0' data/integrity.json >/dev/null
 
       - name: Commit updated report
         shell: bash
