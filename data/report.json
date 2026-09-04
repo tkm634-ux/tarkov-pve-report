@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-04T08:40:01.040Z",
+    "calculatedAt": "2026-09-04T08:52:00.532Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-04T08:28:12.000Z"
+      "newest": "2026-09-04T08:48:07.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -380,7 +380,7 @@
               "methodType": "flea",
               "lastLowPrice": 119000,
               "avg24hPrice": 120041,
-              "updated": "2026-09-04T08:08:04.000Z"
+              "updated": "2026-09-04T08:38:06.000Z"
             }
           ]
         },
@@ -697,7 +697,7 @@
               "methodType": "flea",
               "lastLowPrice": 119000,
               "avg24hPrice": 120041,
-              "updated": "2026-09-04T08:08:04.000Z"
+              "updated": "2026-09-04T08:38:06.000Z"
             }
           ]
         },
@@ -777,6 +777,83 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
+          "craftId": "657fc79cfd86b9d9680c4a24",
+          "craft": "6B13 custom ballistic plates (Back) x1",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 46233,
+          "saleGross": 90000,
+          "fleaFee": 10565,
+          "netRevenue": 79435,
+          "profit": 33202,
+          "durationMinutes": 26.67,
+          "profitPerHour": 74705,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "657b22485f444d6dff0c6c2f",
+              "item": "6B23-2 ballistic plate (Back)",
+              "count": 1,
+              "unitCost": 15234,
+              "subtotal": 15234,
+              "method": "Trader purchase: Prapor LL2",
+              "methodType": "trader",
+              "buyLimit": 5,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af22086f7746d3f3c33fa",
+              "item": "Tube of Poxeram cold welding",
+              "count": 1,
+              "unitCost": 10000,
+              "subtotal": 10000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "57347c1124597737fb1379e3",
+              "item": "Duct tape",
+              "count": 1,
+              "unitCost": 20999,
+              "subtotal": 20999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "63a0b208f444d32d6f03ea1e",
+              "item": "Fierce Blow sledgehammer",
+              "count": 1
+            },
+            {
+              "id": "59e35de086f7741778269d84",
+              "item": "Electric drill",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "656efd66034e8e01c407f35c",
+              "item": "6B13 custom ballistic plates (Back)",
+              "count": 1,
+              "unitPrice": 90000,
+              "gross": 90000,
+              "fee": 10565,
+              "net": 79435,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 90000,
+              "avg24hPrice": 54420,
+              "updated": "2026-09-04T08:38:03.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "5eecaa6327ccd70521107ff5",
           "craft": "Ripstop fabric x2",
           "stationLevel": 1,
@@ -831,24 +908,24 @@
           "craft": "Aramid fiber fabric x2",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 36506,
+          "materialCost": 30000,
           "saleGross": 71110,
           "fleaFee": 5848,
           "netRevenue": 65262,
-          "profit": 28756,
+          "profit": 35262,
           "durationMinutes": 33.33,
-          "profitPerHour": 51761,
+          "profitPerHour": 63472,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5648a7494bdc2d9d488b4583",
               "item": "PACA Soft Armor",
               "count": 1,
-              "unitCost": 36506,
-              "subtotal": 36506,
-              "method": "Trader purchase: Ragman LL1",
-              "methodType": "trader",
-              "buyLimit": 10,
+              "unitCost": 30000,
+              "subtotal": 30000,
+              "method": "Trader barter: Ragman LL1",
+              "methodType": "barter",
+              "buyLimit": 3,
               "taskUnlock": null
             }
           ],
@@ -872,56 +949,6 @@
               "methodType": "flea",
               "lastLowPrice": 35555,
               "avg24hPrice": 37761,
-              "updated": "2026-09-04T08:28:08.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "5ffcafd468c55773943fc71e",
-          "craft": "Fleece fabric x1",
-          "stationLevel": 2,
-          "taskUnlock": null,
-          "materialCost": 5680,
-          "saleGross": 42999,
-          "fleaFee": 6343,
-          "netRevenue": 36656,
-          "profit": 30976,
-          "durationMinutes": 43.33,
-          "profitPerHour": 42890,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5aa2ba46e5b5b000137b758d",
-              "item": "UX PRO beanie",
-              "count": 2,
-              "unitCost": 2840,
-              "subtotal": 5680,
-              "method": "Trader purchase: Ragman LL2",
-              "methodType": "trader",
-              "buyLimit": 4,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "61bf83814088ec1a363d7097",
-              "item": "Sewing kit",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5e2af47786f7746d404f3aaa",
-              "item": "Fleece fabric",
-              "count": 1,
-              "unitPrice": 42999,
-              "gross": 42999,
-              "fee": 6343,
-              "net": 36656,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 42999,
-              "avg24hPrice": 45161,
               "updated": "2026-09-04T08:28:08.000Z"
             }
           ]
@@ -979,78 +1006,28 @@
           ]
         },
         {
-          "craftId": "5ffcafd468c55773943fc71e",
-          "craft": "Fleece fabric x1",
-          "stationLevel": 2,
-          "taskUnlock": null,
-          "materialCost": 5680,
-          "saleGross": 42999,
-          "fleaFee": 6343,
-          "netRevenue": 36656,
-          "profit": 30976,
-          "durationMinutes": 43.33,
-          "profitPerHour": 42890,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5aa2ba46e5b5b000137b758d",
-              "item": "UX PRO beanie",
-              "count": 2,
-              "unitCost": 2840,
-              "subtotal": 5680,
-              "method": "Trader purchase: Ragman LL2",
-              "methodType": "trader",
-              "buyLimit": 4,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "61bf83814088ec1a363d7097",
-              "item": "Sewing kit",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5e2af47786f7746d404f3aaa",
-              "item": "Fleece fabric",
-              "count": 1,
-              "unitPrice": 42999,
-              "gross": 42999,
-              "fee": 6343,
-              "net": 36656,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 42999,
-              "avg24hPrice": 45161,
-              "updated": "2026-09-04T08:28:08.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "5ffcaa60f3fdc212a91d552b",
           "craft": "Aramid fiber fabric x2",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 36506,
+          "materialCost": 30000,
           "saleGross": 71110,
           "fleaFee": 5848,
           "netRevenue": 65262,
-          "profit": 28756,
+          "profit": 35262,
           "durationMinutes": 33.33,
-          "profitPerHour": 51761,
+          "profitPerHour": 63472,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5648a7494bdc2d9d488b4583",
               "item": "PACA Soft Armor",
               "count": 1,
-              "unitCost": 36506,
-              "subtotal": 36506,
-              "method": "Trader purchase: Ragman LL1",
-              "methodType": "trader",
-              "buyLimit": 10,
+              "unitCost": 30000,
+              "subtotal": 30000,
+              "method": "Trader barter: Ragman LL1",
+              "methodType": "barter",
+              "buyLimit": 3,
               "taskUnlock": null
             }
           ],
@@ -1075,6 +1052,83 @@
               "lastLowPrice": 35555,
               "avg24hPrice": 37761,
               "updated": "2026-09-04T08:28:08.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "657fc79cfd86b9d9680c4a24",
+          "craft": "6B13 custom ballistic plates (Back) x1",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 46233,
+          "saleGross": 90000,
+          "fleaFee": 10565,
+          "netRevenue": 79435,
+          "profit": 33202,
+          "durationMinutes": 26.67,
+          "profitPerHour": 74705,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "657b22485f444d6dff0c6c2f",
+              "item": "6B23-2 ballistic plate (Back)",
+              "count": 1,
+              "unitCost": 15234,
+              "subtotal": 15234,
+              "method": "Trader purchase: Prapor LL2",
+              "methodType": "trader",
+              "buyLimit": 5,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af22086f7746d3f3c33fa",
+              "item": "Tube of Poxeram cold welding",
+              "count": 1,
+              "unitCost": 10000,
+              "subtotal": 10000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "57347c1124597737fb1379e3",
+              "item": "Duct tape",
+              "count": 1,
+              "unitCost": 20999,
+              "subtotal": 20999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "63a0b208f444d32d6f03ea1e",
+              "item": "Fierce Blow sledgehammer",
+              "count": 1
+            },
+            {
+              "id": "59e35de086f7741778269d84",
+              "item": "Electric drill",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "656efd66034e8e01c407f35c",
+              "item": "6B13 custom ballistic plates (Back)",
+              "count": 1,
+              "unitPrice": 90000,
+              "gross": 90000,
+              "fee": 10565,
+              "net": 79435,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 90000,
+              "avg24hPrice": 54420,
+              "updated": "2026-09-04T08:38:03.000Z"
             }
           ]
         }
@@ -1160,7 +1214,7 @@
               "methodType": "flea",
               "lastLowPrice": 260000,
               "avg24hPrice": 226079,
-              "updated": "2026-09-04T08:08:04.000Z"
+              "updated": "2026-09-04T08:38:06.000Z"
             }
           ]
         },
@@ -1237,7 +1291,7 @@
               "methodType": "flea",
               "lastLowPrice": 107000,
               "avg24hPrice": 110634,
-              "updated": "2026-09-04T08:08:04.000Z"
+              "updated": "2026-09-04T08:38:06.000Z"
             }
           ]
         },
@@ -1476,7 +1530,7 @@
               "methodType": "flea",
               "lastLowPrice": 260000,
               "avg24hPrice": 226079,
-              "updated": "2026-09-04T08:08:04.000Z"
+              "updated": "2026-09-04T08:38:06.000Z"
             }
           ]
         },
@@ -1542,7 +1596,7 @@
               "methodType": "flea",
               "lastLowPrice": 59999,
               "avg24hPrice": 61489,
-              "updated": "2026-09-04T08:08:04.000Z"
+              "updated": "2026-09-04T08:38:06.000Z"
             }
           ]
         }
