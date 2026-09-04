@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-04T00:31:39.025Z",
+    "calculatedAt": "2026-09-04T00:52:03.273Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-04T00:28:12.000Z"
+      "newest": "2026-09-04T00:48:05.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -39,7 +39,7 @@
   "acquisitionEngine": {
     "converged": true,
     "passes": 6,
-    "pricedItems": 4077
+    "pricedItems": 4076
   },
   "fleaMarket": {
     "name": "FleaMarket",
@@ -380,7 +380,7 @@
               "methodType": "flea",
               "lastLowPrice": 119000,
               "avg24hPrice": 119999,
-              "updated": "2026-09-04T00:08:06.000Z"
+              "updated": "2026-09-04T00:38:10.000Z"
             }
           ]
         },
@@ -598,7 +598,7 @@
               "methodType": "flea",
               "lastLowPrice": 119000,
               "avg24hPrice": 119999,
-              "updated": "2026-09-04T00:08:06.000Z"
+              "updated": "2026-09-04T00:38:10.000Z"
             }
           ]
         },
@@ -832,24 +832,24 @@
           "craft": "Aramid fiber fabric x2",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 33000,
+          "materialCost": 36506,
           "saleGross": 66666,
           "fleaFee": 5303,
           "netRevenue": 61363,
-          "profit": 28363,
+          "profit": 24857,
           "durationMinutes": 33.33,
-          "profitPerHour": 51053,
+          "profitPerHour": 44743,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5648a7494bdc2d9d488b4583",
               "item": "PACA Soft Armor",
               "count": 1,
-              "unitCost": 33000,
-              "subtotal": 33000,
-              "method": "Trader barter: Ragman LL1",
-              "methodType": "barter",
-              "buyLimit": 3,
+              "unitCost": 36506,
+              "subtotal": 36506,
+              "method": "Trader purchase: Ragman LL1",
+              "methodType": "trader",
+              "buyLimit": 10,
               "taskUnlock": null
             }
           ],
@@ -985,56 +985,6 @@
           ]
         },
         {
-          "craftId": "5ffcaa60f3fdc212a91d552b",
-          "craft": "Aramid fiber fabric x2",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 33000,
-          "saleGross": 66666,
-          "fleaFee": 5303,
-          "netRevenue": 61363,
-          "profit": 28363,
-          "durationMinutes": 33.33,
-          "profitPerHour": 51053,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5648a7494bdc2d9d488b4583",
-              "item": "PACA Soft Armor",
-              "count": 1,
-              "unitCost": 33000,
-              "subtotal": 33000,
-              "method": "Trader barter: Ragman LL1",
-              "methodType": "barter",
-              "buyLimit": 3,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "544fb5454bdc2df8738b456a",
-              "item": "Leatherman Multitool",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5e2af4d286f7746d4159f07a",
-              "item": "Aramid fiber fabric",
-              "count": 2,
-              "unitPrice": 33333,
-              "gross": 66666,
-              "fee": 5303,
-              "net": 61363,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 33333,
-              "avg24hPrice": 36074,
-              "updated": "2026-09-04T00:28:08.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "600aa209f64dfd63ec1293d6",
           "craft": "BlackRock chest rig (Gray) x1",
           "stationLevel": 2,
@@ -1103,6 +1053,56 @@
               "lastLowPrice": 55555,
               "avg24hPrice": 55471,
               "updated": "2026-09-04T00:18:08.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5ffcaa60f3fdc212a91d552b",
+          "craft": "Aramid fiber fabric x2",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 36506,
+          "saleGross": 66666,
+          "fleaFee": 5303,
+          "netRevenue": 61363,
+          "profit": 24857,
+          "durationMinutes": 33.33,
+          "profitPerHour": 44743,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5648a7494bdc2d9d488b4583",
+              "item": "PACA Soft Armor",
+              "count": 1,
+              "unitCost": 36506,
+              "subtotal": 36506,
+              "method": "Trader purchase: Ragman LL1",
+              "methodType": "trader",
+              "buyLimit": 10,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af4d286f7746d4159f07a",
+              "item": "Aramid fiber fabric",
+              "count": 2,
+              "unitPrice": 33333,
+              "gross": 66666,
+              "fee": 5303,
+              "net": 61363,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 33333,
+              "avg24hPrice": 36074,
+              "updated": "2026-09-04T00:28:08.000Z"
             }
           ]
         }
@@ -1186,13 +1186,13 @@
           "craft": "Grizzly medical kit x2",
           "stationLevel": 3,
           "taskUnlock": null,
-          "materialCost": 94676,
+          "materialCost": 94474,
           "saleGross": 160000,
           "fleaFee": 11175,
           "netRevenue": 148825,
-          "profit": 54149,
+          "profit": 54351,
           "durationMinutes": 75,
-          "profitPerHour": 43319,
+          "profitPerHour": 43481,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -1210,8 +1210,8 @@
               "id": "60098af40accd37ef2175f27",
               "item": "CAT hemostatic tourniquet",
               "count": 2,
-              "unitCost": 10604,
-              "subtotal": 21208,
+              "unitCost": 10503,
+              "subtotal": 21006,
               "method": "Trader purchase: Peacekeeper LL1",
               "methodType": "trader",
               "buyLimit": 20,
@@ -1243,7 +1243,7 @@
               "methodType": "flea",
               "lastLowPrice": 80000,
               "avg24hPrice": 77898,
-              "updated": "2026-09-04T00:08:06.000Z"
+              "updated": "2026-09-04T00:38:10.000Z"
             }
           ]
         },
@@ -1477,7 +1477,7 @@
               "methodType": "flea",
               "lastLowPrice": 55000,
               "avg24hPrice": 61638,
-              "updated": "2026-09-04T00:08:06.000Z"
+              "updated": "2026-09-04T00:38:10.000Z"
             }
           ]
         },
@@ -1486,13 +1486,13 @@
           "craft": "Grizzly medical kit x2",
           "stationLevel": 3,
           "taskUnlock": null,
-          "materialCost": 94676,
+          "materialCost": 94474,
           "saleGross": 160000,
           "fleaFee": 11175,
           "netRevenue": 148825,
-          "profit": 54149,
+          "profit": 54351,
           "durationMinutes": 75,
-          "profitPerHour": 43319,
+          "profitPerHour": 43481,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -1510,8 +1510,8 @@
               "id": "60098af40accd37ef2175f27",
               "item": "CAT hemostatic tourniquet",
               "count": 2,
-              "unitCost": 10604,
-              "subtotal": 21208,
+              "unitCost": 10503,
+              "subtotal": 21006,
               "method": "Trader purchase: Peacekeeper LL1",
               "methodType": "trader",
               "buyLimit": 20,
@@ -1543,7 +1543,7 @@
               "methodType": "flea",
               "lastLowPrice": 80000,
               "avg24hPrice": 77898,
-              "updated": "2026-09-04T00:08:06.000Z"
+              "updated": "2026-09-04T00:38:10.000Z"
             }
           ]
         }
@@ -2322,13 +2322,13 @@
           "craft": "Gunpowder \"Hawk\" x3",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 47903,
+          "materialCost": 47745,
           "saleGross": 179997,
           "fleaFee": 11067,
           "netRevenue": 168930,
-          "profit": 121028,
+          "profit": 121186,
           "durationMinutes": 35.83,
-          "profitPerHour": 202651,
+          "profitPerHour": 202915,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -2346,8 +2346,8 @@
               "id": "5d6fc78386f77449d825f9dc",
               "item": "Gunpowder \"Eagle\"",
               "count": 1,
-              "unitCost": 18903,
-              "subtotal": 18903,
+              "unitCost": 18745,
+              "subtotal": 18745,
               "method": "Hideout craft: Workbench Lv2",
               "methodType": "craft",
               "buyLimit": null,
@@ -2429,21 +2429,21 @@
           "craft": "Gunpowder \"Eagle\" x2",
           "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 37805,
+          "materialCost": 37489,
           "saleGross": 188000,
           "fleaFee": 13287,
           "netRevenue": 174713,
-          "profit": 136908,
+          "profit": 137224,
           "durationMinutes": 97.83,
-          "profitPerHour": 83964,
+          "profitPerHour": 84158,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "58d3db5386f77426186285a0",
               "item": "M67 hand grenade",
               "count": 2,
-              "unitCost": 16610,
-              "subtotal": 33220,
+              "unitCost": 16452,
+              "subtotal": 32904,
               "method": "Trader purchase: Peacekeeper LL3",
               "methodType": "trader",
               "buyLimit": 10,
@@ -2540,13 +2540,13 @@
           "craft": "Gunpowder \"Hawk\" x3",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 47903,
+          "materialCost": 47745,
           "saleGross": 179997,
           "fleaFee": 11067,
           "netRevenue": 168930,
-          "profit": 121028,
+          "profit": 121186,
           "durationMinutes": 35.83,
-          "profitPerHour": 202651,
+          "profitPerHour": 202915,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -2564,8 +2564,8 @@
               "id": "5d6fc78386f77449d825f9dc",
               "item": "Gunpowder \"Eagle\"",
               "count": 1,
-              "unitCost": 18903,
-              "subtotal": 18903,
+              "unitCost": 18745,
+              "subtotal": 18745,
               "method": "Hideout craft: Workbench Lv2",
               "methodType": "craft",
               "buyLimit": null,
