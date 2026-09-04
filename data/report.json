@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-04T16:36:30.949Z",
+    "calculatedAt": "2026-09-04T16:48:38.352Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-04T16:28:14.000Z"
+      "newest": "2026-09-04T16:38:07.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -380,7 +380,7 @@
               "methodType": "flea",
               "lastLowPrice": 118888,
               "avg24hPrice": 120041,
-              "updated": "2026-09-04T16:08:04.000Z"
+              "updated": "2026-09-04T16:38:07.000Z"
             }
           ]
         },
@@ -703,7 +703,7 @@
               "methodType": "flea",
               "lastLowPrice": 118888,
               "avg24hPrice": 120041,
-              "updated": "2026-09-04T16:08:04.000Z"
+              "updated": "2026-09-04T16:38:07.000Z"
             }
           ]
         },
@@ -778,67 +778,6 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
-          "craftId": "603ce7c5fd70f047f93bee2a",
-          "craft": "6B47 Ratnik-BSh helmet (EMR cover) x1",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 28500,
-          "saleGross": 88888,
-          "fleaFee": 5919,
-          "netRevenue": 82969,
-          "profit": 54469,
-          "durationMinutes": 20,
-          "profitPerHour": 163407,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5e2af4d286f7746d4159f07a",
-              "item": "Aramid fiber fabric",
-              "count": 1,
-              "unitCost": 16500,
-              "subtotal": 16500,
-              "method": "Hideout craft: Lavatory Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "57347c1124597737fb1379e3",
-              "item": "Duct tape",
-              "count": 1,
-              "unitCost": 12000,
-              "subtotal": 12000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "61bf83814088ec1a363d7097",
-              "item": "Sewing kit",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5aa7cfc0e5b5b00015693143",
-              "item": "6B47 Ratnik-BSh helmet (EMR cover)",
-              "count": 1,
-              "unitPrice": 88888,
-              "gross": 88888,
-              "fee": 5919,
-              "net": 82969,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 88888,
-              "avg24hPrice": 37583,
-              "updated": "2026-09-04T16:18:02.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "5eecaa6327ccd70521107ff5",
           "craft": "Ripstop fabric x2",
           "stationLevel": 1,
@@ -883,7 +822,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 28999,
-              "avg24hPrice": 29984,
+              "avg24hPrice": 30041,
               "updated": "2026-09-04T16:28:08.000Z"
             }
           ]
@@ -893,21 +832,21 @@
           "craft": "Aramid fiber fabric x2",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 33000,
+          "materialCost": 35997,
           "saleGross": 71110,
           "fleaFee": 5848,
           "netRevenue": 65262,
-          "profit": 32262,
+          "profit": 29265,
           "durationMinutes": 33.33,
-          "profitPerHour": 58072,
+          "profitPerHour": 52677,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5648a7494bdc2d9d488b4583",
               "item": "PACA Soft Armor",
               "count": 1,
-              "unitCost": 33000,
-              "subtotal": 33000,
+              "unitCost": 35997,
+              "subtotal": 35997,
               "method": "Trader barter: Ragman LL1",
               "methodType": "barter",
               "buyLimit": 3,
@@ -933,7 +872,57 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 35555,
-              "avg24hPrice": 39815,
+              "avg24hPrice": 40570,
+              "updated": "2026-09-04T16:28:08.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5ffcafd468c55773943fc71e",
+          "craft": "Fleece fabric x1",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 5680,
+          "saleGross": 40000,
+          "fleaFee": 5635,
+          "netRevenue": 34365,
+          "profit": 28685,
+          "durationMinutes": 43.33,
+          "profitPerHour": 39718,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5aa2ba46e5b5b000137b758d",
+              "item": "UX PRO beanie",
+              "count": 2,
+              "unitCost": 2840,
+              "subtotal": 5680,
+              "method": "Trader purchase: Ragman LL2",
+              "methodType": "trader",
+              "buyLimit": 4,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "61bf83814088ec1a363d7097",
+              "item": "Sewing kit",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af47786f7746d404f3aaa",
+              "item": "Fleece fabric",
+              "count": 1,
+              "unitPrice": 40000,
+              "gross": 40000,
+              "fee": 5635,
+              "net": 34365,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 40000,
+              "avg24hPrice": 44400,
               "updated": "2026-09-04T16:28:08.000Z"
             }
           ]
@@ -941,67 +930,6 @@
       ],
       "topProfitPerCraft": [
         {
-          "craftId": "603ce7c5fd70f047f93bee2a",
-          "craft": "6B47 Ratnik-BSh helmet (EMR cover) x1",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 28500,
-          "saleGross": 88888,
-          "fleaFee": 5919,
-          "netRevenue": 82969,
-          "profit": 54469,
-          "durationMinutes": 20,
-          "profitPerHour": 163407,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5e2af4d286f7746d4159f07a",
-              "item": "Aramid fiber fabric",
-              "count": 1,
-              "unitCost": 16500,
-              "subtotal": 16500,
-              "method": "Hideout craft: Lavatory Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "57347c1124597737fb1379e3",
-              "item": "Duct tape",
-              "count": 1,
-              "unitCost": 12000,
-              "subtotal": 12000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "61bf83814088ec1a363d7097",
-              "item": "Sewing kit",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5aa7cfc0e5b5b00015693143",
-              "item": "6B47 Ratnik-BSh helmet (EMR cover)",
-              "count": 1,
-              "unitPrice": 88888,
-              "gross": 88888,
-              "fee": 5919,
-              "net": 82969,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 88888,
-              "avg24hPrice": 37583,
-              "updated": "2026-09-04T16:18:02.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "5eecaa6327ccd70521107ff5",
           "craft": "Ripstop fabric x2",
           "stationLevel": 1,
@@ -1046,7 +974,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 28999,
-              "avg24hPrice": 29984,
+              "avg24hPrice": 30041,
               "updated": "2026-09-04T16:28:08.000Z"
             }
           ]
@@ -1056,21 +984,21 @@
           "craft": "Aramid fiber fabric x2",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 33000,
+          "materialCost": 35997,
           "saleGross": 71110,
           "fleaFee": 5848,
           "netRevenue": 65262,
-          "profit": 32262,
+          "profit": 29265,
           "durationMinutes": 33.33,
-          "profitPerHour": 58072,
+          "profitPerHour": 52677,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5648a7494bdc2d9d488b4583",
               "item": "PACA Soft Armor",
               "count": 1,
-              "unitCost": 33000,
-              "subtotal": 33000,
+              "unitCost": 35997,
+              "subtotal": 35997,
               "method": "Trader barter: Ragman LL1",
               "methodType": "barter",
               "buyLimit": 3,
@@ -1096,7 +1024,57 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 35555,
-              "avg24hPrice": 39815,
+              "avg24hPrice": 40570,
+              "updated": "2026-09-04T16:28:08.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5ffcafd468c55773943fc71e",
+          "craft": "Fleece fabric x1",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 5680,
+          "saleGross": 40000,
+          "fleaFee": 5635,
+          "netRevenue": 34365,
+          "profit": 28685,
+          "durationMinutes": 43.33,
+          "profitPerHour": 39718,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5aa2ba46e5b5b000137b758d",
+              "item": "UX PRO beanie",
+              "count": 2,
+              "unitCost": 2840,
+              "subtotal": 5680,
+              "method": "Trader purchase: Ragman LL2",
+              "methodType": "trader",
+              "buyLimit": 4,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "61bf83814088ec1a363d7097",
+              "item": "Sewing kit",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af47786f7746d404f3aaa",
+              "item": "Fleece fabric",
+              "count": 1,
+              "unitPrice": 40000,
+              "gross": 40000,
+              "fee": 5635,
+              "net": 34365,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 40000,
+              "avg24hPrice": 44400,
               "updated": "2026-09-04T16:28:08.000Z"
             }
           ]
@@ -1183,7 +1161,7 @@
               "methodType": "flea",
               "lastLowPrice": 235000,
               "avg24hPrice": 226328,
-              "updated": "2026-09-04T16:08:04.000Z"
+              "updated": "2026-09-04T16:38:07.000Z"
             }
           ]
         },
@@ -1265,7 +1243,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 444444,
-              "avg24hPrice": 489034,
+              "avg24hPrice": 485883,
               "updated": "2026-09-04T16:28:08.000Z"
             }
           ]
@@ -1332,7 +1310,7 @@
               "methodType": "flea",
               "lastLowPrice": 62222,
               "avg24hPrice": 61417,
-              "updated": "2026-09-04T16:08:04.000Z"
+              "updated": "2026-09-04T16:38:07.000Z"
             }
           ]
         }
@@ -1416,7 +1394,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 444444,
-              "avg24hPrice": 489034,
+              "avg24hPrice": 485883,
               "updated": "2026-09-04T16:28:08.000Z"
             }
           ]
@@ -1483,7 +1461,7 @@
               "methodType": "flea",
               "lastLowPrice": 62222,
               "avg24hPrice": 61417,
-              "updated": "2026-09-04T16:08:04.000Z"
+              "updated": "2026-09-04T16:38:07.000Z"
             }
           ]
         },
@@ -1560,7 +1538,7 @@
               "methodType": "flea",
               "lastLowPrice": 235000,
               "avg24hPrice": 226328,
-              "updated": "2026-09-04T16:08:04.000Z"
+              "updated": "2026-09-04T16:38:07.000Z"
             }
           ]
         }
@@ -1733,7 +1711,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 34999,
-              "avg24hPrice": 35425,
+              "avg24hPrice": 34675,
               "updated": "2026-09-04T16:28:08.000Z"
             }
           ]
@@ -1933,7 +1911,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 34999,
-              "avg24hPrice": 35425,
+              "avg24hPrice": 34675,
               "updated": "2026-09-04T16:28:08.000Z"
             }
           ]
@@ -2339,7 +2317,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 25400,
-              "avg24hPrice": 27132,
+              "avg24hPrice": 27192,
               "updated": "2026-09-04T16:28:08.000Z"
             }
           ]
@@ -2394,7 +2372,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 45000,
-              "avg24hPrice": 57571,
+              "avg24hPrice": 58133,
               "updated": "2026-09-04T16:28:08.000Z"
             }
           ]
@@ -2457,7 +2435,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 94888,
-              "avg24hPrice": 93758,
+              "avg24hPrice": 93845,
               "updated": "2026-09-04T16:28:08.000Z"
             }
           ]
