@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-05T00:33:18.452Z",
+    "calculatedAt": "2026-09-05T00:52:18.351Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-05T00:28:08.000Z"
+      "newest": "2026-09-05T00:48:06.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -39,7 +39,7 @@
   "acquisitionEngine": {
     "converged": true,
     "passes": 6,
-    "pricedItems": 4077
+    "pricedItems": 4076
   },
   "fleaMarket": {
     "name": "FleaMarket",
@@ -380,7 +380,7 @@
               "methodType": "flea",
               "lastLowPrice": 122000,
               "avg24hPrice": 120374,
-              "updated": "2026-09-05T00:08:05.000Z"
+              "updated": "2026-09-05T00:38:09.000Z"
             }
           ]
         },
@@ -548,7 +548,7 @@
               "methodType": "flea",
               "lastLowPrice": 122000,
               "avg24hPrice": 120374,
-              "updated": "2026-09-05T00:08:05.000Z"
+              "updated": "2026-09-05T00:38:09.000Z"
             }
           ]
         },
@@ -689,6 +689,56 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
+          "craftId": "5ffcaa60f3fdc212a91d552b",
+          "craft": "Aramid fiber fabric x2",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 25500,
+          "saleGross": 68000,
+          "fleaFee": 5464,
+          "netRevenue": 62536,
+          "profit": 37036,
+          "durationMinutes": 33.33,
+          "profitPerHour": 66665,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5648a7494bdc2d9d488b4583",
+              "item": "PACA Soft Armor",
+              "count": 1,
+              "unitCost": 25500,
+              "subtotal": 25500,
+              "method": "Trader barter: Ragman LL1",
+              "methodType": "barter",
+              "buyLimit": 3,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af4d286f7746d4159f07a",
+              "item": "Aramid fiber fabric",
+              "count": 2,
+              "unitPrice": 34000,
+              "gross": 68000,
+              "fee": 5464,
+              "net": 62536,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 34000,
+              "avg24hPrice": 40546,
+              "updated": "2026-09-05T00:28:05.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "5eecaa6327ccd70521107ff5",
           "craft": "Ripstop fabric x2",
           "stationLevel": 1,
@@ -734,56 +784,6 @@
               "methodType": "flea",
               "lastLowPrice": 28888,
               "avg24hPrice": 30006,
-              "updated": "2026-09-05T00:28:05.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "5ffcaa60f3fdc212a91d552b",
-          "craft": "Aramid fiber fabric x2",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 30000,
-          "saleGross": 68000,
-          "fleaFee": 5464,
-          "netRevenue": 62536,
-          "profit": 32536,
-          "durationMinutes": 33.33,
-          "profitPerHour": 58565,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5648a7494bdc2d9d488b4583",
-              "item": "PACA Soft Armor",
-              "count": 1,
-              "unitCost": 30000,
-              "subtotal": 30000,
-              "method": "Trader barter: Ragman LL1",
-              "methodType": "barter",
-              "buyLimit": 3,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "544fb5454bdc2df8738b456a",
-              "item": "Leatherman Multitool",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5e2af4d286f7746d4159f07a",
-              "item": "Aramid fiber fabric",
-              "count": 2,
-              "unitPrice": 34000,
-              "gross": 68000,
-              "fee": 5464,
-              "net": 62536,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 34000,
-              "avg24hPrice": 40546,
               "updated": "2026-09-05T00:28:05.000Z"
             }
           ]
@@ -895,21 +895,21 @@
           "craft": "Aramid fiber fabric x2",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 30000,
+          "materialCost": 25500,
           "saleGross": 68000,
           "fleaFee": 5464,
           "netRevenue": 62536,
-          "profit": 32536,
+          "profit": 37036,
           "durationMinutes": 33.33,
-          "profitPerHour": 58565,
+          "profitPerHour": 66665,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5648a7494bdc2d9d488b4583",
               "item": "PACA Soft Armor",
               "count": 1,
-              "unitCost": 30000,
-              "subtotal": 30000,
+              "unitCost": 25500,
+              "subtotal": 25500,
               "method": "Trader barter: Ragman LL1",
               "methodType": "barter",
               "buyLimit": 3,
@@ -1072,7 +1072,7 @@
               "methodType": "flea",
               "lastLowPrice": 249999,
               "avg24hPrice": 229720,
-              "updated": "2026-09-05T00:08:05.000Z"
+              "updated": "2026-09-05T00:38:09.000Z"
             }
           ]
         },
@@ -1138,7 +1138,7 @@
               "methodType": "flea",
               "lastLowPrice": 60999,
               "avg24hPrice": 61279,
-              "updated": "2026-09-05T00:08:05.000Z"
+              "updated": "2026-09-05T00:38:09.000Z"
             }
           ]
         },
@@ -1366,7 +1366,7 @@
               "methodType": "flea",
               "lastLowPrice": 249999,
               "avg24hPrice": 229720,
-              "updated": "2026-09-05T00:08:05.000Z"
+              "updated": "2026-09-05T00:38:09.000Z"
             }
           ]
         },
@@ -1432,7 +1432,7 @@
               "methodType": "flea",
               "lastLowPrice": 60999,
               "avg24hPrice": 61279,
-              "updated": "2026-09-05T00:08:05.000Z"
+              "updated": "2026-09-05T00:38:09.000Z"
             }
           ]
         }
