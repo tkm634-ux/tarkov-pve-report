@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-05T17:33:38.403Z",
+    "calculatedAt": "2026-09-05T17:48:28.108Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-05T17:28:07.000Z"
+      "newest": "2026-09-05T17:38:05.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -823,7 +823,7 @@
               "methodType": "flea",
               "lastLowPrice": 28500,
               "avg24hPrice": 30288,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         },
@@ -900,7 +900,7 @@
               "methodType": "flea",
               "lastLowPrice": 87500,
               "avg24hPrice": 63632,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         },
@@ -950,7 +950,7 @@
               "methodType": "flea",
               "lastLowPrice": 30800,
               "avg24hPrice": 39170,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         }
@@ -1002,7 +1002,7 @@
               "methodType": "flea",
               "lastLowPrice": 28500,
               "avg24hPrice": 30288,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         },
@@ -1052,7 +1052,7 @@
               "methodType": "flea",
               "lastLowPrice": 42000,
               "avg24hPrice": 40640,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         },
@@ -1129,7 +1129,7 @@
               "methodType": "flea",
               "lastLowPrice": 87500,
               "avg24hPrice": 63632,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         }
@@ -1364,7 +1364,7 @@
               "methodType": "flea",
               "lastLowPrice": 400000,
               "avg24hPrice": 494500,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         }
@@ -1449,7 +1449,7 @@
               "methodType": "flea",
               "lastLowPrice": 400000,
               "avg24hPrice": 494500,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         },
@@ -1783,7 +1783,7 @@
               "methodType": "flea",
               "lastLowPrice": 30000,
               "avg24hPrice": 32472,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         }
@@ -2311,6 +2311,83 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
+          "craftId": "63a3359eaf870e651d58e61a",
+          "craft": "PM 9x18PM 84-round makeshift drum magazine x1",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 21830,
+          "saleGross": 80000,
+          "fleaFee": 7091,
+          "netRevenue": 72909,
+          "profit": 51079,
+          "durationMinutes": 20,
+          "profitPerHour": 153236,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5ea034f65aad6446a939737e",
+              "item": "PPSh-41 7.62x25 71-round drum magazine",
+              "count": 1,
+              "unitCost": 10751,
+              "subtotal": 10751,
+              "method": "Trader barter: Prapor LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            },
+            {
+              "id": "5448c12b4bdc2d02308b456f",
+              "item": "PM 9x18PM 90-93 8-round magazine",
+              "count": 1,
+              "unitCost": 1080,
+              "subtotal": 1080,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af22086f7746d3f3c33fa",
+              "item": "Tube of Poxeram cold welding",
+              "count": 1,
+              "unitCost": 9999,
+              "subtotal": 9999,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "62a0a0bb621468534a797ad5",
+              "item": "Set of files \"Master\"",
+              "count": 1
+            },
+            {
+              "id": "590c2b4386f77425357b6123",
+              "item": "Pliers",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "55d485be4bdc2d962f8b456f",
+              "item": "PM 9x18PM 84-round makeshift drum magazine",
+              "count": 1,
+              "unitPrice": 80000,
+              "gross": 80000,
+              "fee": 7091,
+              "net": 72909,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 80000,
+              "avg24hPrice": 119507,
+              "updated": "2026-09-05T17:38:03.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "5dd3c9c8449c0c31795b0f0b",
           "craft": "Gunpowder \"Hawk\" x3",
           "stationLevel": 1,
@@ -2361,7 +2438,7 @@
               "methodType": "flea",
               "lastLowPrice": 45000,
               "avg24hPrice": 55760,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         },
@@ -2412,56 +2489,6 @@
               "lastLowPrice": 55000,
               "avg24hPrice": 56790,
               "updated": "2026-09-05T16:58:06.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "5dd3c5487058311d4b267186",
-          "craft": "Gunpowder \"Kite\" x2",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 7920,
-          "saleGross": 37774,
-          "fleaFee": 2359,
-          "netRevenue": 35415,
-          "profit": 27495,
-          "durationMinutes": 15,
-          "profitPerHour": 109980,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "56dff216d2720bbd668b4568",
-              "item": "5.45x39mm HP",
-              "count": 120,
-              "unitCost": 66,
-              "subtotal": 7920,
-              "method": "Trader purchase: Jaeger LL1",
-              "methodType": "trader",
-              "buyLimit": 1000,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "590c2b4386f77425357b6123",
-              "item": "Pliers",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "590c5a7286f7747884343aea",
-              "item": "Gunpowder \"Kite\"",
-              "count": 2,
-              "unitPrice": 18887,
-              "gross": 37774,
-              "fee": 2359,
-              "net": 35415,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 18887,
-              "avg24hPrice": 26641,
-              "updated": "2026-09-05T17:08:03.000Z"
             }
           ]
         }
@@ -2524,7 +2551,7 @@
               "methodType": "flea",
               "lastLowPrice": 85000,
               "avg24hPrice": 93404,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         },
@@ -2579,7 +2606,7 @@
               "methodType": "flea",
               "lastLowPrice": 45000,
               "avg24hPrice": 55760,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         },
@@ -2629,7 +2656,7 @@
               "methodType": "flea",
               "lastLowPrice": 29000,
               "avg24hPrice": 30178,
-              "updated": "2026-09-05T17:08:03.000Z"
+              "updated": "2026-09-05T17:38:05.000Z"
             }
           ]
         }
