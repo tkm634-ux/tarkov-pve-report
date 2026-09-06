@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-06T06:42:26.400Z",
+    "calculatedAt": "2026-09-06T06:53:46.287Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-06T06:38:05.000Z"
+      "newest": "2026-09-06T06:48:05.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -546,7 +546,7 @@
               "methodType": "flea",
               "lastLowPrice": 675000,
               "avg24hPrice": 758281,
-              "updated": "2026-09-06T05:28:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         }
@@ -764,7 +764,7 @@
               "methodType": "flea",
               "lastLowPrice": 675000,
               "avg24hPrice": 758281,
-              "updated": "2026-09-06T05:28:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         }
@@ -900,7 +900,7 @@
               "methodType": "flea",
               "lastLowPrice": 29998,
               "avg24hPrice": 29820,
-              "updated": "2026-09-06T05:38:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         },
@@ -950,7 +950,7 @@
               "methodType": "flea",
               "lastLowPrice": 27000,
               "avg24hPrice": 23974,
-              "updated": "2026-09-06T05:38:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         }
@@ -1079,7 +1079,7 @@
               "methodType": "flea",
               "lastLowPrice": 29998,
               "avg24hPrice": 29820,
-              "updated": "2026-09-06T05:38:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         },
@@ -1129,7 +1129,7 @@
               "methodType": "flea",
               "lastLowPrice": 27000,
               "avg24hPrice": 23974,
-              "updated": "2026-09-06T05:38:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         }
@@ -1142,6 +1142,83 @@
       "incomplete": 0,
       "specialRandom": 0,
       "topProfitPerHour": [
+        {
+          "craftId": "6012ee7e44a0465ee67a58de",
+          "craft": "M.U.L.E. stimulant injector x1",
+          "stationLevel": 2,
+          "taskUnlock": "5c0d1c4cd0928202a02a6f5c",
+          "materialCost": 153874,
+          "saleGross": 260000,
+          "fleaFee": 26632,
+          "netRevenue": 233368,
+          "profit": 79494,
+          "durationMinutes": 91.67,
+          "profitPerHour": 52032,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5c0e533786f7747fa23f4d47",
+              "item": "Zagustin hemostatic drug injector",
+              "count": 2,
+              "unitCost": 37998,
+              "subtotal": 75996,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "544fb3f34bdc2d03748b456a",
+              "item": "Morphine injector",
+              "count": 1,
+              "unitCost": 10250,
+              "subtotal": 10250,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5751435d24597720a27126d1",
+              "item": "Can of Max Energy energy drink",
+              "count": 2,
+              "unitCost": 16467,
+              "subtotal": 32934,
+              "method": "Hideout craft: Nutrition Unit Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d1b3a5d86f774252167ba22",
+              "item": "Pile of meds",
+              "count": 2,
+              "unitCost": 17347,
+              "subtotal": 34694,
+              "method": "Hideout craft: Medstation Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5ed51652f6c34d2cc26336a1",
+              "item": "M.U.L.E. stimulant injector",
+              "count": 1,
+              "unitPrice": 260000,
+              "gross": 260000,
+              "fee": 26632,
+              "net": 233368,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 260000,
+              "avg24hPrice": 230281,
+              "updated": "2026-09-06T06:48:03.000Z"
+            }
+          ]
+        },
         {
           "craftId": "5eeca8e327ccd70521107fdc",
           "craft": "Portable defibrillator x1",
@@ -1221,7 +1298,7 @@
               "methodType": "flea",
               "lastLowPrice": 470000,
               "avg24hPrice": 489360,
-              "updated": "2026-09-06T05:38:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         },
@@ -1230,24 +1307,24 @@
           "craft": "Disposable syringe x4",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 76637,
+          "materialCost": 76737,
           "saleGross": 159996,
           "fleaFee": 14251,
           "netRevenue": 145745,
-          "profit": 69108,
+          "profit": 69008,
           "durationMinutes": 89,
-          "profitPerHour": 46589,
+          "profitPerHour": 46522,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5755356824597772cb798962",
               "item": "AI-2 medkit",
               "count": 4,
-              "unitCost": 6625,
-              "subtotal": 26500,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
+              "unitCost": 6650,
+              "subtotal": 26600,
+              "method": "Trader purchase: Therapist LL1",
+              "methodType": "trader",
+              "buyLimit": 20,
               "taskUnlock": null
             },
             {
@@ -1298,73 +1375,7 @@
               "methodType": "flea",
               "lastLowPrice": 39999,
               "avg24hPrice": 28500,
-              "updated": "2026-09-06T05:38:06.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "5e13301cc7049d4d9738e1a7",
-          "craft": "Pile of meds x3",
-          "stationLevel": 2,
-          "taskUnlock": null,
-          "materialCost": 52719,
-          "saleGross": 96000,
-          "fleaFee": 8793,
-          "netRevenue": 87207,
-          "profit": 34488,
-          "durationMinutes": 48,
-          "profitPerHour": 43110,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5755356824597772cb798962",
-              "item": "AI-2 medkit",
-              "count": 1,
-              "unitCost": 6625,
-              "subtotal": 6625,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "544fb25a4bdc2dfb738b4567",
-              "item": "Aseptic bandage",
-              "count": 1,
-              "unitCost": 947,
-              "subtotal": 947,
-              "method": "Hideout craft: Lavatory Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "590c695186f7741e566b64a2",
-              "item": "Augmentin antibiotic pills",
-              "count": 1,
-              "unitCost": 45147,
-              "subtotal": 45147,
-              "method": "Trader purchase: Therapist LL4",
-              "methodType": "trader",
-              "buyLimit": 2,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [],
-          "outputs": [
-            {
-              "id": "5d1b3a5d86f774252167ba22",
-              "item": "Pile of meds",
-              "count": 3,
-              "unitPrice": 32000,
-              "gross": 96000,
-              "fee": 8793,
-              "net": 87207,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 32000,
-              "avg24hPrice": 32101,
-              "updated": "2026-09-06T05:38:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         }
@@ -1449,7 +1460,84 @@
               "methodType": "flea",
               "lastLowPrice": 470000,
               "avg24hPrice": 489360,
-              "updated": "2026-09-06T05:38:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "6012ee7e44a0465ee67a58de",
+          "craft": "M.U.L.E. stimulant injector x1",
+          "stationLevel": 2,
+          "taskUnlock": "5c0d1c4cd0928202a02a6f5c",
+          "materialCost": 153874,
+          "saleGross": 260000,
+          "fleaFee": 26632,
+          "netRevenue": 233368,
+          "profit": 79494,
+          "durationMinutes": 91.67,
+          "profitPerHour": 52032,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5c0e533786f7747fa23f4d47",
+              "item": "Zagustin hemostatic drug injector",
+              "count": 2,
+              "unitCost": 37998,
+              "subtotal": 75996,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "544fb3f34bdc2d03748b456a",
+              "item": "Morphine injector",
+              "count": 1,
+              "unitCost": 10250,
+              "subtotal": 10250,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5751435d24597720a27126d1",
+              "item": "Can of Max Energy energy drink",
+              "count": 2,
+              "unitCost": 16467,
+              "subtotal": 32934,
+              "method": "Hideout craft: Nutrition Unit Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d1b3a5d86f774252167ba22",
+              "item": "Pile of meds",
+              "count": 2,
+              "unitCost": 17347,
+              "subtotal": 34694,
+              "method": "Hideout craft: Medstation Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5ed51652f6c34d2cc26336a1",
+              "item": "M.U.L.E. stimulant injector",
+              "count": 1,
+              "unitPrice": 260000,
+              "gross": 260000,
+              "fee": 26632,
+              "net": 233368,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 260000,
+              "avg24hPrice": 230281,
+              "updated": "2026-09-06T06:48:03.000Z"
             }
           ]
         },
@@ -1458,24 +1546,24 @@
           "craft": "Disposable syringe x4",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 76637,
+          "materialCost": 76737,
           "saleGross": 159996,
           "fleaFee": 14251,
           "netRevenue": 145745,
-          "profit": 69108,
+          "profit": 69008,
           "durationMinutes": 89,
-          "profitPerHour": 46589,
+          "profitPerHour": 46522,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5755356824597772cb798962",
               "item": "AI-2 medkit",
               "count": 4,
-              "unitCost": 6625,
-              "subtotal": 26500,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
+              "unitCost": 6650,
+              "subtotal": 26600,
+              "method": "Trader purchase: Therapist LL1",
+              "methodType": "trader",
+              "buyLimit": 20,
               "taskUnlock": null
             },
             {
@@ -1526,73 +1614,7 @@
               "methodType": "flea",
               "lastLowPrice": 39999,
               "avg24hPrice": 28500,
-              "updated": "2026-09-06T05:38:06.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "5d8f614c9ea122564c316462",
-          "craft": "Propital regenerative stimulant injector x4",
-          "stationLevel": 3,
-          "taskUnlock": null,
-          "materialCost": 157852,
-          "saleGross": 219996,
-          "fleaFee": 14852,
-          "netRevenue": 205144,
-          "profit": 47292,
-          "durationMinutes": 115,
-          "profitPerHour": 24674,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5af0548586f7743a532b7e99",
-              "item": "Ibuprofen painkillers",
-              "count": 1,
-              "unitCost": 72707,
-              "subtotal": 72707,
-              "method": "Trader barter: Therapist LL4",
-              "methodType": "barter",
-              "buyLimit": 1,
-              "taskUnlock": null
-            },
-            {
-              "id": "5751a89d24597722aa0e8db0",
-              "item": "Golden Star balm",
-              "count": 1,
-              "unitCost": 50000,
-              "subtotal": 50000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5d1b3a5d86f774252167ba22",
-              "item": "Pile of meds",
-              "count": 2,
-              "unitCost": 17573,
-              "subtotal": 35146,
-              "method": "Hideout craft: Medstation Lv2",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [],
-          "outputs": [
-            {
-              "id": "5c0e530286f7747fa1419862",
-              "item": "Propital regenerative stimulant injector",
-              "count": 4,
-              "unitPrice": 54999,
-              "gross": 219996,
-              "fee": 14852,
-              "net": 205144,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 54999,
-              "avg24hPrice": 61683,
-              "updated": "2026-09-06T06:28:03.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         }
@@ -1783,7 +1805,7 @@
               "methodType": "flea",
               "lastLowPrice": 23333,
               "avg24hPrice": 32829,
-              "updated": "2026-09-06T05:38:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         }
@@ -2361,7 +2383,7 @@
               "methodType": "flea",
               "lastLowPrice": 49420,
               "avg24hPrice": 54997,
-              "updated": "2026-09-06T05:38:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         },
@@ -2461,7 +2483,7 @@
               "methodType": "flea",
               "lastLowPrice": 29000,
               "avg24hPrice": 28500,
-              "updated": "2026-09-06T05:28:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         }
@@ -2524,7 +2546,7 @@
               "methodType": "flea",
               "lastLowPrice": 92222,
               "avg24hPrice": 93517,
-              "updated": "2026-09-06T05:38:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         },
@@ -2574,7 +2596,7 @@
               "methodType": "flea",
               "lastLowPrice": 97777,
               "avg24hPrice": 87318,
-              "updated": "2026-09-06T05:28:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         },
@@ -2629,7 +2651,7 @@
               "methodType": "flea",
               "lastLowPrice": 49420,
               "avg24hPrice": 54997,
-              "updated": "2026-09-06T05:38:06.000Z"
+              "updated": "2026-09-06T06:48:02.000Z"
             }
           ]
         }
