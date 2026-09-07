@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-07T07:08:36.905Z",
+    "calculatedAt": "2026-09-07T07:27:03.036Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-07T06:58:07.000Z"
+      "newest": "2026-09-07T07:18:05.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -380,7 +380,7 @@
               "methodType": "flea",
               "lastLowPrice": 119000,
               "avg24hPrice": 120506,
-              "updated": "2026-09-07T05:58:09.000Z"
+              "updated": "2026-09-07T07:08:03.000Z"
             }
           ]
         },
@@ -598,7 +598,7 @@
               "methodType": "flea",
               "lastLowPrice": 119000,
               "avg24hPrice": 120506,
-              "updated": "2026-09-07T05:58:09.000Z"
+              "updated": "2026-09-07T07:08:03.000Z"
             }
           ]
         },
@@ -778,94 +778,6 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
-          "craftId": "655b63ac9db22d43ab42b70a",
-          "craft": "Ars Arma A18 Skanda plate carrier (MultiCam) x1",
-          "stationLevel": 2,
-          "taskUnlock": "5b47876e86f7744d1c353205",
-          "materialCost": 93770,
-          "saleGross": 300000,
-          "fleaFee": 27534,
-          "netRevenue": 272466,
-          "profit": 178696,
-          "durationMinutes": 150,
-          "profitPerHour": 71478,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5e2af41e86f774755a234b67",
-              "item": "Cordura polyamide fabric",
-              "count": 2,
-              "unitCost": 8340,
-              "subtotal": 16680,
-              "method": "Hideout craft: Lavatory Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5e2af4d286f7746d4159f07a",
-              "item": "Aramid fiber fabric",
-              "count": 3,
-              "unitCost": 13500,
-              "subtotal": 40500,
-              "method": "Hideout craft: Lavatory Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5e2af4a786f7746d3f3c3400",
-              "item": "Ripstop fabric",
-              "count": 1,
-              "unitCost": 5750,
-              "subtotal": 5750,
-              "method": "Hideout craft: Lavatory Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "656f9fa0498d1b7e3e071d98",
-              "item": "SPRTN Omega ballistic plate",
-              "count": 2,
-              "unitCost": 15420,
-              "subtotal": 30840,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "61bf83814088ec1a363d7097",
-              "item": "Sewing kit",
-              "count": 1
-            },
-            {
-              "id": "590c2e1186f77425357b6124",
-              "item": "Toolset",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5d5d87f786f77427997cfaef",
-              "item": "Ars Arma A18 Skanda plate carrier (MultiCam)",
-              "count": 1,
-              "unitPrice": 300000,
-              "gross": 300000,
-              "fee": 27534,
-              "net": 272466,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 300000,
-              "avg24hPrice": 58984,
-              "updated": "2026-09-07T06:48:02.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "5eecaa6327ccd70521107ff5",
           "craft": "Ripstop fabric x2",
           "stationLevel": 1,
@@ -910,7 +822,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 28888,
-              "avg24hPrice": 29152,
+              "avg24hPrice": 28994,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
@@ -960,7 +872,57 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 33000,
-              "avg24hPrice": 26992,
+              "avg24hPrice": 26407,
+              "updated": "2026-09-07T06:18:05.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5ffcaa60f3fdc212a91d552b",
+          "craft": "Aramid fiber fabric x2",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 27000,
+          "saleGross": 57998,
+          "fleaFee": 4312,
+          "netRevenue": 53686,
+          "profit": 26686,
+          "durationMinutes": 33.33,
+          "profitPerHour": 48035,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5648a7494bdc2d9d488b4583",
+              "item": "PACA Soft Armor",
+              "count": 1,
+              "unitCost": 27000,
+              "subtotal": 27000,
+              "method": "Trader barter: Ragman LL1",
+              "methodType": "barter",
+              "buyLimit": 3,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af4d286f7746d4159f07a",
+              "item": "Aramid fiber fabric",
+              "count": 2,
+              "unitPrice": 28999,
+              "gross": 57998,
+              "fee": 4312,
+              "net": 53686,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 28999,
+              "avg24hPrice": 39643,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
@@ -968,94 +930,6 @@
       ],
       "topProfitPerCraft": [
         {
-          "craftId": "655b63ac9db22d43ab42b70a",
-          "craft": "Ars Arma A18 Skanda plate carrier (MultiCam) x1",
-          "stationLevel": 2,
-          "taskUnlock": "5b47876e86f7744d1c353205",
-          "materialCost": 93770,
-          "saleGross": 300000,
-          "fleaFee": 27534,
-          "netRevenue": 272466,
-          "profit": 178696,
-          "durationMinutes": 150,
-          "profitPerHour": 71478,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5e2af41e86f774755a234b67",
-              "item": "Cordura polyamide fabric",
-              "count": 2,
-              "unitCost": 8340,
-              "subtotal": 16680,
-              "method": "Hideout craft: Lavatory Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5e2af4d286f7746d4159f07a",
-              "item": "Aramid fiber fabric",
-              "count": 3,
-              "unitCost": 13500,
-              "subtotal": 40500,
-              "method": "Hideout craft: Lavatory Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5e2af4a786f7746d3f3c3400",
-              "item": "Ripstop fabric",
-              "count": 1,
-              "unitCost": 5750,
-              "subtotal": 5750,
-              "method": "Hideout craft: Lavatory Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "656f9fa0498d1b7e3e071d98",
-              "item": "SPRTN Omega ballistic plate",
-              "count": 2,
-              "unitCost": 15420,
-              "subtotal": 30840,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "61bf83814088ec1a363d7097",
-              "item": "Sewing kit",
-              "count": 1
-            },
-            {
-              "id": "590c2e1186f77425357b6124",
-              "item": "Toolset",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5d5d87f786f77427997cfaef",
-              "item": "Ars Arma A18 Skanda plate carrier (MultiCam)",
-              "count": 1,
-              "unitPrice": 300000,
-              "gross": 300000,
-              "fee": 27534,
-              "net": 272466,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 300000,
-              "avg24hPrice": 58984,
-              "updated": "2026-09-07T06:48:02.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "600aa140090cb63380270290",
           "craft": "Cordura polyamide fabric x2",
           "stationLevel": 1,
@@ -1100,7 +974,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 33000,
-              "avg24hPrice": 26992,
+              "avg24hPrice": 26407,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
@@ -1150,7 +1024,68 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 28888,
-              "avg24hPrice": 29152,
+              "avg24hPrice": 28994,
+              "updated": "2026-09-07T06:18:05.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5df8fe0deddb880fd56f2d7d",
+          "craft": "Clin window cleaner x2",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 63205,
+          "saleGross": 105998,
+          "fleaFee": 12411,
+          "netRevenue": 93587,
+          "profit": 30382,
+          "durationMinutes": 40.83,
+          "profitPerHour": 44643,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5d40407c86f774318526545a",
+              "item": "Bottle of Tarkovskaya vodka",
+              "count": 1,
+              "unitCost": 41205,
+              "subtotal": 41205,
+              "method": "Hideout craft: Nutrition Unit Lv3",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d40412b86f7743cb332ac3a",
+              "item": "Schaman shampoo",
+              "count": 1,
+              "unitCost": 22000,
+              "subtotal": 22000,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5d1b39a386f774252339976f",
+              "item": "Silicone tube",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "59e358a886f7741776641ac3",
+              "item": "Clin window cleaner",
+              "count": 2,
+              "unitPrice": 52999,
+              "gross": 105998,
+              "fee": 12411,
+              "net": 93587,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 52999,
+              "avg24hPrice": 57998,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
@@ -1225,7 +1160,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 29999,
-              "avg24hPrice": 32706,
+              "avg24hPrice": 32799,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
@@ -1303,7 +1238,7 @@
               "methodType": "flea",
               "lastLowPrice": 100913,
               "avg24hPrice": 111374,
-              "updated": "2026-09-07T06:08:05.000Z"
+              "updated": "2026-09-07T07:08:03.000Z"
             }
           ]
         },
@@ -1380,7 +1315,7 @@
               "methodType": "flea",
               "lastLowPrice": 210000,
               "avg24hPrice": 226762,
-              "updated": "2026-09-07T05:58:09.000Z"
+              "updated": "2026-09-07T07:08:03.000Z"
             }
           ]
         }
@@ -1464,7 +1399,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 400000,
-              "avg24hPrice": 465674,
+              "avg24hPrice": 463799,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
@@ -1542,7 +1477,7 @@
               "methodType": "flea",
               "lastLowPrice": 100913,
               "avg24hPrice": 111374,
-              "updated": "2026-09-07T06:08:05.000Z"
+              "updated": "2026-09-07T07:08:03.000Z"
             }
           ]
         },
@@ -1619,7 +1554,7 @@
               "methodType": "flea",
               "lastLowPrice": 210000,
               "avg24hPrice": 226762,
-              "updated": "2026-09-07T05:58:09.000Z"
+              "updated": "2026-09-07T07:08:03.000Z"
             }
           ]
         }
@@ -1682,7 +1617,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 35555,
-              "avg24hPrice": 32465,
+              "avg24hPrice": 31941,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
@@ -1921,7 +1856,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 35555,
-              "avg24hPrice": 32465,
+              "avg24hPrice": 31941,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
@@ -2387,7 +2322,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 49888,
-              "avg24hPrice": 54849,
+              "avg24hPrice": 55079,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
@@ -2437,7 +2372,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 24888,
-              "avg24hPrice": 25971,
+              "avg24hPrice": 26127,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
@@ -2550,7 +2485,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 89999,
-              "avg24hPrice": 92767,
+              "avg24hPrice": 92627,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
@@ -2611,7 +2546,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 49888,
-              "avg24hPrice": 54849,
+              "avg24hPrice": 55079,
               "updated": "2026-09-07T06:18:05.000Z"
             }
           ]
