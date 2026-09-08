@@ -134,22 +134,22 @@
           "durationSeconds": 19500,
           "durationHours": 5.42,
           "cyclesPerDay": 4.43,
-          "materialCostPerCycle": 217145,
+          "materialCostPerCycle": 231000,
           "netRevenuePerCycle": 218329,
-          "profitPerCycleBeforeFuel": 1184,
-          "profitPerDayBeforeFuel": 5246,
+          "profitPerCycleBeforeFuel": -12671,
+          "profitPerDayBeforeFuel": -56142,
           "standaloneFuelCostPerDay": 23199,
-          "profitPerDayStandalone": -17953,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": 5246,
+          "profitPerDayStandalone": -79341,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": -56142,
           "materials": [
             {
               "id": "5d1b385e86f774252167b98a",
               "item": "Water filter",
               "count": 0.66,
-              "unitCost": 329008,
-              "subtotal": 217145,
-              "method": "Hideout craft: Lavatory Lv2",
-              "methodType": "craft",
+              "unitCost": 350000,
+              "subtotal": 231000,
+              "method": "Flea Market",
+              "methodType": "flea",
               "buyLimit": null,
               "taskUnlock": null
             }
@@ -386,13 +386,13 @@
           "durationSeconds": 11000,
           "durationHours": 3.06,
           "cyclesPerDay": 7.85,
-          "materialCostPerCycle": 316025,
+          "materialCostPerCycle": 338880,
           "netRevenuePerCycle": 393416,
-          "profitPerCycleBeforeFuel": 77391,
-          "profitPerDayBeforeFuel": 607871,
+          "profitPerCycleBeforeFuel": 54536,
+          "profitPerDayBeforeFuel": 428355,
           "standaloneFuelCostPerDay": 23199,
-          "profitPerDayStandalone": 584672,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": 607871,
+          "profitPerDayStandalone": 405156,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 428355,
           "materials": [
             {
               "id": "59e3577886f774176a362503",
@@ -409,10 +409,10 @@
               "id": "5d1b33a686f7742523398398",
               "item": "Canister with purified water",
               "count": 1,
-              "unitCost": 217145,
-              "subtotal": 217145,
-              "method": "Hideout craft: Water Collector Lv3",
-              "methodType": "craft",
+              "unitCost": 240000,
+              "subtotal": 240000,
+              "method": "Flea Market",
+              "methodType": "flea",
               "buyLimit": null,
               "taskUnlock": null
             }
@@ -443,13 +443,13 @@
         "durationSeconds": 11000,
         "durationHours": 3.06,
         "cyclesPerDay": 7.85,
-        "materialCostPerCycle": 316025,
+        "materialCostPerCycle": 338880,
         "netRevenuePerCycle": 393416,
-        "profitPerCycleBeforeFuel": 77391,
-        "profitPerDayBeforeFuel": 607871,
+        "profitPerCycleBeforeFuel": 54536,
+        "profitPerDayBeforeFuel": 428355,
         "standaloneFuelCostPerDay": 23199,
-        "profitPerDayStandalone": 584672,
-        "profitPerDayMarginalIfGeneratorAlreadyRunning": 607871,
+        "profitPerDayStandalone": 405156,
+        "profitPerDayMarginalIfGeneratorAlreadyRunning": 428355,
         "materials": [
           {
             "id": "59e3577886f774176a362503",
@@ -466,10 +466,10 @@
             "id": "5d1b33a686f7742523398398",
             "item": "Canister with purified water",
             "count": 1,
-            "unitCost": 217145,
-            "subtotal": 217145,
-            "method": "Hideout craft: Water Collector Lv3",
-            "methodType": "craft",
+            "unitCost": 240000,
+            "subtotal": 240000,
+            "method": "Flea Market",
+            "methodType": "flea",
             "buyLimit": null,
             "taskUnlock": null
           }
@@ -583,8 +583,8 @@
         ],
         "input": "5d1b376e86f774252519444e Name",
         "inputItemId": "5d1b376e86f774252519444e",
-        "investmentCost": 316025,
-        "investmentMethod": "Hideout craft: Booze Generator Lv1",
+        "investmentCost": 420000,
+        "investmentMethod": "Flea Market",
         "durationMinutes": 280,
         "expectedReturn": null,
         "expectedProfit": null,
@@ -630,6 +630,6 @@
     "waterCraft": "Aquamari water bottle with filter x5",
     "boozeCraft": "Bottle of Fierce Hatchling moonshine x1",
     "sharedFuelCostPerDay": 23199,
-    "netProfitPerDay": 1944913
+    "netProfitPerDay": 1765397
   }
 }
