@@ -2,7 +2,7 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-08T16:42:15.040Z",
+    "calculatedAt": "2026-09-08T16:44:18.054Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
       "newest": "2026-09-08T16:38:06.000Z"
@@ -3165,924 +3165,1980 @@
     }
   },
   "stabilityRanking": {
-    "metric": "Positive-profit crafts only. Trader-sale outputs are treated as 0% sale-price deviation. Flea-sale outputs use absolute deviation between current lastLowPrice and avg24hPrice. Stable <=10%; very-stable <=5%. Ranking is profitPerHour descending after stability filter.",
-    "stableThresholdPct": 10,
-    "veryStableThresholdPct": 5,
-    "eligibleStableCount": 15,
-    "eligibleVeryStableCount": 7,
-    "topStableProfitPerHour": [
-      {
-        "craftId": "5dd3c5487058311d4b267186",
-        "station": "Workbench",
-        "craft": "Gunpowder \"Kite\" x2",
-        "durationMinutes": 15,
-        "materialCost": 7920,
-        "profit": 37129,
-        "profitPerHour": 148516,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 9.35,
-        "traderFixedSale": false,
-        "stabilityTier": "stable",
-        "limitedMaterials": [
-          {
-            "item": "5.45x39mm HP",
-            "buyLimit": 1000,
-            "method": "Trader purchase: Jaeger LL1"
+    "currentVsAverageMetric": "Positive-profit crafts only. Trader-sale outputs are treated as 0% sale-price deviation. Flea-sale outputs use absolute deviation between current lastLowPrice and avg24hPrice. Stable <=10%; very-stable <=5%.",
+    "historicalMetric": "Trailing 24h sale-price coefficient of variation from recent main-branch GitHub report snapshots. Trader sale = 0% CV. Flea ranking requires at least 6 snapshots. Stable CV <=10%; very-stable CV <=5%. Ranking is current profitPerHour descending after stability filter.",
+    "snapshotCount": 30,
+    "currentVsAverage": {
+      "stableThresholdPct": 10,
+      "veryStableThresholdPct": 5,
+      "eligibleStableCount": 15,
+      "eligibleVeryStableCount": 7,
+      "topStableProfitPerHour": [
+        {
+          "craftId": "5dd3c5487058311d4b267186",
+          "station": "Workbench",
+          "craft": "Gunpowder \"Kite\" x2",
+          "durationMinutes": 15,
+          "materialCost": 7920,
+          "profit": 37129,
+          "profitPerHour": 148516,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 9.35,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [
+            {
+              "item": "5.45x39mm HP",
+              "buyLimit": 1000,
+              "method": "Trader purchase: Jaeger LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "590c5a7286f7747884343aea",
+              "item": "Gunpowder \"Kite\"",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 24000,
+              "gross": 48000,
+              "net": 45049,
+              "lastLowPrice": 24000,
+              "avg24hPrice": 26476,
+              "deviationPct": 9.35,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "5eecaa6327ccd70521107ff5",
+          "station": "Lavatory",
+          "craft": "Ripstop fabric x2",
+          "durationMinutes": 36.67,
+          "materialCost": 11111,
+          "profit": 43237,
+          "profitPerHour": 70751,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 2.15,
+          "traderFixedSale": false,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [
+            {
+              "item": "Scav Vest",
+              "buyLimit": 10,
+              "method": "Trader barter: Jaeger LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af4a786f7746d3f3c3400",
+              "item": "Ripstop fabric",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 30000,
+              "gross": 60000,
+              "net": 54348,
+              "lastLowPrice": 30000,
+              "avg24hPrice": 30659,
+              "deviationPct": 2.15,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "5dc1f7de6058e020335c9d88",
+          "station": "Nutrition Unit",
+          "craft": "Slickers chocolate bar x5",
+          "durationMinutes": 21.5,
+          "materialCost": 52364,
+          "profit": 25302,
+          "profitPerHour": 70610,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 1.89,
+          "traderFixedSale": false,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [
+            {
+              "item": "Army crackers",
+              "buyLimit": 3,
+              "method": "Trader purchase: Therapist LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "544fb6cc4bdc2d34748b456e",
+              "item": "Slickers chocolate bar",
+              "count": 5,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 16666,
+              "gross": 83330,
+              "net": 77666,
+              "lastLowPrice": 16666,
+              "avg24hPrice": 16357,
+              "deviationPct": 1.89,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "67da0223078f1947650d7bb7",
+          "station": "Intelligence Center",
+          "craft": "TerraGroup Labs access keycard x3",
+          "durationMinutes": 40,
+          "materialCost": 290000,
+          "profit": 32432,
+          "profitPerHour": 48648,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 6.35,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5c94bbff86f7747ee735c08f",
+              "item": "TerraGroup Labs access keycard",
+              "count": 3,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 115000,
+              "gross": 345000,
+              "net": 322432,
+              "lastLowPrice": 115000,
+              "avg24hPrice": 122799,
+              "deviationPct": 6.35,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "5dd3c9c8449c0c31795b0f0b",
+          "station": "Workbench",
+          "craft": "Gunpowder \"Hawk\" x3",
+          "durationMinutes": 35.83,
+          "materialCost": 109420,
+          "profit": 28140,
+          "profitPerHour": 47118,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 9.64,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5d6fc87386f77449db3db94e",
+              "item": "Gunpowder \"Hawk\"",
+              "count": 3,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 48888,
+              "gross": 146664,
+              "net": 137560,
+              "lastLowPrice": 48888,
+              "avg24hPrice": 54104,
+              "deviationPct": 9.64,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "5d8f5e1af3a8f83c8600afb2",
+          "station": "Lavatory",
+          "craft": "Schaman shampoo x2",
+          "durationMinutes": 35,
+          "materialCost": 42444,
+          "profit": 26177,
+          "profitPerHour": 44875,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 5.57,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5d40412b86f7743cb332ac3a",
+              "item": "Schaman shampoo",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 37990,
+              "gross": 75980,
+              "net": 68621,
+              "lastLowPrice": 37990,
+              "avg24hPrice": 40229,
+              "deviationPct": 5.57,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "5e13301cc7049d4d9738e1a7",
+          "station": "Medstation",
+          "craft": "Pile of meds x3",
+          "durationMinutes": 48,
+          "materialCost": 52163,
+          "profit": 35614,
+          "profitPerHour": 44518,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 5.98,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [
+            {
+              "item": "AI-2 medkit",
+              "buyLimit": 20,
+              "method": "Trader purchase: Therapist LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d1b3a5d86f774252167ba22",
+              "item": "Pile of meds",
+              "count": 3,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 32222,
+              "gross": 96666,
+              "net": 87777,
+              "lastLowPrice": 32222,
+              "avg24hPrice": 34273,
+              "deviationPct": 5.98,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "600a9b10adfcb94fee6d3e06",
+          "station": "Workbench",
+          "craft": "T-Shaped plug x3",
+          "durationMinutes": 56.67,
+          "materialCost": 52000,
+          "profit": 32400,
+          "profitPerHour": 34306,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 0.95,
+          "traderFixedSale": false,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "57347cd0245977445a2d6ff1",
+              "item": "T-Shaped plug",
+              "count": 3,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 34000,
+              "gross": 102000,
+              "net": 84400,
+              "lastLowPrice": 34000,
+              "avg24hPrice": 33679,
+              "deviationPct": 0.95,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "5dd3c5a67da3785e63275437",
+          "station": "Workbench",
+          "craft": "Gunpowder \"Hawk\" x3",
+          "durationMinutes": 112.5,
+          "materialCost": 80000,
+          "profit": 57560,
+          "profitPerHour": 30699,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 9.64,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5d6fc87386f77449db3db94e",
+              "item": "Gunpowder \"Hawk\"",
+              "count": 3,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 48888,
+              "gross": 146664,
+              "net": 137560,
+              "lastLowPrice": 48888,
+              "avg24hPrice": 54104,
+              "deviationPct": 9.64,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "629e1b3a0694b45420210cad",
+          "station": "Nutrition Unit",
+          "craft": "Can of Majaica coffee beans x2",
+          "durationMinutes": 45,
+          "materialCost": 46000,
+          "profit": 19444,
+          "profitPerHour": 25925,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 5.25,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5af0484c86f7740f02001f7f",
+              "item": "Can of Majaica coffee beans",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 35000,
+              "gross": 70000,
+              "net": 65444,
+              "lastLowPrice": 35000,
+              "avg24hPrice": 36940,
+              "deviationPct": 5.25,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "5d5c1fd4d582a500650132f0",
+          "station": "Booze Generator",
+          "craft": "Bottle of Fierce Hatchling moonshine x1",
+          "durationMinutes": 183.33,
+          "materialCost": 338880,
+          "profit": 54536,
+          "profitPerHour": 17848,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 4.58,
+          "traderFixedSale": false,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [
+            {
+              "item": "Pack of sugar",
+              "buyLimit": 1,
+              "method": "Trader barter: Jaeger LL2"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d1b376e86f774252519444e",
+              "item": "Bottle of Fierce Hatchling moonshine",
+              "count": 1,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 420000,
+              "gross": 420000,
+              "net": 393416,
+              "lastLowPrice": 420000,
+              "avg24hPrice": 440171,
+              "deviationPct": 4.58,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "62a115db5c6bbf22c15ac19d",
+          "station": "Workbench",
+          "craft": "Round pliers x1",
+          "durationMinutes": 15,
+          "materialCost": 9999,
+          "profit": 3771,
+          "profitPerHour": 15084,
+          "sellTo": "Therapist",
+          "priceDeviationPct": 0,
+          "traderFixedSale": true,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5d1b31ce86f7742523398394",
+              "item": "Round pliers",
+              "count": 1,
+              "sellTo": "Therapist",
+              "methodType": "trader",
+              "unitPrice": 13770,
+              "gross": 13770,
+              "net": 13770,
+              "lastLowPrice": 12000,
+              "avg24hPrice": 14127,
+              "deviationPct": 0,
+              "stabilitySource": "fixed-trader-price"
+            }
+          ]
+        },
+        {
+          "craftId": "5d5c205bd582a50d042a3c0e",
+          "station": "Bitcoin Farm",
+          "craft": "Physical Bitcoin x1",
+          "durationMinutes": 5000,
+          "materialCost": 0,
+          "profit": 560859,
+          "profitPerHour": 6730,
+          "sellTo": "Therapist",
+          "priceDeviationPct": 0,
+          "traderFixedSale": true,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "59faff1d86f7746c51718c9c",
+              "item": "Physical Bitcoin",
+              "count": 1,
+              "sellTo": "Therapist",
+              "methodType": "trader",
+              "unitPrice": 560859,
+              "gross": 560859,
+              "net": 560859,
+              "lastLowPrice": null,
+              "avg24hPrice": null,
+              "deviationPct": 0,
+              "stabilitySource": "fixed-trader-price"
+            }
+          ]
+        },
+        {
+          "craftId": "5f240f45f4a9420a8c328ee0",
+          "station": "Nutrition Unit",
+          "craft": "Can of Max Energy energy drink x4",
+          "durationMinutes": 108.33,
+          "materialCost": 87789,
+          "profit": 5281,
+          "profitPerHour": 2925,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 6.94,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [
+            {
+              "item": "Bottle of water (0.6L)",
+              "buyLimit": 2,
+              "method": "Trader barter: Therapist LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5751435d24597720a27126d1",
+              "item": "Can of Max Energy energy drink",
+              "count": 4,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 25000,
+              "gross": 100000,
+              "net": 93070,
+              "lastLowPrice": 25000,
+              "avg24hPrice": 26865,
+              "deviationPct": 6.94,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        },
+        {
+          "craftId": "600ab8e3e4022c380a726088",
+          "station": "Nutrition Unit",
+          "craft": "Bottle of Dan Jackiel whiskey x3",
+          "durationMinutes": 106.67,
+          "materialCost": 136078,
+          "profit": 3416,
+          "profitPerHour": 1921,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 0.1,
+          "traderFixedSale": false,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [
+            {
+              "item": "Bottle of water (0.6L)",
+              "buyLimit": 2,
+              "method": "Trader barter: Therapist LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d403f9186f7743cac3f229b",
+              "item": "Bottle of Dan Jackiel whiskey",
+              "count": 3,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 49998,
+              "gross": 149994,
+              "net": 139494,
+              "lastLowPrice": 49998,
+              "avg24hPrice": 49950,
+              "deviationPct": 0.1,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ]
+        }
+      ]
+    },
+    "historical24h": {
+      "stableCvThresholdPct": 10,
+      "veryStableCvThresholdPct": 5,
+      "eligibleStableCount": 18,
+      "eligibleVeryStableCount": 9,
+      "topStableProfitPerHour": [
+        {
+          "craftId": "5dd3c5487058311d4b267186",
+          "station": "Workbench",
+          "craft": "Gunpowder \"Kite\" x2",
+          "durationMinutes": 15,
+          "materialCost": 7920,
+          "profit": 37129,
+          "profitPerHour": 148516,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 9.35,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [
+            {
+              "item": "5.45x39mm HP",
+              "buyLimit": 1000,
+              "method": "Trader purchase: Jaeger LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "590c5a7286f7747884343aea",
+              "item": "Gunpowder \"Kite\"",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 24000,
+              "gross": 48000,
+              "net": 45049,
+              "lastLowPrice": 24000,
+              "avg24hPrice": 26476,
+              "deviationPct": 9.35,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 22867,
+            "min": 22000,
+            "max": 25000,
+            "cvPct": 5.84,
+            "rangePct": 13.12,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Gunpowder \"Kite\"",
-            "count": 2,
-            "sellTo": "Flea Market",
-            "unitPrice": 24000,
-            "gross": 48000,
-            "net": 45049,
-            "lastLowPrice": 24000,
-            "avg24hPrice": 26476,
-            "deviationPct": 9.35,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5de919ec1b25d85cf30ca39a",
+          "station": "Workbench",
+          "craft": "Gunpowder \"Eagle\" x2",
+          "durationMinutes": 97.83,
+          "materialCost": 37569,
+          "profit": 119830,
+          "profitPerHour": 73490,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 10.14,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "M67 hand grenade",
+              "buyLimit": 10,
+              "method": "Trader purchase: Peacekeeper LL3"
+            },
+            {
+              "item": "M18 smoke grenade (Green)",
+              "buyLimit": 5,
+              "method": "Trader purchase: Jaeger LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d6fc78386f77449d825f9dc",
+              "item": "Gunpowder \"Eagle\"",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 84420,
+              "gross": 168840,
+              "net": 157399,
+              "lastLowPrice": 84420,
+              "avg24hPrice": 93944,
+              "deviationPct": 10.14,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 89114,
+            "min": 84420,
+            "max": 89999,
+            "cvPct": 1.1,
+            "rangePct": 6.26,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "5eecaa6327ccd70521107ff5",
-        "station": "Lavatory",
-        "craft": "Ripstop fabric x2",
-        "durationMinutes": 36.67,
-        "materialCost": 11111,
-        "profit": 43237,
-        "profitPerHour": 70751,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 2.15,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [
-          {
-            "item": "Scav Vest",
-            "buyLimit": 10,
-            "method": "Trader barter: Jaeger LL1"
+        },
+        {
+          "craftId": "5dd1126571e3fd3f634b1c8b",
+          "station": "Workbench",
+          "craft": "Bundle of wires x8",
+          "durationMinutes": 118.33,
+          "materialCost": 80000,
+          "profit": 97830,
+          "profitPerHour": 49604,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 19.88,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5c06779c86f77426e00dd782",
+              "item": "Bundle of wires",
+              "count": 8,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 24000,
+              "gross": 192000,
+              "net": 177830,
+              "lastLowPrice": 24000,
+              "avg24hPrice": 29956,
+              "deviationPct": 19.88,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 23844,
+            "min": 23333,
+            "max": 24000,
+            "cvPct": 1.18,
+            "rangePct": 2.8,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Ripstop fabric",
-            "count": 2,
-            "sellTo": "Flea Market",
-            "unitPrice": 30000,
-            "gross": 60000,
-            "net": 54348,
-            "lastLowPrice": 30000,
-            "avg24hPrice": 30659,
-            "deviationPct": 2.15,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5ffcaa60f3fdc212a91d552b",
+          "station": "Lavatory",
+          "craft": "Aramid fiber fabric x2",
+          "durationMinutes": 33.33,
+          "materialCost": 33333,
+          "profit": 27444,
+          "profitPerHour": 49399,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 20.87,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "PACA Soft Armor",
+              "buyLimit": 3,
+              "method": "Trader barter: Ragman LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af4d286f7746d4159f07a",
+              "item": "Aramid fiber fabric",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 33000,
+              "gross": 66000,
+              "net": 60777,
+              "lastLowPrice": 33000,
+              "avg24hPrice": 41705,
+              "deviationPct": 20.87,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 42077,
+            "min": 33000,
+            "max": 44443,
+            "cvPct": 8.74,
+            "rangePct": 27.2,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "5dc1f7de6058e020335c9d88",
-        "station": "Nutrition Unit",
-        "craft": "Slickers chocolate bar x5",
-        "durationMinutes": 21.5,
-        "materialCost": 52364,
-        "profit": 25302,
-        "profitPerHour": 70610,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 1.89,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [
-          {
-            "item": "Army crackers",
-            "buyLimit": 3,
-            "method": "Trader purchase: Therapist LL1"
+        },
+        {
+          "craftId": "5dd3c9c8449c0c31795b0f0b",
+          "station": "Workbench",
+          "craft": "Gunpowder \"Hawk\" x3",
+          "durationMinutes": 35.83,
+          "materialCost": 109420,
+          "profit": 28140,
+          "profitPerHour": 47118,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 9.64,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5d6fc87386f77449db3db94e",
+              "item": "Gunpowder \"Hawk\"",
+              "count": 3,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 48888,
+              "gross": 146664,
+              "net": 137560,
+              "lastLowPrice": 48888,
+              "avg24hPrice": 54104,
+              "deviationPct": 9.64,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 65796,
+            "min": 48888,
+            "max": 70000,
+            "cvPct": 5.82,
+            "rangePct": 32.09,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Slickers chocolate bar",
-            "count": 5,
-            "sellTo": "Flea Market",
-            "unitPrice": 16666,
-            "gross": 83330,
-            "net": 77666,
-            "lastLowPrice": 16666,
-            "avg24hPrice": 16357,
-            "deviationPct": 1.89,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5d8f5e1af3a8f83c8600afb2",
+          "station": "Lavatory",
+          "craft": "Schaman shampoo x2",
+          "durationMinutes": 35,
+          "materialCost": 42444,
+          "profit": 26177,
+          "profitPerHour": 44875,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 5.57,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5d40412b86f7743cb332ac3a",
+              "item": "Schaman shampoo",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 37990,
+              "gross": 75980,
+              "net": 68621,
+              "lastLowPrice": 37990,
+              "avg24hPrice": 40229,
+              "deviationPct": 5.57,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 38207,
+            "min": 37990,
+            "max": 38888,
+            "cvPct": 0.98,
+            "rangePct": 2.35,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "67da0223078f1947650d7bb7",
-        "station": "Intelligence Center",
-        "craft": "TerraGroup Labs access keycard x3",
-        "durationMinutes": 40,
-        "materialCost": 290000,
-        "profit": 32432,
-        "profitPerHour": 48648,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 6.35,
-        "traderFixedSale": false,
-        "stabilityTier": "stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "TerraGroup Labs access keycard",
-            "count": 3,
-            "sellTo": "Flea Market",
-            "unitPrice": 115000,
-            "gross": 345000,
-            "net": 322432,
-            "lastLowPrice": 115000,
-            "avg24hPrice": 122799,
-            "deviationPct": 6.35,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5df138986c38ba26da0b3a77",
+          "station": "Workbench",
+          "craft": "Broken LCD x4",
+          "durationMinutes": 22,
+          "materialCost": 62220,
+          "profit": 16268,
+          "profitPerHour": 44367,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 28.71,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5d1b309586f77425227d1676",
+              "item": "Broken LCD",
+              "count": 4,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 21111,
+              "gross": 84444,
+              "net": 78488,
+              "lastLowPrice": 21111,
+              "avg24hPrice": 29612,
+              "deviationPct": 28.71,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 29057,
+            "min": 21111,
+            "max": 30000,
+            "cvPct": 7.34,
+            "rangePct": 30.59,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "5dd3c9c8449c0c31795b0f0b",
-        "station": "Workbench",
-        "craft": "Gunpowder \"Hawk\" x3",
-        "durationMinutes": 35.83,
-        "materialCost": 109420,
-        "profit": 28140,
-        "profitPerHour": 47118,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 9.64,
-        "traderFixedSale": false,
-        "stabilityTier": "stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "Gunpowder \"Hawk\"",
-            "count": 3,
-            "sellTo": "Flea Market",
-            "unitPrice": 48888,
-            "gross": 146664,
-            "net": 137560,
-            "lastLowPrice": 48888,
-            "avg24hPrice": 54104,
-            "deviationPct": 9.64,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "67f4ec521d41954d4f09a9c8",
+          "station": "Water Collector",
+          "craft": "Aquamari water bottle with filter x5",
+          "durationMinutes": 60,
+          "materialCost": 53944,
+          "profit": 36351,
+          "profitPerHour": 36351,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 22.37,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "Bottle of water (0.6L)",
+              "buyLimit": 2,
+              "method": "Trader barter: Therapist LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5c0fa877d174af02a012e1cf",
+              "item": "Aquamari water bottle with filter",
+              "count": 5,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 20000,
+              "gross": 100000,
+              "net": 90295,
+              "lastLowPrice": 20000,
+              "avg24hPrice": 25763,
+              "deviationPct": 22.37,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 22993,
+            "min": 20000,
+            "max": 24000,
+            "cvPct": 6.09,
+            "rangePct": 17.4,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "5d8f5e1af3a8f83c8600afb2",
-        "station": "Lavatory",
-        "craft": "Schaman shampoo x2",
-        "durationMinutes": 35,
-        "materialCost": 42444,
-        "profit": 26177,
-        "profitPerHour": 44875,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 5.57,
-        "traderFixedSale": false,
-        "stabilityTier": "stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "Schaman shampoo",
-            "count": 2,
-            "sellTo": "Flea Market",
-            "unitPrice": 37990,
-            "gross": 75980,
-            "net": 68621,
-            "lastLowPrice": 37990,
-            "avg24hPrice": 40229,
-            "deviationPct": 5.57,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5dd3c5a67da3785e63275437",
+          "station": "Workbench",
+          "craft": "Gunpowder \"Hawk\" x3",
+          "durationMinutes": 112.5,
+          "materialCost": 80000,
+          "profit": 57560,
+          "profitPerHour": 30699,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 9.64,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5d6fc87386f77449db3db94e",
+              "item": "Gunpowder \"Hawk\"",
+              "count": 3,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 48888,
+              "gross": 146664,
+              "net": 137560,
+              "lastLowPrice": 48888,
+              "avg24hPrice": 54104,
+              "deviationPct": 9.64,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 65796,
+            "min": 48888,
+            "max": 70000,
+            "cvPct": 5.82,
+            "rangePct": 32.09,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "5e13301cc7049d4d9738e1a7",
-        "station": "Medstation",
-        "craft": "Pile of meds x3",
-        "durationMinutes": 48,
-        "materialCost": 52163,
-        "profit": 35614,
-        "profitPerHour": 44518,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 5.98,
-        "traderFixedSale": false,
-        "stabilityTier": "stable",
-        "limitedMaterials": [
-          {
-            "item": "AI-2 medkit",
-            "buyLimit": 20,
-            "method": "Trader purchase: Therapist LL1"
+        },
+        {
+          "craftId": "600aa140090cb63380270290",
+          "station": "Lavatory",
+          "craft": "Cordura polyamide fabric x2",
+          "durationMinutes": 48.33,
+          "materialCost": 16680,
+          "profit": 19914,
+          "profitPerHour": 24721,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 26.88,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "Tactical sling bag (Khaki)",
+              "buyLimit": 10,
+              "method": "Trader purchase: Ragman LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af41e86f774755a234b67",
+              "item": "Cordura polyamide fabric",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 19499,
+              "gross": 38998,
+              "net": 36594,
+              "lastLowPrice": 19499,
+              "avg24hPrice": 26668,
+              "deviationPct": 26.88,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 20949,
+            "min": 19499,
+            "max": 21000,
+            "cvPct": 1.29,
+            "rangePct": 7.16,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Pile of meds",
-            "count": 3,
-            "sellTo": "Flea Market",
-            "unitPrice": 32222,
-            "gross": 96666,
-            "net": 87777,
-            "lastLowPrice": 32222,
-            "avg24hPrice": 34273,
-            "deviationPct": 5.98,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5d5c1fd4d582a500650132f0",
+          "station": "Booze Generator",
+          "craft": "Bottle of Fierce Hatchling moonshine x1",
+          "durationMinutes": 183.33,
+          "materialCost": 338880,
+          "profit": 54536,
+          "profitPerHour": 17848,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 4.58,
+          "traderFixedSale": false,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [
+            {
+              "item": "Pack of sugar",
+              "buyLimit": 1,
+              "method": "Trader barter: Jaeger LL2"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d1b376e86f774252519444e",
+              "item": "Bottle of Fierce Hatchling moonshine",
+              "count": 1,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 420000,
+              "gross": 420000,
+              "net": 393416,
+              "lastLowPrice": 420000,
+              "avg24hPrice": 440171,
+              "deviationPct": 4.58,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 409630,
+            "min": 381111,
+            "max": 420000,
+            "cvPct": 4.2,
+            "rangePct": 9.49,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "600a9b10adfcb94fee6d3e06",
-        "station": "Workbench",
-        "craft": "T-Shaped plug x3",
-        "durationMinutes": 56.67,
-        "materialCost": 52000,
-        "profit": 32400,
-        "profitPerHour": 34306,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 0.95,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "T-Shaped plug",
-            "count": 3,
-            "sellTo": "Flea Market",
-            "unitPrice": 34000,
-            "gross": 102000,
-            "net": 84400,
-            "lastLowPrice": 34000,
-            "avg24hPrice": 33679,
-            "deviationPct": 0.95,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "62a115db5c6bbf22c15ac19d",
+          "station": "Workbench",
+          "craft": "Round pliers x1",
+          "durationMinutes": 15,
+          "materialCost": 9999,
+          "profit": 3771,
+          "profitPerHour": 15084,
+          "sellTo": "Therapist",
+          "priceDeviationPct": 0,
+          "traderFixedSale": true,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5d1b31ce86f7742523398394",
+              "item": "Round pliers",
+              "count": 1,
+              "sellTo": "Therapist",
+              "methodType": "trader",
+              "unitPrice": 13770,
+              "gross": 13770,
+              "net": 13770,
+              "lastLowPrice": 12000,
+              "avg24hPrice": 14127,
+              "deviationPct": 0,
+              "stabilitySource": "fixed-trader-price"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 13770,
+            "min": 13770,
+            "max": 13770,
+            "cvPct": 0,
+            "rangePct": 0,
+            "source": "fixed-trader-price"
           }
-        ]
-      },
-      {
-        "craftId": "5dd3c5a67da3785e63275437",
-        "station": "Workbench",
-        "craft": "Gunpowder \"Hawk\" x3",
-        "durationMinutes": 112.5,
-        "materialCost": 80000,
-        "profit": 57560,
-        "profitPerHour": 30699,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 9.64,
-        "traderFixedSale": false,
-        "stabilityTier": "stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "Gunpowder \"Hawk\"",
-            "count": 3,
-            "sellTo": "Flea Market",
-            "unitPrice": 48888,
-            "gross": 146664,
-            "net": 137560,
-            "lastLowPrice": 48888,
-            "avg24hPrice": 54104,
-            "deviationPct": 9.64,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "63a3359eaf870e651d58e61a",
+          "station": "Workbench",
+          "craft": "PM 9x18PM 84-round makeshift drum magazine x1",
+          "durationMinutes": 20,
+          "materialCost": 29039,
+          "profit": 4274,
+          "profitPerHour": 12822,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 33.54,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "PPSh-41 7.62x25 71-round drum magazine",
+              "buyLimit": 4,
+              "method": "Trader purchase: Prapor LL1"
+            },
+            {
+              "item": "PM 9x18PM 90-93 8-round magazine",
+              "buyLimit": 10,
+              "method": "Trader purchase: Prapor LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "55d485be4bdc2d962f8b456f",
+              "item": "PM 9x18PM 84-round makeshift drum magazine",
+              "count": 1,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 35555,
+              "gross": 35555,
+              "net": 33313,
+              "lastLowPrice": 35555,
+              "avg24hPrice": 53498,
+              "deviationPct": 33.54,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 47851,
+            "min": 45000,
+            "max": 48888,
+            "cvPct": 3.59,
+            "rangePct": 8.13,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "629e1b3a0694b45420210cad",
-        "station": "Nutrition Unit",
-        "craft": "Can of Majaica coffee beans x2",
-        "durationMinutes": 45,
-        "materialCost": 46000,
-        "profit": 19444,
-        "profitPerHour": 25925,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 5.25,
-        "traderFixedSale": false,
-        "stabilityTier": "stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "Can of Majaica coffee beans",
-            "count": 2,
-            "sellTo": "Flea Market",
-            "unitPrice": 35000,
-            "gross": 70000,
-            "net": 65444,
-            "lastLowPrice": 35000,
-            "avg24hPrice": 36940,
-            "deviationPct": 5.25,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5ede0502879619077751d00a",
+          "station": "Medstation",
+          "craft": "SJ6 TGLabs combat stimulant injector x2",
+          "durationMinutes": 85,
+          "materialCost": 171110,
+          "profit": 13427,
+          "profitPerHour": 9478,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 11.93,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "Bottle of OLOLO Multivitamins",
+              "buyLimit": 2,
+              "method": "Trader barter: Jaeger LL2"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5c0e531d86f7747fa23f4d42",
+              "item": "SJ6 TGLabs combat stimulant injector",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 100000,
+              "gross": 200000,
+              "net": 184537,
+              "lastLowPrice": 100000,
+              "avg24hPrice": 113550,
+              "deviationPct": 11.93,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 103733,
+            "min": 100000,
+            "max": 114000,
+            "cvPct": 5.97,
+            "rangePct": 13.5,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "5d5c1fd4d582a500650132f0",
-        "station": "Booze Generator",
-        "craft": "Bottle of Fierce Hatchling moonshine x1",
-        "durationMinutes": 183.33,
-        "materialCost": 338880,
-        "profit": 54536,
-        "profitPerHour": 17848,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 4.58,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [
-          {
-            "item": "Pack of sugar",
-            "buyLimit": 1,
-            "method": "Trader barter: Jaeger LL2"
+        },
+        {
+          "craftId": "5d5c205bd582a50d042a3c0e",
+          "station": "Bitcoin Farm",
+          "craft": "Physical Bitcoin x1",
+          "durationMinutes": 5000,
+          "materialCost": 0,
+          "profit": 560859,
+          "profitPerHour": 6730,
+          "sellTo": "Therapist",
+          "priceDeviationPct": 0,
+          "traderFixedSale": true,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "59faff1d86f7746c51718c9c",
+              "item": "Physical Bitcoin",
+              "count": 1,
+              "sellTo": "Therapist",
+              "methodType": "trader",
+              "unitPrice": 560859,
+              "gross": 560859,
+              "net": 560859,
+              "lastLowPrice": null,
+              "avg24hPrice": null,
+              "deviationPct": 0,
+              "stabilitySource": "fixed-trader-price"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 560859,
+            "min": 560859,
+            "max": 560859,
+            "cvPct": 0,
+            "rangePct": 0,
+            "source": "fixed-trader-price"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Bottle of Fierce Hatchling moonshine",
-            "count": 1,
-            "sellTo": "Flea Market",
-            "unitPrice": 420000,
-            "gross": 420000,
-            "net": 393416,
-            "lastLowPrice": 420000,
-            "avg24hPrice": 440171,
-            "deviationPct": 4.58,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5df8ffcbaab5f257bd7ff3a8",
+          "station": "Lavatory",
+          "craft": "WD-40 (100ml) x2",
+          "durationMinutes": 150,
+          "materialCost": 10000,
+          "profit": 16243,
+          "profitPerHour": 6497,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 23.34,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "590c5bbd86f774785762df04",
+              "item": "WD-40 (100ml)",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 14000,
+              "gross": 28000,
+              "net": 26243,
+              "lastLowPrice": 14000,
+              "avg24hPrice": 18262,
+              "deviationPct": 23.34,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 14407,
+            "min": 14000,
+            "max": 15000,
+            "cvPct": 2.5,
+            "rangePct": 6.94,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "62a115db5c6bbf22c15ac19d",
-        "station": "Workbench",
-        "craft": "Round pliers x1",
-        "durationMinutes": 15,
-        "materialCost": 9999,
-        "profit": 3771,
-        "profitPerHour": 15084,
-        "sellTo": "Therapist",
-        "priceDeviationPct": 0,
-        "traderFixedSale": true,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "Round pliers",
-            "count": 1,
-            "sellTo": "Therapist",
-            "unitPrice": 13770,
-            "gross": 13770,
-            "net": 13770,
-            "lastLowPrice": 12000,
-            "avg24hPrice": 14127,
-            "deviationPct": 0,
-            "stabilitySource": "fixed-trader-price"
+        },
+        {
+          "craftId": "600aa0d1090cb6338027028c",
+          "station": "Medstation",
+          "craft": "Aluminum splint x2",
+          "durationMinutes": 53.33,
+          "materialCost": 27450,
+          "profit": 3665,
+          "profitPerHour": 4123,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 26.19,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5af0454c86f7746bf20992e8",
+              "item": "Aluminum splint",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 16666,
+              "gross": 33332,
+              "net": 31115,
+              "lastLowPrice": 16666,
+              "avg24hPrice": 22580,
+              "deviationPct": 26.19,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 23526,
+            "min": 16666,
+            "max": 25000,
+            "cvPct": 9.9,
+            "rangePct": 35.42,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "5d5c205bd582a50d042a3c0e",
-        "station": "Bitcoin Farm",
-        "craft": "Physical Bitcoin x1",
-        "durationMinutes": 5000,
-        "materialCost": 0,
-        "profit": 560859,
-        "profitPerHour": 6730,
-        "sellTo": "Therapist",
-        "priceDeviationPct": 0,
-        "traderFixedSale": true,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "Physical Bitcoin",
-            "count": 1,
-            "sellTo": "Therapist",
-            "unitPrice": 560859,
-            "gross": 560859,
-            "net": 560859,
-            "lastLowPrice": null,
-            "avg24hPrice": null,
-            "deviationPct": 0,
-            "stabilitySource": "fixed-trader-price"
+        },
+        {
+          "craftId": "5f240f45f4a9420a8c328ee0",
+          "station": "Nutrition Unit",
+          "craft": "Can of Max Energy energy drink x4",
+          "durationMinutes": 108.33,
+          "materialCost": 87789,
+          "profit": 5281,
+          "profitPerHour": 2925,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 6.94,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [
+            {
+              "item": "Bottle of water (0.6L)",
+              "buyLimit": 2,
+              "method": "Trader barter: Therapist LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5751435d24597720a27126d1",
+              "item": "Can of Max Energy energy drink",
+              "count": 4,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 25000,
+              "gross": 100000,
+              "net": 93070,
+              "lastLowPrice": 25000,
+              "avg24hPrice": 26865,
+              "deviationPct": 6.94,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 23667,
+            "min": 20000,
+            "max": 25000,
+            "cvPct": 9.34,
+            "rangePct": 21.13,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "5f240f45f4a9420a8c328ee0",
-        "station": "Nutrition Unit",
-        "craft": "Can of Max Energy energy drink x4",
-        "durationMinutes": 108.33,
-        "materialCost": 87789,
-        "profit": 5281,
-        "profitPerHour": 2925,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 6.94,
-        "traderFixedSale": false,
-        "stabilityTier": "stable",
-        "limitedMaterials": [
-          {
-            "item": "Bottle of water (0.6L)",
-            "buyLimit": 2,
-            "method": "Trader barter: Therapist LL1"
+        }
+      ],
+      "topVeryStableProfitPerHour": [
+        {
+          "craftId": "5de919ec1b25d85cf30ca39a",
+          "station": "Workbench",
+          "craft": "Gunpowder \"Eagle\" x2",
+          "durationMinutes": 97.83,
+          "materialCost": 37569,
+          "profit": 119830,
+          "profitPerHour": 73490,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 10.14,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "M67 hand grenade",
+              "buyLimit": 10,
+              "method": "Trader purchase: Peacekeeper LL3"
+            },
+            {
+              "item": "M18 smoke grenade (Green)",
+              "buyLimit": 5,
+              "method": "Trader purchase: Jaeger LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d6fc78386f77449d825f9dc",
+              "item": "Gunpowder \"Eagle\"",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 84420,
+              "gross": 168840,
+              "net": 157399,
+              "lastLowPrice": 84420,
+              "avg24hPrice": 93944,
+              "deviationPct": 10.14,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 89114,
+            "min": 84420,
+            "max": 89999,
+            "cvPct": 1.1,
+            "rangePct": 6.26,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Can of Max Energy energy drink",
-            "count": 4,
-            "sellTo": "Flea Market",
-            "unitPrice": 25000,
-            "gross": 100000,
-            "net": 93070,
-            "lastLowPrice": 25000,
-            "avg24hPrice": 26865,
-            "deviationPct": 6.94,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5dd1126571e3fd3f634b1c8b",
+          "station": "Workbench",
+          "craft": "Bundle of wires x8",
+          "durationMinutes": 118.33,
+          "materialCost": 80000,
+          "profit": 97830,
+          "profitPerHour": 49604,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 19.88,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5c06779c86f77426e00dd782",
+              "item": "Bundle of wires",
+              "count": 8,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 24000,
+              "gross": 192000,
+              "net": 177830,
+              "lastLowPrice": 24000,
+              "avg24hPrice": 29956,
+              "deviationPct": 19.88,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 23844,
+            "min": 23333,
+            "max": 24000,
+            "cvPct": 1.18,
+            "rangePct": 2.8,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "600ab8e3e4022c380a726088",
-        "station": "Nutrition Unit",
-        "craft": "Bottle of Dan Jackiel whiskey x3",
-        "durationMinutes": 106.67,
-        "materialCost": 136078,
-        "profit": 3416,
-        "profitPerHour": 1921,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 0.1,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [
-          {
-            "item": "Bottle of water (0.6L)",
-            "buyLimit": 2,
-            "method": "Trader barter: Therapist LL1"
+        },
+        {
+          "craftId": "5d8f5e1af3a8f83c8600afb2",
+          "station": "Lavatory",
+          "craft": "Schaman shampoo x2",
+          "durationMinutes": 35,
+          "materialCost": 42444,
+          "profit": 26177,
+          "profitPerHour": 44875,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 5.57,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5d40412b86f7743cb332ac3a",
+              "item": "Schaman shampoo",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 37990,
+              "gross": 75980,
+              "net": 68621,
+              "lastLowPrice": 37990,
+              "avg24hPrice": 40229,
+              "deviationPct": 5.57,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 38207,
+            "min": 37990,
+            "max": 38888,
+            "cvPct": 0.98,
+            "rangePct": 2.35,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Bottle of Dan Jackiel whiskey",
-            "count": 3,
-            "sellTo": "Flea Market",
-            "unitPrice": 49998,
-            "gross": 149994,
-            "net": 139494,
-            "lastLowPrice": 49998,
-            "avg24hPrice": 49950,
-            "deviationPct": 0.1,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "600aa140090cb63380270290",
+          "station": "Lavatory",
+          "craft": "Cordura polyamide fabric x2",
+          "durationMinutes": 48.33,
+          "materialCost": 16680,
+          "profit": 19914,
+          "profitPerHour": 24721,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 26.88,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "Tactical sling bag (Khaki)",
+              "buyLimit": 10,
+              "method": "Trader purchase: Ragman LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af41e86f774755a234b67",
+              "item": "Cordura polyamide fabric",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 19499,
+              "gross": 38998,
+              "net": 36594,
+              "lastLowPrice": 19499,
+              "avg24hPrice": 26668,
+              "deviationPct": 26.88,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 20949,
+            "min": 19499,
+            "max": 21000,
+            "cvPct": 1.29,
+            "rangePct": 7.16,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      }
-    ],
-    "topVeryStableProfitPerHour": [
-      {
-        "craftId": "5eecaa6327ccd70521107ff5",
-        "station": "Lavatory",
-        "craft": "Ripstop fabric x2",
-        "durationMinutes": 36.67,
-        "materialCost": 11111,
-        "profit": 43237,
-        "profitPerHour": 70751,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 2.15,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [
-          {
-            "item": "Scav Vest",
-            "buyLimit": 10,
-            "method": "Trader barter: Jaeger LL1"
+        },
+        {
+          "craftId": "5d5c1fd4d582a500650132f0",
+          "station": "Booze Generator",
+          "craft": "Bottle of Fierce Hatchling moonshine x1",
+          "durationMinutes": 183.33,
+          "materialCost": 338880,
+          "profit": 54536,
+          "profitPerHour": 17848,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 4.58,
+          "traderFixedSale": false,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [
+            {
+              "item": "Pack of sugar",
+              "buyLimit": 1,
+              "method": "Trader barter: Jaeger LL2"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d1b376e86f774252519444e",
+              "item": "Bottle of Fierce Hatchling moonshine",
+              "count": 1,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 420000,
+              "gross": 420000,
+              "net": 393416,
+              "lastLowPrice": 420000,
+              "avg24hPrice": 440171,
+              "deviationPct": 4.58,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 409630,
+            "min": 381111,
+            "max": 420000,
+            "cvPct": 4.2,
+            "rangePct": 9.49,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Ripstop fabric",
-            "count": 2,
-            "sellTo": "Flea Market",
-            "unitPrice": 30000,
-            "gross": 60000,
-            "net": 54348,
-            "lastLowPrice": 30000,
-            "avg24hPrice": 30659,
-            "deviationPct": 2.15,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "62a115db5c6bbf22c15ac19d",
+          "station": "Workbench",
+          "craft": "Round pliers x1",
+          "durationMinutes": 15,
+          "materialCost": 9999,
+          "profit": 3771,
+          "profitPerHour": 15084,
+          "sellTo": "Therapist",
+          "priceDeviationPct": 0,
+          "traderFixedSale": true,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "5d1b31ce86f7742523398394",
+              "item": "Round pliers",
+              "count": 1,
+              "sellTo": "Therapist",
+              "methodType": "trader",
+              "unitPrice": 13770,
+              "gross": 13770,
+              "net": 13770,
+              "lastLowPrice": 12000,
+              "avg24hPrice": 14127,
+              "deviationPct": 0,
+              "stabilitySource": "fixed-trader-price"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 13770,
+            "min": 13770,
+            "max": 13770,
+            "cvPct": 0,
+            "rangePct": 0,
+            "source": "fixed-trader-price"
           }
-        ]
-      },
-      {
-        "craftId": "5dc1f7de6058e020335c9d88",
-        "station": "Nutrition Unit",
-        "craft": "Slickers chocolate bar x5",
-        "durationMinutes": 21.5,
-        "materialCost": 52364,
-        "profit": 25302,
-        "profitPerHour": 70610,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 1.89,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [
-          {
-            "item": "Army crackers",
-            "buyLimit": 3,
-            "method": "Trader purchase: Therapist LL1"
+        },
+        {
+          "craftId": "63a3359eaf870e651d58e61a",
+          "station": "Workbench",
+          "craft": "PM 9x18PM 84-round makeshift drum magazine x1",
+          "durationMinutes": 20,
+          "materialCost": 29039,
+          "profit": 4274,
+          "profitPerHour": 12822,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 33.54,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "PPSh-41 7.62x25 71-round drum magazine",
+              "buyLimit": 4,
+              "method": "Trader purchase: Prapor LL1"
+            },
+            {
+              "item": "PM 9x18PM 90-93 8-round magazine",
+              "buyLimit": 10,
+              "method": "Trader purchase: Prapor LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "55d485be4bdc2d962f8b456f",
+              "item": "PM 9x18PM 84-round makeshift drum magazine",
+              "count": 1,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 35555,
+              "gross": 35555,
+              "net": 33313,
+              "lastLowPrice": 35555,
+              "avg24hPrice": 53498,
+              "deviationPct": 33.54,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 47851,
+            "min": 45000,
+            "max": 48888,
+            "cvPct": 3.59,
+            "rangePct": 8.13,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Slickers chocolate bar",
-            "count": 5,
-            "sellTo": "Flea Market",
-            "unitPrice": 16666,
-            "gross": 83330,
-            "net": 77666,
-            "lastLowPrice": 16666,
-            "avg24hPrice": 16357,
-            "deviationPct": 1.89,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5d5c205bd582a50d042a3c0e",
+          "station": "Bitcoin Farm",
+          "craft": "Physical Bitcoin x1",
+          "durationMinutes": 5000,
+          "materialCost": 0,
+          "profit": 560859,
+          "profitPerHour": 6730,
+          "sellTo": "Therapist",
+          "priceDeviationPct": 0,
+          "traderFixedSale": true,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "59faff1d86f7746c51718c9c",
+              "item": "Physical Bitcoin",
+              "count": 1,
+              "sellTo": "Therapist",
+              "methodType": "trader",
+              "unitPrice": 560859,
+              "gross": 560859,
+              "net": 560859,
+              "lastLowPrice": null,
+              "avg24hPrice": null,
+              "deviationPct": 0,
+              "stabilitySource": "fixed-trader-price"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 560859,
+            "min": 560859,
+            "max": 560859,
+            "cvPct": 0,
+            "rangePct": 0,
+            "source": "fixed-trader-price"
           }
-        ]
-      },
-      {
-        "craftId": "600a9b10adfcb94fee6d3e06",
-        "station": "Workbench",
-        "craft": "T-Shaped plug x3",
-        "durationMinutes": 56.67,
-        "materialCost": 52000,
-        "profit": 32400,
-        "profitPerHour": 34306,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 0.95,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "T-Shaped plug",
-            "count": 3,
-            "sellTo": "Flea Market",
-            "unitPrice": 34000,
-            "gross": 102000,
-            "net": 84400,
-            "lastLowPrice": 34000,
-            "avg24hPrice": 33679,
-            "deviationPct": 0.95,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5df8ffcbaab5f257bd7ff3a8",
+          "station": "Lavatory",
+          "craft": "WD-40 (100ml) x2",
+          "durationMinutes": 150,
+          "materialCost": 10000,
+          "profit": 16243,
+          "profitPerHour": 6497,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 23.34,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "590c5bbd86f774785762df04",
+              "item": "WD-40 (100ml)",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 14000,
+              "gross": 28000,
+              "net": 26243,
+              "lastLowPrice": 14000,
+              "avg24hPrice": 18262,
+              "deviationPct": 23.34,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 14407,
+            "min": 14000,
+            "max": 15000,
+            "cvPct": 2.5,
+            "rangePct": 6.94,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "5d5c1fd4d582a500650132f0",
-        "station": "Booze Generator",
-        "craft": "Bottle of Fierce Hatchling moonshine x1",
-        "durationMinutes": 183.33,
-        "materialCost": 338880,
-        "profit": 54536,
-        "profitPerHour": 17848,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 4.58,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [
-          {
-            "item": "Pack of sugar",
-            "buyLimit": 1,
-            "method": "Trader barter: Jaeger LL2"
+        }
+      ],
+      "bestStableByStation": [
+        {
+          "craftId": "5dd3c5487058311d4b267186",
+          "station": "Workbench",
+          "craft": "Gunpowder \"Kite\" x2",
+          "durationMinutes": 15,
+          "materialCost": 7920,
+          "profit": 37129,
+          "profitPerHour": 148516,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 9.35,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [
+            {
+              "item": "5.45x39mm HP",
+              "buyLimit": 1000,
+              "method": "Trader purchase: Jaeger LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "590c5a7286f7747884343aea",
+              "item": "Gunpowder \"Kite\"",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 24000,
+              "gross": 48000,
+              "net": 45049,
+              "lastLowPrice": 24000,
+              "avg24hPrice": 26476,
+              "deviationPct": 9.35,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 22867,
+            "min": 22000,
+            "max": 25000,
+            "cvPct": 5.84,
+            "rangePct": 13.12,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Bottle of Fierce Hatchling moonshine",
-            "count": 1,
-            "sellTo": "Flea Market",
-            "unitPrice": 420000,
-            "gross": 420000,
-            "net": 393416,
-            "lastLowPrice": 420000,
-            "avg24hPrice": 440171,
-            "deviationPct": 4.58,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5ffcaa60f3fdc212a91d552b",
+          "station": "Lavatory",
+          "craft": "Aramid fiber fabric x2",
+          "durationMinutes": 33.33,
+          "materialCost": 33333,
+          "profit": 27444,
+          "profitPerHour": 49399,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 20.87,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "PACA Soft Armor",
+              "buyLimit": 3,
+              "method": "Trader barter: Ragman LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af4d286f7746d4159f07a",
+              "item": "Aramid fiber fabric",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 33000,
+              "gross": 66000,
+              "net": 60777,
+              "lastLowPrice": 33000,
+              "avg24hPrice": 41705,
+              "deviationPct": 20.87,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 42077,
+            "min": 33000,
+            "max": 44443,
+            "cvPct": 8.74,
+            "rangePct": 27.2,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "62a115db5c6bbf22c15ac19d",
-        "station": "Workbench",
-        "craft": "Round pliers x1",
-        "durationMinutes": 15,
-        "materialCost": 9999,
-        "profit": 3771,
-        "profitPerHour": 15084,
-        "sellTo": "Therapist",
-        "priceDeviationPct": 0,
-        "traderFixedSale": true,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "Round pliers",
-            "count": 1,
-            "sellTo": "Therapist",
-            "unitPrice": 13770,
-            "gross": 13770,
-            "net": 13770,
-            "lastLowPrice": 12000,
-            "avg24hPrice": 14127,
-            "deviationPct": 0,
-            "stabilitySource": "fixed-trader-price"
+        },
+        {
+          "craftId": "67f4ec521d41954d4f09a9c8",
+          "station": "Water Collector",
+          "craft": "Aquamari water bottle with filter x5",
+          "durationMinutes": 60,
+          "materialCost": 53944,
+          "profit": 36351,
+          "profitPerHour": 36351,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 22.37,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "Bottle of water (0.6L)",
+              "buyLimit": 2,
+              "method": "Trader barter: Therapist LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5c0fa877d174af02a012e1cf",
+              "item": "Aquamari water bottle with filter",
+              "count": 5,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 20000,
+              "gross": 100000,
+              "net": 90295,
+              "lastLowPrice": 20000,
+              "avg24hPrice": 25763,
+              "deviationPct": 22.37,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 22993,
+            "min": 20000,
+            "max": 24000,
+            "cvPct": 6.09,
+            "rangePct": 17.4,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "5d5c205bd582a50d042a3c0e",
-        "station": "Bitcoin Farm",
-        "craft": "Physical Bitcoin x1",
-        "durationMinutes": 5000,
-        "materialCost": 0,
-        "profit": 560859,
-        "profitPerHour": 6730,
-        "sellTo": "Therapist",
-        "priceDeviationPct": 0,
-        "traderFixedSale": true,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "Physical Bitcoin",
-            "count": 1,
-            "sellTo": "Therapist",
-            "unitPrice": 560859,
-            "gross": 560859,
-            "net": 560859,
-            "lastLowPrice": null,
-            "avg24hPrice": null,
-            "deviationPct": 0,
-            "stabilitySource": "fixed-trader-price"
+        },
+        {
+          "craftId": "5d5c1fd4d582a500650132f0",
+          "station": "Booze Generator",
+          "craft": "Bottle of Fierce Hatchling moonshine x1",
+          "durationMinutes": 183.33,
+          "materialCost": 338880,
+          "profit": 54536,
+          "profitPerHour": 17848,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 4.58,
+          "traderFixedSale": false,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [
+            {
+              "item": "Pack of sugar",
+              "buyLimit": 1,
+              "method": "Trader barter: Jaeger LL2"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d1b376e86f774252519444e",
+              "item": "Bottle of Fierce Hatchling moonshine",
+              "count": 1,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 420000,
+              "gross": 420000,
+              "net": 393416,
+              "lastLowPrice": 420000,
+              "avg24hPrice": 440171,
+              "deviationPct": 4.58,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 409630,
+            "min": 381111,
+            "max": 420000,
+            "cvPct": 4.2,
+            "rangePct": 9.49,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ]
-      },
-      {
-        "craftId": "600ab8e3e4022c380a726088",
-        "station": "Nutrition Unit",
-        "craft": "Bottle of Dan Jackiel whiskey x3",
-        "durationMinutes": 106.67,
-        "materialCost": 136078,
-        "profit": 3416,
-        "profitPerHour": 1921,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 0.1,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [
-          {
-            "item": "Bottle of water (0.6L)",
-            "buyLimit": 2,
-            "method": "Trader barter: Therapist LL1"
+        },
+        {
+          "craftId": "5ede0502879619077751d00a",
+          "station": "Medstation",
+          "craft": "SJ6 TGLabs combat stimulant injector x2",
+          "durationMinutes": 85,
+          "materialCost": 171110,
+          "profit": 13427,
+          "profitPerHour": 9478,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 11.93,
+          "traderFixedSale": false,
+          "stabilityTier": "volatile",
+          "limitedMaterials": [
+            {
+              "item": "Bottle of OLOLO Multivitamins",
+              "buyLimit": 2,
+              "method": "Trader barter: Jaeger LL2"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5c0e531d86f7747fa23f4d42",
+              "item": "SJ6 TGLabs combat stimulant injector",
+              "count": 2,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 100000,
+              "gross": 200000,
+              "net": 184537,
+              "lastLowPrice": 100000,
+              "avg24hPrice": 113550,
+              "deviationPct": 11.93,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 103733,
+            "min": 100000,
+            "max": 114000,
+            "cvPct": 5.97,
+            "rangePct": 13.5,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Bottle of Dan Jackiel whiskey",
-            "count": 3,
-            "sellTo": "Flea Market",
-            "unitPrice": 49998,
-            "gross": 149994,
-            "net": 139494,
-            "lastLowPrice": 49998,
-            "avg24hPrice": 49950,
-            "deviationPct": 0.1,
-            "stabilitySource": "current-vs-24h-average"
+        },
+        {
+          "craftId": "5d5c205bd582a50d042a3c0e",
+          "station": "Bitcoin Farm",
+          "craft": "Physical Bitcoin x1",
+          "durationMinutes": 5000,
+          "materialCost": 0,
+          "profit": 560859,
+          "profitPerHour": 6730,
+          "sellTo": "Therapist",
+          "priceDeviationPct": 0,
+          "traderFixedSale": true,
+          "stabilityTier": "very-stable",
+          "limitedMaterials": [],
+          "outputs": [
+            {
+              "id": "59faff1d86f7746c51718c9c",
+              "item": "Physical Bitcoin",
+              "count": 1,
+              "sellTo": "Therapist",
+              "methodType": "trader",
+              "unitPrice": 560859,
+              "gross": 560859,
+              "net": 560859,
+              "lastLowPrice": null,
+              "avg24hPrice": null,
+              "deviationPct": 0,
+              "stabilitySource": "fixed-trader-price"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 560859,
+            "min": 560859,
+            "max": 560859,
+            "cvPct": 0,
+            "rangePct": 0,
+            "source": "fixed-trader-price"
           }
-        ]
-      }
-    ],
-    "bestStableByStation": [
-      {
-        "craftId": "5dd3c5487058311d4b267186",
-        "station": "Workbench",
-        "craft": "Gunpowder \"Kite\" x2",
-        "durationMinutes": 15,
-        "materialCost": 7920,
-        "profit": 37129,
-        "profitPerHour": 148516,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 9.35,
-        "traderFixedSale": false,
-        "stabilityTier": "stable",
-        "limitedMaterials": [
-          {
-            "item": "5.45x39mm HP",
-            "buyLimit": 1000,
-            "method": "Trader purchase: Jaeger LL1"
+        },
+        {
+          "craftId": "5f240f45f4a9420a8c328ee0",
+          "station": "Nutrition Unit",
+          "craft": "Can of Max Energy energy drink x4",
+          "durationMinutes": 108.33,
+          "materialCost": 87789,
+          "profit": 5281,
+          "profitPerHour": 2925,
+          "sellTo": "Flea Market",
+          "priceDeviationPct": 6.94,
+          "traderFixedSale": false,
+          "stabilityTier": "stable",
+          "limitedMaterials": [
+            {
+              "item": "Bottle of water (0.6L)",
+              "buyLimit": 2,
+              "method": "Trader barter: Therapist LL1"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5751435d24597720a27126d1",
+              "item": "Can of Max Energy energy drink",
+              "count": 4,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "unitPrice": 25000,
+              "gross": 100000,
+              "net": 93070,
+              "lastLowPrice": 25000,
+              "avg24hPrice": 26865,
+              "deviationPct": 6.94,
+              "stabilitySource": "current-vs-24h-average"
+            }
+          ],
+          "historical24h": {
+            "samples": 30,
+            "mean": 23667,
+            "min": 20000,
+            "max": 25000,
+            "cvPct": 9.34,
+            "rangePct": 21.13,
+            "source": "GitHub hourly report snapshots over trailing 24h"
           }
-        ],
-        "outputs": [
-          {
-            "item": "Gunpowder \"Kite\"",
-            "count": 2,
-            "sellTo": "Flea Market",
-            "unitPrice": 24000,
-            "gross": 48000,
-            "net": 45049,
-            "lastLowPrice": 24000,
-            "avg24hPrice": 26476,
-            "deviationPct": 9.35,
-            "stabilitySource": "current-vs-24h-average"
-          }
-        ]
-      },
-      {
-        "craftId": "5eecaa6327ccd70521107ff5",
-        "station": "Lavatory",
-        "craft": "Ripstop fabric x2",
-        "durationMinutes": 36.67,
-        "materialCost": 11111,
-        "profit": 43237,
-        "profitPerHour": 70751,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 2.15,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [
-          {
-            "item": "Scav Vest",
-            "buyLimit": 10,
-            "method": "Trader barter: Jaeger LL1"
-          }
-        ],
-        "outputs": [
-          {
-            "item": "Ripstop fabric",
-            "count": 2,
-            "sellTo": "Flea Market",
-            "unitPrice": 30000,
-            "gross": 60000,
-            "net": 54348,
-            "lastLowPrice": 30000,
-            "avg24hPrice": 30659,
-            "deviationPct": 2.15,
-            "stabilitySource": "current-vs-24h-average"
-          }
-        ]
-      },
-      {
-        "craftId": "5dc1f7de6058e020335c9d88",
-        "station": "Nutrition Unit",
-        "craft": "Slickers chocolate bar x5",
-        "durationMinutes": 21.5,
-        "materialCost": 52364,
-        "profit": 25302,
-        "profitPerHour": 70610,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 1.89,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [
-          {
-            "item": "Army crackers",
-            "buyLimit": 3,
-            "method": "Trader purchase: Therapist LL1"
-          }
-        ],
-        "outputs": [
-          {
-            "item": "Slickers chocolate bar",
-            "count": 5,
-            "sellTo": "Flea Market",
-            "unitPrice": 16666,
-            "gross": 83330,
-            "net": 77666,
-            "lastLowPrice": 16666,
-            "avg24hPrice": 16357,
-            "deviationPct": 1.89,
-            "stabilitySource": "current-vs-24h-average"
-          }
-        ]
-      },
-      {
-        "craftId": "67da0223078f1947650d7bb7",
-        "station": "Intelligence Center",
-        "craft": "TerraGroup Labs access keycard x3",
-        "durationMinutes": 40,
-        "materialCost": 290000,
-        "profit": 32432,
-        "profitPerHour": 48648,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 6.35,
-        "traderFixedSale": false,
-        "stabilityTier": "stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "TerraGroup Labs access keycard",
-            "count": 3,
-            "sellTo": "Flea Market",
-            "unitPrice": 115000,
-            "gross": 345000,
-            "net": 322432,
-            "lastLowPrice": 115000,
-            "avg24hPrice": 122799,
-            "deviationPct": 6.35,
-            "stabilitySource": "current-vs-24h-average"
-          }
-        ]
-      },
-      {
-        "craftId": "5e13301cc7049d4d9738e1a7",
-        "station": "Medstation",
-        "craft": "Pile of meds x3",
-        "durationMinutes": 48,
-        "materialCost": 52163,
-        "profit": 35614,
-        "profitPerHour": 44518,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 5.98,
-        "traderFixedSale": false,
-        "stabilityTier": "stable",
-        "limitedMaterials": [
-          {
-            "item": "AI-2 medkit",
-            "buyLimit": 20,
-            "method": "Trader purchase: Therapist LL1"
-          }
-        ],
-        "outputs": [
-          {
-            "item": "Pile of meds",
-            "count": 3,
-            "sellTo": "Flea Market",
-            "unitPrice": 32222,
-            "gross": 96666,
-            "net": 87777,
-            "lastLowPrice": 32222,
-            "avg24hPrice": 34273,
-            "deviationPct": 5.98,
-            "stabilitySource": "current-vs-24h-average"
-          }
-        ]
-      },
-      {
-        "craftId": "5d5c1fd4d582a500650132f0",
-        "station": "Booze Generator",
-        "craft": "Bottle of Fierce Hatchling moonshine x1",
-        "durationMinutes": 183.33,
-        "materialCost": 338880,
-        "profit": 54536,
-        "profitPerHour": 17848,
-        "sellTo": "Flea Market",
-        "priceDeviationPct": 4.58,
-        "traderFixedSale": false,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [
-          {
-            "item": "Pack of sugar",
-            "buyLimit": 1,
-            "method": "Trader barter: Jaeger LL2"
-          }
-        ],
-        "outputs": [
-          {
-            "item": "Bottle of Fierce Hatchling moonshine",
-            "count": 1,
-            "sellTo": "Flea Market",
-            "unitPrice": 420000,
-            "gross": 420000,
-            "net": 393416,
-            "lastLowPrice": 420000,
-            "avg24hPrice": 440171,
-            "deviationPct": 4.58,
-            "stabilitySource": "current-vs-24h-average"
-          }
-        ]
-      },
-      {
-        "craftId": "5d5c205bd582a50d042a3c0e",
-        "station": "Bitcoin Farm",
-        "craft": "Physical Bitcoin x1",
-        "durationMinutes": 5000,
-        "materialCost": 0,
-        "profit": 560859,
-        "profitPerHour": 6730,
-        "sellTo": "Therapist",
-        "priceDeviationPct": 0,
-        "traderFixedSale": true,
-        "stabilityTier": "very-stable",
-        "limitedMaterials": [],
-        "outputs": [
-          {
-            "item": "Physical Bitcoin",
-            "count": 1,
-            "sellTo": "Therapist",
-            "unitPrice": 560859,
-            "gross": 560859,
-            "net": 560859,
-            "lastLowPrice": null,
-            "avg24hPrice": null,
-            "deviationPct": 0,
-            "stabilitySource": "fixed-trader-price"
-          }
-        ]
-      }
-    ]
+        }
+      ]
+    }
   }
 }
