@@ -61,60 +61,60 @@
         "secondsPerBitcoin": 300000,
         "hoursPerBitcoin": 83.33,
         "bitcoinsPerDay": 0.29,
-        "bitcoinNetSaleEach": 549887,
+        "bitcoinNetSaleEach": 560859,
         "saleDestination": "Therapist",
-        "revenuePerDay": 158367,
+        "revenuePerDay": 161527,
         "fuelCostPerDay": 23199,
-        "netProfitPerDay": 135168,
+        "netProfitPerDay": 138328,
         "gpuUnitAcquisitionCost": 810000,
         "gpuAcquisitionMethod": "Flea Market",
         "installedGpuCapital": 810000,
-        "simpleCapitalPaybackDays": 5.99
+        "simpleCapitalPaybackDays": 5.86
       },
       {
         "gpuCount": 10,
         "secondsPerBitcoin": 218814,
         "hoursPerBitcoin": 60.78,
         "bitcoinsPerDay": 0.39,
-        "bitcoinNetSaleEach": 549887,
+        "bitcoinNetSaleEach": 560859,
         "saleDestination": "Therapist",
-        "revenuePerDay": 217126,
+        "revenuePerDay": 221458,
         "fuelCostPerDay": 23199,
-        "netProfitPerDay": 193927,
+        "netProfitPerDay": 198259,
         "gpuUnitAcquisitionCost": 810000,
         "gpuAcquisitionMethod": "Flea Market",
         "installedGpuCapital": 8100000,
-        "simpleCapitalPaybackDays": 41.77
+        "simpleCapitalPaybackDays": 40.86
       },
       {
         "gpuCount": 25,
         "secondsPerBitcoin": 150799,
         "hoursPerBitcoin": 41.89,
         "bitcoinsPerDay": 0.57,
-        "bitcoinNetSaleEach": 549887,
+        "bitcoinNetSaleEach": 560859,
         "saleDestination": "Therapist",
-        "revenuePerDay": 315056,
+        "revenuePerDay": 321343,
         "fuelCostPerDay": 23199,
-        "netProfitPerDay": 291857,
+        "netProfitPerDay": 298144,
         "gpuUnitAcquisitionCost": 810000,
         "gpuAcquisitionMethod": "Flea Market",
         "installedGpuCapital": 20250000,
-        "simpleCapitalPaybackDays": 69.38
+        "simpleCapitalPaybackDays": 67.92
       },
       {
         "gpuCount": 50,
         "secondsPerBitcoin": 99337,
         "hoursPerBitcoin": 27.59,
         "bitcoinsPerDay": 0.87,
-        "bitcoinNetSaleEach": 549887,
+        "bitcoinNetSaleEach": 560859,
         "saleDestination": "Therapist",
-        "revenuePerDay": 478274,
+        "revenuePerDay": 487817,
         "fuelCostPerDay": 23199,
-        "netProfitPerDay": 455075,
+        "netProfitPerDay": 464618,
         "gpuUnitAcquisitionCost": 810000,
         "gpuAcquisitionMethod": "Flea Market",
         "installedGpuCapital": 40500000,
-        "simpleCapitalPaybackDays": 89
+        "simpleCapitalPaybackDays": 87.17
       }
     ]
   },
@@ -173,51 +173,6 @@
           "sellTo": "Flea Market"
         },
         {
-          "craftId": "67f4ec82690e0a541a021d3d",
-          "station": "Water Collector",
-          "craft": "Emergency Water Ration x2",
-          "durationSeconds": 1800,
-          "durationHours": 0.5,
-          "cyclesPerDay": 48,
-          "materialCostPerCycle": 56666,
-          "netRevenuePerCycle": 25801,
-          "profitPerCycleBeforeFuel": -30865,
-          "profitPerDayBeforeFuel": -1481520,
-          "standaloneFuelCostPerDay": 23199,
-          "profitPerDayStandalone": -1504719,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": -1481520,
-          "materials": [
-            {
-              "id": "57513f9324597720a7128161",
-              "item": "Pack of Grand juice",
-              "count": 1,
-              "unitCost": 56666,
-              "subtotal": 56666,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "outputs": [
-            {
-              "id": "60098b1705871270cd5352a1",
-              "item": "Emergency Water Ration",
-              "count": 2,
-              "unitPrice": 14000,
-              "gross": 28000,
-              "fee": 2199,
-              "net": 25801,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 14000,
-              "avg24hPrice": 31409,
-              "updated": "2026-09-08T13:58:07.000Z"
-            }
-          ],
-          "sellTo": "Flea Market"
-        },
-        {
           "craftId": "67f4ebb7d0fb51b8c705e80e",
           "station": "Water Collector",
           "craft": "Bottle of water (0.6L) x1",
@@ -257,6 +212,51 @@
               "methodType": "flea",
               "lastLowPrice": 20999,
               "avg24hPrice": 28426,
+              "updated": "2026-09-08T13:58:07.000Z"
+            }
+          ],
+          "sellTo": "Flea Market"
+        },
+        {
+          "craftId": "67f4ec82690e0a541a021d3d",
+          "station": "Water Collector",
+          "craft": "Emergency Water Ration x2",
+          "durationSeconds": 1800,
+          "durationHours": 0.5,
+          "cyclesPerDay": 48,
+          "materialCostPerCycle": 56666,
+          "netRevenuePerCycle": 25801,
+          "profitPerCycleBeforeFuel": -30865,
+          "profitPerDayBeforeFuel": -1481520,
+          "standaloneFuelCostPerDay": 23199,
+          "profitPerDayStandalone": -1504719,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": -1481520,
+          "materials": [
+            {
+              "id": "57513f9324597720a7128161",
+              "item": "Pack of Grand juice",
+              "count": 1,
+              "unitCost": 56666,
+              "subtotal": 56666,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "outputs": [
+            {
+              "id": "60098b1705871270cd5352a1",
+              "item": "Emergency Water Ration",
+              "count": 2,
+              "unitPrice": 14000,
+              "gross": 28000,
+              "fee": 2199,
+              "net": 25801,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 14000,
+              "avg24hPrice": 31409,
               "updated": "2026-09-08T13:58:07.000Z"
             }
           ],
@@ -630,6 +630,6 @@
     "waterCraft": "Aquamari water bottle with filter x5",
     "boozeCraft": "Bottle of Fierce Hatchling moonshine x1",
     "sharedFuelCostPerDay": 23199,
-    "netProfitPerDay": 345904
+    "netProfitPerDay": 355447
   }
 }
