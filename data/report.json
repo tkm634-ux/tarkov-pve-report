@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-09T01:51:50.019Z",
+    "calculatedAt": "2026-09-09T02:06:09.039Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-09T01:48:07.000Z"
+      "newest": "2026-09-09T01:58:08.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -380,7 +380,7 @@
               "methodType": "flea",
               "lastLowPrice": 123000,
               "avg24hPrice": 124381,
-              "updated": "2026-09-09T01:38:04.000Z"
+              "updated": "2026-09-09T01:58:08.000Z"
             }
           ]
         },
@@ -548,7 +548,7 @@
               "methodType": "flea",
               "lastLowPrice": 123000,
               "avg24hPrice": 124381,
-              "updated": "2026-09-09T01:38:04.000Z"
+              "updated": "2026-09-09T01:58:08.000Z"
             }
           ]
         },
@@ -1247,7 +1247,7 @@
               "methodType": "flea",
               "lastLowPrice": 98999,
               "avg24hPrice": 114230,
-              "updated": "2026-09-09T01:48:04.000Z"
+              "updated": "2026-09-09T01:58:08.000Z"
             }
           ]
         }
@@ -1258,13 +1258,13 @@
           "craft": "Portable defibrillator x1",
           "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 229276,
+          "materialCost": 235942,
           "saleGross": 400000,
           "fleaFee": 24662,
           "netRevenue": 375338,
-          "profit": 146062,
+          "profit": 139396,
           "durationMinutes": 315,
-          "profitPerHour": 27821,
+          "profitPerHour": 26552,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -1304,8 +1304,8 @@
               "id": "5af0561e86f7745f5f3ad6ac",
               "item": "Portable Powerbank",
               "count": 1,
-              "unitCost": 60000,
-              "subtotal": 60000,
+              "unitCost": 66666,
+              "subtotal": 66666,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -1599,19 +1599,41 @@
           ]
         },
         {
-          "craftId": "61c77cc6fcc1673f08540e9b",
-          "craft": "Emergency Water Ration x2",
+          "craftId": "5f240f45f4a9420a8c328ee0",
+          "craft": "Can of Max Energy energy drink x4",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 54444,
-          "saleGross": 76000,
-          "fleaFee": 4870,
-          "netRevenue": 71130,
-          "profit": 16686,
-          "durationMinutes": 66.67,
-          "profitPerHour": 15017,
+          "materialCost": 61300,
+          "saleGross": 92000,
+          "fleaFee": 6179,
+          "netRevenue": 85821,
+          "profit": 24522,
+          "durationMinutes": 108.33,
+          "profitPerHour": 13581,
           "sellTo": "Flea Market",
           "materials": [
+            {
+              "id": "57514643245977207f2c2d09",
+              "item": "Can of TarCola soda",
+              "count": 1,
+              "unitCost": 30987,
+              "subtotal": 30987,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5af0484c86f7740f02001f7f",
+              "item": "Can of Majaica coffee beans",
+              "count": 1,
+              "unitCost": 15869,
+              "subtotal": 15869,
+              "method": "Hideout craft: Nutrition Unit Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
             {
               "id": "5448fee04bdc2dbc018b4567",
               "item": "Bottle of water (0.6L)",
@@ -1622,39 +1644,28 @@
               "methodType": "barter",
               "buyLimit": 2,
               "taskUnlock": null
-            },
-            {
-              "id": "5e2af29386f7746d4159f077",
-              "item": "KEKTAPE duct tape",
-              "count": 1,
-              "unitCost": 40000,
-              "subtotal": 40000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
             }
           ],
           "tools": [
             {
-              "id": "5d1b39a386f774252339976f",
-              "item": "Silicone tube",
+              "id": "62a09e73af34e73a266d932a",
+              "item": "BakeEzy cook book",
               "count": 1
             }
           ],
           "outputs": [
             {
-              "id": "60098b1705871270cd5352a1",
-              "item": "Emergency Water Ration",
-              "count": 2,
-              "unitPrice": 38000,
-              "gross": 76000,
-              "fee": 4870,
-              "net": 71130,
+              "id": "5751435d24597720a27126d1",
+              "item": "Can of Max Energy energy drink",
+              "count": 4,
+              "unitPrice": 23000,
+              "gross": 92000,
+              "fee": 6179,
+              "net": 85821,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 38000,
-              "avg24hPrice": 28470,
+              "lastLowPrice": 23000,
+              "avg24hPrice": 27936,
               "updated": "2026-09-09T01:48:07.000Z"
             }
           ]
@@ -2200,12 +2211,12 @@
           "stationLevel": 1,
           "taskUnlock": null,
           "materialCost": 35998,
-          "saleGross": 140000,
-          "fleaFee": 11516,
-          "netRevenue": 128484,
-          "profit": 92486,
+          "saleGross": 120000,
+          "fleaFee": 9135,
+          "netRevenue": 110865,
+          "profit": 74867,
           "durationMinutes": 25,
-          "profitPerHour": 221966,
+          "profitPerHour": 179681,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -2232,15 +2243,15 @@
               "id": "59e366c186f7741778269d85",
               "item": "Piece of plexiglass",
               "count": 4,
-              "unitPrice": 35000,
-              "gross": 140000,
-              "fee": 11516,
-              "net": 128484,
+              "unitPrice": 30000,
+              "gross": 120000,
+              "fee": 9135,
+              "net": 110865,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 35000,
-              "avg24hPrice": 27912,
-              "updated": "2026-09-09T01:38:02.000Z"
+              "lastLowPrice": 30000,
+              "avg24hPrice": 29158,
+              "updated": "2026-09-09T01:58:05.000Z"
             }
           ]
         },
@@ -2458,25 +2469,25 @@
           ]
         },
         {
-          "craftId": "63a2abbb31772a61500d5336",
-          "craft": "Piece of plexiglass x4",
+          "craftId": "5de021b30f6d581e965bcde7",
+          "craft": "Weapon parts x5",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 35998,
-          "saleGross": 140000,
-          "fleaFee": 11516,
-          "netRevenue": 128484,
-          "profit": 92486,
-          "durationMinutes": 25,
-          "profitPerHour": 221966,
+          "materialCost": 54000,
+          "saleGross": 150000,
+          "fleaFee": 9501,
+          "netRevenue": 140499,
+          "profit": 86499,
+          "durationMinutes": 78.33,
+          "profitPerHour": 66255,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "5d1b309586f77425227d1676",
-              "item": "Broken LCD",
-              "count": 2,
-              "unitCost": 17999,
-              "subtotal": 35998,
+              "id": "59d6088586f774275f37482f",
+              "item": "Kalashnikov AKM 7.62x39 assault rifle",
+              "count": 1,
+              "unitCost": 54000,
+              "subtotal": 54000,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -2485,25 +2496,25 @@
           ],
           "tools": [
             {
-              "id": "5e2af22086f7746d3f3c33fa",
-              "item": "Tube of Poxeram cold welding",
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
               "count": 1
             }
           ],
           "outputs": [
             {
-              "id": "59e366c186f7741778269d85",
-              "item": "Piece of plexiglass",
-              "count": 4,
-              "unitPrice": 35000,
-              "gross": 140000,
-              "fee": 11516,
-              "net": 128484,
+              "id": "5d1c819a86f774771b0acd6c",
+              "item": "Weapon parts",
+              "count": 5,
+              "unitPrice": 30000,
+              "gross": 150000,
+              "fee": 9501,
+              "net": 140499,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 35000,
-              "avg24hPrice": 27912,
-              "updated": "2026-09-09T01:38:02.000Z"
+              "lastLowPrice": 30000,
+              "avg24hPrice": 32935,
+              "updated": "2026-09-09T01:48:02.000Z"
             }
           ]
         }
