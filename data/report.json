@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-10T01:23:53.401Z",
+    "calculatedAt": "2026-09-10T01:36:46.533Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-10T01:18:05.000Z"
+      "newest": "2026-09-10T01:28:06.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -711,6 +711,94 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
+          "craftId": "655b63ac9db22d43ab42b70a",
+          "craft": "Ars Arma A18 Skanda plate carrier (MultiCam) x1",
+          "stationLevel": 2,
+          "taskUnlock": "5b47876e86f7744d1c353205",
+          "materialCost": 118156,
+          "saleGross": 4699999,
+          "fleaFee": 2586427,
+          "netRevenue": 2113572,
+          "profit": 1995416,
+          "durationMinutes": 150,
+          "profitPerHour": 798167,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5e2af41e86f774755a234b67",
+              "item": "Cordura polyamide fabric",
+              "count": 2,
+              "unitCost": 8340,
+              "subtotal": 16680,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af4d286f7746d4159f07a",
+              "item": "Aramid fiber fabric",
+              "count": 3,
+              "unitCost": 18253,
+              "subtotal": 54759,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af4a786f7746d3f3c3400",
+              "item": "Ripstop fabric",
+              "count": 1,
+              "unitCost": 6717,
+              "subtotal": 6717,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "656f9fa0498d1b7e3e071d98",
+              "item": "SPRTN Omega ballistic plate",
+              "count": 2,
+              "unitCost": 20000,
+              "subtotal": 40000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "61bf83814088ec1a363d7097",
+              "item": "Sewing kit",
+              "count": 1
+            },
+            {
+              "id": "590c2e1186f77425357b6124",
+              "item": "Toolset",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d5d87f786f77427997cfaef",
+              "item": "Ars Arma A18 Skanda plate carrier (MultiCam)",
+              "count": 1,
+              "unitPrice": 4699999,
+              "gross": 4699999,
+              "fee": 2586427,
+              "net": 2113572,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 4699999,
+              "avg24hPrice": 58762,
+              "updated": "2026-09-10T01:28:04.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "5eecaa6327ccd70521107ff5",
           "craft": "Ripstop fabric x2",
           "stationLevel": 1,
@@ -823,62 +911,100 @@
               "lastLowPrice": 26000,
               "avg24hPrice": 17923,
               "updated": "2026-09-10T00:18:05.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "5df8ffcbaab5f257bd7ff3a8",
-          "craft": "WD-40 (100ml) x2",
-          "stationLevel": 2,
-          "taskUnlock": null,
-          "materialCost": 11999,
-          "saleGross": 151000,
-          "fleaFee": 22410,
-          "netRevenue": 128590,
-          "profit": 116591,
-          "durationMinutes": 150,
-          "profitPerHour": 46636,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "590c5c9f86f77477c91c36e7",
-              "item": "WD-40 (400ml)",
-              "count": 1,
-              "unitCost": 11999,
-              "subtotal": 11999,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "5d40419286f774318526545f",
-              "item": "Metal cutting scissors",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "590c5bbd86f774785762df04",
-              "item": "WD-40 (100ml)",
-              "count": 2,
-              "unitPrice": 75500,
-              "gross": 151000,
-              "fee": 22410,
-              "net": 128590,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 75500,
-              "avg24hPrice": 19250,
-              "updated": "2026-09-10T00:18:06.000Z"
             }
           ]
         }
       ],
       "topProfitPerCraft": [
         {
+          "craftId": "655b63ac9db22d43ab42b70a",
+          "craft": "Ars Arma A18 Skanda plate carrier (MultiCam) x1",
+          "stationLevel": 2,
+          "taskUnlock": "5b47876e86f7744d1c353205",
+          "materialCost": 118156,
+          "saleGross": 4699999,
+          "fleaFee": 2586427,
+          "netRevenue": 2113572,
+          "profit": 1995416,
+          "durationMinutes": 150,
+          "profitPerHour": 798167,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5e2af41e86f774755a234b67",
+              "item": "Cordura polyamide fabric",
+              "count": 2,
+              "unitCost": 8340,
+              "subtotal": 16680,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af4d286f7746d4159f07a",
+              "item": "Aramid fiber fabric",
+              "count": 3,
+              "unitCost": 18253,
+              "subtotal": 54759,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af4a786f7746d3f3c3400",
+              "item": "Ripstop fabric",
+              "count": 1,
+              "unitCost": 6717,
+              "subtotal": 6717,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "656f9fa0498d1b7e3e071d98",
+              "item": "SPRTN Omega ballistic plate",
+              "count": 2,
+              "unitCost": 20000,
+              "subtotal": 40000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "61bf83814088ec1a363d7097",
+              "item": "Sewing kit",
+              "count": 1
+            },
+            {
+              "id": "590c2e1186f77425357b6124",
+              "item": "Toolset",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d5d87f786f77427997cfaef",
+              "item": "Ars Arma A18 Skanda plate carrier (MultiCam)",
+              "count": 1,
+              "unitPrice": 4699999,
+              "gross": 4699999,
+              "fee": 2586427,
+              "net": 2113572,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 4699999,
+              "avg24hPrice": 58762,
+              "updated": "2026-09-10T01:28:04.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "5df8ffcbaab5f257bd7ff3a8",
           "craft": "WD-40 (100ml) x2",
           "stationLevel": 2,
@@ -991,56 +1117,6 @@
               "lastLowPrice": 26000,
               "avg24hPrice": 17923,
               "updated": "2026-09-10T00:18:05.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "5eecaa6327ccd70521107ff5",
-          "craft": "Ripstop fabric x2",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 13433,
-          "saleGross": 67798,
-          "fleaFee": 6858,
-          "netRevenue": 60940,
-          "profit": 47507,
-          "durationMinutes": 36.67,
-          "profitPerHour": 77739,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "572b7adb24597762ae139821",
-              "item": "Scav Vest",
-              "count": 1,
-              "unitCost": 13433,
-              "subtotal": 13433,
-              "method": "Trader barter: Jaeger LL1",
-              "methodType": "barter",
-              "buyLimit": 10,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "61bf83814088ec1a363d7097",
-              "item": "Sewing kit",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5e2af4a786f7746d3f3c3400",
-              "item": "Ripstop fabric",
-              "count": 2,
-              "unitPrice": 33899,
-              "gross": 67798,
-              "fee": 6858,
-              "net": 60940,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 33899,
-              "avg24hPrice": 32813,
-              "updated": "2026-09-10T00:18:06.000Z"
             }
           ]
         }
@@ -2317,12 +2393,12 @@
           "stationLevel": 1,
           "taskUnlock": null,
           "materialCost": 39990,
-          "saleGross": 53900,
-          "fleaFee": 3360,
-          "netRevenue": 50540,
-          "profit": 10550,
+          "saleGross": 53800,
+          "fleaFee": 3355,
+          "netRevenue": 50445,
+          "profit": 10455,
           "durationMinutes": 6,
-          "profitPerHour": 105500,
+          "profitPerHour": 104550,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -2349,15 +2425,15 @@
               "id": "59e8d2ab86f77407f03fc9c2",
               "item": "Kalashnikov AKM 7.62x39 assault rifle Default",
               "count": 1,
-              "unitPrice": 53900,
-              "gross": 53900,
-              "fee": 3360,
-              "net": 50540,
+              "unitPrice": 53800,
+              "gross": 53800,
+              "fee": 3355,
+              "net": 50445,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 53900,
-              "avg24hPrice": 55399,
-              "updated": "2026-09-10T01:08:03.000Z"
+              "lastLowPrice": 53800,
+              "avg24hPrice": 55780,
+              "updated": "2026-09-10T01:28:04.000Z"
             }
           ]
         }
