@@ -11,11 +11,11 @@
         "item": "5d1b371186f774253763a656 Name",
         "normalizedName": "expeditionary-fuel-tank",
         "capacity": 60,
-        "acquisitionCost": 119444,
+        "acquisitionCost": 100000,
         "acquisitionMethod": "Flea Market",
         "runtimeHours": 25.26,
-        "costPerHour": 4727.99,
-        "costPerDay": 113472,
+        "costPerHour": 3958.33,
+        "costPerDay": 95000,
         "status": "complete"
       },
       {
@@ -23,11 +23,11 @@
         "item": "5d1b36a186f7742523398433 Name",
         "normalizedName": "metal-fuel-tank",
         "capacity": 100,
-        "acquisitionCost": 156496,
-        "acquisitionMethod": "Trader barter: Jaeger LL1",
+        "acquisitionCost": 149110,
+        "acquisitionMethod": "Trader barter: Prapor LL2",
         "runtimeHours": 42.11,
-        "costPerHour": 3716.78,
-        "costPerDay": 89203,
+        "costPerHour": 3541.36,
+        "costPerDay": 84993,
         "status": "complete"
       }
     ],
@@ -36,14 +36,14 @@
       "item": "5d1b36a186f7742523398433 Name",
       "normalizedName": "metal-fuel-tank",
       "capacity": 100,
-      "acquisitionCost": 156496,
-      "acquisitionMethod": "Trader barter: Jaeger LL1",
+      "acquisitionCost": 149110,
+      "acquisitionMethod": "Trader barter: Prapor LL2",
       "runtimeHours": 42.11,
-      "costPerHour": 3716.78,
-      "costPerDay": 89203,
+      "costPerHour": 3541.36,
+      "costPerDay": 84993,
       "status": "complete"
     },
-    "dailyFuelCost": 89203
+    "dailyFuelCost": 84993
   },
   "bitcoinFarm": {
     "status": "complete",
@@ -64,12 +64,12 @@
         "bitcoinNetSaleEach": 556449,
         "saleDestination": "Therapist",
         "revenuePerDay": 160257,
-        "fuelCostPerDay": 89203,
-        "netProfitPerDay": 71054,
+        "fuelCostPerDay": 84993,
+        "netProfitPerDay": 75264,
         "gpuUnitAcquisitionCost": 759197,
         "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
         "installedGpuCapital": 759197,
-        "simpleCapitalPaybackDays": 10.68
+        "simpleCapitalPaybackDays": 10.09
       },
       {
         "gpuCount": 10,
@@ -79,12 +79,12 @@
         "bitcoinNetSaleEach": 556449,
         "saleDestination": "Therapist",
         "revenuePerDay": 219717,
-        "fuelCostPerDay": 89203,
-        "netProfitPerDay": 130514,
+        "fuelCostPerDay": 84993,
+        "netProfitPerDay": 134724,
         "gpuUnitAcquisitionCost": 759197,
         "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
         "installedGpuCapital": 7591970,
-        "simpleCapitalPaybackDays": 58.17
+        "simpleCapitalPaybackDays": 56.35
       },
       {
         "gpuCount": 25,
@@ -94,12 +94,12 @@
         "bitcoinNetSaleEach": 556449,
         "saleDestination": "Therapist",
         "revenuePerDay": 318816,
-        "fuelCostPerDay": 89203,
-        "netProfitPerDay": 229613,
+        "fuelCostPerDay": 84993,
+        "netProfitPerDay": 233823,
         "gpuUnitAcquisitionCost": 759197,
         "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
         "installedGpuCapital": 18979925,
-        "simpleCapitalPaybackDays": 82.66
+        "simpleCapitalPaybackDays": 81.17
       },
       {
         "gpuCount": 50,
@@ -109,12 +109,12 @@
         "bitcoinNetSaleEach": 556449,
         "saleDestination": "Therapist",
         "revenuePerDay": 483981,
-        "fuelCostPerDay": 89203,
-        "netProfitPerDay": 394778,
+        "fuelCostPerDay": 84993,
+        "netProfitPerDay": 398988,
         "gpuUnitAcquisitionCost": 759197,
         "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
         "installedGpuCapital": 37959850,
-        "simpleCapitalPaybackDays": 96.15
+        "simpleCapitalPaybackDays": 95.14
       }
     ]
   },
@@ -134,20 +134,20 @@
           "durationSeconds": 3600,
           "durationHours": 1,
           "cyclesPerDay": 24,
-          "materialCostPerCycle": 54599,
+          "materialCostPerCycle": 63000,
           "netRevenuePerCycle": 100217,
-          "profitPerCycleBeforeFuel": 45618,
-          "profitPerDayBeforeFuel": 1094832,
-          "standaloneFuelCostPerDay": 89203,
-          "profitPerDayStandalone": 1005629,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": 1094832,
+          "profitPerCycleBeforeFuel": 37217,
+          "profitPerDayBeforeFuel": 893208,
+          "standaloneFuelCostPerDay": 84993,
+          "profitPerDayStandalone": 808215,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 893208,
           "materials": [
             {
               "id": "5448fee04bdc2dbc018b4567",
               "item": "Bottle of water (0.6L)",
               "count": 5,
-              "unitCost": 7777,
-              "subtotal": 38885,
+              "unitCost": 10000,
+              "subtotal": 50000,
               "method": "Trader barter: Therapist LL1",
               "methodType": "barter",
               "buyLimit": 2,
@@ -157,8 +157,8 @@
               "id": "6389c6c7dbfd5e4b95197e68",
               "item": "Aquapeps water purification tablets",
               "count": 1,
-              "unitCost": 15714,
-              "subtotal": 15714,
+              "unitCost": 13000,
+              "subtotal": 13000,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -194,8 +194,8 @@
           "netRevenuePerCycle": 212592,
           "profitPerCycleBeforeFuel": 14592,
           "profitPerDayBeforeFuel": 64654,
-          "standaloneFuelCostPerDay": 89203,
-          "profitPerDayStandalone": -24549,
+          "standaloneFuelCostPerDay": 84993,
+          "profitPerDayStandalone": -20339,
           "profitPerDayMarginalIfGeneratorAlreadyRunning": 64654,
           "materials": [
             {
@@ -235,20 +235,20 @@
           "durationSeconds": 1200,
           "durationHours": 0.33,
           "cyclesPerDay": 72,
-          "materialCostPerCycle": 7777,
+          "materialCostPerCycle": 10000,
           "netRevenuePerCycle": 19497,
-          "profitPerCycleBeforeFuel": 11720,
-          "profitPerDayBeforeFuel": 843840,
-          "standaloneFuelCostPerDay": 89203,
-          "profitPerDayStandalone": 754637,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": 843840,
+          "profitPerCycleBeforeFuel": 9497,
+          "profitPerDayBeforeFuel": 683784,
+          "standaloneFuelCostPerDay": 84993,
+          "profitPerDayStandalone": 598791,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 683784,
           "materials": [
             {
               "id": "5448fee04bdc2dbc018b4567",
               "item": "Bottle of water (0.6L)",
               "count": 1,
-              "unitCost": 7777,
-              "subtotal": 7777,
+              "unitCost": 10000,
+              "subtotal": 10000,
               "method": "Trader barter: Therapist LL1",
               "methodType": "barter",
               "buyLimit": 2,
@@ -284,8 +284,8 @@
           "netRevenuePerCycle": 33350,
           "profitPerCycleBeforeFuel": 2350,
           "profitPerDayBeforeFuel": 112800,
-          "standaloneFuelCostPerDay": 89203,
-          "profitPerDayStandalone": 23597,
+          "standaloneFuelCostPerDay": 84993,
+          "profitPerDayStandalone": 27807,
           "profitPerDayMarginalIfGeneratorAlreadyRunning": 112800,
           "materials": [
             {
@@ -326,20 +326,20 @@
         "durationSeconds": 3600,
         "durationHours": 1,
         "cyclesPerDay": 24,
-        "materialCostPerCycle": 54599,
+        "materialCostPerCycle": 63000,
         "netRevenuePerCycle": 100217,
-        "profitPerCycleBeforeFuel": 45618,
-        "profitPerDayBeforeFuel": 1094832,
-        "standaloneFuelCostPerDay": 89203,
-        "profitPerDayStandalone": 1005629,
-        "profitPerDayMarginalIfGeneratorAlreadyRunning": 1094832,
+        "profitPerCycleBeforeFuel": 37217,
+        "profitPerDayBeforeFuel": 893208,
+        "standaloneFuelCostPerDay": 84993,
+        "profitPerDayStandalone": 808215,
+        "profitPerDayMarginalIfGeneratorAlreadyRunning": 893208,
         "materials": [
           {
             "id": "5448fee04bdc2dbc018b4567",
             "item": "Bottle of water (0.6L)",
             "count": 5,
-            "unitCost": 7777,
-            "subtotal": 38885,
+            "unitCost": 10000,
+            "subtotal": 50000,
             "method": "Trader barter: Therapist LL1",
             "methodType": "barter",
             "buyLimit": 2,
@@ -349,8 +349,8 @@
             "id": "6389c6c7dbfd5e4b95197e68",
             "item": "Aquapeps water purification tablets",
             "count": 1,
-            "unitCost": 15714,
-            "subtotal": 15714,
+            "unitCost": 13000,
+            "subtotal": 13000,
             "method": "Flea Market",
             "methodType": "flea",
             "buyLimit": null,
@@ -390,8 +390,8 @@
           "netRevenuePerCycle": 374935,
           "profitPerCycleBeforeFuel": 36935,
           "profitPerDayBeforeFuel": 290108,
-          "standaloneFuelCostPerDay": 89203,
-          "profitPerDayStandalone": 200905,
+          "standaloneFuelCostPerDay": 84993,
+          "profitPerDayStandalone": 205115,
           "profitPerDayMarginalIfGeneratorAlreadyRunning": 290108,
           "materials": [
             {
@@ -447,8 +447,8 @@
         "netRevenuePerCycle": 374935,
         "profitPerCycleBeforeFuel": 36935,
         "profitPerDayBeforeFuel": 290108,
-        "standaloneFuelCostPerDay": 89203,
-        "profitPerDayStandalone": 200905,
+        "standaloneFuelCostPerDay": 84993,
+        "profitPerDayStandalone": 205115,
         "profitPerDayMarginalIfGeneratorAlreadyRunning": 290108,
         "materials": [
           {
@@ -608,8 +608,8 @@
         ],
         "input": "5c12613b86f7743bbe2c3f76 Name",
         "inputItemId": "5c12613b86f7743bbe2c3f76",
-        "investmentCost": 212050,
-        "investmentMethod": "Hideout craft: Intelligence Center Lv3",
+        "investmentCost": 247940,
+        "investmentMethod": "Trader barter: Peacekeeper LL3",
         "durationMinutes": 320,
         "expectedReturn": null,
         "expectedProfit": null,
@@ -629,7 +629,7 @@
     "bitcoinGpuCount": 50,
     "waterCraft": "Aquamari water bottle with filter x5",
     "boozeCraft": "Bottle of Fierce Hatchling moonshine x1",
-    "sharedFuelCostPerDay": 89203,
-    "netProfitPerDay": 1779718
+    "sharedFuelCostPerDay": 84993,
+    "netProfitPerDay": 1582304
   }
 }
