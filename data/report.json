@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-10T17:23:20.258Z",
+    "calculatedAt": "2026-09-10T17:35:49.375Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-10T17:18:07.000Z"
+      "newest": "2026-09-10T17:28:05.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -38,7 +38,7 @@
   },
   "acquisitionEngine": {
     "converged": true,
-    "passes": 4,
+    "passes": 5,
     "pricedItems": 4081
   },
   "fleaMarket": {
@@ -263,7 +263,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 400000,
-              "avg24hPrice": 415095,
+              "avg24hPrice": 418270,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -320,7 +320,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 400000,
-              "avg24hPrice": 415095,
+              "avg24hPrice": 418270,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -1726,7 +1726,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 25000,
-              "avg24hPrice": 30153,
+              "avg24hPrice": 30224,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -1853,7 +1853,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 20000,
-              "avg24hPrice": 26391,
+              "avg24hPrice": 25963,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -1927,7 +1927,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 20000,
-              "avg24hPrice": 26391,
+              "avg24hPrice": 25963,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -2054,7 +2054,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 25000,
-              "avg24hPrice": 30153,
+              "avg24hPrice": 30224,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -2118,7 +2118,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 24444,
-              "avg24hPrice": 25717,
+              "avg24hPrice": 25349,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -2162,7 +2162,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 18000,
-              "avg24hPrice": 24065,
+              "avg24hPrice": 24126,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -2206,7 +2206,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 220000,
-              "avg24hPrice": 258207,
+              "avg24hPrice": 258818,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -2263,7 +2263,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 24444,
-              "avg24hPrice": 25717,
+              "avg24hPrice": 25349,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -2307,7 +2307,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 18000,
-              "avg24hPrice": 24065,
+              "avg24hPrice": 24126,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -2357,7 +2357,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 14999,
-              "avg24hPrice": 25707,
+              "avg24hPrice": 25202,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ]
@@ -2568,52 +2568,74 @@
           ]
         },
         {
-          "craftId": "5dd11303b78bb413d5133f79",
-          "craft": "Capacitors x6",
-          "stationLevel": 1,
+          "craftId": "5d78dbfb65aebb016d20b6f3",
+          "craft": "Kalashnikov AK-74M 5.45x39 assault rifle Default x1",
+          "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 53333,
-          "saleGross": 180000,
-          "fleaFee": 28500,
-          "netRevenue": 151500,
-          "profit": 98167,
-          "durationMinutes": 124.17,
-          "profitPerHour": 47436,
+          "materialCost": 11602,
+          "saleGross": 139000,
+          "fleaFee": 11193,
+          "netRevenue": 127807,
+          "profit": 116205,
+          "durationMinutes": 83.33,
+          "profitPerHour": 83668,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "57347c2e24597744902c94a1",
-              "item": "Power supply unit",
+              "id": "5d1c819a86f774771b0acd6c",
+              "item": "Weapon parts",
               "count": 1,
-              "unitCost": 53333,
-              "subtotal": 53333,
-              "method": "Flea Market",
-              "methodType": "flea",
+              "unitCost": 8000,
+              "subtotal": 8000,
+              "method": "Hideout craft: Workbench Lv1",
+              "methodType": "craft",
               "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5648b1504bdc2d9d488b4584",
+              "item": "AK-74M polymer handguard",
+              "count": 1,
+              "unitCost": 1390,
+              "subtotal": 1390,
+              "method": "Trader purchase: Prapor LL2",
+              "methodType": "trader",
+              "buyLimit": 3,
+              "taskUnlock": null
+            },
+            {
+              "id": "5ac50c185acfc400163398d4",
+              "item": "AK-74M polymer stock",
+              "count": 1,
+              "unitCost": 2212,
+              "subtotal": 2212,
+              "method": "Trader purchase: Prapor LL2",
+              "methodType": "trader",
+              "buyLimit": 5,
               "taskUnlock": null
             }
           ],
           "tools": [
             {
-              "id": "590c2d8786f774245b1f03f3",
-              "item": "Screwdriver",
+              "id": "590c2e1186f77425357b6124",
+              "item": "Toolset",
               "count": 1
             }
           ],
           "outputs": [
             {
-              "id": "5c06782b86f77426df5407d2",
-              "item": "Capacitors",
-              "count": 6,
-              "unitPrice": 30000,
-              "gross": 180000,
-              "fee": 28500,
-              "net": 151500,
+              "id": "5acf7db286f7743a9c7092e3",
+              "item": "Kalashnikov AK-74M 5.45x39 assault rifle Default",
+              "count": 1,
+              "unitPrice": 139000,
+              "gross": 139000,
+              "fee": 11193,
+              "net": 127807,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 30000,
-              "avg24hPrice": 39423,
-              "updated": "2026-09-10T16:18:06.000Z"
+              "lastLowPrice": 139000,
+              "avg24hPrice": 50509,
+              "updated": "2026-09-10T17:28:03.000Z"
             }
           ]
         },
@@ -2622,21 +2644,21 @@
           "craft": "Weapon parts x5",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 53987,
+          "materialCost": 40000,
           "saleGross": 160000,
           "fleaFee": 10299,
           "netRevenue": 149701,
-          "profit": 95714,
+          "profit": 109701,
           "durationMinutes": 78.33,
-          "profitPerHour": 73313,
+          "profitPerHour": 84026,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "59d6088586f774275f37482f",
               "item": "Kalashnikov AKM 7.62x39 assault rifle",
               "count": 1,
-              "unitCost": 53987,
-              "subtotal": 53987,
+              "unitCost": 40000,
+              "subtotal": 40000,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -2984,7 +3006,7 @@
                 "sellTo": "Flea Market",
                 "methodType": "flea",
                 "lastLowPrice": 24444,
-                "avg24hPrice": 25717,
+                "avg24hPrice": 25349,
                 "updated": "2026-09-10T17:08:02.000Z"
               }
             ],
@@ -3029,7 +3051,7 @@
                 "sellTo": "Flea Market",
                 "methodType": "flea",
                 "lastLowPrice": 220000,
-                "avg24hPrice": 258207,
+                "avg24hPrice": 258818,
                 "updated": "2026-09-10T17:08:02.000Z"
               }
             ],
@@ -3074,7 +3096,7 @@
                 "sellTo": "Flea Market",
                 "methodType": "flea",
                 "lastLowPrice": 18000,
-                "avg24hPrice": 24065,
+                "avg24hPrice": 24126,
                 "updated": "2026-09-10T17:08:02.000Z"
               }
             ],
@@ -3119,7 +3141,7 @@
                 "sellTo": "Flea Market",
                 "methodType": "flea",
                 "lastLowPrice": 14999,
-                "avg24hPrice": 25707,
+                "avg24hPrice": 25202,
                 "updated": "2026-09-10T17:08:02.000Z"
               }
             ],
@@ -3176,7 +3198,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 24444,
-              "avg24hPrice": 25717,
+              "avg24hPrice": 25349,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ],
@@ -3236,7 +3258,7 @@
                 "sellTo": "Flea Market",
                 "methodType": "flea",
                 "lastLowPrice": 400000,
-                "avg24hPrice": 415095,
+                "avg24hPrice": 418270,
                 "updated": "2026-09-10T17:08:02.000Z"
               }
             ],
@@ -3293,7 +3315,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 400000,
-              "avg24hPrice": 415095,
+              "avg24hPrice": 418270,
               "updated": "2026-09-10T17:08:02.000Z"
             }
           ],
