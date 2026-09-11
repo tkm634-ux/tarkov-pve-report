@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-11T13:25:19.862Z",
+    "calculatedAt": "2026-09-11T13:38:33.541Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-11T13:18:07.000Z"
+      "newest": "2026-09-11T13:28:06.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -799,28 +799,50 @@
           ]
         },
         {
-          "craftId": "600aa140090cb63380270290",
-          "craft": "Cordura polyamide fabric x2",
-          "stationLevel": 1,
+          "craftId": "655b6bc01f2b6843ec751fd7",
+          "craft": "Eberlestock F5 Switchblade backpack (Dry Earth) x1",
+          "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 16680,
-          "saleGross": 57776,
-          "fleaFee": 3693,
-          "netRevenue": 54083,
-          "profit": 37403,
-          "durationMinutes": 48.33,
-          "profitPerHour": 46431,
+          "materialCost": 33680,
+          "saleGross": 75000,
+          "fleaFee": 4747,
+          "netRevenue": 70253,
+          "profit": 36573,
+          "durationMinutes": 41.67,
+          "profitPerHour": 52665,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "5ab8f04f86f774585f4237d8",
-              "item": "Tactical sling bag (Khaki)",
+              "id": "5e2af4a786f7746d3f3c3400",
+              "item": "Ripstop fabric",
+              "count": 2,
+              "unitCost": 5000,
+              "subtotal": 10000,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af41e86f774755a234b67",
+              "item": "Cordura polyamide fabric",
               "count": 2,
               "unitCost": 8340,
               "subtotal": 16680,
-              "method": "Trader purchase: Ragman LL1",
-              "methodType": "trader",
-              "buyLimit": 10,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "59e3556c86f7741776641ac2",
+              "item": "Ox bleach",
+              "count": 1,
+              "unitCost": 7000,
+              "subtotal": 7000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
               "taskUnlock": null
             }
           ],
@@ -833,106 +855,23 @@
           ],
           "outputs": [
             {
-              "id": "5e2af41e86f774755a234b67",
-              "item": "Cordura polyamide fabric",
-              "count": 2,
-              "unitPrice": 28888,
-              "gross": 57776,
-              "fee": 3693,
-              "net": 54083,
+              "id": "5f5e467b0bc58666c37e7821",
+              "item": "Eberlestock F5 Switchblade backpack (Dry Earth)",
+              "count": 1,
+              "unitPrice": 75000,
+              "gross": 75000,
+              "fee": 4747,
+              "net": 70253,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 28888,
-              "avg24hPrice": 25192,
-              "updated": "2026-09-11T12:18:07.000Z"
+              "lastLowPrice": 75000,
+              "avg24hPrice": 42927,
+              "updated": "2026-09-11T13:28:04.000Z"
             }
           ]
         }
       ],
       "topProfitPerCraft": [
-        {
-          "craftId": "5eeca9bad874f914d2536585",
-          "craft": "Lucky Scav Junk box x1",
-          "stationLevel": 2,
-          "taskUnlock": null,
-          "materialCost": 566429,
-          "saleGross": 619787,
-          "fleaFee": 0,
-          "netRevenue": 619787,
-          "profit": 53358,
-          "durationMinutes": 300,
-          "profitPerHour": 10672,
-          "sellTo": "Therapist",
-          "materials": [
-            {
-              "id": "5c127c4486f7745625356c13",
-              "item": "Magazine case",
-              "count": 3,
-              "unitCost": 50000,
-              "subtotal": 150000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "57347c5b245977448d35f6e1",
-              "item": "Bolts",
-              "count": 6,
-              "unitCost": 26999,
-              "subtotal": 161994,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5e2af29386f7746d4159f077",
-              "item": "KEKTAPE duct tape",
-              "count": 3,
-              "unitCost": 20000,
-              "subtotal": 60000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "61bf7b6302b3924be92fa8c3",
-              "item": "Metal spare parts",
-              "count": 5,
-              "unitCost": 38887,
-              "subtotal": 194435,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "5d40419286f774318526545f",
-              "item": "Metal cutting scissors",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5b7c710788a4506dec015957",
-              "item": "Lucky Scav Junk box",
-              "count": 1,
-              "unitPrice": 619787,
-              "gross": 619787,
-              "fee": 0,
-              "net": 619787,
-              "sellTo": "Therapist",
-              "methodType": "trader",
-              "lastLowPrice": null,
-              "avg24hPrice": null,
-              "updated": "2025-12-03T12:34:06.000Z"
-            }
-          ]
-        },
         {
           "craftId": "62a11415c30cfa1d366aeb83",
           "craft": "Soap x6",
@@ -1046,6 +985,78 @@
               "lastLowPrice": 28888,
               "avg24hPrice": 25192,
               "updated": "2026-09-11T12:18:07.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "655b6bc01f2b6843ec751fd7",
+          "craft": "Eberlestock F5 Switchblade backpack (Dry Earth) x1",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 33680,
+          "saleGross": 75000,
+          "fleaFee": 4747,
+          "netRevenue": 70253,
+          "profit": 36573,
+          "durationMinutes": 41.67,
+          "profitPerHour": 52665,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5e2af4a786f7746d3f3c3400",
+              "item": "Ripstop fabric",
+              "count": 2,
+              "unitCost": 5000,
+              "subtotal": 10000,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af41e86f774755a234b67",
+              "item": "Cordura polyamide fabric",
+              "count": 2,
+              "unitCost": 8340,
+              "subtotal": 16680,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "59e3556c86f7741776641ac2",
+              "item": "Ox bleach",
+              "count": 1,
+              "unitCost": 7000,
+              "subtotal": 7000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "61bf83814088ec1a363d7097",
+              "item": "Sewing kit",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5f5e467b0bc58666c37e7821",
+              "item": "Eberlestock F5 Switchblade backpack (Dry Earth)",
+              "count": 1,
+              "unitPrice": 75000,
+              "gross": 75000,
+              "fee": 4747,
+              "net": 70253,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 75000,
+              "avg24hPrice": 42927,
+              "updated": "2026-09-11T13:28:04.000Z"
             }
           ]
         }
@@ -2350,51 +2361,51 @@
           ]
         },
         {
-          "craftId": "63a2abbb31772a61500d5336",
-          "craft": "Piece of plexiglass x4",
+          "craftId": "5de021b30f6d581e965bcde7",
+          "craft": "Weapon parts x5",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 37776,
-          "saleGross": 72000,
-          "fleaFee": 4547,
-          "netRevenue": 67453,
-          "profit": 29677,
-          "durationMinutes": 25,
-          "profitPerHour": 71225,
+          "materialCost": 34567,
+          "saleGross": 149950,
+          "fleaFee": 9497,
+          "netRevenue": 140453,
+          "profit": 105886,
+          "durationMinutes": 78.33,
+          "profitPerHour": 81104,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "5d1b309586f77425227d1676",
-              "item": "Broken LCD",
-              "count": 2,
-              "unitCost": 18888,
-              "subtotal": 37776,
-              "method": "Hideout craft: Workbench Lv1",
-              "methodType": "craft",
+              "id": "59d6088586f774275f37482f",
+              "item": "Kalashnikov AKM 7.62x39 assault rifle",
+              "count": 1,
+              "unitCost": 34567,
+              "subtotal": 34567,
+              "method": "Flea Market",
+              "methodType": "flea",
               "buyLimit": null,
               "taskUnlock": null
             }
           ],
           "tools": [
             {
-              "id": "5e2af22086f7746d3f3c33fa",
-              "item": "Tube of Poxeram cold welding",
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
               "count": 1
             }
           ],
           "outputs": [
             {
-              "id": "59e366c186f7741778269d85",
-              "item": "Piece of plexiglass",
-              "count": 4,
-              "unitPrice": 18000,
-              "gross": 72000,
-              "fee": 4547,
-              "net": 67453,
+              "id": "5d1c819a86f774771b0acd6c",
+              "item": "Weapon parts",
+              "count": 5,
+              "unitPrice": 29990,
+              "gross": 149950,
+              "fee": 9497,
+              "net": 140453,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 18000,
-              "avg24hPrice": 22719,
+              "lastLowPrice": 29990,
+              "avg24hPrice": 32036,
               "updated": "2026-09-11T12:18:07.000Z"
             }
           ]
@@ -2496,62 +2507,51 @@
           ]
         },
         {
-          "craftId": "5de919ec1b25d85cf30ca39a",
-          "craft": "Gunpowder \"Eagle\" x2",
-          "stationLevel": 2,
+          "craftId": "5de021b30f6d581e965bcde7",
+          "craft": "Weapon parts x5",
+          "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 35695,
-          "saleGross": 141554,
-          "fleaFee": 9073,
-          "netRevenue": 132481,
-          "profit": 96786,
-          "durationMinutes": 97.83,
-          "profitPerHour": 59358,
+          "materialCost": 34567,
+          "saleGross": 149950,
+          "fleaFee": 9497,
+          "netRevenue": 140453,
+          "profit": 105886,
+          "durationMinutes": 78.33,
+          "profitPerHour": 81104,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "58d3db5386f77426186285a0",
-              "item": "M67 hand grenade",
-              "count": 2,
-              "unitCost": 15555,
-              "subtotal": 31110,
-              "method": "Trader barter: Peacekeeper LL2",
-              "methodType": "barter",
-              "buyLimit": 8,
-              "taskUnlock": null
-            },
-            {
-              "id": "617aa4dd8166f034d57de9c5",
-              "item": "M18 smoke grenade (Green)",
+              "id": "59d6088586f774275f37482f",
+              "item": "Kalashnikov AKM 7.62x39 assault rifle",
               "count": 1,
-              "unitCost": 4585,
-              "subtotal": 4585,
-              "method": "Trader purchase: Jaeger LL1",
-              "methodType": "trader",
-              "buyLimit": 5,
+              "unitCost": 34567,
+              "subtotal": 34567,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
               "taskUnlock": null
             }
           ],
           "tools": [
             {
-              "id": "590c2d8786f774245b1f03f3",
-              "item": "Screwdriver",
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
               "count": 1
             }
           ],
           "outputs": [
             {
-              "id": "5d6fc78386f77449d825f9dc",
-              "item": "Gunpowder \"Eagle\"",
-              "count": 2,
-              "unitPrice": 70777,
-              "gross": 141554,
-              "fee": 9073,
-              "net": 132481,
+              "id": "5d1c819a86f774771b0acd6c",
+              "item": "Weapon parts",
+              "count": 5,
+              "unitPrice": 29990,
+              "gross": 149950,
+              "fee": 9497,
+              "net": 140453,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 70777,
-              "avg24hPrice": 71440,
+              "lastLowPrice": 29990,
+              "avg24hPrice": 32036,
               "updated": "2026-09-11T12:18:07.000Z"
             }
           ]
