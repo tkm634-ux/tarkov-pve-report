@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-12T16:35:39.101Z",
+    "calculatedAt": "2026-09-12T16:48:21.665Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-12T16:28:10.000Z"
+      "newest": "2026-09-12T16:38:06.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -2373,83 +2373,6 @@
           ]
         },
         {
-          "craftId": "63a3359eaf870e651d58e61a",
-          "craft": "PM 9x18PM 84-round makeshift drum magazine x1",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 22700,
-          "saleGross": 88888,
-          "fleaFee": 8361,
-          "netRevenue": 80527,
-          "profit": 57827,
-          "durationMinutes": 20,
-          "profitPerHour": 173482,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5ea034f65aad6446a939737e",
-              "item": "PPSh-41 7.62x25 71-round drum magazine",
-              "count": 1,
-              "unitCost": 13600,
-              "subtotal": 13600,
-              "method": "Trader barter: Prapor LL1",
-              "methodType": "barter",
-              "buyLimit": 2,
-              "taskUnlock": null
-            },
-            {
-              "id": "5448c12b4bdc2d02308b456f",
-              "item": "PM 9x18PM 90-93 8-round magazine",
-              "count": 1,
-              "unitCost": 1100,
-              "subtotal": 1100,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5e2af22086f7746d3f3c33fa",
-              "item": "Tube of Poxeram cold welding",
-              "count": 1,
-              "unitCost": 8000,
-              "subtotal": 8000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "62a0a0bb621468534a797ad5",
-              "item": "Set of files \"Master\"",
-              "count": 1
-            },
-            {
-              "id": "590c2b4386f77425357b6123",
-              "item": "Pliers",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "55d485be4bdc2d962f8b456f",
-              "item": "PM 9x18PM 84-round makeshift drum magazine",
-              "count": 1,
-              "unitPrice": 88888,
-              "gross": 88888,
-              "fee": 8361,
-              "net": 80527,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 88888,
-              "avg24hPrice": 79958,
-              "updated": "2026-09-12T16:18:02.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "5dd3c5487058311d4b267186",
           "craft": "Gunpowder \"Kite\" x2",
           "stationLevel": 1,
@@ -2495,6 +2418,56 @@
               "methodType": "flea",
               "lastLowPrice": 18000,
               "avg24hPrice": 25106,
+              "updated": "2026-09-12T16:18:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "63a2abbb31772a61500d5336",
+          "craft": "Piece of plexiglass x4",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 36998,
+          "saleGross": 84000,
+          "fleaFee": 5530,
+          "netRevenue": 78470,
+          "profit": 41472,
+          "durationMinutes": 25,
+          "profitPerHour": 99533,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5d1b309586f77425227d1676",
+              "item": "Broken LCD",
+              "count": 2,
+              "unitCost": 18499,
+              "subtotal": 36998,
+              "method": "Hideout craft: Workbench Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5e2af22086f7746d3f3c33fa",
+              "item": "Tube of Poxeram cold welding",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "59e366c186f7741778269d85",
+              "item": "Piece of plexiglass",
+              "count": 4,
+              "unitPrice": 21000,
+              "gross": 84000,
+              "fee": 5530,
+              "net": 78470,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 21000,
+              "avg24hPrice": 30332,
               "updated": "2026-09-12T16:18:06.000Z"
             }
           ]
