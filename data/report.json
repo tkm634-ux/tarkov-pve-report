@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-12T20:39:32.176Z",
+    "calculatedAt": "2026-09-12T20:52:39.878Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-12T20:28:12.000Z"
+      "newest": "2026-09-12T20:48:07.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -2192,17 +2192,67 @@
           ]
         },
         {
+          "craftId": "600a9955ba91d953182d69f0",
+          "craft": "Kalashnikov AKM 7.62x39 assault rifle Default x1",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 42000,
+          "saleGross": 54420,
+          "fleaFee": 3387,
+          "netRevenue": 51033,
+          "profit": 9033,
+          "durationMinutes": 6,
+          "profitPerHour": 90330,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "59e6152586f77473dc057aa1",
+              "item": "Molot Arms VPO-136 Vepr-KM 7.62x39 carbine",
+              "count": 1,
+              "unitCost": 42000,
+              "subtotal": 42000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "59e8d2ab86f77407f03fc9c2",
+              "item": "Kalashnikov AKM 7.62x39 assault rifle Default",
+              "count": 1,
+              "unitPrice": 54420,
+              "gross": 54420,
+              "fee": 3387,
+              "net": 51033,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 54420,
+              "avg24hPrice": 55033,
+              "updated": "2026-09-12T19:38:07.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "63a3359eaf870e651d58e61a",
           "craft": "PM 9x18PM 84-round makeshift drum magazine x1",
           "stationLevel": 1,
           "taskUnlock": null,
           "materialCost": 21983,
-          "saleGross": 59999,
-          "fleaFee": 4578,
-          "netRevenue": 55421,
-          "profit": 33438,
+          "saleGross": 55555,
+          "fleaFee": 4089,
+          "netRevenue": 51466,
+          "profit": 29483,
           "durationMinutes": 20,
-          "profitPerHour": 100314,
+          "profitPerHour": 88449,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -2256,65 +2306,15 @@
               "id": "55d485be4bdc2d962f8b456f",
               "item": "PM 9x18PM 84-round makeshift drum magazine",
               "count": 1,
-              "unitPrice": 59999,
-              "gross": 59999,
-              "fee": 4578,
-              "net": 55421,
+              "unitPrice": 55555,
+              "gross": 55555,
+              "fee": 4089,
+              "net": 51466,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 59999,
-              "avg24hPrice": 83589,
-              "updated": "2026-09-12T20:18:01.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "600a9955ba91d953182d69f0",
-          "craft": "Kalashnikov AKM 7.62x39 assault rifle Default x1",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 42000,
-          "saleGross": 54420,
-          "fleaFee": 3387,
-          "netRevenue": 51033,
-          "profit": 9033,
-          "durationMinutes": 6,
-          "profitPerHour": 90330,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "59e6152586f77473dc057aa1",
-              "item": "Molot Arms VPO-136 Vepr-KM 7.62x39 carbine",
-              "count": 1,
-              "unitCost": 42000,
-              "subtotal": 42000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "544fb5454bdc2df8738b456a",
-              "item": "Leatherman Multitool",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "59e8d2ab86f77407f03fc9c2",
-              "item": "Kalashnikov AKM 7.62x39 assault rifle Default",
-              "count": 1,
-              "unitPrice": 54420,
-              "gross": 54420,
-              "fee": 3387,
-              "net": 51033,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 54420,
-              "avg24hPrice": 55033,
-              "updated": "2026-09-12T19:38:07.000Z"
+              "lastLowPrice": 55555,
+              "avg24hPrice": 84149,
+              "updated": "2026-09-12T20:38:03.000Z"
             }
           ]
         }
