@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-13T07:23:13.147Z",
+    "calculatedAt": "2026-09-13T07:36:31.620Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-13T07:18:06.000Z"
+      "newest": "2026-09-13T07:28:06.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -2224,6 +2224,56 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
+          "craftId": "600a9955ba91d953182d69f0",
+          "craft": "Kalashnikov AKM 7.62x39 assault rifle Default x1",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 39993,
+          "saleGross": 80000,
+          "fleaFee": 5024,
+          "netRevenue": 74976,
+          "profit": 34983,
+          "durationMinutes": 6,
+          "profitPerHour": 349830,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "59e6152586f77473dc057aa1",
+              "item": "Molot Arms VPO-136 Vepr-KM 7.62x39 carbine",
+              "count": 1,
+              "unitCost": 39993,
+              "subtotal": 39993,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "59e8d2ab86f77407f03fc9c2",
+              "item": "Kalashnikov AKM 7.62x39 assault rifle Default",
+              "count": 1,
+              "unitPrice": 80000,
+              "gross": 80000,
+              "fee": 5024,
+              "net": 74976,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 80000,
+              "avg24hPrice": 55563,
+              "updated": "2026-09-13T07:28:04.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "5dd3c5487058311d4b267186",
           "craft": "Gunpowder \"Kite\" x2",
           "stationLevel": 1,
@@ -2274,75 +2324,25 @@
           ]
         },
         {
-          "craftId": "600a9955ba91d953182d69f0",
-          "craft": "Kalashnikov AKM 7.62x39 assault rifle Default x1",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 39993,
-          "saleGross": 53999,
-          "fleaFee": 3365,
-          "netRevenue": 50634,
-          "profit": 10641,
-          "durationMinutes": 6,
-          "profitPerHour": 106410,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "59e6152586f77473dc057aa1",
-              "item": "Molot Arms VPO-136 Vepr-KM 7.62x39 carbine",
-              "count": 1,
-              "unitCost": 39993,
-              "subtotal": 39993,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "544fb5454bdc2df8738b456a",
-              "item": "Leatherman Multitool",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "59e8d2ab86f77407f03fc9c2",
-              "item": "Kalashnikov AKM 7.62x39 assault rifle Default",
-              "count": 1,
-              "unitPrice": 53999,
-              "gross": 53999,
-              "fee": 3365,
-              "net": 50634,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 53999,
-              "avg24hPrice": 55241,
-              "updated": "2026-09-13T07:08:03.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "63a3359eaf870e651d58e61a",
           "craft": "PM 9x18PM 84-round makeshift drum magazine x1",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 20878,
+          "materialCost": 20078,
           "saleGross": 59998,
           "fleaFee": 4578,
           "netRevenue": 55420,
-          "profit": 34542,
+          "profit": 35342,
           "durationMinutes": 20,
-          "profitPerHour": 103627,
+          "profitPerHour": 106026,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5ea034f65aad6446a939737e",
               "item": "PPSh-41 7.62x25 71-round drum magazine",
               "count": 1,
-              "unitCost": 10800,
-              "subtotal": 10800,
+              "unitCost": 10000,
+              "subtotal": 10000,
               "method": "Trader barter: Prapor LL1",
               "methodType": "barter",
               "buyLimit": 2,
@@ -2497,62 +2497,51 @@
           ]
         },
         {
-          "craftId": "5de919ec1b25d85cf30ca39a",
-          "craft": "Gunpowder \"Eagle\" x2",
-          "stationLevel": 2,
+          "craftId": "5de021b30f6d581e965bcde7",
+          "craft": "Weapon parts x5",
+          "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 37569,
-          "saleGross": 124444,
-          "fleaFee": 7759,
-          "netRevenue": 116685,
-          "profit": 79116,
-          "durationMinutes": 97.83,
-          "profitPerHour": 48521,
+          "materialCost": 50000,
+          "saleGross": 140000,
+          "fleaFee": 8746,
+          "netRevenue": 131254,
+          "profit": 81254,
+          "durationMinutes": 78.33,
+          "profitPerHour": 62237,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "58d3db5386f77426186285a0",
-              "item": "M67 hand grenade",
-              "count": 2,
-              "unitCost": 16492,
-              "subtotal": 32984,
-              "method": "Trader purchase: Peacekeeper LL3",
-              "methodType": "trader",
-              "buyLimit": 10,
-              "taskUnlock": "5a03173786f77451cb427172"
-            },
-            {
-              "id": "617aa4dd8166f034d57de9c5",
-              "item": "M18 smoke grenade (Green)",
+              "id": "59d6088586f774275f37482f",
+              "item": "Kalashnikov AKM 7.62x39 assault rifle",
               "count": 1,
-              "unitCost": 4585,
-              "subtotal": 4585,
-              "method": "Trader purchase: Jaeger LL1",
-              "methodType": "trader",
-              "buyLimit": 5,
+              "unitCost": 50000,
+              "subtotal": 50000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
               "taskUnlock": null
             }
           ],
           "tools": [
             {
-              "id": "590c2d8786f774245b1f03f3",
-              "item": "Screwdriver",
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
               "count": 1
             }
           ],
           "outputs": [
             {
-              "id": "5d6fc78386f77449d825f9dc",
-              "item": "Gunpowder \"Eagle\"",
-              "count": 2,
-              "unitPrice": 62222,
-              "gross": 124444,
-              "fee": 7759,
-              "net": 116685,
+              "id": "5d1c819a86f774771b0acd6c",
+              "item": "Weapon parts",
+              "count": 5,
+              "unitPrice": 28000,
+              "gross": 140000,
+              "fee": 8746,
+              "net": 131254,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 62222,
-              "avg24hPrice": 68287,
+              "lastLowPrice": 28000,
+              "avg24hPrice": 32046,
               "updated": "2026-09-13T06:18:06.000Z"
             }
           ]
