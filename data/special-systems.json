@@ -23,11 +23,11 @@
         "item": "5d1b36a186f7742523398433 Name",
         "normalizedName": "metal-fuel-tank",
         "capacity": 100,
-        "acquisitionCost": 199998,
+        "acquisitionCost": 184798,
         "acquisitionMethod": "Trader barter: Skier LL3",
         "runtimeHours": 42.11,
-        "costPerHour": 4749.95,
-        "costPerDay": 113999,
+        "costPerHour": 4388.95,
+        "costPerDay": 105335,
         "status": "complete"
       }
     ],
@@ -177,7 +177,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 21000,
-              "avg24hPrice": 25664,
+              "avg24hPrice": 25415,
               "updated": "2026-09-13T03:28:04.000Z"
             }
           ],
@@ -369,7 +369,7 @@
             "sellTo": "Flea Market",
             "methodType": "flea",
             "lastLowPrice": 21000,
-            "avg24hPrice": 25664,
+            "avg24hPrice": 25415,
             "updated": "2026-09-13T03:28:04.000Z"
           }
         ],
@@ -386,23 +386,23 @@
           "durationSeconds": 11000,
           "durationHours": 3.06,
           "cyclesPerDay": 7.85,
-          "materialCostPerCycle": 380222,
+          "materialCostPerCycle": 298000,
           "netRevenuePerCycle": 346164,
-          "profitPerCycleBeforeFuel": -34058,
-          "profitPerDayBeforeFuel": -267510,
+          "profitPerCycleBeforeFuel": 48164,
+          "profitPerDayBeforeFuel": 378306,
           "standaloneFuelCostPerDay": 76000,
-          "profitPerDayStandalone": -343510,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": -267510,
+          "profitPerDayStandalone": 302306,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 378306,
           "materials": [
             {
               "id": "59e3577886f774176a362503",
               "item": "Pack of sugar",
               "count": 2,
-              "unitCost": 91111,
-              "subtotal": 182222,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
+              "unitCost": 50000,
+              "subtotal": 100000,
+              "method": "Trader barter: Jaeger LL2",
+              "methodType": "barter",
+              "buyLimit": 1,
               "taskUnlock": null
             },
             {
@@ -429,7 +429,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 369000,
-              "avg24hPrice": 448158,
+              "avg24hPrice": 451138,
               "updated": "2026-09-13T03:28:04.000Z"
             }
           ],
@@ -443,23 +443,23 @@
         "durationSeconds": 11000,
         "durationHours": 3.06,
         "cyclesPerDay": 7.85,
-        "materialCostPerCycle": 380222,
+        "materialCostPerCycle": 298000,
         "netRevenuePerCycle": 346164,
-        "profitPerCycleBeforeFuel": -34058,
-        "profitPerDayBeforeFuel": -267510,
+        "profitPerCycleBeforeFuel": 48164,
+        "profitPerDayBeforeFuel": 378306,
         "standaloneFuelCostPerDay": 76000,
-        "profitPerDayStandalone": -343510,
-        "profitPerDayMarginalIfGeneratorAlreadyRunning": -267510,
+        "profitPerDayStandalone": 302306,
+        "profitPerDayMarginalIfGeneratorAlreadyRunning": 378306,
         "materials": [
           {
             "id": "59e3577886f774176a362503",
             "item": "Pack of sugar",
             "count": 2,
-            "unitCost": 91111,
-            "subtotal": 182222,
-            "method": "Flea Market",
-            "methodType": "flea",
-            "buyLimit": null,
+            "unitCost": 50000,
+            "subtotal": 100000,
+            "method": "Trader barter: Jaeger LL2",
+            "methodType": "barter",
+            "buyLimit": 1,
             "taskUnlock": null
           },
           {
@@ -486,7 +486,7 @@
             "sellTo": "Flea Market",
             "methodType": "flea",
             "lastLowPrice": 369000,
-            "avg24hPrice": 448158,
+            "avg24hPrice": 451138,
             "updated": "2026-09-13T03:28:04.000Z"
           }
         ],
@@ -583,8 +583,8 @@
         ],
         "input": "5d1b376e86f774252519444e Name",
         "inputItemId": "5d1b376e86f774252519444e",
-        "investmentCost": 369000,
-        "investmentMethod": "Flea Market",
+        "investmentCost": 298000,
+        "investmentMethod": "Hideout craft: Booze Generator Lv1",
         "durationMinutes": 280,
         "expectedReturn": null,
         "expectedProfit": null,
@@ -608,8 +608,8 @@
         ],
         "input": "5c12613b86f7743bbe2c3f76 Name",
         "inputItemId": "5c12613b86f7743bbe2c3f76",
-        "investmentCost": 275000,
-        "investmentMethod": "Flea Market",
+        "investmentCost": 214000,
+        "investmentMethod": "Trader barter: Peacekeeper LL3",
         "durationMinutes": 320,
         "expectedReturn": null,
         "expectedProfit": null,
@@ -630,6 +630,6 @@
     "waterCraft": "Aquamari water bottle with filter x5",
     "boozeCraft": "Bottle of Fierce Hatchling moonshine x1",
     "sharedFuelCostPerDay": 76000,
-    "netProfitPerDay": 773519
+    "netProfitPerDay": 1419335
   }
 }
