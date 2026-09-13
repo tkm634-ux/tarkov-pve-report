@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-13T05:22:26.410Z",
+    "calculatedAt": "2026-09-13T05:35:41.627Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-13T05:18:07.000Z"
+      "newest": "2026-09-13T05:28:07.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -39,7 +39,7 @@
   "acquisitionEngine": {
     "converged": true,
     "passes": 4,
-    "pricedItems": 4080
+    "pricedItems": 4081
   },
   "fleaMarket": {
     "name": "FleaMarket",
@@ -831,23 +831,23 @@
           "craft": "Clin window cleaner x2",
           "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 53080,
+          "materialCost": 53193,
           "saleGross": 120000,
           "fleaFee": 15177,
           "netRevenue": 104823,
-          "profit": 51743,
+          "profit": 51630,
           "durationMinutes": 40.83,
-          "profitPerHour": 76031,
+          "profitPerHour": 75865,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5d40407c86f774318526545a",
               "item": "Bottle of Tarkovskaya vodka",
               "count": 1,
-              "unitCost": 33333,
-              "subtotal": 33333,
-              "method": "Flea Market",
-              "methodType": "flea",
+              "unitCost": 33446,
+              "subtotal": 33446,
+              "method": "Hideout craft: Nutrition Unit Lv3",
+              "methodType": "craft",
               "buyLimit": null,
               "taskUnlock": null
             },
@@ -944,23 +944,23 @@
           "craft": "Clin window cleaner x2",
           "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 53080,
+          "materialCost": 53193,
           "saleGross": 120000,
           "fleaFee": 15177,
           "netRevenue": 104823,
-          "profit": 51743,
+          "profit": 51630,
           "durationMinutes": 40.83,
-          "profitPerHour": 76031,
+          "profitPerHour": 75865,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5d40407c86f774318526545a",
               "item": "Bottle of Tarkovskaya vodka",
               "count": 1,
-              "unitCost": 33333,
-              "subtotal": 33333,
-              "method": "Flea Market",
-              "methodType": "flea",
+              "unitCost": 33446,
+              "subtotal": 33446,
+              "method": "Hideout craft: Nutrition Unit Lv3",
+              "methodType": "craft",
               "buyLimit": null,
               "taskUnlock": null
             },
@@ -1281,7 +1281,7 @@
               "methodType": "flea",
               "lastLowPrice": 100000,
               "avg24hPrice": 105348,
-              "updated": "2026-09-13T03:58:07.000Z"
+              "updated": "2026-09-13T05:28:02.000Z"
             }
           ]
         }
@@ -1443,7 +1443,7 @@
               "methodType": "flea",
               "lastLowPrice": 100000,
               "avg24hPrice": 105348,
-              "updated": "2026-09-13T03:58:07.000Z"
+              "updated": "2026-09-13T05:28:02.000Z"
             }
           ]
         },
@@ -1509,7 +1509,7 @@
               "methodType": "flea",
               "lastLowPrice": 52000,
               "avg24hPrice": 60093,
-              "updated": "2026-09-13T03:58:07.000Z"
+              "updated": "2026-09-13T05:28:02.000Z"
             }
           ]
         }
@@ -1522,6 +1522,61 @@
       "incomplete": 0,
       "specialRandom": 0,
       "topProfitPerHour": [
+        {
+          "craftId": "5dc1f634ee5f2440a9272dc7",
+          "craft": "Bottle of Tarkovskaya vodka x10",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 334460,
+          "saleGross": 570000,
+          "fleaFee": 36837,
+          "netRevenue": 533163,
+          "profit": 198703,
+          "durationMinutes": 95.83,
+          "profitPerHour": 124405,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5d1b376e86f774252519444e",
+              "item": "Bottle of Fierce Hatchling moonshine",
+              "count": 1,
+              "unitCost": 274460,
+              "subtotal": 274460,
+              "method": "Hideout craft: Booze Generator Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5448fee04bdc2dbc018b4567",
+              "item": "Bottle of water (0.6L)",
+              "count": 5,
+              "unitCost": 12000,
+              "subtotal": 60000,
+              "method": "Trader barter: Therapist LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5d40407c86f774318526545a",
+              "item": "Bottle of Tarkovskaya vodka",
+              "count": 10,
+              "unitPrice": 57000,
+              "gross": 570000,
+              "fee": 36837,
+              "net": 533163,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 57000,
+              "avg24hPrice": 53426,
+              "updated": "2026-09-13T05:28:05.000Z"
+            }
+          ]
+        },
         {
           "craftId": "68f2073205d9d632d30e1e97",
           "craft": "Salty Dog beef sausage x3",
@@ -1648,39 +1703,30 @@
               "updated": "2026-09-13T04:18:07.000Z"
             }
           ]
-        },
+        }
+      ],
+      "topProfitPerCraft": [
         {
-          "craftId": "5f240f45f4a9420a8c328ee0",
-          "craft": "Can of Max Energy energy drink x4",
-          "stationLevel": 1,
+          "craftId": "5dc1f634ee5f2440a9272dc7",
+          "craft": "Bottle of Tarkovskaya vodka x10",
+          "stationLevel": 3,
           "taskUnlock": null,
-          "materialCost": 57869,
-          "saleGross": 99996,
-          "fleaFee": 6929,
-          "netRevenue": 93067,
-          "profit": 35199,
-          "durationMinutes": 108.33,
-          "profitPerHour": 19495,
+          "materialCost": 334460,
+          "saleGross": 570000,
+          "fleaFee": 36837,
+          "netRevenue": 533163,
+          "profit": 198703,
+          "durationMinutes": 95.83,
+          "profitPerHour": 124405,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "57514643245977207f2c2d09",
-              "item": "Can of TarCola soda",
+              "id": "5d1b376e86f774252519444e",
+              "item": "Bottle of Fierce Hatchling moonshine",
               "count": 1,
-              "unitCost": 32222,
-              "subtotal": 32222,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5af0484c86f7740f02001f7f",
-              "item": "Can of Majaica coffee beans",
-              "count": 1,
-              "unitCost": 13647,
-              "subtotal": 13647,
-              "method": "Hideout craft: Nutrition Unit Lv2",
+              "unitCost": 274460,
+              "subtotal": 274460,
+              "method": "Hideout craft: Booze Generator Lv1",
               "methodType": "craft",
               "buyLimit": null,
               "taskUnlock": null
@@ -1688,41 +1734,33 @@
             {
               "id": "5448fee04bdc2dbc018b4567",
               "item": "Bottle of water (0.6L)",
-              "count": 1,
+              "count": 5,
               "unitCost": 12000,
-              "subtotal": 12000,
+              "subtotal": 60000,
               "method": "Trader barter: Therapist LL1",
               "methodType": "barter",
               "buyLimit": 2,
               "taskUnlock": null
             }
           ],
-          "tools": [
-            {
-              "id": "62a09e73af34e73a266d932a",
-              "item": "BakeEzy cook book",
-              "count": 1
-            }
-          ],
+          "tools": [],
           "outputs": [
             {
-              "id": "5751435d24597720a27126d1",
-              "item": "Can of Max Energy energy drink",
-              "count": 4,
-              "unitPrice": 24999,
-              "gross": 99996,
-              "fee": 6929,
-              "net": 93067,
+              "id": "5d40407c86f774318526545a",
+              "item": "Bottle of Tarkovskaya vodka",
+              "count": 10,
+              "unitPrice": 57000,
+              "gross": 570000,
+              "fee": 36837,
+              "net": 533163,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 24999,
-              "avg24hPrice": 26282,
-              "updated": "2026-09-13T05:08:03.000Z"
+              "lastLowPrice": 57000,
+              "avg24hPrice": 53426,
+              "updated": "2026-09-13T05:28:05.000Z"
             }
           ]
-        }
-      ],
-      "topProfitPerCraft": [
+        },
         {
           "craftId": "5f241246232409155b66b809",
           "craft": "Can of Hot Rod energy drink x20",
@@ -1812,78 +1850,6 @@
           ]
         },
         {
-          "craftId": "5f240f45f4a9420a8c328ee0",
-          "craft": "Can of Max Energy energy drink x4",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 57869,
-          "saleGross": 99996,
-          "fleaFee": 6929,
-          "netRevenue": 93067,
-          "profit": 35199,
-          "durationMinutes": 108.33,
-          "profitPerHour": 19495,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "57514643245977207f2c2d09",
-              "item": "Can of TarCola soda",
-              "count": 1,
-              "unitCost": 32222,
-              "subtotal": 32222,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5af0484c86f7740f02001f7f",
-              "item": "Can of Majaica coffee beans",
-              "count": 1,
-              "unitCost": 13647,
-              "subtotal": 13647,
-              "method": "Hideout craft: Nutrition Unit Lv2",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5448fee04bdc2dbc018b4567",
-              "item": "Bottle of water (0.6L)",
-              "count": 1,
-              "unitCost": 12000,
-              "subtotal": 12000,
-              "method": "Trader barter: Therapist LL1",
-              "methodType": "barter",
-              "buyLimit": 2,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "62a09e73af34e73a266d932a",
-              "item": "BakeEzy cook book",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5751435d24597720a27126d1",
-              "item": "Can of Max Energy energy drink",
-              "count": 4,
-              "unitPrice": 24999,
-              "gross": 99996,
-              "fee": 6929,
-              "net": 93067,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 24999,
-              "avg24hPrice": 26282,
-              "updated": "2026-09-13T05:08:03.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "68f2073205d9d632d30e1e97",
           "craft": "Salty Dog beef sausage x3",
           "stationLevel": 1,
@@ -1965,6 +1931,56 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
+          "craftId": "67f4ec82690e0a541a021d3d",
+          "craft": "Emergency Water Ration x2",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 22222,
+          "saleGross": 39120,
+          "fleaFee": 2570,
+          "netRevenue": 36550,
+          "profit": 14328,
+          "durationMinutes": 30,
+          "profitPerHour": 28656,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "57513f9324597720a7128161",
+              "item": "Pack of Grand juice",
+              "count": 1,
+              "unitCost": 22222,
+              "subtotal": 22222,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5d1b39a386f774252339976f",
+              "item": "Silicone tube",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "60098b1705871270cd5352a1",
+              "item": "Emergency Water Ration",
+              "count": 2,
+              "unitPrice": 19560,
+              "gross": 39120,
+              "fee": 2570,
+              "net": 36550,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 19560,
+              "avg24hPrice": 22339,
+              "updated": "2026-09-13T05:28:05.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "67f4ec521d41954d4f09a9c8",
           "craft": "Aquamari water bottle with filter x5",
           "stationLevel": 2,
@@ -2020,67 +2036,17 @@
           ]
         },
         {
-          "craftId": "67f4ec82690e0a541a021d3d",
-          "craft": "Emergency Water Ration x2",
-          "stationLevel": 2,
-          "taskUnlock": null,
-          "materialCost": 20000,
-          "saleGross": 30230,
-          "fleaFee": 2260,
-          "netRevenue": 27970,
-          "profit": 7970,
-          "durationMinutes": 30,
-          "profitPerHour": 15940,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "57513f9324597720a7128161",
-              "item": "Pack of Grand juice",
-              "count": 1,
-              "unitCost": 20000,
-              "subtotal": 20000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "5d1b39a386f774252339976f",
-              "item": "Silicone tube",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "60098b1705871270cd5352a1",
-              "item": "Emergency Water Ration",
-              "count": 2,
-              "unitPrice": 15115,
-              "gross": 30230,
-              "fee": 2260,
-              "net": 27970,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 15115,
-              "avg24hPrice": 22550,
-              "updated": "2026-09-13T05:08:03.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "67f4ebb7d0fb51b8c705e80e",
           "craft": "Bottle of water (0.6L) x1",
           "stationLevel": 1,
           "taskUnlock": null,
           "materialCost": 12000,
-          "saleGross": 18000,
-          "fleaFee": 2090,
-          "netRevenue": 15910,
-          "profit": 3910,
+          "saleGross": 19998,
+          "fleaFee": 2479,
+          "netRevenue": 17519,
+          "profit": 5519,
           "durationMinutes": 20,
-          "profitPerHour": 11730,
+          "profitPerHour": 16557,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -2101,15 +2067,15 @@
               "id": "5448fee04bdc2dbc018b4567",
               "item": "Bottle of water (0.6L)",
               "count": 1,
-              "unitPrice": 18000,
-              "gross": 18000,
-              "fee": 2090,
-              "net": 15910,
+              "unitPrice": 19998,
+              "gross": 19998,
+              "fee": 2479,
+              "net": 17519,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 18000,
-              "avg24hPrice": 26526,
-              "updated": "2026-09-13T05:08:03.000Z"
+              "lastLowPrice": 19998,
+              "avg24hPrice": 25858,
+              "updated": "2026-09-13T05:28:05.000Z"
             }
           ]
         }
@@ -2121,12 +2087,12 @@
           "stationLevel": 3,
           "taskUnlock": null,
           "materialCost": 174460,
-          "saleGross": 240000,
-          "fleaFee": 21671,
-          "netRevenue": 218329,
-          "profit": 43869,
+          "saleGross": 235555,
+          "fleaFee": 21049,
+          "netRevenue": 214506,
+          "profit": 40046,
           "durationMinutes": 325,
-          "profitPerHour": 8099,
+          "profitPerHour": 7393,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -2147,15 +2113,15 @@
               "id": "5d1b33a686f7742523398398",
               "item": "Canister with purified water",
               "count": 1,
-              "unitPrice": 240000,
-              "gross": 240000,
-              "fee": 21671,
-              "net": 218329,
+              "unitPrice": 235555,
+              "gross": 235555,
+              "fee": 21049,
+              "net": 214506,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 240000,
-              "avg24hPrice": 249413,
-              "updated": "2026-09-13T05:08:03.000Z"
+              "lastLowPrice": 235555,
+              "avg24hPrice": 248167,
+              "updated": "2026-09-13T05:28:05.000Z"
             }
           ]
         },
@@ -2219,21 +2185,21 @@
           "craft": "Emergency Water Ration x2",
           "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 20000,
-          "saleGross": 30230,
-          "fleaFee": 2260,
-          "netRevenue": 27970,
-          "profit": 7970,
+          "materialCost": 22222,
+          "saleGross": 39120,
+          "fleaFee": 2570,
+          "netRevenue": 36550,
+          "profit": 14328,
           "durationMinutes": 30,
-          "profitPerHour": 15940,
+          "profitPerHour": 28656,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "57513f9324597720a7128161",
               "item": "Pack of Grand juice",
               "count": 1,
-              "unitCost": 20000,
-              "subtotal": 20000,
+              "unitCost": 22222,
+              "subtotal": 22222,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -2252,15 +2218,15 @@
               "id": "60098b1705871270cd5352a1",
               "item": "Emergency Water Ration",
               "count": 2,
-              "unitPrice": 15115,
-              "gross": 30230,
-              "fee": 2260,
-              "net": 27970,
+              "unitPrice": 19560,
+              "gross": 39120,
+              "fee": 2570,
+              "net": 36550,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 15115,
-              "avg24hPrice": 22550,
-              "updated": "2026-09-13T05:08:03.000Z"
+              "lastLowPrice": 19560,
+              "avg24hPrice": 22339,
+              "updated": "2026-09-13T05:28:05.000Z"
             }
           ]
         }
@@ -2423,8 +2389,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 53999,
-              "avg24hPrice": 54966,
-              "updated": "2026-09-13T05:08:03.000Z"
+              "avg24hPrice": 55241,
+              "updated": "2026-09-13T05:28:05.000Z"
             }
           ]
         }
@@ -2581,7 +2547,7 @@
               "methodType": "flea",
               "lastLowPrice": 24332,
               "avg24hPrice": 22639,
-              "updated": "2026-09-13T04:08:06.000Z"
+              "updated": "2026-09-13T05:28:02.000Z"
             }
           ]
         }
@@ -2916,12 +2882,12 @@
             "durationHours": 5.42,
             "cyclesPerDay": 4.43,
             "materialCostPerCycle": 174460,
-            "netRevenuePerCycle": 218329,
-            "profitPerCycleBeforeFuel": 43869,
-            "profitPerDayBeforeFuel": 194373,
+            "netRevenuePerCycle": 214506,
+            "profitPerCycleBeforeFuel": 40046,
+            "profitPerDayBeforeFuel": 177435,
             "standaloneFuelCostPerDay": 67760,
-            "profitPerDayStandalone": 126613,
-            "profitPerDayMarginalIfGeneratorAlreadyRunning": 194373,
+            "profitPerDayStandalone": 109675,
+            "profitPerDayMarginalIfGeneratorAlreadyRunning": 177435,
             "materials": [
               {
                 "id": "5d1b385e86f774252167b98a",
@@ -2940,15 +2906,15 @@
                 "id": "5d1b33a686f7742523398398",
                 "item": "Canister with purified water",
                 "count": 1,
-                "unitPrice": 240000,
-                "gross": 240000,
-                "fee": 21671,
-                "net": 218329,
+                "unitPrice": 235555,
+                "gross": 235555,
+                "fee": 21049,
+                "net": 214506,
                 "sellTo": "Flea Market",
                 "methodType": "flea",
-                "lastLowPrice": 240000,
-                "avg24hPrice": 249413,
-                "updated": "2026-09-13T05:08:03.000Z"
+                "lastLowPrice": 235555,
+                "avg24hPrice": 248167,
+                "updated": "2026-09-13T05:28:05.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -2961,12 +2927,12 @@
             "durationHours": 0.33,
             "cyclesPerDay": 72,
             "materialCostPerCycle": 12000,
-            "netRevenuePerCycle": 15910,
-            "profitPerCycleBeforeFuel": 3910,
-            "profitPerDayBeforeFuel": 281520,
+            "netRevenuePerCycle": 17519,
+            "profitPerCycleBeforeFuel": 5519,
+            "profitPerDayBeforeFuel": 397368,
             "standaloneFuelCostPerDay": 67760,
-            "profitPerDayStandalone": 213760,
-            "profitPerDayMarginalIfGeneratorAlreadyRunning": 281520,
+            "profitPerDayStandalone": 329608,
+            "profitPerDayMarginalIfGeneratorAlreadyRunning": 397368,
             "materials": [
               {
                 "id": "5448fee04bdc2dbc018b4567",
@@ -2985,15 +2951,15 @@
                 "id": "5448fee04bdc2dbc018b4567",
                 "item": "Bottle of water (0.6L)",
                 "count": 1,
-                "unitPrice": 18000,
-                "gross": 18000,
-                "fee": 2090,
-                "net": 15910,
+                "unitPrice": 19998,
+                "gross": 19998,
+                "fee": 2479,
+                "net": 17519,
                 "sellTo": "Flea Market",
                 "methodType": "flea",
-                "lastLowPrice": 18000,
-                "avg24hPrice": 26526,
-                "updated": "2026-09-13T05:08:03.000Z"
+                "lastLowPrice": 19998,
+                "avg24hPrice": 25858,
+                "updated": "2026-09-13T05:28:05.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3005,20 +2971,20 @@
             "durationSeconds": 1800,
             "durationHours": 0.5,
             "cyclesPerDay": 48,
-            "materialCostPerCycle": 20000,
-            "netRevenuePerCycle": 27970,
-            "profitPerCycleBeforeFuel": 7970,
-            "profitPerDayBeforeFuel": 382560,
+            "materialCostPerCycle": 22222,
+            "netRevenuePerCycle": 36550,
+            "profitPerCycleBeforeFuel": 14328,
+            "profitPerDayBeforeFuel": 687744,
             "standaloneFuelCostPerDay": 67760,
-            "profitPerDayStandalone": 314800,
-            "profitPerDayMarginalIfGeneratorAlreadyRunning": 382560,
+            "profitPerDayStandalone": 619984,
+            "profitPerDayMarginalIfGeneratorAlreadyRunning": 687744,
             "materials": [
               {
                 "id": "57513f9324597720a7128161",
                 "item": "Pack of Grand juice",
                 "count": 1,
-                "unitCost": 20000,
-                "subtotal": 20000,
+                "unitCost": 22222,
+                "subtotal": 22222,
                 "method": "Flea Market",
                 "methodType": "flea",
                 "buyLimit": null,
@@ -3030,52 +2996,41 @@
                 "id": "60098b1705871270cd5352a1",
                 "item": "Emergency Water Ration",
                 "count": 2,
-                "unitPrice": 15115,
-                "gross": 30230,
-                "fee": 2260,
-                "net": 27970,
+                "unitPrice": 19560,
+                "gross": 39120,
+                "fee": 2570,
+                "net": 36550,
                 "sellTo": "Flea Market",
                 "methodType": "flea",
-                "lastLowPrice": 15115,
-                "avg24hPrice": 22550,
-                "updated": "2026-09-13T05:08:03.000Z"
+                "lastLowPrice": 19560,
+                "avg24hPrice": 22339,
+                "updated": "2026-09-13T05:28:05.000Z"
               }
             ],
             "sellTo": "Flea Market"
           }
         ],
         "recommendedByDailyProfitBeforeFuel": {
-          "craftId": "67f4ec521d41954d4f09a9c8",
+          "craftId": "67f4ec82690e0a541a021d3d",
           "station": "Water Collector",
-          "craft": "Aquamari water bottle with filter x5",
-          "durationSeconds": 3600,
-          "durationHours": 1,
-          "cyclesPerDay": 24,
-          "materialCostPerCycle": 73333,
-          "netRevenuePerCycle": 95272,
-          "profitPerCycleBeforeFuel": 21939,
-          "profitPerDayBeforeFuel": 526536,
+          "craft": "Emergency Water Ration x2",
+          "durationSeconds": 1800,
+          "durationHours": 0.5,
+          "cyclesPerDay": 48,
+          "materialCostPerCycle": 22222,
+          "netRevenuePerCycle": 36550,
+          "profitPerCycleBeforeFuel": 14328,
+          "profitPerDayBeforeFuel": 687744,
           "standaloneFuelCostPerDay": 67760,
-          "profitPerDayStandalone": 458776,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": 526536,
+          "profitPerDayStandalone": 619984,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 687744,
           "materials": [
             {
-              "id": "5448fee04bdc2dbc018b4567",
-              "item": "Bottle of water (0.6L)",
-              "count": 5,
-              "unitCost": 12000,
-              "subtotal": 60000,
-              "method": "Trader barter: Therapist LL1",
-              "methodType": "barter",
-              "buyLimit": 2,
-              "taskUnlock": null
-            },
-            {
-              "id": "6389c6c7dbfd5e4b95197e68",
-              "item": "Aquapeps water purification tablets",
+              "id": "57513f9324597720a7128161",
+              "item": "Pack of Grand juice",
               "count": 1,
-              "unitCost": 13333,
-              "subtotal": 13333,
+              "unitCost": 22222,
+              "subtotal": 22222,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -3084,18 +3039,18 @@
           ],
           "outputs": [
             {
-              "id": "5c0fa877d174af02a012e1cf",
-              "item": "Aquamari water bottle with filter",
-              "count": 5,
-              "unitPrice": 21000,
-              "gross": 105000,
-              "fee": 9728,
-              "net": 95272,
+              "id": "60098b1705871270cd5352a1",
+              "item": "Emergency Water Ration",
+              "count": 2,
+              "unitPrice": 19560,
+              "gross": 39120,
+              "fee": 2570,
+              "net": 36550,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 21000,
-              "avg24hPrice": 25415,
-              "updated": "2026-09-13T05:08:03.000Z"
+              "lastLowPrice": 19560,
+              "avg24hPrice": 22339,
+              "updated": "2026-09-13T05:28:05.000Z"
             }
           ],
           "sellTo": "Flea Market"
@@ -3352,10 +3307,10 @@
     "combinedDailyOperation": {
       "scenario": "50 GPU Bitcoin Farm + highest daily-profit Water Collector craft + highest daily-profit Booze Generator craft; generator fuel counted once",
       "bitcoinGpuCount": 50,
-      "waterCraft": "Aquamari water bottle with filter x5",
+      "waterCraft": "Emergency Water Ration x2",
       "boozeCraft": "Bottle of Fierce Hatchling moonshine x1",
       "sharedFuelCostPerDay": 67760,
-      "netProfitPerDay": 1505959
+      "netProfitPerDay": 1667167
     }
   }
 }
