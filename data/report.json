@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-13T10:49:21.122Z",
+    "calculatedAt": "2026-09-13T11:05:27.984Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-13T10:38:07.000Z"
+      "newest": "2026-09-13T10:58:07.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -2300,83 +2300,6 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
-          "craftId": "63a3359eaf870e651d58e61a",
-          "craft": "PM 9x18PM 84-round makeshift drum magazine x1",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 19389,
-          "saleGross": 66661,
-          "fleaFee": 5360,
-          "netRevenue": 61301,
-          "profit": 41912,
-          "durationMinutes": 20,
-          "profitPerHour": 125736,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5ea034f65aad6446a939737e",
-              "item": "PPSh-41 7.62x25 71-round drum magazine",
-              "count": 1,
-              "unitCost": 11111,
-              "subtotal": 11111,
-              "method": "Trader barter: Prapor LL1",
-              "methodType": "barter",
-              "buyLimit": 2,
-              "taskUnlock": null
-            },
-            {
-              "id": "5448c12b4bdc2d02308b456f",
-              "item": "PM 9x18PM 90-93 8-round magazine",
-              "count": 1,
-              "unitCost": 1278,
-              "subtotal": 1278,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5e2af22086f7746d3f3c33fa",
-              "item": "Tube of Poxeram cold welding",
-              "count": 1,
-              "unitCost": 7000,
-              "subtotal": 7000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "62a0a0bb621468534a797ad5",
-              "item": "Set of files \"Master\"",
-              "count": 1
-            },
-            {
-              "id": "590c2b4386f77425357b6123",
-              "item": "Pliers",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "55d485be4bdc2d962f8b456f",
-              "item": "PM 9x18PM 84-round makeshift drum magazine",
-              "count": 1,
-              "unitPrice": 66661,
-              "gross": 66661,
-              "fee": 5360,
-              "net": 61301,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 66661,
-              "avg24hPrice": 79899,
-              "updated": "2026-09-13T10:18:03.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "600a9955ba91d953182d69f0",
           "craft": "Kalashnikov AKM 7.62x39 assault rifle Default x1",
           "stationLevel": 1,
@@ -2472,6 +2395,50 @@
               "methodType": "flea",
               "lastLowPrice": 18000,
               "avg24hPrice": 22896,
+              "updated": "2026-09-13T10:18:07.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5dd1126571e3fd3f634b1c8b",
+          "craft": "Bundle of wires x8",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 51110,
+          "saleGross": 213328,
+          "fleaFee": 16552,
+          "netRevenue": 196776,
+          "profit": 145666,
+          "durationMinutes": 118.33,
+          "profitPerHour": 73859,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "59e36c6f86f774176c10a2a7",
+              "item": "Power cord",
+              "count": 2,
+              "unitCost": 25555,
+              "subtotal": 51110,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5c06779c86f77426e00dd782",
+              "item": "Bundle of wires",
+              "count": 8,
+              "unitPrice": 26666,
+              "gross": 213328,
+              "fee": 16552,
+              "net": 196776,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 26666,
+              "avg24hPrice": 28014,
               "updated": "2026-09-13T10:18:07.000Z"
             }
           ]
