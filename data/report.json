@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-17T05:51:33.623Z",
+    "calculatedAt": "2026-09-17T06:07:28.533Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-17T05:48:05.000Z"
+      "newest": "2026-09-17T05:58:07.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -2304,6 +2304,83 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
+          "craftId": "63a3359eaf870e651d58e61a",
+          "craft": "PM 9x18PM 84-round makeshift drum magazine x1",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 23977,
+          "saleGross": 99999,
+          "fleaFee": 10073,
+          "netRevenue": 89926,
+          "profit": 65949,
+          "durationMinutes": 20,
+          "profitPerHour": 197847,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5ea034f65aad6446a939737e",
+              "item": "PPSh-41 7.62x25 71-round drum magazine",
+              "count": 1,
+              "unitCost": 10800,
+              "subtotal": 10800,
+              "method": "Trader barter: Prapor LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            },
+            {
+              "id": "5448c12b4bdc2d02308b456f",
+              "item": "PM 9x18PM 90-93 8-round magazine",
+              "count": 1,
+              "unitCost": 1278,
+              "subtotal": 1278,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af22086f7746d3f3c33fa",
+              "item": "Tube of Poxeram cold welding",
+              "count": 1,
+              "unitCost": 11899,
+              "subtotal": 11899,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "62a0a0bb621468534a797ad5",
+              "item": "Set of files \"Master\"",
+              "count": 1
+            },
+            {
+              "id": "590c2b4386f77425357b6123",
+              "item": "Pliers",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "55d485be4bdc2d962f8b456f",
+              "item": "PM 9x18PM 84-round makeshift drum magazine",
+              "count": 1,
+              "unitPrice": 99999,
+              "gross": 99999,
+              "fee": 10073,
+              "net": 89926,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 99999,
+              "avg24hPrice": 37777,
+              "updated": "2026-09-17T05:58:05.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "5df138986c38ba26da0b3a77",
           "craft": "Broken LCD x4",
           "stationLevel": 1,
@@ -2399,61 +2476,6 @@
               "methodType": "flea",
               "lastLowPrice": 27444,
               "avg24hPrice": 27481,
-              "updated": "2026-09-17T05:38:07.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "5dd3c9c8449c0c31795b0f0b",
-          "craft": "Gunpowder \"Hawk\" x3",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 36336,
-          "saleGross": 117000,
-          "fleaFee": 7753,
-          "netRevenue": 109247,
-          "profit": 72912,
-          "durationMinutes": 35.83,
-          "profitPerHour": 122084,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "57347b8b24597737dd42e192",
-              "item": "Classic matches",
-              "count": 1,
-              "unitCost": 19000,
-              "subtotal": 19000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5d6fc78386f77449d825f9dc",
-              "item": "Gunpowder \"Eagle\"",
-              "count": 1,
-              "unitCost": 17336,
-              "subtotal": 17336,
-              "method": "Hideout craft: Workbench Lv2",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [],
-          "outputs": [
-            {
-              "id": "5d6fc87386f77449db3db94e",
-              "item": "Gunpowder \"Hawk\"",
-              "count": 3,
-              "unitPrice": 39000,
-              "gross": 117000,
-              "fee": 7753,
-              "net": 109247,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 39000,
-              "avg24hPrice": 35594,
               "updated": "2026-09-17T05:38:07.000Z"
             }
           ]
