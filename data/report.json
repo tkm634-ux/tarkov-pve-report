@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-18T20:05:52.095Z",
+    "calculatedAt": "2026-09-18T20:23:24.167Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-18T19:58:07.000Z"
+      "newest": "2026-09-18T20:18:07.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -2404,57 +2404,79 @@
           ]
         },
         {
-          "craftId": "5dd3c9c8449c0c31795b0f0b",
-          "craft": "Gunpowder \"Hawk\" x3",
+          "craftId": "63a3359eaf870e651d58e61a",
+          "craft": "PM 9x18PM 84-round makeshift drum magazine x1",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 42184,
-          "saleGross": 89997,
-          "fleaFee": 6831,
-          "netRevenue": 83166,
-          "profit": 40983,
-          "durationMinutes": 35.83,
-          "profitPerHour": 68622,
+          "materialCost": 21279,
+          "saleGross": 60000,
+          "fleaFee": 4578,
+          "netRevenue": 55422,
+          "profit": 34143,
+          "durationMinutes": 20,
+          "profitPerHour": 102429,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "57347b8b24597737dd42e192",
-              "item": "Classic matches",
+              "id": "5ea034f65aad6446a939737e",
+              "item": "PPSh-41 7.62x25 71-round drum magazine",
               "count": 1,
-              "unitCost": 24888,
-              "subtotal": 24888,
+              "unitCost": 11000,
+              "subtotal": 11000,
+              "method": "Trader barter: Prapor LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            },
+            {
+              "id": "5448c12b4bdc2d02308b456f",
+              "item": "PM 9x18PM 90-93 8-round magazine",
+              "count": 1,
+              "unitCost": 1279,
+              "subtotal": 1279,
+              "method": "Trader purchase: Prapor LL1",
+              "methodType": "trader",
+              "buyLimit": 10,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af22086f7746d3f3c33fa",
+              "item": "Tube of Poxeram cold welding",
+              "count": 1,
+              "unitCost": 9000,
+              "subtotal": 9000,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
               "taskUnlock": null
-            },
-            {
-              "id": "5d6fc78386f77449d825f9dc",
-              "item": "Gunpowder \"Eagle\"",
-              "count": 1,
-              "unitCost": 17296,
-              "subtotal": 17296,
-              "method": "Hideout craft: Workbench Lv2",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
             }
           ],
-          "tools": [],
+          "tools": [
+            {
+              "id": "62a0a0bb621468534a797ad5",
+              "item": "Set of files \"Master\"",
+              "count": 1
+            },
+            {
+              "id": "590c2b4386f77425357b6123",
+              "item": "Pliers",
+              "count": 1
+            }
+          ],
           "outputs": [
             {
-              "id": "5d6fc87386f77449db3db94e",
-              "item": "Gunpowder \"Hawk\"",
-              "count": 3,
-              "unitPrice": 29999,
-              "gross": 89997,
-              "fee": 6831,
-              "net": 83166,
+              "id": "55d485be4bdc2d962f8b456f",
+              "item": "PM 9x18PM 84-round makeshift drum magazine",
+              "count": 1,
+              "unitPrice": 60000,
+              "gross": 60000,
+              "fee": 4578,
+              "net": 55422,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 29999,
-              "avg24hPrice": 40437,
-              "updated": "2026-09-18T19:58:07.000Z"
+              "lastLowPrice": 60000,
+              "avg24hPrice": 52036,
+              "updated": "2026-09-18T20:18:05.000Z"
             }
           ]
         }
