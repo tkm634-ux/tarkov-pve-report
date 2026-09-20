@@ -167,7 +167,7 @@
               "methodType": "flea",
               "lastLowPrice": 190000,
               "avg24hPrice": 229512,
-              "updated": "2026-09-20T09:28:08.000Z"
+              "updated": "2026-09-20T11:08:03.000Z"
             }
           ],
           "sellTo": "Flea Market"
@@ -212,7 +212,7 @@
               "methodType": "flea",
               "lastLowPrice": 16888,
               "avg24hPrice": 21069,
-              "updated": "2026-09-20T09:28:08.000Z"
+              "updated": "2026-09-20T11:08:03.000Z"
             }
           ],
           "sellTo": "Flea Market"
@@ -257,7 +257,7 @@
               "methodType": "flea",
               "lastLowPrice": 22222,
               "avg24hPrice": 24261,
-              "updated": "2026-09-20T09:28:08.000Z"
+              "updated": "2026-09-20T11:08:03.000Z"
             }
           ],
           "sellTo": "Flea Market"
@@ -270,12 +270,12 @@
           "durationHours": 1,
           "cyclesPerDay": 24,
           "materialCostPerCycle": 72700,
-          "netRevenuePerCycle": 101324,
-          "profitPerCycleBeforeFuel": 28624,
-          "profitPerDayBeforeFuel": 686976,
+          "netRevenuePerCycle": 80610,
+          "profitPerCycleBeforeFuel": 7910,
+          "profitPerDayBeforeFuel": 189840,
           "standaloneFuelCostPerDay": 76000,
-          "profitPerDayStandalone": 610976,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": 686976,
+          "profitPerDayStandalone": 113840,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 189840,
           "materials": [
             {
               "id": "5448fee04bdc2dbc018b4567",
@@ -305,72 +305,61 @@
               "id": "5c0fa877d174af02a012e1cf",
               "item": "Aquamari water bottle with filter",
               "count": 5,
-              "unitPrice": 22222,
-              "gross": 111110,
-              "fee": 9786,
-              "net": 101324,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 22222,
-              "avg24hPrice": 23476,
-              "updated": "2026-09-20T09:28:08.000Z"
+              "unitPrice": 16122,
+              "gross": 80610,
+              "fee": 0,
+              "net": 80610,
+              "sellTo": "Therapist",
+              "methodType": "trader",
+              "lastLowPrice": 14444,
+              "avg24hPrice": 23603,
+              "updated": "2026-09-20T11:18:08.000Z"
             }
           ],
-          "sellTo": "Flea Market"
+          "sellTo": "Therapist"
         }
       ],
       "recommendedByDailyProfitBeforeFuel": {
-        "craftId": "67f4ec521d41954d4f09a9c8",
+        "craftId": "67f4ebb7d0fb51b8c705e80e",
         "station": "Water Collector",
-        "craft": "Aquamari water bottle with filter x5",
-        "durationSeconds": 3600,
-        "durationHours": 1,
-        "cyclesPerDay": 24,
-        "materialCostPerCycle": 72700,
-        "netRevenuePerCycle": 101324,
-        "profitPerCycleBeforeFuel": 28624,
-        "profitPerDayBeforeFuel": 686976,
+        "craft": "Bottle of water (0.6L) x1",
+        "durationSeconds": 1200,
+        "durationHours": 0.33,
+        "cyclesPerDay": 72,
+        "materialCostPerCycle": 10000,
+        "netRevenuePerCycle": 19279,
+        "profitPerCycleBeforeFuel": 9279,
+        "profitPerDayBeforeFuel": 668088,
         "standaloneFuelCostPerDay": 76000,
-        "profitPerDayStandalone": 610976,
-        "profitPerDayMarginalIfGeneratorAlreadyRunning": 686976,
+        "profitPerDayStandalone": 592088,
+        "profitPerDayMarginalIfGeneratorAlreadyRunning": 668088,
         "materials": [
           {
             "id": "5448fee04bdc2dbc018b4567",
             "item": "Bottle of water (0.6L)",
-            "count": 5,
+            "count": 1,
             "unitCost": 10000,
-            "subtotal": 50000,
+            "subtotal": 10000,
             "method": "Trader barter: Therapist LL1",
             "methodType": "barter",
             "buyLimit": 2,
-            "taskUnlock": null
-          },
-          {
-            "id": "6389c6c7dbfd5e4b95197e68",
-            "item": "Aquapeps water purification tablets",
-            "count": 1,
-            "unitCost": 22700,
-            "subtotal": 22700,
-            "method": "Flea Market",
-            "methodType": "flea",
-            "buyLimit": null,
             "taskUnlock": null
           }
         ],
         "outputs": [
           {
-            "id": "5c0fa877d174af02a012e1cf",
-            "item": "Aquamari water bottle with filter",
-            "count": 5,
+            "id": "5448fee04bdc2dbc018b4567",
+            "item": "Bottle of water (0.6L)",
+            "count": 1,
             "unitPrice": 22222,
-            "gross": 111110,
-            "fee": 9786,
-            "net": 101324,
+            "gross": 22222,
+            "fee": 2943,
+            "net": 19279,
             "sellTo": "Flea Market",
             "methodType": "flea",
             "lastLowPrice": 22222,
-            "avg24hPrice": 23476,
-            "updated": "2026-09-20T09:28:08.000Z"
+            "avg24hPrice": 24261,
+            "updated": "2026-09-20T11:08:03.000Z"
           }
         ],
         "sellTo": "Flea Market"
@@ -386,22 +375,22 @@
           "durationSeconds": 11000,
           "durationHours": 3.06,
           "cyclesPerDay": 7.85,
-          "materialCostPerCycle": 341750,
-          "netRevenuePerCycle": 337782,
-          "profitPerCycleBeforeFuel": -3968,
-          "profitPerDayBeforeFuel": -31167,
+          "materialCostPerCycle": 329750,
+          "netRevenuePerCycle": 393416,
+          "profitPerCycleBeforeFuel": 63666,
+          "profitPerDayBeforeFuel": 500067,
           "standaloneFuelCostPerDay": 76000,
-          "profitPerDayStandalone": -107167,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": -31167,
+          "profitPerDayStandalone": 424067,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 500067,
           "materials": [
             {
               "id": "59e3577886f774176a362503",
               "item": "Pack of sugar",
               "count": 2,
-              "unitCost": 76000,
-              "subtotal": 152000,
-              "method": "Flea Market",
-              "methodType": "flea",
+              "unitCost": 70000,
+              "subtotal": 140000,
+              "method": "Hideout craft: Nutrition Unit Lv2",
+              "methodType": "craft",
               "buyLimit": null,
               "taskUnlock": null
             },
@@ -422,15 +411,15 @@
               "id": "5d1b376e86f774252519444e",
               "item": "Bottle of Fierce Hatchling moonshine",
               "count": 1,
-              "unitPrice": 360000,
-              "gross": 360000,
-              "fee": 22218,
-              "net": 337782,
+              "unitPrice": 420000,
+              "gross": 420000,
+              "fee": 26584,
+              "net": 393416,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 360000,
-              "avg24hPrice": 441493,
-              "updated": "2026-09-20T09:28:08.000Z"
+              "lastLowPrice": 420000,
+              "avg24hPrice": 440777,
+              "updated": "2026-09-20T11:18:08.000Z"
             }
           ],
           "sellTo": "Flea Market"
@@ -443,22 +432,22 @@
         "durationSeconds": 11000,
         "durationHours": 3.06,
         "cyclesPerDay": 7.85,
-        "materialCostPerCycle": 341750,
-        "netRevenuePerCycle": 337782,
-        "profitPerCycleBeforeFuel": -3968,
-        "profitPerDayBeforeFuel": -31167,
+        "materialCostPerCycle": 329750,
+        "netRevenuePerCycle": 393416,
+        "profitPerCycleBeforeFuel": 63666,
+        "profitPerDayBeforeFuel": 500067,
         "standaloneFuelCostPerDay": 76000,
-        "profitPerDayStandalone": -107167,
-        "profitPerDayMarginalIfGeneratorAlreadyRunning": -31167,
+        "profitPerDayStandalone": 424067,
+        "profitPerDayMarginalIfGeneratorAlreadyRunning": 500067,
         "materials": [
           {
             "id": "59e3577886f774176a362503",
             "item": "Pack of sugar",
             "count": 2,
-            "unitCost": 76000,
-            "subtotal": 152000,
-            "method": "Flea Market",
-            "methodType": "flea",
+            "unitCost": 70000,
+            "subtotal": 140000,
+            "method": "Hideout craft: Nutrition Unit Lv2",
+            "methodType": "craft",
             "buyLimit": null,
             "taskUnlock": null
           },
@@ -479,15 +468,15 @@
             "id": "5d1b376e86f774252519444e",
             "item": "Bottle of Fierce Hatchling moonshine",
             "count": 1,
-            "unitPrice": 360000,
-            "gross": 360000,
-            "fee": 22218,
-            "net": 337782,
+            "unitPrice": 420000,
+            "gross": 420000,
+            "fee": 26584,
+            "net": 393416,
             "sellTo": "Flea Market",
             "methodType": "flea",
-            "lastLowPrice": 360000,
-            "avg24hPrice": 441493,
-            "updated": "2026-09-20T09:28:08.000Z"
+            "lastLowPrice": 420000,
+            "avg24hPrice": 440777,
+            "updated": "2026-09-20T11:18:08.000Z"
           }
         ],
         "sellTo": "Flea Market"
@@ -583,7 +572,7 @@
         ],
         "input": "5d1b376e86f774252519444e Name",
         "inputItemId": "5d1b376e86f774252519444e",
-        "investmentCost": 341750,
+        "investmentCost": 329750,
         "investmentMethod": "Hideout craft: Booze Generator Lv1",
         "durationMinutes": 280,
         "expectedReturn": null,
@@ -608,7 +597,7 @@
         ],
         "input": "5c12613b86f7743bbe2c3f76 Name",
         "inputItemId": "5c12613b86f7743bbe2c3f76",
-        "investmentCost": 257999,
+        "investmentCost": 237440,
         "investmentMethod": "Trader barter: Peacekeeper LL3",
         "durationMinutes": 320,
         "expectedReturn": null,
@@ -627,9 +616,9 @@
   "combinedDailyOperation": {
     "scenario": "50 GPU Bitcoin Farm + highest daily-profit Water Collector craft + highest daily-profit Booze Generator craft; generator fuel counted once",
     "bitcoinGpuCount": 50,
-    "waterCraft": "Aquamari water bottle with filter x5",
+    "waterCraft": "Bottle of water (0.6L) x1",
     "boozeCraft": "Bottle of Fierce Hatchling moonshine x1",
     "sharedFuelCostPerDay": 76000,
-    "netProfitPerDay": 1044606
+    "netProfitPerDay": 1556952
   }
 }
