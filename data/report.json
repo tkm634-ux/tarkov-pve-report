@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-20T17:21:59.141Z",
+    "calculatedAt": "2026-09-20T17:34:43.008Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-20T17:18:09.000Z"
+      "newest": "2026-09-20T17:28:07.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -264,7 +264,7 @@
               "methodType": "flea",
               "lastLowPrice": 420000,
               "avg24hPrice": 443699,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         }
@@ -321,7 +321,7 @@
               "methodType": "flea",
               "lastLowPrice": 420000,
               "avg24hPrice": 443699,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         }
@@ -540,7 +540,7 @@
               "methodType": "flea",
               "lastLowPrice": 299999,
               "avg24hPrice": 310690,
-              "updated": "2026-09-20T17:18:06.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         }
@@ -752,7 +752,7 @@
               "methodType": "flea",
               "lastLowPrice": 299999,
               "avg24hPrice": 310690,
-              "updated": "2026-09-20T17:18:06.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         }
@@ -990,83 +990,6 @@
           ]
         },
         {
-          "craftId": "6a1568b4a9185da666070a24",
-          "craft": "RDG-2B smoke grenade x6",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 65776,
-          "saleGross": 119328,
-          "fleaFee": 9324,
-          "netRevenue": 110004,
-          "profit": 44228,
-          "durationMinutes": 60,
-          "profitPerHour": 44228,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5e2af02c86f7746d420957d4",
-              "item": "Pack of chlorine",
-              "count": 1,
-              "unitCost": 14444,
-              "subtotal": 14444,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5e2af2bc86f7746d3f3c33fc",
-              "item": "Hunting matches",
-              "count": 1,
-              "unitCost": 14444,
-              "subtotal": 14444,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "57347c1124597737fb1379e3",
-              "item": "Duct tape",
-              "count": 1,
-              "unitCost": 15000,
-              "subtotal": 15000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5c13cef886f774072e618e82",
-              "item": "Toilet paper",
-              "count": 1,
-              "unitCost": 21888,
-              "subtotal": 21888,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [],
-          "outputs": [
-            {
-              "id": "5a2a57cfc4a2826c6e06d44a",
-              "item": "RDG-2B smoke grenade",
-              "count": 6,
-              "unitPrice": 19888,
-              "gross": 119328,
-              "fee": 9324,
-              "net": 110004,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 19888,
-              "avg24hPrice": 17210,
-              "updated": "2026-09-20T15:48:07.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "5eecaa6327ccd70521107ff5",
           "craft": "Ripstop fabric x2",
           "stationLevel": 1,
@@ -1112,6 +1035,56 @@
               "methodType": "flea",
               "lastLowPrice": 27999,
               "avg24hPrice": 28240,
+              "updated": "2026-09-20T15:58:07.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5ffcaa60f3fdc212a91d552b",
+          "craft": "Aramid fiber fabric x2",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 30000,
+          "saleGross": 74000,
+          "fleaFee": 6215,
+          "netRevenue": 67785,
+          "profit": 37785,
+          "durationMinutes": 33.33,
+          "profitPerHour": 68013,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5648a7494bdc2d9d488b4583",
+              "item": "PACA Soft Armor",
+              "count": 1,
+              "unitCost": 30000,
+              "subtotal": 30000,
+              "method": "Trader barter: Ragman LL1",
+              "methodType": "barter",
+              "buyLimit": 3,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af4d286f7746d4159f07a",
+              "item": "Aramid fiber fabric",
+              "count": 2,
+              "unitPrice": 37000,
+              "gross": 74000,
+              "fee": 6215,
+              "net": 67785,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 37000,
+              "avg24hPrice": 33787,
               "updated": "2026-09-20T15:58:07.000Z"
             }
           ]
@@ -1656,7 +1629,7 @@
               "methodType": "flea",
               "lastLowPrice": 34444,
               "avg24hPrice": 39101,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         },
@@ -1783,7 +1756,7 @@
               "methodType": "flea",
               "lastLowPrice": 20000,
               "avg24hPrice": 25203,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         }
@@ -1873,7 +1846,7 @@
               "methodType": "flea",
               "lastLowPrice": 20000,
               "avg24hPrice": 22801,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         },
@@ -1945,7 +1918,7 @@
               "methodType": "flea",
               "lastLowPrice": 34444,
               "avg24hPrice": 39101,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         },
@@ -2053,7 +2026,7 @@
               "methodType": "flea",
               "lastLowPrice": 22222,
               "avg24hPrice": 25672,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         },
@@ -2108,7 +2081,7 @@
               "methodType": "trader",
               "lastLowPrice": 14444,
               "avg24hPrice": 24112,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         },
@@ -2158,7 +2131,7 @@
               "methodType": "flea",
               "lastLowPrice": 16888,
               "avg24hPrice": 22622,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         }
@@ -2204,7 +2177,7 @@
               "methodType": "flea",
               "lastLowPrice": 22222,
               "avg24hPrice": 25672,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         },
@@ -2259,7 +2232,7 @@
               "methodType": "trader",
               "lastLowPrice": 14444,
               "avg24hPrice": 24112,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         },
@@ -2309,7 +2282,7 @@
               "methodType": "flea",
               "lastLowPrice": 16888,
               "avg24hPrice": 22622,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ]
         }
@@ -2930,7 +2903,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 190000,
                 "avg24hPrice": 229930,
-                "updated": "2026-09-20T17:08:03.000Z"
+                "updated": "2026-09-20T17:28:07.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -2975,7 +2948,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 16888,
                 "avg24hPrice": 22622,
-                "updated": "2026-09-20T17:08:03.000Z"
+                "updated": "2026-09-20T17:28:07.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3020,7 +2993,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 22222,
                 "avg24hPrice": 25672,
-                "updated": "2026-09-20T17:08:03.000Z"
+                "updated": "2026-09-20T17:28:07.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3076,7 +3049,7 @@
                 "methodType": "trader",
                 "lastLowPrice": 14444,
                 "avg24hPrice": 24112,
-                "updated": "2026-09-20T17:08:03.000Z"
+                "updated": "2026-09-20T17:28:07.000Z"
               }
             ],
             "sellTo": "Therapist"
@@ -3122,7 +3095,7 @@
               "methodType": "flea",
               "lastLowPrice": 22222,
               "avg24hPrice": 25672,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ],
           "sellTo": "Flea Market"
@@ -3182,7 +3155,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 420000,
                 "avg24hPrice": 443699,
-                "updated": "2026-09-20T17:08:03.000Z"
+                "updated": "2026-09-20T17:28:07.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3239,7 +3212,7 @@
               "methodType": "flea",
               "lastLowPrice": 420000,
               "avg24hPrice": 443699,
-              "updated": "2026-09-20T17:08:03.000Z"
+              "updated": "2026-09-20T17:28:07.000Z"
             }
           ],
           "sellTo": "Flea Market"
