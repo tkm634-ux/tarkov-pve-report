@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-20T23:48:01.312Z",
+    "calculatedAt": "2026-09-21T00:07:43.464Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-20T23:38:08.000Z"
+      "newest": "2026-09-20T23:58:08.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -551,7 +551,7 @@
               "methodType": "flea",
               "lastLowPrice": 769999,
               "avg24hPrice": 787007,
-              "updated": "2026-09-20T23:38:05.000Z"
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         }
@@ -708,7 +708,7 @@
               "methodType": "flea",
               "lastLowPrice": 769999,
               "avg24hPrice": 787007,
-              "updated": "2026-09-20T23:38:05.000Z"
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         },
@@ -788,25 +788,75 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
+          "craftId": "5e1330dca0f0f8773c069c99",
+          "craft": "Gas mask air filter x1",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 81270,
+          "saleGross": 100000,
+          "fleaFee": 14053,
+          "netRevenue": 85947,
+          "profit": 4677,
+          "durationMinutes": 2,
+          "profitPerHour": 140310,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "60363c0c92ec1c31037959f5",
+              "item": "GP-7 gas mask",
+              "count": 1,
+              "unitCost": 81270,
+              "subtotal": 81270,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "590c2d8786f774245b1f03f3",
+              "item": "Screwdriver",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "590c595c86f7747884343ad7",
+              "item": "Gas mask air filter",
+              "count": 1,
+              "unitPrice": 100000,
+              "gross": 100000,
+              "fee": 14053,
+              "net": 85947,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 100000,
+              "avg24hPrice": 99322,
+              "updated": "2026-09-20T23:58:08.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "5ffcaa60f3fdc212a91d552b",
           "craft": "Aramid fiber fabric x2",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 30000,
-          "saleGross": 70000,
-          "fleaFee": 5709,
-          "netRevenue": 64291,
-          "profit": 34291,
+          "materialCost": 22500,
+          "saleGross": 96000,
+          "fleaFee": 9325,
+          "netRevenue": 86675,
+          "profit": 64175,
           "durationMinutes": 33.33,
-          "profitPerHour": 61724,
+          "profitPerHour": 115515,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5648a7494bdc2d9d488b4583",
               "item": "PACA Soft Armor",
               "count": 1,
-              "unitCost": 30000,
-              "subtotal": 30000,
+              "unitCost": 22500,
+              "subtotal": 22500,
               "method": "Trader barter: Ragman LL1",
               "methodType": "barter",
               "buyLimit": 3,
@@ -825,15 +875,15 @@
               "id": "5e2af4d286f7746d4159f07a",
               "item": "Aramid fiber fabric",
               "count": 2,
-              "unitPrice": 35000,
-              "gross": 70000,
-              "fee": 5709,
-              "net": 64291,
+              "unitPrice": 48000,
+              "gross": 96000,
+              "fee": 9325,
+              "net": 86675,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 35000,
-              "avg24hPrice": 34913,
-              "updated": "2026-09-20T23:38:03.000Z"
+              "lastLowPrice": 48000,
+              "avg24hPrice": 36952,
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         },
@@ -843,12 +893,12 @@
           "stationLevel": 1,
           "taskUnlock": null,
           "materialCost": 9999,
-          "saleGross": 45998,
-          "fleaFee": 3746,
-          "netRevenue": 42252,
-          "profit": 32253,
+          "saleGross": 48888,
+          "fleaFee": 4111,
+          "netRevenue": 44777,
+          "profit": 34778,
           "durationMinutes": 36.67,
-          "profitPerHour": 52778,
+          "profitPerHour": 56909,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -875,172 +925,40 @@
               "id": "5e2af4a786f7746d3f3c3400",
               "item": "Ripstop fabric",
               "count": 2,
-              "unitPrice": 22999,
-              "gross": 45998,
-              "fee": 3746,
-              "net": 42252,
+              "unitPrice": 24444,
+              "gross": 48888,
+              "fee": 4111,
+              "net": 44777,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 22999,
-              "avg24hPrice": 28079,
-              "updated": "2026-09-20T23:38:03.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "62a11415c30cfa1d366aeb83",
-          "craft": "Soap x6",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 56495,
-          "saleGross": 108000,
-          "fleaFee": 9555,
-          "netRevenue": 98445,
-          "profit": 41950,
-          "durationMinutes": 50,
-          "profitPerHour": 50340,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "59faf98186f774067b6be103",
-              "item": "Alkaline cleaner for heat exchangers",
-              "count": 1,
-              "unitCost": 14444,
-              "subtotal": 14444,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "62a09ee4cf4a99369e262453",
-              "item": "Can of white salt",
-              "count": 1,
-              "unitCost": 20900,
-              "subtotal": 20900,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "635a758bfefc88a93f021b8a",
-              "item": "Salty Dog beef sausage",
-              "count": 1,
-              "unitCost": 21151,
-              "subtotal": 21151,
-              "method": "Hideout craft: Nutrition Unit Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [],
-          "outputs": [
-            {
-              "id": "5c13cd2486f774072c757944",
-              "item": "Soap",
-              "count": 6,
-              "unitPrice": 18000,
-              "gross": 108000,
-              "fee": 9555,
-              "net": 98445,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 18000,
-              "avg24hPrice": 18578,
-              "updated": "2026-09-20T23:38:05.000Z"
+              "lastLowPrice": 24444,
+              "avg24hPrice": 27862,
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         }
       ],
       "topProfitPerCraft": [
         {
-          "craftId": "62a11415c30cfa1d366aeb83",
-          "craft": "Soap x6",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 56495,
-          "saleGross": 108000,
-          "fleaFee": 9555,
-          "netRevenue": 98445,
-          "profit": 41950,
-          "durationMinutes": 50,
-          "profitPerHour": 50340,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "59faf98186f774067b6be103",
-              "item": "Alkaline cleaner for heat exchangers",
-              "count": 1,
-              "unitCost": 14444,
-              "subtotal": 14444,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "62a09ee4cf4a99369e262453",
-              "item": "Can of white salt",
-              "count": 1,
-              "unitCost": 20900,
-              "subtotal": 20900,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "635a758bfefc88a93f021b8a",
-              "item": "Salty Dog beef sausage",
-              "count": 1,
-              "unitCost": 21151,
-              "subtotal": 21151,
-              "method": "Hideout craft: Nutrition Unit Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [],
-          "outputs": [
-            {
-              "id": "5c13cd2486f774072c757944",
-              "item": "Soap",
-              "count": 6,
-              "unitPrice": 18000,
-              "gross": 108000,
-              "fee": 9555,
-              "net": 98445,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 18000,
-              "avg24hPrice": 18578,
-              "updated": "2026-09-20T23:38:05.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "5ffcaa60f3fdc212a91d552b",
           "craft": "Aramid fiber fabric x2",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 30000,
-          "saleGross": 70000,
-          "fleaFee": 5709,
-          "netRevenue": 64291,
-          "profit": 34291,
+          "materialCost": 22500,
+          "saleGross": 96000,
+          "fleaFee": 9325,
+          "netRevenue": 86675,
+          "profit": 64175,
           "durationMinutes": 33.33,
-          "profitPerHour": 61724,
+          "profitPerHour": 115515,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5648a7494bdc2d9d488b4583",
               "item": "PACA Soft Armor",
               "count": 1,
-              "unitCost": 30000,
-              "subtotal": 30000,
+              "unitCost": 22500,
+              "subtotal": 22500,
               "method": "Trader barter: Ragman LL1",
               "methodType": "barter",
               "buyLimit": 3,
@@ -1059,41 +977,107 @@
               "id": "5e2af4d286f7746d4159f07a",
               "item": "Aramid fiber fabric",
               "count": 2,
-              "unitPrice": 35000,
-              "gross": 70000,
-              "fee": 5709,
-              "net": 64291,
+              "unitPrice": 48000,
+              "gross": 96000,
+              "fee": 9325,
+              "net": 86675,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 35000,
-              "avg24hPrice": 34913,
-              "updated": "2026-09-20T23:38:03.000Z"
+              "lastLowPrice": 48000,
+              "avg24hPrice": 36952,
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         },
         {
-          "craftId": "5ffcafd468c55773943fc71e",
-          "craft": "Fleece fabric x1",
-          "stationLevel": 2,
+          "craftId": "62a11415c30cfa1d366aeb83",
+          "craft": "Soap x6",
+          "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 5680,
-          "saleGross": 45000,
-          "fleaFee": 6835,
-          "netRevenue": 38165,
-          "profit": 32485,
-          "durationMinutes": 43.33,
-          "profitPerHour": 44979,
+          "materialCost": 56495,
+          "saleGross": 108000,
+          "fleaFee": 9555,
+          "netRevenue": 98445,
+          "profit": 41950,
+          "durationMinutes": 50,
+          "profitPerHour": 50340,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "5aa2ba46e5b5b000137b758d",
-              "item": "UX PRO beanie",
-              "count": 2,
-              "unitCost": 2840,
-              "subtotal": 5680,
-              "method": "Trader purchase: Ragman LL2",
-              "methodType": "trader",
-              "buyLimit": 4,
+              "id": "59faf98186f774067b6be103",
+              "item": "Alkaline cleaner for heat exchangers",
+              "count": 1,
+              "unitCost": 14444,
+              "subtotal": 14444,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "62a09ee4cf4a99369e262453",
+              "item": "Can of white salt",
+              "count": 1,
+              "unitCost": 20900,
+              "subtotal": 20900,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "635a758bfefc88a93f021b8a",
+              "item": "Salty Dog beef sausage",
+              "count": 1,
+              "unitCost": 21151,
+              "subtotal": 21151,
+              "method": "Hideout craft: Nutrition Unit Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5c13cd2486f774072c757944",
+              "item": "Soap",
+              "count": 6,
+              "unitPrice": 18000,
+              "gross": 108000,
+              "fee": 9555,
+              "net": 98445,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 18000,
+              "avg24hPrice": 18578,
+              "updated": "2026-09-20T23:58:08.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5eecaa6327ccd70521107ff5",
+          "craft": "Ripstop fabric x2",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 9999,
+          "saleGross": 48888,
+          "fleaFee": 4111,
+          "netRevenue": 44777,
+          "profit": 34778,
+          "durationMinutes": 36.67,
+          "profitPerHour": 56909,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "572b7adb24597762ae139821",
+              "item": "Scav Vest",
+              "count": 1,
+              "unitCost": 9999,
+              "subtotal": 9999,
+              "method": "Trader barter: Jaeger LL1",
+              "methodType": "barter",
+              "buyLimit": 10,
               "taskUnlock": null
             }
           ],
@@ -1106,18 +1090,18 @@
           ],
           "outputs": [
             {
-              "id": "5e2af47786f7746d404f3aaa",
-              "item": "Fleece fabric",
-              "count": 1,
-              "unitPrice": 45000,
-              "gross": 45000,
-              "fee": 6835,
-              "net": 38165,
+              "id": "5e2af4a786f7746d3f3c3400",
+              "item": "Ripstop fabric",
+              "count": 2,
+              "unitPrice": 24444,
+              "gross": 48888,
+              "fee": 4111,
+              "net": 44777,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 45000,
-              "avg24hPrice": 37520,
-              "updated": "2026-09-20T23:38:03.000Z"
+              "lastLowPrice": 24444,
+              "avg24hPrice": 27862,
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         }
@@ -1209,7 +1193,7 @@
               "methodType": "flea",
               "lastLowPrice": 480000,
               "avg24hPrice": 488192,
-              "updated": "2026-09-20T23:38:03.000Z"
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         },
@@ -1275,7 +1259,7 @@
               "methodType": "flea",
               "lastLowPrice": 30000,
               "avg24hPrice": 32622,
-              "updated": "2026-09-20T23:38:03.000Z"
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         },
@@ -1426,7 +1410,7 @@
               "methodType": "flea",
               "lastLowPrice": 480000,
               "avg24hPrice": 488192,
-              "updated": "2026-09-20T23:38:03.000Z"
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         },
@@ -1648,21 +1632,21 @@
           "craft": "Can of Majaica coffee beans x2",
           "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 28960,
+          "materialCost": 26460,
           "saleGross": 43550,
           "fleaFee": 2689,
           "netRevenue": 40861,
-          "profit": 11901,
+          "profit": 14401,
           "durationMinutes": 45,
-          "profitPerHour": 15868,
+          "profitPerHour": 19201,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5e54f6af86f7742199090bf3",
               "item": "Can of Dr. Lupo's coffee beans",
               "count": 1,
-              "unitCost": 25000,
-              "subtotal": 25000,
+              "unitCost": 22500,
+              "subtotal": 22500,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -1694,7 +1678,7 @@
               "methodType": "flea",
               "lastLowPrice": 21775,
               "avg24hPrice": 30833,
-              "updated": "2026-09-20T23:38:03.000Z"
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         },
@@ -1755,13 +1739,13 @@
           "craft": "Can of Hot Rod energy drink x20",
           "stationLevel": 3,
           "taskUnlock": null,
-          "materialCost": 275034,
+          "materialCost": 278227,
           "saleGross": 400000,
           "fleaFee": 25501,
           "netRevenue": 374499,
-          "profit": 99465,
+          "profit": 96272,
           "durationMinutes": 720,
-          "profitPerHour": 8289,
+          "profitPerHour": 8023,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -1790,8 +1774,8 @@
               "id": "5af0484c86f7740f02001f7f",
               "item": "Can of Majaica coffee beans",
               "count": 1,
-              "unitCost": 14480,
-              "subtotal": 14480,
+              "unitCost": 13230,
+              "subtotal": 13230,
               "method": "Hideout craft: Nutrition Unit Lv2",
               "methodType": "craft",
               "buyLimit": null,
@@ -1801,8 +1785,8 @@
               "id": "5bc9be8fd4351e00334cae6e",
               "item": "42 Signature Blend English Tea",
               "count": 1,
-              "unitCost": 15555,
-              "subtotal": 15555,
+              "unitCost": 19998,
+              "subtotal": 19998,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -2272,12 +2256,12 @@
           "stationLevel": 1,
           "taskUnlock": null,
           "materialCost": 7920,
-          "saleGross": 41998,
-          "fleaFee": 2586,
-          "netRevenue": 39412,
-          "profit": 31492,
+          "saleGross": 46000,
+          "fleaFee": 2824,
+          "netRevenue": 43176,
+          "profit": 35256,
           "durationMinutes": 15,
-          "profitPerHour": 125968,
+          "profitPerHour": 141024,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -2304,15 +2288,15 @@
               "id": "590c5a7286f7747884343aea",
               "item": "Gunpowder \"Kite\"",
               "count": 2,
-              "unitPrice": 20999,
-              "gross": 41998,
-              "fee": 2586,
-              "net": 39412,
+              "unitPrice": 23000,
+              "gross": 46000,
+              "fee": 2824,
+              "net": 43176,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 20999,
-              "avg24hPrice": 25393,
-              "updated": "2026-09-20T23:38:03.000Z"
+              "lastLowPrice": 23000,
+              "avg24hPrice": 25587,
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         },
@@ -2362,62 +2346,57 @@
               "methodType": "flea",
               "lastLowPrice": 20000,
               "avg24hPrice": 20429,
-              "updated": "2026-09-20T23:38:05.000Z"
+              "updated": "2026-09-20T23:48:08.000Z"
             }
           ]
         },
         {
-          "craftId": "5dd3c9c8449c0c31795b0f0b",
-          "craft": "Gunpowder \"Hawk\" x3",
+          "craftId": "5de951483c52683d810b4a10",
+          "craft": "Printed circuit board x2",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 50332,
-          "saleGross": 108000,
-          "fleaFee": 7439,
-          "netRevenue": 100561,
-          "profit": 50230,
-          "durationMinutes": 35.83,
-          "profitPerHour": 84105,
+          "materialCost": 10000,
+          "saleGross": 60000,
+          "fleaFee": 3913,
+          "netRevenue": 56087,
+          "profit": 46087,
+          "durationMinutes": 33,
+          "profitPerHour": 83795,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "57347b8b24597737dd42e192",
-              "item": "Classic matches",
+              "id": "5734781f24597737e04bf32a",
+              "item": "DVD drive",
               "count": 1,
-              "unitCost": 32999,
-              "subtotal": 32999,
+              "unitCost": 10000,
+              "subtotal": 10000,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
               "taskUnlock": null
-            },
-            {
-              "id": "5d6fc78386f77449d825f9dc",
-              "item": "Gunpowder \"Eagle\"",
-              "count": 1,
-              "unitCost": 17333,
-              "subtotal": 17333,
-              "method": "Hideout craft: Workbench Lv2",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
             }
           ],
-          "tools": [],
+          "tools": [
+            {
+              "id": "5d63d33b86f7746ea9275524",
+              "item": "Flat screwdriver",
+              "count": 1
+            }
+          ],
           "outputs": [
             {
-              "id": "5d6fc87386f77449db3db94e",
-              "item": "Gunpowder \"Hawk\"",
-              "count": 3,
-              "unitPrice": 36000,
-              "gross": 108000,
-              "fee": 7439,
-              "net": 100561,
+              "id": "590a3b0486f7743954552bdb",
+              "item": "Printed circuit board",
+              "count": 2,
+              "unitPrice": 30000,
+              "gross": 60000,
+              "fee": 3913,
+              "net": 56087,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 36000,
-              "avg24hPrice": 38795,
-              "updated": "2026-09-20T23:38:03.000Z"
+              "lastLowPrice": 30000,
+              "avg24hPrice": 31328,
+              "updated": "2026-09-20T23:48:08.000Z"
             }
           ]
         }
@@ -2463,7 +2442,68 @@
               "methodType": "flea",
               "lastLowPrice": 24999,
               "avg24hPrice": 32959,
-              "updated": "2026-09-20T23:38:05.000Z"
+              "updated": "2026-09-20T23:58:08.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5de919ec1b25d85cf30ca39a",
+          "craft": "Gunpowder \"Eagle\" x2",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 34665,
+          "saleGross": 147338,
+          "fleaFee": 9548,
+          "netRevenue": 137790,
+          "profit": 103125,
+          "durationMinutes": 97.83,
+          "profitPerHour": 63245,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "58d3db5386f77426186285a0",
+              "item": "M67 hand grenade",
+              "count": 2,
+              "unitCost": 15040,
+              "subtotal": 30080,
+              "method": "Trader purchase: Peacekeeper LL3",
+              "methodType": "trader",
+              "buyLimit": 10,
+              "taskUnlock": "5a03173786f77451cb427172"
+            },
+            {
+              "id": "617aa4dd8166f034d57de9c5",
+              "item": "M18 smoke grenade (Green)",
+              "count": 1,
+              "unitCost": 4585,
+              "subtotal": 4585,
+              "method": "Trader purchase: Jaeger LL1",
+              "methodType": "trader",
+              "buyLimit": 5,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "590c2d8786f774245b1f03f3",
+              "item": "Screwdriver",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5d6fc78386f77449d825f9dc",
+              "item": "Gunpowder \"Eagle\"",
+              "count": 2,
+              "unitPrice": 73669,
+              "gross": 147338,
+              "fee": 9548,
+              "net": 137790,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 73669,
+              "avg24hPrice": 66949,
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         },
@@ -2512,69 +2552,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 29999,
-              "avg24hPrice": 29295,
-              "updated": "2026-09-20T23:38:03.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "5de919ec1b25d85cf30ca39a",
-          "craft": "Gunpowder \"Eagle\" x2",
-          "stationLevel": 2,
-          "taskUnlock": null,
-          "materialCost": 34665,
-          "saleGross": 111110,
-          "fleaFee": 6837,
-          "netRevenue": 104273,
-          "profit": 69608,
-          "durationMinutes": 97.83,
-          "profitPerHour": 42690,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "58d3db5386f77426186285a0",
-              "item": "M67 hand grenade",
-              "count": 2,
-              "unitCost": 15040,
-              "subtotal": 30080,
-              "method": "Trader purchase: Peacekeeper LL3",
-              "methodType": "trader",
-              "buyLimit": 10,
-              "taskUnlock": "5a03173786f77451cb427172"
-            },
-            {
-              "id": "617aa4dd8166f034d57de9c5",
-              "item": "M18 smoke grenade (Green)",
-              "count": 1,
-              "unitCost": 4585,
-              "subtotal": 4585,
-              "method": "Trader purchase: Jaeger LL1",
-              "methodType": "trader",
-              "buyLimit": 5,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "590c2d8786f774245b1f03f3",
-              "item": "Screwdriver",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5d6fc78386f77449d825f9dc",
-              "item": "Gunpowder \"Eagle\"",
-              "count": 2,
-              "unitPrice": 55555,
-              "gross": 111110,
-              "fee": 6837,
-              "net": 104273,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 55555,
-              "avg24hPrice": 65029,
-              "updated": "2026-09-20T23:38:03.000Z"
+              "avg24hPrice": 29360,
+              "updated": "2026-09-20T23:58:08.000Z"
             }
           ]
         }
