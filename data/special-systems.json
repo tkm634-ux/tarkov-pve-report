@@ -23,11 +23,11 @@
         "item": "5d1b36a186f7742523398433 Name",
         "normalizedName": "metal-fuel-tank",
         "capacity": 100,
-        "acquisitionCost": 128000,
-        "acquisitionMethod": "Trader barter: Prapor LL2",
+        "acquisitionCost": 144665,
+        "acquisitionMethod": "Trader barter: Skier LL3",
         "runtimeHours": 42.11,
-        "costPerHour": 3040,
-        "costPerDay": 72960,
+        "costPerHour": 3435.79,
+        "costPerDay": 82459,
         "status": "complete"
       }
     ],
@@ -52,7 +52,7 @@
     "formulaVerifiedAt": "2026-09-03",
     "graphicsCard": {
       "itemId": "57347ca924597744596b4e71",
-      "acquisitionCost": 421276,
+      "acquisitionCost": 652640,
       "acquisitionMethod": "Hideout craft: Intelligence Center Lv3"
     },
     "variants": [
@@ -66,10 +66,10 @@
         "revenuePerDay": 153905,
         "fuelCostPerDay": 63331,
         "netProfitPerDay": 90574,
-        "gpuUnitAcquisitionCost": 421276,
+        "gpuUnitAcquisitionCost": 652640,
         "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
-        "installedGpuCapital": 421276,
-        "simpleCapitalPaybackDays": 4.65
+        "installedGpuCapital": 652640,
+        "simpleCapitalPaybackDays": 7.21
       },
       {
         "gpuCount": 10,
@@ -81,10 +81,10 @@
         "revenuePerDay": 211007,
         "fuelCostPerDay": 63331,
         "netProfitPerDay": 147676,
-        "gpuUnitAcquisitionCost": 421276,
+        "gpuUnitAcquisitionCost": 652640,
         "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
-        "installedGpuCapital": 4212760,
-        "simpleCapitalPaybackDays": 28.53
+        "installedGpuCapital": 6526400,
+        "simpleCapitalPaybackDays": 44.19
       },
       {
         "gpuCount": 25,
@@ -96,10 +96,10 @@
         "revenuePerDay": 306178,
         "fuelCostPerDay": 63331,
         "netProfitPerDay": 242847,
-        "gpuUnitAcquisitionCost": 421276,
+        "gpuUnitAcquisitionCost": 652640,
         "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
-        "installedGpuCapital": 10531900,
-        "simpleCapitalPaybackDays": 43.37
+        "installedGpuCapital": 16316000,
+        "simpleCapitalPaybackDays": 67.19
       },
       {
         "gpuCount": 50,
@@ -111,10 +111,10 @@
         "revenuePerDay": 464797,
         "fuelCostPerDay": 63331,
         "netProfitPerDay": 401466,
-        "gpuUnitAcquisitionCost": 421276,
+        "gpuUnitAcquisitionCost": 652640,
         "gpuAcquisitionMethod": "Hideout craft: Intelligence Center Lv3",
-        "installedGpuCapital": 21063800,
-        "simpleCapitalPaybackDays": 52.47
+        "installedGpuCapital": 32632000,
+        "simpleCapitalPaybackDays": 81.28
       }
     ]
   },
@@ -134,20 +134,20 @@
           "durationSeconds": 19500,
           "durationHours": 5.42,
           "cyclesPerDay": 4.43,
-          "materialCostPerCycle": 179664,
+          "materialCostPerCycle": 179299,
           "netRevenuePerCycle": 102448,
-          "profitPerCycleBeforeFuel": -77216,
-          "profitPerDayBeforeFuel": -342126,
+          "profitPerCycleBeforeFuel": -76851,
+          "profitPerDayBeforeFuel": -340509,
           "standaloneFuelCostPerDay": 63331,
-          "profitPerDayStandalone": -405457,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": -342126,
+          "profitPerDayStandalone": -403840,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": -340509,
           "materials": [
             {
               "id": "5d1b385e86f774252167b98a",
               "item": "Water filter",
               "count": 0.66,
-              "unitCost": 272219,
-              "subtotal": 179664,
+              "unitCost": 271665,
+              "subtotal": 179299,
               "method": "Hideout craft: Lavatory Lv2",
               "methodType": "craft",
               "buyLimit": null,
@@ -224,23 +224,23 @@
           "durationSeconds": 1200,
           "durationHours": 0.33,
           "cyclesPerDay": 72,
-          "materialCostPerCycle": 10944,
+          "materialCostPerCycle": 8000,
           "netRevenuePerCycle": 16719,
-          "profitPerCycleBeforeFuel": 5775,
-          "profitPerDayBeforeFuel": 415800,
+          "profitPerCycleBeforeFuel": 8719,
+          "profitPerDayBeforeFuel": 627768,
           "standaloneFuelCostPerDay": 63331,
-          "profitPerDayStandalone": 352469,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": 415800,
+          "profitPerDayStandalone": 564437,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 627768,
           "materials": [
             {
               "id": "5448fee04bdc2dbc018b4567",
               "item": "Bottle of water (0.6L)",
               "count": 1,
-              "unitCost": 10944,
-              "subtotal": 10944,
-              "method": "Hideout craft: Nutrition Unit Lv3",
-              "methodType": "craft",
-              "buyLimit": null,
+              "unitCost": 8000,
+              "subtotal": 8000,
+              "method": "Trader barter: Therapist LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
               "taskUnlock": null
             }
           ],
@@ -269,31 +269,31 @@
           "durationSeconds": 3600,
           "durationHours": 1,
           "cyclesPerDay": 24,
-          "materialCostPerCycle": 72222,
+          "materialCostPerCycle": 55000,
           "netRevenuePerCycle": 80610,
-          "profitPerCycleBeforeFuel": 8388,
-          "profitPerDayBeforeFuel": 201312,
+          "profitPerCycleBeforeFuel": 25610,
+          "profitPerDayBeforeFuel": 614640,
           "standaloneFuelCostPerDay": 63331,
-          "profitPerDayStandalone": 137981,
-          "profitPerDayMarginalIfGeneratorAlreadyRunning": 201312,
+          "profitPerDayStandalone": 551309,
+          "profitPerDayMarginalIfGeneratorAlreadyRunning": 614640,
           "materials": [
             {
               "id": "5448fee04bdc2dbc018b4567",
               "item": "Bottle of water (0.6L)",
               "count": 5,
-              "unitCost": 10944,
-              "subtotal": 54722,
-              "method": "Hideout craft: Nutrition Unit Lv3",
-              "methodType": "craft",
-              "buyLimit": null,
+              "unitCost": 8000,
+              "subtotal": 40000,
+              "method": "Trader barter: Therapist LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
               "taskUnlock": null
             },
             {
               "id": "6389c6c7dbfd5e4b95197e68",
               "item": "Aquapeps water purification tablets",
               "count": 1,
-              "unitCost": 17500,
-              "subtotal": 17500,
+              "unitCost": 15000,
+              "subtotal": 15000,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -326,23 +326,23 @@
         "durationSeconds": 1200,
         "durationHours": 0.33,
         "cyclesPerDay": 72,
-        "materialCostPerCycle": 10944,
+        "materialCostPerCycle": 8000,
         "netRevenuePerCycle": 16719,
-        "profitPerCycleBeforeFuel": 5775,
-        "profitPerDayBeforeFuel": 415800,
+        "profitPerCycleBeforeFuel": 8719,
+        "profitPerDayBeforeFuel": 627768,
         "standaloneFuelCostPerDay": 63331,
-        "profitPerDayStandalone": 352469,
-        "profitPerDayMarginalIfGeneratorAlreadyRunning": 415800,
+        "profitPerDayStandalone": 564437,
+        "profitPerDayMarginalIfGeneratorAlreadyRunning": 627768,
         "materials": [
           {
             "id": "5448fee04bdc2dbc018b4567",
             "item": "Bottle of water (0.6L)",
             "count": 1,
-            "unitCost": 10944,
-            "subtotal": 10944,
-            "method": "Hideout craft: Nutrition Unit Lv3",
-            "methodType": "craft",
-            "buyLimit": null,
+            "unitCost": 8000,
+            "subtotal": 8000,
+            "method": "Trader barter: Therapist LL1",
+            "methodType": "barter",
+            "buyLimit": 2,
             "taskUnlock": null
           }
         ],
@@ -597,7 +597,7 @@
         ],
         "input": "5c12613b86f7743bbe2c3f76 Name",
         "inputItemId": "5c12613b86f7743bbe2c3f76",
-        "investmentCost": 214444,
+        "investmentCost": 209999,
         "investmentMethod": "Hideout craft: Intelligence Center Lv3",
         "durationMinutes": 320,
         "expectedReturn": null,
@@ -619,6 +619,6 @@
     "waterCraft": "Bottle of water (0.6L) x1",
     "boozeCraft": "Bottle of Fierce Hatchling moonshine x1",
     "sharedFuelCostPerDay": 63331,
-    "netProfitPerDay": 2086411
+    "netProfitPerDay": 2298379
   }
 }
