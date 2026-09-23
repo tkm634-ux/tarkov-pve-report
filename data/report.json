@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-23T00:45:14.689Z",
+    "calculatedAt": "2026-09-23T01:05:31.666Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-23T00:38:11.000Z"
+      "newest": "2026-09-23T00:58:07.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -39,7 +39,7 @@
   "acquisitionEngine": {
     "converged": true,
     "passes": 5,
-    "pricedItems": 4103
+    "pricedItems": 4102
   },
   "fleaMarket": {
     "name": "FleaMarket",
@@ -263,8 +263,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 411111,
-              "avg24hPrice": 430285,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 429881,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         }
@@ -320,8 +320,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 411111,
-              "avg24hPrice": 430285,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 429881,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         }
@@ -340,12 +340,12 @@
           "stationLevel": 2,
           "taskUnlock": null,
           "materialCost": 251317,
-          "saleGross": 533331,
-          "fleaFee": 32877,
-          "netRevenue": 500454,
-          "profit": 249137,
+          "saleGross": 385500,
+          "fleaFee": 24340,
+          "netRevenue": 361160,
+          "profit": 109843,
           "durationMinutes": 40,
-          "profitPerHour": 373706,
+          "profitPerHour": 164765,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -372,15 +372,15 @@
               "id": "5c94bbff86f7747ee735c08f",
               "item": "TerraGroup Labs access keycard",
               "count": 3,
-              "unitPrice": 177777,
-              "gross": 533331,
-              "fee": 32877,
-              "net": 500454,
+              "unitPrice": 128500,
+              "gross": 385500,
+              "fee": 24340,
+              "net": 361160,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 177777,
-              "avg24hPrice": 132182,
-              "updated": "2026-09-22T23:08:06.000Z"
+              "lastLowPrice": 128500,
+              "avg24hPrice": 132135,
+              "updated": "2026-09-23T00:48:04.000Z"
             }
           ]
         },
@@ -484,7 +484,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 770000,
-              "avg24hPrice": 779070,
+              "avg24hPrice": 791862,
               "updated": "2026-09-22T23:28:07.000Z"
             }
           ]
@@ -539,64 +539,14 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 260000,
-              "avg24hPrice": 315828,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 327771,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         }
       ],
       "topProfitPerCraft": [
         {
-          "craftId": "67da0223078f1947650d7bb7",
-          "craft": "TerraGroup Labs access keycard x3",
-          "stationLevel": 2,
-          "taskUnlock": null,
-          "materialCost": 251317,
-          "saleGross": 533331,
-          "fleaFee": 32877,
-          "netRevenue": 500454,
-          "profit": 249137,
-          "durationMinutes": 40,
-          "profitPerHour": 373706,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5c12613b86f7743bbe2c3f76",
-              "item": "Intelligence folder",
-              "count": 1,
-              "unitCost": 251317,
-              "subtotal": 251317,
-              "method": "Trader barter: Peacekeeper LL3",
-              "methodType": "barter",
-              "buyLimit": 1,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "5c052fb986f7746b2101e909",
-              "item": "UHF RFID Reader",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "5c94bbff86f7747ee735c08f",
-              "item": "TerraGroup Labs access keycard",
-              "count": 3,
-              "unitPrice": 177777,
-              "gross": 533331,
-              "fee": 32877,
-              "net": 500454,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 177777,
-              "avg24hPrice": 132182,
-              "updated": "2026-09-22T23:08:06.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "5eeca812c4c989140245ae0c",
           "craft": "Graphics card x1",
           "stationLevel": 3,
@@ -696,8 +646,58 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 770000,
-              "avg24hPrice": 779070,
+              "avg24hPrice": 791862,
               "updated": "2026-09-22T23:28:07.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "67da0223078f1947650d7bb7",
+          "craft": "TerraGroup Labs access keycard x3",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 251317,
+          "saleGross": 385500,
+          "fleaFee": 24340,
+          "netRevenue": 361160,
+          "profit": 109843,
+          "durationMinutes": 40,
+          "profitPerHour": 164765,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5c12613b86f7743bbe2c3f76",
+              "item": "Intelligence folder",
+              "count": 1,
+              "unitCost": 251317,
+              "subtotal": 251317,
+              "method": "Trader barter: Peacekeeper LL3",
+              "methodType": "barter",
+              "buyLimit": 1,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5c052fb986f7746b2101e909",
+              "item": "UHF RFID Reader",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5c94bbff86f7747ee735c08f",
+              "item": "TerraGroup Labs access keycard",
+              "count": 3,
+              "unitPrice": 128500,
+              "gross": 385500,
+              "fee": 24340,
+              "net": 361160,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 128500,
+              "avg24hPrice": 132135,
+              "updated": "2026-09-23T00:48:04.000Z"
             }
           ]
         },
@@ -751,8 +751,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 260000,
-              "avg24hPrice": 315828,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 327771,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         }
@@ -860,7 +860,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 33333,
-              "avg24hPrice": 37146,
+              "avg24hPrice": 40708,
               "updated": "2026-09-22T23:28:07.000Z"
             }
           ]
@@ -926,7 +926,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 16666,
-              "avg24hPrice": 18980,
+              "avg24hPrice": 19068,
               "updated": "2026-09-22T23:28:07.000Z"
             }
           ]
@@ -978,7 +978,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 28885,
-              "avg24hPrice": 23316,
+              "avg24hPrice": 26538,
               "updated": "2026-09-22T23:28:07.000Z"
             }
           ]
@@ -1044,7 +1044,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 16666,
-              "avg24hPrice": 18980,
+              "avg24hPrice": 19068,
               "updated": "2026-09-22T23:28:07.000Z"
             }
           ]
@@ -1186,7 +1186,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 469595,
-              "avg24hPrice": 486368,
+              "avg24hPrice": 509098,
               "updated": "2026-09-22T23:28:07.000Z"
             }
           ]
@@ -1252,8 +1252,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 60000,
-              "avg24hPrice": 59439,
-              "updated": "2026-09-22T23:08:06.000Z"
+              "avg24hPrice": 59396,
+              "updated": "2026-09-23T00:48:03.000Z"
             }
           ]
         },
@@ -1318,7 +1318,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 28999,
-              "avg24hPrice": 34607,
+              "avg24hPrice": 32778,
               "updated": "2026-09-22T23:28:07.000Z"
             }
           ]
@@ -1403,7 +1403,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 469595,
-              "avg24hPrice": 486368,
+              "avg24hPrice": 509098,
               "updated": "2026-09-22T23:28:07.000Z"
             }
           ]
@@ -1469,8 +1469,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 60000,
-              "avg24hPrice": 59439,
-              "updated": "2026-09-22T23:08:06.000Z"
+              "avg24hPrice": 59396,
+              "updated": "2026-09-23T00:48:03.000Z"
             }
           ]
         },
@@ -1546,7 +1546,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 29888,
-              "avg24hPrice": 31495,
+              "avg24hPrice": 29583,
               "updated": "2026-09-22T23:28:07.000Z"
             }
           ]
@@ -1610,8 +1610,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 18500,
-              "avg24hPrice": 19066,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 19575,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         },
@@ -1682,8 +1682,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 32000,
-              "avg24hPrice": 39856,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 36146,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         },
@@ -1754,8 +1754,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 25555,
-              "avg24hPrice": 26431,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 25306,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         }
@@ -1844,8 +1844,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 21200,
-              "avg24hPrice": 23380,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 23037,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         },
@@ -1916,8 +1916,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 25555,
-              "avg24hPrice": 26431,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 25306,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         },
@@ -1988,8 +1988,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 32000,
-              "avg24hPrice": 39856,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 36146,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         }
@@ -2052,8 +2052,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 22000,
-              "avg24hPrice": 21826,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 21904,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         },
@@ -2096,8 +2096,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 19991,
-              "avg24hPrice": 22674,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 22033,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         },
@@ -2141,7 +2141,7 @@
               "methodType": "flea",
               "lastLowPrice": 215000,
               "avg24hPrice": 219999,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         }
@@ -2197,8 +2197,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 22000,
-              "avg24hPrice": 21826,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 21904,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         },
@@ -2242,7 +2242,7 @@
               "methodType": "flea",
               "lastLowPrice": 215000,
               "avg24hPrice": 219999,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         },
@@ -2285,8 +2285,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 19991,
-              "avg24hPrice": 22674,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 22033,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ]
         }
@@ -2517,7 +2517,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 33333,
-              "avg24hPrice": 32901,
+              "avg24hPrice": 30910,
               "updated": "2026-09-22T23:28:07.000Z"
             }
           ]
@@ -2528,12 +2528,12 @@
           "stationLevel": 2,
           "taskUnlock": null,
           "materialCost": 77995,
-          "saleGross": 200000,
-          "fleaFee": 13686,
-          "netRevenue": 186314,
-          "profit": 108319,
+          "saleGross": 192000,
+          "fleaFee": 12942,
+          "netRevenue": 179058,
+          "profit": 101063,
           "durationMinutes": 80,
-          "profitPerHour": 81239,
+          "profitPerHour": 75797,
           "sellTo": "Flea Market",
           "materials": [
             {
@@ -2571,15 +2571,15 @@
               "id": "5e32f56fcb6d5863cc5e5ee4",
               "item": "VOG-17 Khattabka improvised hand grenade",
               "count": 8,
-              "unitPrice": 25000,
-              "gross": 200000,
-              "fee": 13686,
-              "net": 186314,
+              "unitPrice": 24000,
+              "gross": 192000,
+              "fee": 12942,
+              "net": 179058,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 25000,
-              "avg24hPrice": 20845,
-              "updated": "2026-09-22T23:18:08.000Z"
+              "lastLowPrice": 24000,
+              "avg24hPrice": 21520,
+              "updated": "2026-09-23T00:58:04.000Z"
             }
           ]
         },
@@ -2588,21 +2588,21 @@
           "craft": "Gunpowder \"Eagle\" x2",
           "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 34689,
+          "materialCost": 34695,
           "saleGross": 139974,
           "fleaFee": 8946,
           "netRevenue": 131028,
-          "profit": 96339,
+          "profit": 96333,
           "durationMinutes": 97.83,
-          "profitPerHour": 59084,
+          "profitPerHour": 59080,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "58d3db5386f77426186285a0",
               "item": "M67 hand grenade",
               "count": 2,
-              "unitCost": 15052,
-              "subtotal": 30104,
+              "unitCost": 15055,
+              "subtotal": 30110,
               "method": "Trader purchase: Peacekeeper LL3",
               "methodType": "trader",
               "buyLimit": 10,
@@ -2639,7 +2639,7 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 69987,
-              "avg24hPrice": 75667,
+              "avg24hPrice": 70403,
               "updated": "2026-09-22T23:28:07.000Z"
             }
           ]
@@ -2951,7 +2951,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 215000,
                 "avg24hPrice": 219999,
-                "updated": "2026-09-23T00:38:06.000Z"
+                "updated": "2026-09-23T00:58:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -2995,8 +2995,8 @@
                 "sellTo": "Flea Market",
                 "methodType": "flea",
                 "lastLowPrice": 22299,
-                "avg24hPrice": 23440,
-                "updated": "2026-09-23T00:38:06.000Z"
+                "avg24hPrice": 22141,
+                "updated": "2026-09-23T00:58:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3040,8 +3040,8 @@
                 "sellTo": "Flea Market",
                 "methodType": "flea",
                 "lastLowPrice": 19991,
-                "avg24hPrice": 22674,
-                "updated": "2026-09-23T00:38:06.000Z"
+                "avg24hPrice": 22033,
+                "updated": "2026-09-23T00:58:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3096,8 +3096,8 @@
                 "sellTo": "Flea Market",
                 "methodType": "flea",
                 "lastLowPrice": 22000,
-                "avg24hPrice": 21826,
-                "updated": "2026-09-23T00:38:06.000Z"
+                "avg24hPrice": 21904,
+                "updated": "2026-09-23T00:58:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3153,8 +3153,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 22000,
-              "avg24hPrice": 21826,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 21904,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ],
           "sellTo": "Flea Market"
@@ -3213,8 +3213,8 @@
                 "sellTo": "Flea Market",
                 "methodType": "flea",
                 "lastLowPrice": 411111,
-                "avg24hPrice": 430285,
-                "updated": "2026-09-23T00:38:06.000Z"
+                "avg24hPrice": 429881,
+                "updated": "2026-09-23T00:58:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3270,8 +3270,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 411111,
-              "avg24hPrice": 430285,
-              "updated": "2026-09-23T00:38:06.000Z"
+              "avg24hPrice": 429881,
+              "updated": "2026-09-23T00:58:06.000Z"
             }
           ],
           "sellTo": "Flea Market"
