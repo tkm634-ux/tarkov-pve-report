@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-23T09:51:45.753Z",
+    "calculatedAt": "2026-09-23T10:05:35.915Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-23T09:38:08.000Z"
+      "newest": "2026-09-23T09:58:08.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -2449,57 +2449,79 @@
           ]
         },
         {
-          "craftId": "5dd3c9c8449c0c31795b0f0b",
-          "craft": "Gunpowder \"Hawk\" x3",
+          "craftId": "63a3359eaf870e651d58e61a",
+          "craft": "PM 9x18PM 84-round makeshift drum magazine x1",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 38348,
-          "saleGross": 129999,
-          "fleaFee": 8292,
-          "netRevenue": 121707,
-          "profit": 83360,
-          "durationMinutes": 35.83,
-          "profitPerHour": 139579,
+          "materialCost": 23078,
+          "saleGross": 79998,
+          "fleaFee": 7090,
+          "netRevenue": 72908,
+          "profit": 49830,
+          "durationMinutes": 20,
+          "profitPerHour": 149490,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "57347b8b24597737dd42e192",
-              "item": "Classic matches",
+              "id": "5ea034f65aad6446a939737e",
+              "item": "PPSh-41 7.62x25 71-round drum magazine",
               "count": 1,
-              "unitCost": 21000,
-              "subtotal": 21000,
+              "unitCost": 10800,
+              "subtotal": 10800,
+              "method": "Trader barter: Prapor LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            },
+            {
+              "id": "5448c12b4bdc2d02308b456f",
+              "item": "PM 9x18PM 90-93 8-round magazine",
+              "count": 1,
+              "unitCost": 1278,
+              "subtotal": 1278,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
               "taskUnlock": null
             },
             {
-              "id": "5d6fc78386f77449d825f9dc",
-              "item": "Gunpowder \"Eagle\"",
+              "id": "5e2af22086f7746d3f3c33fa",
+              "item": "Tube of Poxeram cold welding",
               "count": 1,
-              "unitCost": 17348,
-              "subtotal": 17348,
-              "method": "Hideout craft: Workbench Lv2",
-              "methodType": "craft",
+              "unitCost": 11000,
+              "subtotal": 11000,
+              "method": "Flea Market",
+              "methodType": "flea",
               "buyLimit": null,
               "taskUnlock": null
             }
           ],
-          "tools": [],
+          "tools": [
+            {
+              "id": "62a0a0bb621468534a797ad5",
+              "item": "Set of files \"Master\"",
+              "count": 1
+            },
+            {
+              "id": "590c2b4386f77425357b6123",
+              "item": "Pliers",
+              "count": 1
+            }
+          ],
           "outputs": [
             {
-              "id": "5d6fc87386f77449db3db94e",
-              "item": "Gunpowder \"Hawk\"",
-              "count": 3,
-              "unitPrice": 43333,
-              "gross": 129999,
-              "fee": 8292,
-              "net": 121707,
+              "id": "55d485be4bdc2d962f8b456f",
+              "item": "PM 9x18PM 84-round makeshift drum magazine",
+              "count": 1,
+              "unitPrice": 79998,
+              "gross": 79998,
+              "fee": 7090,
+              "net": 72908,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 43333,
-              "avg24hPrice": 47566,
-              "updated": "2026-09-23T09:28:07.000Z"
+              "lastLowPrice": 79998,
+              "avg24hPrice": 82818,
+              "updated": "2026-09-23T09:58:08.000Z"
             }
           ]
         }
