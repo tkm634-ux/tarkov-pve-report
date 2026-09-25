@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-25T08:26:49.128Z",
+    "calculatedAt": "2026-09-25T08:41:11.814Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-25T08:18:07.000Z"
+      "newest": "2026-09-25T08:38:07.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -788,6 +788,78 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
+          "craftId": "655b6bc01f2b6843ec751fd7",
+          "craft": "Eberlestock F5 Switchblade backpack (Dry Earth) x1",
+          "stationLevel": 2,
+          "taskUnlock": null,
+          "materialCost": 38680,
+          "saleGross": 99999,
+          "fleaFee": 6145,
+          "netRevenue": 93854,
+          "profit": 55174,
+          "durationMinutes": 41.67,
+          "profitPerHour": 79451,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5e2af4a786f7746d3f3c3400",
+              "item": "Ripstop fabric",
+              "count": 2,
+              "unitCost": 5500,
+              "subtotal": 11000,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af41e86f774755a234b67",
+              "item": "Cordura polyamide fabric",
+              "count": 2,
+              "unitCost": 8340,
+              "subtotal": 16680,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "59e3556c86f7741776641ac2",
+              "item": "Ox bleach",
+              "count": 1,
+              "unitCost": 11000,
+              "subtotal": 11000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "61bf83814088ec1a363d7097",
+              "item": "Sewing kit",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5f5e467b0bc58666c37e7821",
+              "item": "Eberlestock F5 Switchblade backpack (Dry Earth)",
+              "count": 1,
+              "unitPrice": 99999,
+              "gross": 99999,
+              "fee": 6145,
+              "net": 93854,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 99999,
+              "avg24hPrice": 41567,
+              "updated": "2026-09-25T08:38:05.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "5eecaa6327ccd70521107ff5",
           "craft": "Ripstop fabric x2",
           "stationLevel": 1,
@@ -886,30 +958,54 @@
               "updated": "2026-09-25T07:28:06.000Z"
             }
           ]
-        },
+        }
+      ],
+      "topProfitPerCraft": [
         {
-          "craftId": "600aa140090cb63380270290",
-          "craft": "Cordura polyamide fabric x2",
-          "stationLevel": 1,
+          "craftId": "655b6bc01f2b6843ec751fd7",
+          "craft": "Eberlestock F5 Switchblade backpack (Dry Earth) x1",
+          "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 16680,
-          "saleGross": 60000,
-          "fleaFee": 3874,
-          "netRevenue": 56126,
-          "profit": 39446,
-          "durationMinutes": 48.33,
-          "profitPerHour": 48967,
+          "materialCost": 38680,
+          "saleGross": 99999,
+          "fleaFee": 6145,
+          "netRevenue": 93854,
+          "profit": 55174,
+          "durationMinutes": 41.67,
+          "profitPerHour": 79451,
           "sellTo": "Flea Market",
           "materials": [
             {
-              "id": "5ab8f04f86f774585f4237d8",
-              "item": "Tactical sling bag (Khaki)",
+              "id": "5e2af4a786f7746d3f3c3400",
+              "item": "Ripstop fabric",
+              "count": 2,
+              "unitCost": 5500,
+              "subtotal": 11000,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af41e86f774755a234b67",
+              "item": "Cordura polyamide fabric",
               "count": 2,
               "unitCost": 8340,
               "subtotal": 16680,
-              "method": "Trader purchase: Ragman LL1",
-              "methodType": "trader",
-              "buyLimit": 10,
+              "method": "Hideout craft: Lavatory Lv1",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "59e3556c86f7741776641ac2",
+              "item": "Ox bleach",
+              "count": 1,
+              "unitCost": 11000,
+              "subtotal": 11000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
               "taskUnlock": null
             }
           ],
@@ -922,23 +1018,21 @@
           ],
           "outputs": [
             {
-              "id": "5e2af41e86f774755a234b67",
-              "item": "Cordura polyamide fabric",
-              "count": 2,
-              "unitPrice": 30000,
-              "gross": 60000,
-              "fee": 3874,
-              "net": 56126,
+              "id": "5f5e467b0bc58666c37e7821",
+              "item": "Eberlestock F5 Switchblade backpack (Dry Earth)",
+              "count": 1,
+              "unitPrice": 99999,
+              "gross": 99999,
+              "fee": 6145,
+              "net": 93854,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 30000,
-              "avg24hPrice": 27899,
-              "updated": "2026-09-25T07:28:06.000Z"
+              "lastLowPrice": 99999,
+              "avg24hPrice": 41567,
+              "updated": "2026-09-25T08:38:05.000Z"
             }
           ]
-        }
-      ],
-      "topProfitPerCraft": [
+        },
         {
           "craftId": "5eecaa6327ccd70521107ff5",
           "craft": "Ripstop fabric x2",
@@ -1035,61 +1129,6 @@
               "methodType": "flea",
               "lastLowPrice": 30000,
               "avg24hPrice": 27899,
-              "updated": "2026-09-25T07:28:06.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "5d8f5e1af3a8f83c8600afb2",
-          "craft": "Schaman shampoo x2",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 45207,
-          "saleGross": 81998,
-          "fleaFee": 8305,
-          "netRevenue": 73693,
-          "profit": 28486,
-          "durationMinutes": 35,
-          "profitPerHour": 48833,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5c13cd2486f774072c757944",
-              "item": "Soap",
-              "count": 1,
-              "unitCost": 17407,
-              "subtotal": 17407,
-              "method": "Hideout craft: Lavatory Lv1",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "62a09f32621468534a797acb",
-              "item": "Bottle of Pevko Light beer",
-              "count": 1,
-              "unitCost": 27800,
-              "subtotal": 27800,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [],
-          "outputs": [
-            {
-              "id": "5d40412b86f7743cb332ac3a",
-              "item": "Schaman shampoo",
-              "count": 2,
-              "unitPrice": 40999,
-              "gross": 81998,
-              "fee": 8305,
-              "net": 73693,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 40999,
-              "avg24hPrice": 43714,
               "updated": "2026-09-25T07:28:06.000Z"
             }
           ]
@@ -2354,21 +2393,21 @@
           "craft": "Kalashnikov AKM 7.62x39 assault rifle Default x1",
           "stationLevel": 1,
           "taskUnlock": null,
-          "materialCost": 39500,
+          "materialCost": 39420,
           "saleGross": 55000,
           "fleaFee": 3417,
           "netRevenue": 51583,
-          "profit": 12083,
+          "profit": 12163,
           "durationMinutes": 6,
-          "profitPerHour": 120830,
+          "profitPerHour": 121630,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "59e6152586f77473dc057aa1",
               "item": "Molot Arms VPO-136 Vepr-KM 7.62x39 carbine",
               "count": 1,
-              "unitCost": 39500,
-              "subtotal": 39500,
+              "unitCost": 39420,
+              "subtotal": 39420,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -2394,8 +2433,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 55000,
-              "avg24hPrice": 54812,
-              "updated": "2026-09-25T06:48:06.000Z"
+              "avg24hPrice": 54781,
+              "updated": "2026-09-25T08:38:05.000Z"
             }
           ]
         },
