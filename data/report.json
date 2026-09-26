@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-26T00:52:37.949Z",
+    "calculatedAt": "2026-09-26T01:04:48.259Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-26T00:48:07.000Z"
+      "newest": "2026-09-26T00:58:06.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -264,7 +264,7 @@
               "methodType": "flea",
               "lastLowPrice": 380000,
               "avg24hPrice": 432065,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:05.000Z"
             }
           ]
         }
@@ -321,7 +321,7 @@
               "methodType": "flea",
               "lastLowPrice": 380000,
               "avg24hPrice": 432065,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:05.000Z"
             }
           ]
         }
@@ -540,7 +540,7 @@
               "methodType": "flea",
               "lastLowPrice": 300000,
               "avg24hPrice": 311327,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:05.000Z"
             }
           ]
         }
@@ -752,7 +752,7 @@
               "methodType": "flea",
               "lastLowPrice": 300000,
               "avg24hPrice": 311327,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:05.000Z"
             }
           ]
         }
@@ -1212,83 +1212,6 @@
           ]
         },
         {
-          "craftId": "5ede0502879619077751d00a",
-          "craft": "SJ6 TGLabs combat stimulant injector x2",
-          "stationLevel": 3,
-          "taskUnlock": null,
-          "materialCost": 119631,
-          "saleGross": 195000,
-          "fleaFee": 14892,
-          "netRevenue": 180108,
-          "profit": 60477,
-          "durationMinutes": 85,
-          "profitPerHour": 42690,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5c0e531286f7747fa54205c2",
-              "item": "SJ1 TGLabs combat stimulant injector",
-              "count": 1,
-              "unitCost": 30000,
-              "subtotal": 30000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5d1b3a5d86f774252167ba22",
-              "item": "Pile of meds",
-              "count": 2,
-              "unitCost": 15316,
-              "subtotal": 30631,
-              "method": "Hideout craft: Medstation Lv2",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "59e3606886f77417674759a5",
-              "item": "Bottle of saline solution",
-              "count": 1,
-              "unitCost": 40000,
-              "subtotal": 40000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "62a0a043cf4a99369e2624a5",
-              "item": "Bottle of OLOLO Multivitamins",
-              "count": 1,
-              "unitCost": 19000,
-              "subtotal": 19000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [],
-          "outputs": [
-            {
-              "id": "5c0e531d86f7747fa23f4d42",
-              "item": "SJ6 TGLabs combat stimulant injector",
-              "count": 2,
-              "unitPrice": 97500,
-              "gross": 195000,
-              "fee": 14892,
-              "net": 180108,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 97500,
-              "avg24hPrice": 100496,
-              "updated": "2026-09-26T00:48:03.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "5eeca8e327ccd70521107fdc",
           "craft": "Portable defibrillator x1",
           "stationLevel": 2,
@@ -1368,6 +1291,83 @@
               "lastLowPrice": 442000,
               "avg24hPrice": 487856,
               "updated": "2026-09-25T23:28:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5ede0502879619077751d00a",
+          "craft": "SJ6 TGLabs combat stimulant injector x2",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 118631,
+          "saleGross": 185998,
+          "fleaFee": 13890,
+          "netRevenue": 172108,
+          "profit": 53477,
+          "durationMinutes": 85,
+          "profitPerHour": 37748,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5c0e531286f7747fa54205c2",
+              "item": "SJ1 TGLabs combat stimulant injector",
+              "count": 1,
+              "unitCost": 29000,
+              "subtotal": 29000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d1b3a5d86f774252167ba22",
+              "item": "Pile of meds",
+              "count": 2,
+              "unitCost": 15316,
+              "subtotal": 30631,
+              "method": "Hideout craft: Medstation Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "59e3606886f77417674759a5",
+              "item": "Bottle of saline solution",
+              "count": 1,
+              "unitCost": 40000,
+              "subtotal": 40000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "62a0a043cf4a99369e2624a5",
+              "item": "Bottle of OLOLO Multivitamins",
+              "count": 1,
+              "unitCost": 19000,
+              "subtotal": 19000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5c0e531d86f7747fa23f4d42",
+              "item": "SJ6 TGLabs combat stimulant injector",
+              "count": 2,
+              "unitPrice": 92999,
+              "gross": 185998,
+              "fee": 13890,
+              "net": 172108,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 92999,
+              "avg24hPrice": 99928,
+              "updated": "2026-09-26T00:58:03.000Z"
             }
           ]
         }
@@ -1457,91 +1457,25 @@
           ]
         },
         {
-          "craftId": "5d8f614c9ea122564c316462",
-          "craft": "Propital regenerative stimulant injector x4",
-          "stationLevel": 3,
-          "taskUnlock": null,
-          "materialCost": 141577,
-          "saleGross": 236000,
-          "fleaFee": 16362,
-          "netRevenue": 219638,
-          "profit": 78061,
-          "durationMinutes": 115,
-          "profitPerHour": 40728,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5af0548586f7743a532b7e99",
-              "item": "Ibuprofen painkillers",
-              "count": 1,
-              "unitCost": 55946,
-              "subtotal": 55946,
-              "method": "Trader barter: Therapist LL4",
-              "methodType": "barter",
-              "buyLimit": 1,
-              "taskUnlock": null
-            },
-            {
-              "id": "5751a89d24597722aa0e8db0",
-              "item": "Golden Star balm",
-              "count": 1,
-              "unitCost": 55000,
-              "subtotal": 55000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "5d1b3a5d86f774252167ba22",
-              "item": "Pile of meds",
-              "count": 2,
-              "unitCost": 15316,
-              "subtotal": 30631,
-              "method": "Hideout craft: Medstation Lv2",
-              "methodType": "craft",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [],
-          "outputs": [
-            {
-              "id": "5c0e530286f7747fa1419862",
-              "item": "Propital regenerative stimulant injector",
-              "count": 4,
-              "unitPrice": 59000,
-              "gross": 236000,
-              "fee": 16362,
-              "net": 219638,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 59000,
-              "avg24hPrice": 60040,
-              "updated": "2026-09-26T00:48:03.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "5ede0502879619077751d00a",
           "craft": "SJ6 TGLabs combat stimulant injector x2",
           "stationLevel": 3,
           "taskUnlock": null,
-          "materialCost": 119631,
-          "saleGross": 195000,
-          "fleaFee": 14892,
-          "netRevenue": 180108,
-          "profit": 60477,
+          "materialCost": 118631,
+          "saleGross": 185998,
+          "fleaFee": 13890,
+          "netRevenue": 172108,
+          "profit": 53477,
           "durationMinutes": 85,
-          "profitPerHour": 42690,
+          "profitPerHour": 37748,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5c0e531286f7747fa54205c2",
               "item": "SJ1 TGLabs combat stimulant injector",
               "count": 1,
-              "unitCost": 30000,
-              "subtotal": 30000,
+              "unitCost": 29000,
+              "subtotal": 29000,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -1587,15 +1521,81 @@
               "id": "5c0e531d86f7747fa23f4d42",
               "item": "SJ6 TGLabs combat stimulant injector",
               "count": 2,
-              "unitPrice": 97500,
-              "gross": 195000,
-              "fee": 14892,
-              "net": 180108,
+              "unitPrice": 92999,
+              "gross": 185998,
+              "fee": 13890,
+              "net": 172108,
               "sellTo": "Flea Market",
               "methodType": "flea",
-              "lastLowPrice": 97500,
-              "avg24hPrice": 100496,
-              "updated": "2026-09-26T00:48:03.000Z"
+              "lastLowPrice": 92999,
+              "avg24hPrice": 99928,
+              "updated": "2026-09-26T00:58:03.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5d8f614c9ea122564c316462",
+          "craft": "Propital regenerative stimulant injector x4",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 141577,
+          "saleGross": 204000,
+          "fleaFee": 13424,
+          "netRevenue": 190576,
+          "profit": 48999,
+          "durationMinutes": 115,
+          "profitPerHour": 25565,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5af0548586f7743a532b7e99",
+              "item": "Ibuprofen painkillers",
+              "count": 1,
+              "unitCost": 55946,
+              "subtotal": 55946,
+              "method": "Trader barter: Therapist LL4",
+              "methodType": "barter",
+              "buyLimit": 1,
+              "taskUnlock": null
+            },
+            {
+              "id": "5751a89d24597722aa0e8db0",
+              "item": "Golden Star balm",
+              "count": 1,
+              "unitCost": 55000,
+              "subtotal": 55000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5d1b3a5d86f774252167ba22",
+              "item": "Pile of meds",
+              "count": 2,
+              "unitCost": 15316,
+              "subtotal": 30631,
+              "method": "Hideout craft: Medstation Lv2",
+              "methodType": "craft",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [],
+          "outputs": [
+            {
+              "id": "5c0e530286f7747fa1419862",
+              "item": "Propital regenerative stimulant injector",
+              "count": 4,
+              "unitPrice": 51000,
+              "gross": 204000,
+              "fee": 13424,
+              "net": 190576,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 51000,
+              "avg24hPrice": 59896,
+              "updated": "2026-09-26T00:58:03.000Z"
             }
           ]
         }
@@ -1676,7 +1676,7 @@
               "methodType": "flea",
               "lastLowPrice": 45000,
               "avg24hPrice": 43989,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:05.000Z"
             }
           ]
         },
@@ -1726,7 +1726,7 @@
               "methodType": "flea",
               "lastLowPrice": 27272,
               "avg24hPrice": 24320,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:06.000Z"
             }
           ]
         },
@@ -1871,7 +1871,7 @@
               "methodType": "flea",
               "lastLowPrice": 22000,
               "avg24hPrice": 21894,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:06.000Z"
             }
           ]
         },
@@ -1921,7 +1921,7 @@
               "methodType": "flea",
               "lastLowPrice": 27272,
               "avg24hPrice": 24320,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:06.000Z"
             }
           ]
         },
@@ -1993,7 +1993,7 @@
               "methodType": "flea",
               "lastLowPrice": 45000,
               "avg24hPrice": 43989,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:05.000Z"
             }
           ]
         }
@@ -2057,7 +2057,7 @@
               "methodType": "flea",
               "lastLowPrice": 25000,
               "avg24hPrice": 23941,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:05.000Z"
             }
           ]
         },
@@ -2101,7 +2101,7 @@
               "methodType": "flea",
               "lastLowPrice": 27272,
               "avg24hPrice": 24320,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:06.000Z"
             }
           ]
         },
@@ -2145,7 +2145,7 @@
               "methodType": "flea",
               "lastLowPrice": 210000,
               "avg24hPrice": 207537,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:06.000Z"
             }
           ]
         }
@@ -2202,7 +2202,7 @@
               "methodType": "flea",
               "lastLowPrice": 25000,
               "avg24hPrice": 23941,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:05.000Z"
             }
           ]
         },
@@ -2246,7 +2246,7 @@
               "methodType": "flea",
               "lastLowPrice": 210000,
               "avg24hPrice": 207537,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:06.000Z"
             }
           ]
         },
@@ -2290,7 +2290,7 @@
               "methodType": "flea",
               "lastLowPrice": 27272,
               "avg24hPrice": 24320,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:06.000Z"
             }
           ]
         }
@@ -2917,7 +2917,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 210000,
                 "avg24hPrice": 207537,
-                "updated": "2026-09-26T00:48:05.000Z"
+                "updated": "2026-09-26T00:58:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -2962,7 +2962,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 27272,
                 "avg24hPrice": 24320,
-                "updated": "2026-09-26T00:48:05.000Z"
+                "updated": "2026-09-26T00:58:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3007,7 +3007,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 16666,
                 "avg24hPrice": 21323,
-                "updated": "2026-09-26T00:48:05.000Z"
+                "updated": "2026-09-26T00:58:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3063,7 +3063,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 25000,
                 "avg24hPrice": 23941,
-                "updated": "2026-09-26T00:48:05.000Z"
+                "updated": "2026-09-26T00:58:05.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3120,7 +3120,7 @@
               "methodType": "flea",
               "lastLowPrice": 25000,
               "avg24hPrice": 23941,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:05.000Z"
             }
           ],
           "sellTo": "Flea Market"
@@ -3180,7 +3180,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 380000,
                 "avg24hPrice": 432065,
-                "updated": "2026-09-26T00:48:05.000Z"
+                "updated": "2026-09-26T00:58:05.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3237,7 +3237,7 @@
               "methodType": "flea",
               "lastLowPrice": 380000,
               "avg24hPrice": 432065,
-              "updated": "2026-09-26T00:48:05.000Z"
+              "updated": "2026-09-26T00:58:05.000Z"
             }
           ],
           "sellTo": "Flea Market"
