@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-09-29T17:06:20.709Z",
+    "calculatedAt": "2026-09-29T17:26:22.501Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-09-29T16:58:07.000Z"
+      "newest": "2026-09-29T17:18:06.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -39,7 +39,7 @@
   "acquisitionEngine": {
     "converged": true,
     "passes": 5,
-    "pricedItems": 4103
+    "pricedItems": 4104
   },
   "fleaMarket": {
     "name": "FleaMarket",
@@ -485,7 +485,7 @@
               "methodType": "flea",
               "lastLowPrice": 787777,
               "avg24hPrice": 711745,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         },
@@ -653,7 +653,7 @@
               "methodType": "flea",
               "lastLowPrice": 787777,
               "avg24hPrice": 711745,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         },
@@ -778,56 +778,6 @@
       "specialRandom": 0,
       "topProfitPerHour": [
         {
-          "craftId": "5e1330dca0f0f8773c069c99",
-          "craft": "Gas mask air filter x1",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 80000,
-          "saleGross": 98888,
-          "fleaFee": 13798,
-          "netRevenue": 85090,
-          "profit": 5090,
-          "durationMinutes": 2,
-          "profitPerHour": 152700,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "60363c0c92ec1c31037959f5",
-              "item": "GP-7 gas mask",
-              "count": 1,
-              "unitCost": 80000,
-              "subtotal": 80000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "590c2d8786f774245b1f03f3",
-              "item": "Screwdriver",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "590c595c86f7747884343ad7",
-              "item": "Gas mask air filter",
-              "count": 1,
-              "unitPrice": 98888,
-              "gross": 98888,
-              "fee": 13798,
-              "net": 85090,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 98888,
-              "avg24hPrice": 106234,
-              "updated": "2026-09-29T16:58:05.000Z"
-            }
-          ]
-        },
-        {
           "craftId": "5eecaa6327ccd70521107ff5",
           "craft": "Ripstop fabric x2",
           "stationLevel": 1,
@@ -872,8 +822,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 29499,
-              "avg24hPrice": 30554,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "avg24hPrice": 30289,
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         },
@@ -923,7 +873,57 @@
               "methodType": "flea",
               "lastLowPrice": 24999,
               "avg24hPrice": 28042,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "updated": "2026-09-29T17:18:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "5ffcaa60f3fdc212a91d552b",
+          "craft": "Aramid fiber fabric x2",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 29151,
+          "saleGross": 53000,
+          "fleaFee": 3785,
+          "netRevenue": 49215,
+          "profit": 20064,
+          "durationMinutes": 33.33,
+          "profitPerHour": 36115,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5648a7494bdc2d9d488b4583",
+              "item": "PACA Soft Armor",
+              "count": 1,
+              "unitCost": 29151,
+              "subtotal": 29151,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "544fb5454bdc2df8738b456a",
+              "item": "Leatherman Multitool",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "5e2af4d286f7746d4159f07a",
+              "item": "Aramid fiber fabric",
+              "count": 2,
+              "unitPrice": 26500,
+              "gross": 53000,
+              "fee": 3785,
+              "net": 49215,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 26500,
+              "avg24hPrice": 33333,
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         }
@@ -974,8 +974,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 29499,
-              "avg24hPrice": 30554,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "avg24hPrice": 30289,
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         },
@@ -1025,7 +1025,7 @@
               "methodType": "flea",
               "lastLowPrice": 24999,
               "avg24hPrice": 28042,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         },
@@ -1075,7 +1075,7 @@
               "methodType": "flea",
               "lastLowPrice": 35000,
               "avg24hPrice": 35768,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         }
@@ -1244,7 +1244,7 @@
               "methodType": "flea",
               "lastLowPrice": 469000,
               "avg24hPrice": 500409,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         },
@@ -1310,7 +1310,7 @@
               "methodType": "flea",
               "lastLowPrice": 28888,
               "avg24hPrice": 45783,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         }
@@ -1395,7 +1395,7 @@
               "methodType": "flea",
               "lastLowPrice": 469000,
               "avg24hPrice": 500409,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         },
@@ -2301,8 +2301,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 35969,
-              "avg24hPrice": 36375,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "avg24hPrice": 37612,
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         },
@@ -2356,8 +2356,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 39999,
-              "avg24hPrice": 52220,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "avg24hPrice": 54451,
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         },
@@ -2458,8 +2458,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 26000,
-              "avg24hPrice": 38500,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "avg24hPrice": 39441,
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         },
@@ -2502,8 +2502,8 @@
               "sellTo": "Flea Market",
               "methodType": "flea",
               "lastLowPrice": 27777,
-              "avg24hPrice": 29670,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "avg24hPrice": 29812,
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         },
@@ -2564,7 +2564,7 @@
               "methodType": "flea",
               "lastLowPrice": 64444,
               "avg24hPrice": 82300,
-              "updated": "2026-09-29T16:58:05.000Z"
+              "updated": "2026-09-29T17:18:06.000Z"
             }
           ]
         }
