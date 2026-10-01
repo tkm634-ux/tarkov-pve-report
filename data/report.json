@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-10-01T04:31:00.444Z",
+    "calculatedAt": "2026-10-01T04:55:05.473Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-10-01T04:28:09.000Z"
+      "newest": "2026-10-01T04:48:06.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -264,7 +264,7 @@
               "methodType": "flea",
               "lastLowPrice": 370000,
               "avg24hPrice": 409353,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         }
@@ -321,7 +321,7 @@
               "methodType": "flea",
               "lastLowPrice": 370000,
               "avg24hPrice": 409353,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         }
@@ -339,21 +339,21 @@
           "craft": "TerraGroup Labs access keycard x3",
           "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 280000,
+          "materialCost": 250000,
           "saleGross": 399999,
           "fleaFee": 25041,
           "netRevenue": 374958,
-          "profit": 94958,
+          "profit": 124958,
           "durationMinutes": 40,
-          "profitPerHour": 142437,
+          "profitPerHour": 187437,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5c12613b86f7743bbe2c3f76",
               "item": "Intelligence folder",
               "count": 1,
-              "unitCost": 280000,
-              "subtotal": 280000,
+              "unitCost": 250000,
+              "subtotal": 250000,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -380,68 +380,7 @@
               "methodType": "flea",
               "lastLowPrice": 133333,
               "avg24hPrice": 132548,
-              "updated": "2026-10-01T03:08:04.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "62a116282c5e0c325b62d5ec",
-          "craft": "Military flash drive x1",
-          "stationLevel": 3,
-          "taskUnlock": null,
-          "materialCost": 121098,
-          "saleGross": 139420,
-          "fleaFee": 9059,
-          "netRevenue": 130361,
-          "profit": 9263,
-          "durationMinutes": 600,
-          "profitPerHour": 926,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "590c621186f774138d11ea29",
-              "item": "Secure Flash drive",
-              "count": 2,
-              "unitCost": 14549,
-              "subtotal": 29098,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "62a0a124de7ac81993580542",
-              "item": "Topographic survey maps",
-              "count": 2,
-              "unitCost": 46000,
-              "subtotal": 92000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "5c05308086f7746b2101e90b",
-              "item": "Virtex programmable processor",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "62a0a16d0b9d3c46de5b6e97",
-              "item": "Military flash drive",
-              "count": 1,
-              "unitPrice": 139420,
-              "gross": 139420,
-              "fee": 9059,
-              "net": 130361,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 139420,
-              "avg24hPrice": 145265,
-              "updated": "2026-10-01T04:28:03.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         },
@@ -547,6 +486,67 @@
               "lastLowPrice": 666666,
               "avg24hPrice": 732817,
               "updated": "2026-10-01T03:18:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "62a116282c5e0c325b62d5ec",
+          "craft": "Military flash drive x1",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 142220,
+          "saleGross": 130000,
+          "fleaFee": 8289,
+          "netRevenue": 121711,
+          "profit": -20509,
+          "durationMinutes": 600,
+          "profitPerHour": -2051,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "590c621186f774138d11ea29",
+              "item": "Secure Flash drive",
+              "count": 2,
+              "unitCost": 22222,
+              "subtotal": 44444,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "62a0a124de7ac81993580542",
+              "item": "Topographic survey maps",
+              "count": 2,
+              "unitCost": 48888,
+              "subtotal": 97776,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5c05308086f7746b2101e90b",
+              "item": "Virtex programmable processor",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "62a0a16d0b9d3c46de5b6e97",
+              "item": "Military flash drive",
+              "count": 1,
+              "unitPrice": 130000,
+              "gross": 130000,
+              "fee": 8289,
+              "net": 121711,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 130000,
+              "avg24hPrice": 144426,
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         }
@@ -557,21 +557,21 @@
           "craft": "TerraGroup Labs access keycard x3",
           "stationLevel": 2,
           "taskUnlock": null,
-          "materialCost": 280000,
+          "materialCost": 250000,
           "saleGross": 399999,
           "fleaFee": 25041,
           "netRevenue": 374958,
-          "profit": 94958,
+          "profit": 124958,
           "durationMinutes": 40,
-          "profitPerHour": 142437,
+          "profitPerHour": 187437,
           "sellTo": "Flea Market",
           "materials": [
             {
               "id": "5c12613b86f7743bbe2c3f76",
               "item": "Intelligence folder",
               "count": 1,
-              "unitCost": 280000,
-              "subtotal": 280000,
+              "unitCost": 250000,
+              "subtotal": 250000,
               "method": "Flea Market",
               "methodType": "flea",
               "buyLimit": null,
@@ -598,68 +598,7 @@
               "methodType": "flea",
               "lastLowPrice": 133333,
               "avg24hPrice": 132548,
-              "updated": "2026-10-01T03:08:04.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "62a116282c5e0c325b62d5ec",
-          "craft": "Military flash drive x1",
-          "stationLevel": 3,
-          "taskUnlock": null,
-          "materialCost": 121098,
-          "saleGross": 139420,
-          "fleaFee": 9059,
-          "netRevenue": 130361,
-          "profit": 9263,
-          "durationMinutes": 600,
-          "profitPerHour": 926,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "590c621186f774138d11ea29",
-              "item": "Secure Flash drive",
-              "count": 2,
-              "unitCost": 14549,
-              "subtotal": 29098,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            },
-            {
-              "id": "62a0a124de7ac81993580542",
-              "item": "Topographic survey maps",
-              "count": 2,
-              "unitCost": 46000,
-              "subtotal": 92000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "5c05308086f7746b2101e90b",
-              "item": "Virtex programmable processor",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "62a0a16d0b9d3c46de5b6e97",
-              "item": "Military flash drive",
-              "count": 1,
-              "unitPrice": 139420,
-              "gross": 139420,
-              "fee": 9059,
-              "net": 130361,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 139420,
-              "avg24hPrice": 145265,
-              "updated": "2026-10-01T04:28:03.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         },
@@ -765,6 +704,67 @@
               "lastLowPrice": 666666,
               "avg24hPrice": 732817,
               "updated": "2026-10-01T03:18:06.000Z"
+            }
+          ]
+        },
+        {
+          "craftId": "62a116282c5e0c325b62d5ec",
+          "craft": "Military flash drive x1",
+          "stationLevel": 3,
+          "taskUnlock": null,
+          "materialCost": 142220,
+          "saleGross": 130000,
+          "fleaFee": 8289,
+          "netRevenue": 121711,
+          "profit": -20509,
+          "durationMinutes": 600,
+          "profitPerHour": -2051,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "590c621186f774138d11ea29",
+              "item": "Secure Flash drive",
+              "count": 2,
+              "unitCost": 22222,
+              "subtotal": 44444,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "62a0a124de7ac81993580542",
+              "item": "Topographic survey maps",
+              "count": 2,
+              "unitCost": 48888,
+              "subtotal": 97776,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "5c05308086f7746b2101e90b",
+              "item": "Virtex programmable processor",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "62a0a16d0b9d3c46de5b6e97",
+              "item": "Military flash drive",
+              "count": 1,
+              "unitPrice": 130000,
+              "gross": 130000,
+              "fee": 8289,
+              "net": 121711,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 130000,
+              "avg24hPrice": 144426,
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         }
@@ -1629,7 +1629,7 @@
               "methodType": "flea",
               "lastLowPrice": 50000,
               "avg24hPrice": 26453,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         },
@@ -1684,7 +1684,7 @@
               "methodType": "flea",
               "lastLowPrice": 19419,
               "avg24hPrice": 20076,
-              "updated": "2026-10-01T04:28:03.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         },
@@ -1791,7 +1791,7 @@
               "methodType": "flea",
               "lastLowPrice": 50000,
               "avg24hPrice": 26453,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         },
@@ -1879,7 +1879,7 @@
               "methodType": "flea",
               "lastLowPrice": 18888,
               "avg24hPrice": 22761,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         },
@@ -1951,7 +1951,7 @@
               "methodType": "flea",
               "lastLowPrice": 30000,
               "avg24hPrice": 28881,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         }
@@ -2004,7 +2004,7 @@
               "methodType": "flea",
               "lastLowPrice": 50000,
               "avg24hPrice": 26453,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         },
@@ -2059,7 +2059,7 @@
               "methodType": "flea",
               "lastLowPrice": 23000,
               "avg24hPrice": 25009,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         },
@@ -2103,7 +2103,7 @@
               "methodType": "flea",
               "lastLowPrice": 190000,
               "avg24hPrice": 197665,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         }
@@ -2149,7 +2149,7 @@
               "methodType": "flea",
               "lastLowPrice": 190000,
               "avg24hPrice": 197665,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         },
@@ -2193,7 +2193,7 @@
               "methodType": "flea",
               "lastLowPrice": 50000,
               "avg24hPrice": 26453,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         },
@@ -2248,7 +2248,7 @@
               "methodType": "flea",
               "lastLowPrice": 23000,
               "avg24hPrice": 25009,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ]
         }
@@ -2897,7 +2897,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 25000,
                 "avg24hPrice": 24602,
-                "updated": "2026-10-01T04:28:06.000Z"
+                "updated": "2026-10-01T04:48:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -2942,7 +2942,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 50000,
                 "avg24hPrice": 26453,
-                "updated": "2026-10-01T04:28:06.000Z"
+                "updated": "2026-10-01T04:48:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -2987,7 +2987,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 190000,
                 "avg24hPrice": 197665,
-                "updated": "2026-10-01T04:28:06.000Z"
+                "updated": "2026-10-01T04:48:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3043,7 +3043,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 23000,
                 "avg24hPrice": 25009,
-                "updated": "2026-10-01T04:28:06.000Z"
+                "updated": "2026-10-01T04:48:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3089,7 +3089,7 @@
               "methodType": "flea",
               "lastLowPrice": 50000,
               "avg24hPrice": 26453,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ],
           "sellTo": "Flea Market"
@@ -3149,7 +3149,7 @@
                 "methodType": "flea",
                 "lastLowPrice": 370000,
                 "avg24hPrice": 409353,
-                "updated": "2026-10-01T04:28:06.000Z"
+                "updated": "2026-10-01T04:48:06.000Z"
               }
             ],
             "sellTo": "Flea Market"
@@ -3206,7 +3206,7 @@
               "methodType": "flea",
               "lastLowPrice": 370000,
               "avg24hPrice": 409353,
-              "updated": "2026-10-01T04:28:06.000Z"
+              "updated": "2026-10-01T04:48:06.000Z"
             }
           ],
           "sellTo": "Flea Market"
@@ -3327,7 +3327,7 @@
           ],
           "input": "5c12613b86f7743bbe2c3f76 Name",
           "inputItemId": "5c12613b86f7743bbe2c3f76",
-          "investmentCost": 280000,
+          "investmentCost": 250000,
           "investmentMethod": "Flea Market",
           "durationMinutes": 320,
           "expectedReturn": null,
