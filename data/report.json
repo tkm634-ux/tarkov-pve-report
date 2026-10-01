@@ -2,10 +2,10 @@
   "metadata": {
     "mode": "PvE",
     "source": "Tarkov.dev JSON API",
-    "calculatedAt": "2026-10-01T17:27:19.564Z",
+    "calculatedAt": "2026-10-01T17:42:38.936Z",
     "priceUpdatedRange": {
       "oldest": "2025-09-25T09:47:32.000Z",
-      "newest": "2026-10-01T17:18:07.000Z"
+      "newest": "2026-10-01T17:38:05.000Z"
     },
     "assumptions": {
       "hideout": "maximum levels",
@@ -2345,6 +2345,83 @@
           ]
         },
         {
+          "craftId": "63a3359eaf870e651d58e61a",
+          "craft": "PM 9x18PM 84-round makeshift drum magazine x1",
+          "stationLevel": 1,
+          "taskUnlock": null,
+          "materialCost": 22040,
+          "saleGross": 72500,
+          "fleaFee": 6091,
+          "netRevenue": 66409,
+          "profit": 44369,
+          "durationMinutes": 20,
+          "profitPerHour": 133108,
+          "sellTo": "Flea Market",
+          "materials": [
+            {
+              "id": "5ea034f65aad6446a939737e",
+              "item": "PPSh-41 7.62x25 71-round drum magazine",
+              "count": 1,
+              "unitCost": 10762,
+              "subtotal": 10762,
+              "method": "Trader barter: Prapor LL1",
+              "methodType": "barter",
+              "buyLimit": 2,
+              "taskUnlock": null
+            },
+            {
+              "id": "5448c12b4bdc2d02308b456f",
+              "item": "PM 9x18PM 90-93 8-round magazine",
+              "count": 1,
+              "unitCost": 1278,
+              "subtotal": 1278,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            },
+            {
+              "id": "5e2af22086f7746d3f3c33fa",
+              "item": "Tube of Poxeram cold welding",
+              "count": 1,
+              "unitCost": 10000,
+              "subtotal": 10000,
+              "method": "Flea Market",
+              "methodType": "flea",
+              "buyLimit": null,
+              "taskUnlock": null
+            }
+          ],
+          "tools": [
+            {
+              "id": "62a0a0bb621468534a797ad5",
+              "item": "Set of files \"Master\"",
+              "count": 1
+            },
+            {
+              "id": "590c2b4386f77425357b6123",
+              "item": "Pliers",
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "id": "55d485be4bdc2d962f8b456f",
+              "item": "PM 9x18PM 84-round makeshift drum magazine",
+              "count": 1,
+              "unitPrice": 72500,
+              "gross": 72500,
+              "fee": 6091,
+              "net": 66409,
+              "sellTo": "Flea Market",
+              "methodType": "flea",
+              "lastLowPrice": 72500,
+              "avg24hPrice": 65292,
+              "updated": "2026-10-01T17:38:03.000Z"
+            }
+          ]
+        },
+        {
           "craftId": "600a9955ba91d953182d69f0",
           "craft": "Kalashnikov AKM 7.62x39 assault rifle Default x1",
           "stationLevel": 1,
@@ -2391,56 +2468,6 @@
               "lastLowPrice": 53809,
               "avg24hPrice": 55198,
               "updated": "2026-10-01T16:38:07.000Z"
-            }
-          ]
-        },
-        {
-          "craftId": "5de951483c52683d810b4a10",
-          "craft": "Printed circuit board x2",
-          "stationLevel": 1,
-          "taskUnlock": null,
-          "materialCost": 8000,
-          "saleGross": 61600,
-          "fleaFee": 4050,
-          "netRevenue": 57550,
-          "profit": 49550,
-          "durationMinutes": 33,
-          "profitPerHour": 90091,
-          "sellTo": "Flea Market",
-          "materials": [
-            {
-              "id": "5734781f24597737e04bf32a",
-              "item": "DVD drive",
-              "count": 1,
-              "unitCost": 8000,
-              "subtotal": 8000,
-              "method": "Flea Market",
-              "methodType": "flea",
-              "buyLimit": null,
-              "taskUnlock": null
-            }
-          ],
-          "tools": [
-            {
-              "id": "5d63d33b86f7746ea9275524",
-              "item": "Flat screwdriver",
-              "count": 1
-            }
-          ],
-          "outputs": [
-            {
-              "id": "590a3b0486f7743954552bdb",
-              "item": "Printed circuit board",
-              "count": 2,
-              "unitPrice": 30800,
-              "gross": 61600,
-              "fee": 4050,
-              "net": 57550,
-              "sellTo": "Flea Market",
-              "methodType": "flea",
-              "lastLowPrice": 30800,
-              "avg24hPrice": 39783,
-              "updated": "2026-10-01T17:18:07.000Z"
             }
           ]
         }
